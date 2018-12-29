@@ -3,7 +3,7 @@
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
   background: white;
   transition: all 0.3s ease;
-  height: 70px;
+  height: 80px;
   padding: 0px 30px;
   display: flex;
   align-items: center;
@@ -12,9 +12,12 @@
 
 /* Logo */
 .navbar-wagon-brand img {
-  height: 50px;
+  height: 24px;
 }
 
+.mongolfier_logo{
+  height: 34px;
+}
 /* User Avatar */
 .navbar-wagon .avatar {
   height: 35px;
@@ -27,12 +30,46 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  .earn-up-to{
+    font-family: Comfortaa;
+    font-size: 12px;
+    letter-spacing: -1px;
+    line-height: 21px;
+    /* letter-spacing: -1.5px; */
+    color:  #484848;
+    font-weight: 300;
+    margin-right: -12px;
+    i{
+      color: #B4BBC6;
+      font-size: 12px;
+    }
+  }
+  .savings-amount{
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 29px;
+    letter-spacing: -1px;
+    color: #333333;
+
+  }
+  .currency{
+    margin-left: -14px;
+    font-size: 20px;
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1px;
+    color: #333333;
+  }
 }
 
 /* Basic navbar item */
 .navbar-wagon-item {
   cursor: pointer;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 /* Navbar link */
@@ -74,4 +111,19 @@
   transform: rotate(45deg);
   border-left: 1px solid #E6E6E6;
   border-top: 1px solid #E6E6E6;
+}
+
+
+.btn-List-my-container{
+  background: #008489;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-family: Comfortaa;
+  font-size: 18px;
+  font-weight: 400;
+  border: 1px solid #FFFBFB;
+  text-align: center;
+  padding: 8px 23px;
+  // margin-left: 10px;
+  //   margin-right: 10px;
 }
