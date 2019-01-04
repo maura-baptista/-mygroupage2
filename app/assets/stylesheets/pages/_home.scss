@@ -95,8 +95,9 @@
 
 .wrapper-review{
 	background: #FFFFFF;
-	padding: 38px;
-	
+	// padding: 38px;
+	    padding-left: 54px;
+	    padding-bottom: 150px;
 
 	.card-review-image{
 		 // max-width: 100%;
@@ -117,6 +118,7 @@
 		position: relative;
 		
 		height: 600px;
+		// padding-left: 30px;
 
 		q { quotes: '\201c' '\201d'; }
 		q:before { content: open-quote;    font-size: 60px;  color: #FBBB00;}
@@ -144,6 +146,50 @@
 
 			color: #767676;
 		}
+	}
+	.card-padding{
+		 padding: 67px;
+
+	}
+}
+.wrapper-container-sharing{
+	background: #FFFFFF;
+	.border{
+		border: 1.5px solid #8B8B8B;
+		width: 62px;
+		position: absolute;
+		left: 50%;
+	}
+	h1{
+		margin: 0;
+		padding-top: 4px;
+		font-family: Comfortaa;
+		font-style: normal;
+		font-weight: bold;
+		line-height: 117px;
+		font-size: 60px;
+		text-align: center;
+		letter-spacing: -2px;
+
+		color: #333333;
+	}
+	p{
+		font-family: Comfortaa;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 29px;
+		font-size: 16px;
+		letter-spacing: -1px;
+		color: #484848;
+	}
+	ul > li{
+		font-family: Comfortaa;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 31px;
+		font-size: 16px;
+		letter-spacing: -1px;
+		color: #484848;
 	}
 }
 
