@@ -14,7 +14,7 @@
   <div class="navbar-wagon-right hidden-xs hidden-sm">
 
     <% if user_signed_in? %>
-    <span class="earn-up-to navbar-wagon-item">EARN UP TO <i class="fas fa-info-circle"></i></span><span class="savings-amount navbar-wagon-item">2,200</span><span class="currency navbar-wagon-item">USD</span>
+    <span class="earn-up-to navbar-wagon-item">EARN UP TO <i class="fas fa-info-circle"></i></span><span class="savings-amount navbar-wagon-item"><%= number_with_precision(@result, :precision => 0, ) %></span><span class="currency navbar-wagon-item"><%= @currency %></span>
     <%= link_to "List my container", "#", class: "btn-List-my-container navbar-wagon-item" %>
   
 
