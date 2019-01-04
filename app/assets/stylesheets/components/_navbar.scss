@@ -10,6 +10,7 @@
   justify-content: space-between;
 }
 
+
 /* Logo */
 .navbar-wagon-brand img {
   height: 24px;
@@ -35,10 +36,16 @@
     font-size: 12px;
     letter-spacing: -1px;
     line-height: 21px;
-    /* letter-spacing: -1.5px; */
     color:  #484848;
     font-weight: 300;
     margin-right: -12px;
+    
+  }
+  .btn-information{
+    padding: 0px 3px;
+    border: 0px solid transparent;
+    border-radius: 24px;
+    margin-left: 3px;
     i{
       color: #B4BBC6;
       font-size: 12px;
@@ -87,6 +94,7 @@
   margin-top: 15px;
   box-shadow: 1px 1px 4px #E6E6E6;
   border-color: #E6E6E6;
+
 }
 .navbar-wagon-dropdown-menu li > a {
   transition: color 0.3s ease;
@@ -127,3 +135,54 @@
   // margin-left: 10px;
   //   margin-right: 10px;
 }
+
+//mobile navbar
+.navbar{
+  height:80px;
+  position: fixed;
+  top: 0px;
+  width: 100vw;
+  z-index: 500;
+  
+
+}
+.navbar-wagon-mobile{
+  // box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
+  background-color: transparent;
+  transition: all 0.3s ease;
+  height: 80px;
+  padding: 0px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+    .navbar-wagon-dropdown-menu {
+      margin-top: 15px;
+      box-shadow: 1px 1px 4px #E6E6E6;
+      border-color: #E6E6E6;
+      margin-right: -94px;
+   }
+    .navbar-wagon-dropdown-menu:before {
+      content: ' ';
+      height: 10px;
+      width: 10px;
+      position: absolute;
+      right: 114px;
+      top: -6px;
+      background-color: white;
+      transform: rotate(45deg);
+      border-left: 1px solid #E6E6E6;
+      border-top: 1px solid #E6E6E6;
+    }
+    .arrow{
+      height: 13px;
+    }
+  .mongolfier_logo{
+  height: 42px;
+}
+}
+// .navbar-large{
+//   height: 60px;
+//     background-color: transparent;
+//     font-weight: lighter;
+// }

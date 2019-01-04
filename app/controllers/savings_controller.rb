@@ -11,12 +11,14 @@ class SavingsController < ApplicationController
   	@price = @saving[:price].to_f
  	 @currency = @saving[:currency]
   @left_space = @container_size - @volume
+ 
+
 
   @result = (@price / @container_size) * @left_space
 
   end
 
-  private
+  private 
 
   def saving_params
   	params.require(:saving).permit(:container, :volume, :price, :metrics, :currency)
