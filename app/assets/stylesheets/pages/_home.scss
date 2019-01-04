@@ -1,1 +1,150 @@
 // Specific CSS for your home-page
+.wrapper-why-us{
+	background: #FFFFFF;
+	padding: 7px;
+	padding-bottom: 36px;
+	h2{
+		font-family: Comfortaa;
+		font-style: normal;
+		font-weight: bold;
+		line-height: 41px;
+		font-size: 26px;
+		letter-spacing: -1px;
+
+		color: #484848;
+	}
+	p{
+		font-family: Comfortaa;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 31px;
+		font-size: 16px;
+		letter-spacing: -1px;
+
+		color: #484848;
+	}
+	.card-why-us{
+		padding: 38px;
+	}
+
+}
+.wrapper-3-steps{
+	background: #FFFFFF;
+	position: relative;
+	// padding: 7px;
+	.border{
+		border: 1.5px solid #8B8B8B;
+		width: 62px;
+		position: absolute;
+		left: 50%;
+	}
+	h1{
+		font-family: Comfortaa;
+		font-style: normal;
+		font-weight: bold;
+		line-height: 117px;
+		font-size: 60px;
+		text-align: center;
+		letter-spacing: -2px;
+    	margin-top: 6px;
+		color: #333333;
+	}
+	h2{
+		font-family: Comfortaa;
+		font-style: normal;
+		font-weight: bold;
+		line-height: 35px;
+		font-size: 26px;
+		letter-spacing: -1px;
+
+		color: #484848;
+	}
+	p{
+		font-family: Comfortaa;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 31px;
+		font-size: 16px;
+		letter-spacing: -1px;
+
+		color: #484848;
+	}
+
+	.badge {
+		width: 55px;
+		height: 55px;
+		border-radius: 50%;
+		background: #008489;
+		 display: flex;
+		 justify-content: space-around;
+		 align-items: center;
+		 font-family: Comfortaa;
+		font-style: normal;
+		font-weight: bold;
+		line-height: 31px;
+		font-size: 20px;
+		text-align: center;
+		letter-spacing: -1px;
+		color: #FFFFFF;
+	}
+	.card-3-steps{
+		padding: 36px;
+		padding-bottom: 90px;
+	}
+}
+
+.wrapper-review{
+	background: #FFFFFF;
+	padding: 38px;
+	
+
+	.card-review-image{
+		 // max-width: 100%;
+   // 		 max-height: 100%;
+		
+		  height: 600px;
+		  // text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+		  background-size: cover !important;
+		  background-position: center;
+		  // color: white;
+		  // position: relative;
+		  // margin-right: -6px;
+		  // margin-bottom: 21px;
+		  // transition: transform 0.3s;
+
+	}
+	.card-review-content{
+		position: relative;
+		
+		height: 600px;
+
+		q { quotes: '\201c' '\201d'; }
+		q:before { content: open-quote;    font-size: 60px;  color: #FBBB00;}
+		q:after  { content: close-quote; font-size: 60px;  color: #FBBB00; position: absolute;}
+		p q{
+			position: absolute;
+			top: 30%;
+			font-family: Comfortaa;
+			font-style: normal;
+			font-weight: 300;
+			line-height: 40px;
+			font-size: 30px;
+			letter-spacing: -2px;
+			color: #484848;
+		}
+		.review-owner{
+			position: absolute;
+			top: 62%;
+			font-family: Comfortaa;
+			font-style: normal;
+			font-weight: 300;
+			line-height: 21px;
+			font-size: 16px;
+			letter-spacing: -1.5px;
+
+			color: #767676;
+		}
+	}
+}
+
+
