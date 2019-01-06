@@ -80,13 +80,13 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-6">
-					<div class="card-review-image card-padding" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= asset_path 'review-deskt.jpg' %>);">
+					<div class="card-review-image card-padding" style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url(<%= asset_path 'review-deskt.jpg' %>);">
 					</div>
 				</div>
 				<div class="col-sm-6">
 					<div class="card-review-content card-padding">
-						<p classe="review-content"> <q>&nbsp;The movers are responsible for handling each move in the container. This definitely helped us decide to share our container.&nbsp;
-						</q></p>
+						<p classe="review-content"><%= image_tag "right-quotation-mark.svg", height: 30, class: "doube-quotes" %> <br>The movers are responsible for handling each move in the container. This definitely helped us decide to share our container.&nbsp;
+						</p>
 						<span class="review-owner">
 							Karen shared a container with other teachers
 						</span>
@@ -102,25 +102,177 @@
 				<div class="border"></div>
 				<h1>Container sharing done right</h1>
 				<div class="col-sm-6">
-					<p>We know it’s a priority to make sure sharing your container does not affect your move in any way. The schedule must be respected and there should be no hiccup at customs. <br> <br>
+					<div class="sharing-description card-padding">
+						<p>We know it’s a priority to make sure sharing your container does not affect your move in any way. The schedule must be respected and there should be no hiccup at customs. <br> <br>
 
 					To achieve this, we team-up with your mover to qualify every expat interested in booking your space. We verify that their schedule fits into yours, and check if their paperwork is in good order for customs clearance.</p>
+					</div>
+					
 				</div>
 				<div class="col-sm-6">
-					<ul>
-						<li>Secure : all moves are packed by the moving company</li>
-						<li>Compliant : each move is cleared separately under its owner’s name</li>
-						<li>Safe : your container is sealed & opened in front of you</li>
-						<li>On-time : container’s journey is set around your own schedule</li>
-						<li>Confidential : keep your shared-container invite-only if needed</li>
-						<li>Trusted : we only work with movers who handle groupages regularly</li>
-					</ul>
+					<div class="sharing-points card-padding">
+						<ul>
+							<li><%= image_tag "check.svg", height: 50, class: "checklist-icon" %><span class="text-bold">Secure</span> : all moves are packed by the moving company</li>
+							<li><%= image_tag "check.svg", height: 50, class: "checklist-icon" %><span class="text-bold">Compliant</span> : each move is cleared separately under its owner’s name</li>
+							<li><%= image_tag "check.svg", height: 50, class: "checklist-icon" %><span class="text-bold">Safe</span> : your container is sealed & opened in front of you</li>
+							<li><%= image_tag "check.svg", height: 50, class: "checklist-icon" %><span class="text-bold">On-time</span> : container’s journey is set around your own schedule</li>
+							<li><%= image_tag "check.svg", height: 50, class: "checklist-icon" %><span class="text-bold">Confidential</span> : keep your shared-container invite-only if needed</li>
+							<li><%= image_tag "check.svg", height: 50, class: "checklist-icon" %><span class="text-bold">Trusted</span> : we only work with movers who handle groupages regularly</li>
+						</ul>
+					</div>
+					
 				</div>
 			</div>
 		</div>
 		
 		
 	</section>
+	<section class="wrapper-movers-list">
+		<div class="container">
+			<div class="movers-list-box">
+				<div class="row">
+					
+						<div class="col-sm-8">
+							<div class="movers-list-text">
+								<h2>Still looking for a mover?</h2>
+								<p>Receive the list of moving companies we trust in your country. Come back & list your container when you are ready.</p>
+								<%= link_to "Get list", "#", class: "btn-get-movers-list" %>
+							</div>
+							
+						</div>
+						<div class="col-sm-4">
+							<div class="movers-list-image">
+								<%= image_tag "moving-assist-desk.png", height: 50, class: "mover-assist-image" %>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="wrapper-payments">
+		<div class="container">
+			<div class="row">
+				<div class="border"></div>
+				<h1>Payments made simple</h1>
+				<div class="col-sm-4">
+					<div class="card-payments">
+						<h2>Starter’s advantage</h2>
+						<p>Starting a shared-container is always cheaper than joining an existing one. <br> Each booking contributes to reducing your whole door to door bill, not just shipping costs.</p>
+						
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="card-payments">
+						<h2>Pay low fees for free</h2>
+						<p>There’s no cost to sign up. We generally retain a flat 6% per reservation made on your container to cover financial costs and the use of our platform. </p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="card-payments">
+						<h2>Get paid quickly</h2>
+						<p>Expats that reserve a space in your container are debitted as soon as their booking is done. We can send your money by Paypal, direct deposit, or other available methods.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="wrapper-review-II">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="card-review-content">
+						<p classe="review-content"><%= image_tag "right-quotation-mark.svg", height: 30, class: "doube-quotes" %> <br>Sharing our container has helped us pay for the flight tickets.&nbsp;
+						</p>
+						<span class="review-owner">
+							Marie used myGroupage to reduce her relocation expenses
+						</span>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="card-review-image" style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url(<%= asset_path 'couple-review-dskt.jpg' %>);">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="wrapper-about-us">
+			<div class="container">
+				<div class="row">
+					<div class="border"></div>
+					<h1>About myGroupage</h1>
+					<div class="col-sm-6">
+						<div class="card-why-us">
+							<h2>What is myGroupage?</h2>
+							<p>myGroupage is changing the way people move abroad. We apply innovations of the sharing economy to international moving. With technology and great international moving partners, we create shared-containers on-demand and allow expats to enjoy a professional move at the lowest rate in the market.</p>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="card-why-us">
+							<h2>What is a groupage?</h2>
+							<p>You can greatly reduce your moving costs by sharing your container with expats relocating on a similar itinerary. Think of a groupage like ridesharing, where people share your space and split the costs. All our groupages are handled by reputable moving companies who have partnered with us.</p>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+	</section>
+	<section class="FAQ">
+		<div class="container">
+			<div class="row">
+				<div class="border"></div>
+				<h1>Your questions answered</h1>
+				<div class="col-sm-6">
+						<div class="card-faq">
+							 <button type="button" class=" btn-faq" data-toggle="modal" data-target="#who-can-start-a-groupage">
+						  	Who can start a groupage?
+							</button>
+							<hr>
+							 <button type="button" class=" btn-faq" data-toggle="modal" data-target="#what-is-required-for-expats">
+						  	What is required of expats joining my container?
+							</button>
+							<hr>
+							<button type="button" class=" btn-faq" data-toggle="modal" data-target="#how-much-does-it-cost-to-list">
+						  	How much does it cost to list my container?
+							</button>
+							<hr>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="card-faq">
+							<button type="button" class=" btn-faq" data-toggle="modal" data-target="#what-protection-do-i-have">
+						  	What protection do I have against property damage?
+							</button>
+							<hr>
+							<button type="button" class=" btn-faq" data-toggle="modal" data-target="#how-much-do-i-pay">
+						  	How much do I have to pay for my move?
+							</button>
+							<hr>
+							<button type="button" class=" btn-faq" data-toggle="modal" data-target="#how-can-mygroupage-help">
+						  	How can myGroupage help me with setting prices?
+							</button>
+							<hr>
+						</div>
+						
+					</div>
+			</div>
+			<%= render 'savings/faq/modal-faq1' %>
+			<%= render 'savings/faq/modal-faq2' %>
+			<%= render 'savings/faq/modal-faq3' %>
+			<%= render 'savings/faq/modal-faq4' %>
+			<%= render 'savings/faq/modal-faq5' %>
+			<%= render 'savings/faq/modal-faq6' %>
+		</div>
+	</section>
+	<section class="wrapper-ready-to-earn">
+		<div class="container">
+			<div class="image-box" style="background-image: linear-gradient(90deg, #0E0D13 0%, rgba(13, 12, 18, 0.9) 0.01%, rgba(3, 2, 8, 0) 63.54%), url(<%= asset_path 'sitted-lady.jpg' %>);">
+				<h1>Ready to earn?</h1>
+				<%= link_to "List my container", "#", class: "btn-list-container2" %>
+				
+
+			</div>
+	</section>	
 </div>
 
 <!-- <div class="banner-mobile hidden-sm hidden-md hidden-lg">

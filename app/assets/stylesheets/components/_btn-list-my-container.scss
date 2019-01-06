@@ -1,0 +1,29 @@
+.btn-List-my-container{
+  background: #008489;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-family: Comfortaa;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  padding: 11px 23px;
+  // margin-left: 10px;
+  //   margin-right: 10px;
+  
+  &:focus{
+        
+      }
+  &:hover{
+    background: #013638;
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+  &:visited{
+    color: #FFFFFF;
+    text-decoration: none currentcolor solid
+
+  }
+  &:active{
+    
+  }
+}

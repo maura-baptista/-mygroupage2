@@ -50,6 +50,10 @@
       color: #B4BBC6;
       font-size: 12px;
     }
+    &:focus{
+      outline: none;
+      color: #b50000;
+    }
   }
   .savings-amount{
     font-family: Comfortaa;
@@ -121,20 +125,6 @@
   border-top: 1px solid #E6E6E6;
 }
 
-
-.btn-List-my-container{
-  background: #008489;
-  border-radius: 5px;
-  color: #FFFFFF;
-  font-family: Comfortaa;
-  font-size: 18px;
-  font-weight: 400;
-  border: 1px solid #FFFBFB;
-  text-align: center;
-  padding: 8px 23px;
-  // margin-left: 10px;
-  //   margin-right: 10px;
-}
 
 //mobile navbar
 .navbar{

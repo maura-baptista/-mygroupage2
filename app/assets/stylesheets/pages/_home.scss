@@ -46,7 +46,7 @@
 		font-size: 60px;
 		text-align: center;
 		letter-spacing: -2px;
-    	margin-top: 6px;
+    	margin-top: 13px;
 		color: #333333;
 	}
 	h2{
@@ -120,12 +120,13 @@
 		height: 600px;
 		// padding-left: 30px;
 
-		q { quotes: '\201c' '\201d'; }
-		q:before { content: open-quote;    font-size: 60px;  color: #FBBB00;}
-		q:after  { content: close-quote; font-size: 60px;  color: #FBBB00; position: absolute;}
-		p q{
+		//curved double quotes code
+		// q { quotes: '\201c' '\201d'; }
+		// q:before { content: open-quote;    font-size: 60px;  color: #FBBB00;}
+		// q:after  { content: close-quote; font-size: 60px;  color: #FBBB00; position: absolute;}
+		p {
 			position: absolute;
-			top: 30%;
+			top: 15%;
 			font-family: Comfortaa;
 			font-style: normal;
 			font-weight: 300;
@@ -133,10 +134,12 @@
 			font-size: 30px;
 			letter-spacing: -2px;
 			color: #484848;
+			padding-right: 71px;
+			padding-right: 48px;
 		}
 		.review-owner{
 			position: absolute;
-			top: 62%;
+			top: 58%;
 			font-family: Comfortaa;
 			font-style: normal;
 			font-weight: 300;
@@ -151,9 +154,15 @@
 		 padding: 67px;
 
 	}
+	.doube-quotes{
+		margin-bottom: 10px;
+		height: 35px;
+	}
 }
 .wrapper-container-sharing{
 	background: #FFFFFF;
+	padding-left: 50px;
+	padding-bottom: 150px;
 	.border{
 		border: 1.5px solid #8B8B8B;
 		width: 62px;
@@ -162,7 +171,8 @@
 	}
 	h1{
 		margin: 0;
-		padding-top: 4px;
+		padding-top: 13px;
+		margin-bottom: 37px;
 		font-family: Comfortaa;
 		font-style: normal;
 		font-weight: bold;
@@ -177,10 +187,14 @@
 		font-family: Comfortaa;
 		font-style: normal;
 		font-weight: 300;
-		line-height: 29px;
+		line-height: 33px;
 		font-size: 16px;
 		letter-spacing: -1px;
 		color: #484848;
+		padding-right: 63px;
+	}
+	ul{
+		padding-left: 1px;
 	}
 	ul > li{
 		font-family: Comfortaa;
@@ -190,7 +204,334 @@
 		font-size: 16px;
 		letter-spacing: -1px;
 		color: #484848;
+		margin-bottom: 16px;
+		list-style: none;
+		.checklist-icon{
+			height: 17px;
+    		margin-right: 9px;
+		}
+		.text-bold{
+			font-weight: 600;
+		}
 	}
 }
 
+.wrapper-movers-list{
+	background: #FFFFFF;
+	padding-bottom: 150px;
+	.movers-list-box{
+	    background-color: #F2F2F2;
+	    border-radius: 10px;
+	    padding-top: 46px;
+	    padding-left: 55px;
+	    padding-bottom: 72px;
+		.movers-list-text{
+			h2{
+				font-family: Comfortaa;
+				font-style: normal;
+				font-weight: bold;
+				line-height: 48px;
+				font-size: 36px;
+				letter-spacing: -1px;
+				color: #353C4C;
+				margin-bottom: 16px;
+			}
+			p{
+				font-family: Comfortaa;
+				font-style: normal;
+				font-weight: 300;
+				line-height: 44px;
+				font-size: 24px;
+				letter-spacing: -1px;
+				color: #353C4C;
+				margin-bottom: 41px;
+
+			}
+		}
+		.movers-list-image{
+			position: relative;
+			.mover-assist-image{
+				position: absolute;
+			    right: 26px;
+			    top: -86px;
+			    height: 400px;
+			}
+		}
+		.btn-get-movers-list{
+			background: #5AC5C2;
+			border-radius: 5px;
+	        font-family: Comfortaa;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			font-size: 20px;
+			color: #FFFFFF;
+			text-align: center;
+			text-align: center;
+    		padding: 14px 49px;
+    		text-decoration: none;
+    		&:hover{
+    			background: #008489;
+    		}
+		}
+	}
+}
+
+.wrapper-payments{
+	background: #FFFFFF;
+	position: relative;
+	padding-bottom: 50px;
+	// padding: 7px;
+	.border{
+		border: 1.5px solid #8B8B8B;
+		width: 62px;
+		position: absolute;
+		left: 50%;
+	}
+	h1{
+		font-family: Comfortaa;
+		font-style: normal;
+		font-weight: bold;
+		line-height: 117px;
+		font-size: 60px;
+		text-align: center;
+		letter-spacing: -2px;
+    	margin-top: 13px;
+    	margin-bottom: -17px;
+		color: #333333;
+	}
+	h2{
+		font-family: Comfortaa;
+		font-style: normal;
+		font-weight: bold;
+		line-height: 35px;
+		font-size: 26px;
+		letter-spacing: -1px;
+
+		color: #484848;
+	}
+	p{
+		font-family: Comfortaa;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 31px;
+		font-size: 16px;
+		letter-spacing: -1px;
+
+		color: #484848;
+	}
+	.card-payments{
+		padding: 21px;
+		padding-bottom: 90px;
+	}
+}
+
+.wrapper-review-II{
+	background: #FFFFFF;
+	padding-left: 54px;
+	padding-bottom: 145px;
+
+	.card-review-image{
+		  height: 600px;
+		  background-size: cover !important;
+		  background-position: center;
+	}
+	.card-review-content{
+		position: relative;
+		height: 600px;		
+		p {
+			position: absolute;
+			top: 15%;
+			font-family: Comfortaa;
+			font-style: normal;
+			font-weight: 300;
+			line-height: 40px;
+			font-size: 30px;
+			letter-spacing: -2px;
+			color: #484848;
+			padding-right: 71px;
+			padding-right: 48px;
+		}
+		.review-owner{
+			position: absolute;
+			top: 40%;
+			font-family: Comfortaa;
+			font-style: normal;
+			font-weight: 300;
+			line-height: 21px;
+			font-size: 16px;
+			letter-spacing: -1.5px;
+
+			color: #767676;
+		}
+	}
+	.card-padding{
+		 padding: 67px;
+
+	}
+	.doube-quotes{
+		margin-bottom: 10px;
+		height: 35px;
+	}
+}
+
+.wrapper-about-us{
+	background: #FFFFFF;
+	padding: 7px;
+	padding-bottom: 95px;
+	.border{
+		border: 1.5px solid #8B8B8B;
+		width: 62px;
+		position: absolute;
+		left: 50%;
+	}
+	h1{
+		margin: 0;
+		padding-top: 13px;
+		margin-bottom: -37px;
+		font-family: Comfortaa;
+		font-style: normal;
+		font-weight: bold;
+		line-height: 117px;
+		font-size: 60px;
+		text-align: center;
+		letter-spacing: -2px;
+
+		color: #333333;
+	}
+	h2{
+		font-family: Comfortaa;
+		font-style: normal;
+		font-weight: bold;
+		line-height: 41px;
+		font-size: 26px;
+		letter-spacing: -1px;
+
+		color: #484848;
+	}
+	p{
+		font-family: Comfortaa;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 31px;
+		font-size: 16px;
+		letter-spacing: -1px;
+
+		color: #484848;
+	}
+	.card-why-us{
+		padding: 38px;
+	}
+}
+
+.FAQ{
+	background: #FFFFFF;
+	padding: 7px;
+	padding-bottom: 150px;
+	.border{
+		border: 1.5px solid #8B8B8B;
+		width: 62px;
+		position: absolute;
+		left: 50%;
+	}
+	h1{
+		margin: 0;
+		padding-top: 13px;
+		margin-bottom: 3px;
+		font-family: Comfortaa;
+		font-style: normal;
+		font-weight: bold;
+		line-height: 117px;
+		font-size: 60px;
+		text-align: center;
+		letter-spacing: -2px;
+
+		color: #333333;
+	}
+	.card-faq{
+		padding: 38px;
+		 .btn-faq{
+            padding: 0px 3px;
+            border: 0px solid transparent;
+            border-radius: 24px;
+            margin-left: 8px;
+            font-family: Comfortaa;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 35px;
+			font-size: 18px;
+			letter-spacing: -1px;
+			color: #008489;
+			transition: all 0.3s ease;
+			// box-shadow: none;
+			&:focus{
+				 outline: none;
+				 color: #b50000;
+			}
+			&:hover{
+				font-weight: 700;
+				font-size: 19.5px;
+				text-transform: 1s;
+			}
+        }
+        hr{
+        	border: 1px solid #EDEDED;
+        }
+	}
+}
+.wrapper-ready-to-earn{
+	background: #FFFFFF;
+	padding-bottom: 36px;
+	.image-box{
+		position: relative;
+		height: 500px;
+		background-size: cover;
+ 		background-position: top;
+	}
+	h1{
+		position: absolute;
+		top: 100px;
+    	left: 70px;
+		font-family: Comfortaa;
+		font-style: normal;
+		font-weight: bold;
+		line-height: normal;
+		font-size: 60px;
+		color: #FFFFFF;
+		margin: 0;
+	}
+	.btn-list-container2{
+		position: absolute;
+		top: 200px;
+    	left: 70px;
+		  background: #008489;
+		  border-radius: 5px;
+		  color: #FFFFFF;
+		  font-family: Comfortaa;
+		  font-size: 22px;
+		  font-weight: 400;
+		  text-align: center;
+		  padding: 18px 23px;
+		  // margin-left: 10px;
+		  //   margin-right: 10px;
+		  
+		  &:focus{
+		        
+		      }
+		  &:hover{
+		    background: #013638;
+		    text-decoration: none;
+		    color: #FFFFFF;
+		  }
+		  &:visited{
+		    color: #FFFFFF;
+		    text-decoration: none currentcolor solid
+
+		  }
+		  &:active{
+		    
+	 }
+}
+	
+}
 
