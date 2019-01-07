@@ -679,7 +679,8 @@
 				margin: 0;
 			}
 			p{
-				margin-bottom: 49px;
+				padding-bottom: 37px;
+				padding-top: 13px;
 			}
   		}
   	}
@@ -701,7 +702,7 @@
   	}
   	.wrapper-review{
   		padding: 0;
-  		padding-bottom: 97px;
+  		padding-bottom: 67px;
   		.card-review-image{
   			height: 310px;
   		}
@@ -737,12 +738,14 @@
   		p{
   			padding: 0;
   			line-height: 26px;
+  			letter-spacing: 0;
   		}
   		.card-padding{
   			margin-top: 42px;
   		}
   		ul > li{
   			line-height: 24px;
+  			letter-spacing: 0;
   		}
   	}
   	.wrapper-movers-list-mob{
