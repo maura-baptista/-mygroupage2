@@ -1,11 +1,6 @@
-
-<div class="form-calculator">
-	<h1>Share your container <br>and earn money</h1>
+<div class="mob-form-calculator">
 	<p>Find out what you could earn</p>
-	<%#= form_for  root_path, :method => "POST" do %>
- 	<%= simple_form_for :saving, url: calculator_path do |f| %>
-
-	
+	<%= simple_form_for :saving, url: calculator_path do |f| %>
 		<div class="row">
 			<div class="col-xs-12">
 	
@@ -29,24 +24,28 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xs-7 results-section">
-				<div class="results-values">
-				<%= @submit %>
+			<div class="col-xs-12">
 					<h3> <span class="results-savings"><%= number_with_precision(@result, :precision => 0, ) %></span> <span class="results-currency"><%= @currency %></span></h3>
-					 <span class="results-earn-up-to ">EARN UP TO</span>
-					 <button type="button" class="btn btn-information" data-toggle="modal" data-target="#estimate">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="information">
+					<span class="results-earn-up-to">EARN UP TO</span>
+					 <button type="button" class="btn btn-information" data-toggle="modal" data-target="#estimate-mobile">
 						  <i class="fas fa-info-circle"></i>
 					</button>
-						 
-
 				</div>
 			</div>
-			<div class="col-xs-5">
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
 				<div class="results-btn">
 					<%= f.submit "Calculate", class: "btn btn-calculate"  %>
 				</div>
 			</div>
 		</div>
-	<%	end  %>
-	 <%= render 'savings/modal_information' %>
+		</div>
+	<% end %>
+	<%= render 'savings/modal-information-mobile' %>
 </div>

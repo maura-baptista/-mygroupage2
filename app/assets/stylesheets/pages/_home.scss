@@ -43,7 +43,7 @@
 		font-style: normal;
 		font-weight: bold;
 		line-height: 117px;
-		font-size: 60px;
+		font-size: 31px;
 		text-align: center;
 		letter-spacing: -2px;
     	margin-top: 13px;
@@ -503,9 +503,6 @@
 		margin-bottom: 59px;
 	}
 	.btn-list-container2{
-		// position: absolute;
-		// top: 200px;
-  //   	left: 70px;
 		  background: #008489;
 		  border-radius: 5px;
 		  color: #FFFFFF;
@@ -514,12 +511,6 @@
 		  font-weight: 400;
 		  text-align: center;
 		  padding: 22px 23px;
-		  // margin-left: 10px;
-		  //   margin-right: 10px;
-		  
-		  &:focus{
-		        
-		      }
 		  &:hover{
 		    background: #004749;
 		    text-decoration: none;
@@ -528,12 +519,295 @@
 		  &:visited{
 		    color: #FFFFFF;
 		    text-decoration: none currentcolor solid
+		  }	    
+	}
+}
 
-		  }
-		  &:active{
-		    
-	 }
+//mobile version
+.wrapper-calculator-form{
+	background: #FFFFFF;
 }
-	
+
+//mobile media queries
+@media only screen 
+  and (max-width: 320px){
+  	.wrapper-why-us{
+  		.card-why-us{
+			padding: 0;
+			h2{
+				margin: 0;
+			}
+			p{
+				margin-bottom: 49px;
+			}
+  		}
+  	}
+  	.wrapper-3-steps{
+  		padding-bottom: 53px;
+  		.border{
+  		 	position: static;
+  		}
+  		h1{
+  			line-height: 38px;
+			font-size: 38px;
+			text-align: left;
+			margin-top: 26px;
+  		}
+  		.card-3-steps{
+  			padding: 0;
+    		margin-top: 32px;
+  		}
+  	}
+  	.wrapper-review{
+  		padding: 0;
+  		padding-bottom: 97px;
+  		.card-review-image{
+  			height: 310px;
+  		}
+  		.card-review-content{
+  			height: 201px;
+  			.review-content{
+  				position: static;
+  				margin-top: 26px;
+  				p{
+  					font-size: 20px;
+  					line-height: 28px;
+  				}
+  				.doube-quotes{
+					height: 25px;
+  				}
+  			}
+  			
+  		}
+  	}
+  	.wrapper-container-sharing{
+  		padding: 0;
+  		padding-bottom: 100px;
+  		.border{
+  		 	position: static;
+  		}
+  		h1{
+  			line-height: 38px;
+			font-size: 38px;
+			text-align: left;
+			margin-top: 26px;
+			margin-bottom: 0;
+  		}
+  		p{
+  			padding: 0;
+  			line-height: 26px;
+  		}
+  		.card-padding{
+  			margin-top: 42px;
+  		}
+  		ul > li{
+  			line-height: 24px;
+  		}
+  	}
+  	.wrapper-movers-list-mob{
+  		background: #F2F2F2;
+  		position: relative;
+  		h2{
+  			font-family: Comfortaa;
+			font-style: normal;
+			font-weight: bold;
+			line-height: 36px;
+			font-size: 33px;
+			letter-spacing: -1px;
+			color: #353C4C;
+  		}
+		p{
+			font-family: Comfortaa;
+			font-style: normal;
+			font-weight: 300;
+			line-height: 24px;
+			font-size: 15px;
+			letter-spacing: -1px;
+			color: #353C4C;
+			width: 172px;
+		}
+		.col-xs-8{
+			padding-right: 0;
+		}
+		.col-xs-4{
+			padding: 0;
+			margin: 0;
+		}
+  		
+  		.card-mover-image{	
+  			background-image: image-url('moving-assist-desk.png');
+
+		    // background-image: linear-gradient(transparent, transparent), url(/assets/moving-assist-desk-507f2bf….png);
+		    background-size: cover;
+		    height: 332px;
+		    background-position: 2% 104%;
+		    margin-left: -20px;
+		    position: relative;
+    		top: -25px;
+
+
+  		}
+  		.btn-get-movers-list-mob{
+  			background: #5AC5C2;
+			border-radius: 5px;
+	        font-family: Comfortaa;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			font-size: 20px;
+			color: #FFFFFF;
+			text-align: center;
+			text-align: center;
+    		padding: 14px 49px;
+    		width: 100%;
+    		text-decoration: none;
+    		&:hover{
+    			background: #008489;
+    		}
+  		}
+  		
+  	}
 }
+
+@media only screen 
+  and (min-width: 321px)
+  and (max-width: 767px){
+  	.wrapper-why-us{
+  		.card-why-us{
+			padding: 0;
+			h2{
+				margin: 0;
+			}
+			p{
+				margin-bottom: 49px;
+			}
+  		}
+  	}
+  	.wrapper-3-steps{
+  		padding-bottom: 53px;
+  		.border{
+  		 	position: static;
+  		}
+  		h1{
+  			line-height: 38px;
+			font-size: 38px;
+			text-align: left;
+			margin-top: 26px;
+  		}
+  		.card-3-steps{
+  			padding: 0;
+    		margin-top: 32px;
+  		}
+  	}
+  	.wrapper-review{
+  		padding: 0;
+  		padding-bottom: 97px;
+  		.card-review-image{
+  			height: 310px;
+  		}
+  		.card-review-content{
+  			height: 201px;
+  			.review-content{
+  				position: static;
+  				margin-top: 26px;
+  				p{
+  					font-size: 20px;
+  					line-height: 28px;
+  				}
+  				.doube-quotes{
+					height: 25px;
+  				}
+  			}
+  			
+  		}
+  	}
+  	.wrapper-container-sharing{
+  		padding: 0;
+  		padding-bottom: 100px;
+  		.border{
+  		 	position: static;
+  		}
+  		h1{
+  			line-height: 38px;
+			font-size: 38px;
+			text-align: left;
+			margin-top: 26px;
+			margin-bottom: 0;
+  		}
+  		p{
+  			padding: 0;
+  			line-height: 26px;
+  		}
+  		.card-padding{
+  			margin-top: 42px;
+  		}
+  		ul > li{
+  			line-height: 24px;
+  		}
+  	}
+  	.wrapper-movers-list-mob{
+  		background: #F2F2F2;
+  		position: relative;
+  		h2{
+  			font-family: Comfortaa;
+			font-style: normal;
+			font-weight: bold;
+			line-height: 36px;
+			font-size: 33px;
+			letter-spacing: -1px;
+			color: #353C4C;
+  		}
+		p{
+			font-family: Comfortaa;
+			font-style: normal;
+			font-weight: 300;
+			line-height: 24px;
+			font-size: 15px;
+			letter-spacing: -1px;
+			color: #353C4C;
+			width: 172px;
+		}
+		.col-xs-8{
+			padding-right: 0;
+		}
+		.col-xs-4{
+			padding: 0;
+			margin: 0;
+		}
+  		
+  		.card-mover-image{	
+  			background-image: image-url('moving-assist-desk.png');
+
+		    // background-image: linear-gradient(transparent, transparent), url(/assets/moving-assist-desk-507f2bf….png);
+		    background-size: cover;
+		    height: 332px;
+		    background-position: 2% 104%;
+		    margin-left: -20px;
+		    position: relative;
+    		top: -25px;
+
+
+  		}
+  		.btn-get-movers-list-mob{
+  			background: #5AC5C2;
+			border-radius: 5px;
+	        font-family: Comfortaa;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			font-size: 20px;
+			color: #FFFFFF;
+			text-align: center;
+			text-align: center;
+    		padding: 14px 49px;
+    		width: 100%;
+    		text-decoration: none;
+    		&:hover{
+    			background: #008489;
+    		}
+  		}
+  		
+  	}
+  }
+
 
