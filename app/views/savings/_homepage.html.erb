@@ -85,12 +85,14 @@
 				</div>
 				<div class="col-sm-6">
 					<div class="card-review-content card-padding">
-						<p classe="review-content"><%= image_tag "right-quotation-mark.svg", height: 30, class: "doube-quotes" %> <br>The movers are responsible for handling each move in the container. This definitely helped us decide to share our container.&nbsp;
-						</p>
-						<span class="review-owner">
-							Karen shared a container with other teachers
-						</span>
-						
+						<div class="review-content">
+							<%= image_tag "right-quotation-mark.svg", height: 30, class: "doube-quotes" %> <br>
+							<p>The movers are responsible for handling each move in the container. This definitely helped us decide to share our container.&nbsp;
+							</p>
+							<span class="review-owner">
+								Karen shared a container with other teachers
+							</span>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -182,11 +184,14 @@
 			<div class="row">
 				<div class="col-sm-6">
 					<div class="card-review-content">
-						<p classe="review-content"><%= image_tag "right-quotation-mark.svg", height: 30, class: "doube-quotes" %> <br>Sharing our container has helped us pay for the flight tickets.&nbsp;
-						</p>
-						<span class="review-owner">
-							Marie used myGroupage to reduce her relocation expenses
-						</span>
+						<div class="review-content">
+							<%= image_tag "right-quotation-mark.svg", height: 30, class: "doube-quotes" %> <br> 
+							<p>Sharing our container has helped us pay for the flight tickets.&nbsp;
+							</p>
+							<span class="review-owner">
+								Marie used myGroupage to reduce her relocation expenses
+							</span>
+						</div>
 					</div>
 				</div>
 				<div class="col-sm-6">
@@ -267,11 +272,12 @@
 	<section class="wrapper-ready-to-earn">
 		<div class="container">
 			<div class="image-box" style="background-image: linear-gradient(90deg, #0E0D13 0%, rgba(13, 12, 18, 0.9) 0.01%, rgba(3, 2, 8, 0) 63.54%), url(<%= asset_path 'sitted-lady.jpg' %>);">
-				<h1>Ready to earn?</h1>
-				<%= link_to "List my container", "#", class: "btn-list-container2" %>
-				
-
+					<div class="ready-to-earn-content">
+						<h1>Ready to earn?</h1>
+						<%= link_to "List my container", "#", class: "btn-list-container2" %>
+					</div>
 			</div>
+		</div>
 	</section>	
 </div>
 

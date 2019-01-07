@@ -1,0 +1,29 @@
+.footer{
+	background: #FFFFFF;
+	.footer-line{
+		hr{
+			margin: 0;
+			border: 0.5px solid #989898;
+		}
+	}
+	.rights-reserved{
+		display: flex;
+	    justify-content: space-between;
+	    align-items: center;
+	    margin-top: 25px;
+	    padding-bottom: 58px;
+		.logo-footer{
+			// height: 60;
+		}
+		p{
+			font-family: Comfortaa;
+			font-style: normal;
+			font-weight: 300;
+			line-height: normal;
+			font-size: 12px;
+			letter-spacing: -1px;
+			color: #484848;
+		}
+	}
+
+}
