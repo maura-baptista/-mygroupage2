@@ -1,0 +1,288 @@
+.wrapper-calculator-form{
+	background: #FFFFFF;
+}
+
+
+.wrapper-why-us-mob{
+	background: #FFFFFF;
+	padding: 7px;
+	padding-bottom: 17px;
+	h2{
+		font-family: Comfortaa;
+		font-style: normal;
+		font-weight: bold;
+		line-height: 41px;
+		font-size: 26px;
+		letter-spacing: -1px;
+		color: #484848;
+		margin: 0;
+		margin-bottom: 10px;
+	}
+	p{
+		font-family: Comfortaa;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 31px;
+		font-size: 16px;
+		letter-spacing: -1px;
+		color: #484848;
+		margin-bottom: 49px;
+	}
+	.card-why-us-mob{
+		padding: 0;
+	}
+}
+
+.wrapper-3-steps-mob{
+	background: #FFFFFF;
+	position: relative;
+	padding-bottom: 53px;
+	.border-mob{
+		border: 1.5px solid #8B8B8B;
+		width: 62px;
+		position: static;
+	}
+	h1{
+		font-family: Comfortaa;
+		font-style: normal;
+		font-weight: bold;
+		line-height: 38px;
+		font-size: 38px;
+		text-align: left;
+		letter-spacing: -2px;
+    	margin-top: 26px;
+		color: #333333;
+		margin-bottom: 16px;
+	}
+	h2{
+		font-family: Comfortaa;
+		font-style: normal;
+		font-weight: bold;
+		line-height: 35px;
+		font-size: 26px;
+		letter-spacing: -1px;
+		color: #484848;
+		margin-top: 16px;
+	}
+	p{
+		font-family: Comfortaa;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 31px;
+		font-size: 16px;
+		letter-spacing: -1px;
+
+		color: #484848;
+	}
+
+	.badge-mob {
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		background: #008489;
+		 display: flex;
+		 justify-content: space-around;
+		 align-items: center;
+		 font-family: Comfortaa;
+		font-style: normal;
+		font-weight: bold;
+		line-height: 31px;
+		font-size: 20px;
+		text-align: center;
+		letter-spacing: -1px;
+		color: #FFFFFF;
+	}
+	.card-3-steps-mob{
+		padding: 0;
+    	margin-top: 32px;
+    	margin-bottom: 21px;
+	}
+}
+
+.wrapper-review-mob{
+	background: #FFFFFF;
+	padding-bottom: 80px;
+
+	.card-review-image-mob{
+	  height: 310px;
+	  background-size: cover !important;
+	  background-position: center;
+	
+
+	}
+	.card-padding-mob{
+	 	padding: 64px;
+	}
+
+	.card-review-content-mob{
+		position: relative;
+		height: 201px;
+
+		//curved double quotes code
+		// q { quotes: '\201c' '\201d'; }
+		// q:before { content: open-quote;    font-size: 60px;  color: #FBBB00;}
+		// q:after  { content: close-quote; font-size: 60px;  color: #FBBB00; position: absolute;}
+		
+
+
+		.review-content-mob{
+			   position: static;
+    			 margin-top: 26px;
+			.doube-quotes-mob{
+				margin-bottom: 10px;
+				height: 25px;
+			}
+			p {
+				font-family: Comfortaa;
+				font-style: normal;
+				font-weight: 300;
+				letter-spacing: -2px;
+				color: #484848;
+				margin-top: 2px;
+				font-size: 20px;
+  				line-height: 28px;
+			}
+			.review-owner-mob{
+				font-family: Comfortaa;
+				font-style: normal;
+				font-weight: 300;
+				line-height: 21px;
+				font-size: 16px;
+				letter-spacing: -1.5px;
+				color: #767676;
+			}
+		}
+	}
+}
+
+.wrapper-container-sharing-mob{
+	background: #FFFFFF;
+	padding: 0;
+	padding-bottom: 69px;
+	.border-mob{
+		border: 1.5px solid #8B8B8B;
+		width: 62px;
+		position: static;	
+	}
+	h1{
+		font-family: Comfortaa;
+		font-style: normal;
+		font-weight: bold;
+		letter-spacing: -2px;
+		color: #333333;
+		line-height: 38px;
+		font-size: 38px;
+		text-align: left;
+		margin-bottom: 0;
+	}
+	p{
+		font-family: Comfortaa;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 16px;
+		letter-spacing: -1px;
+		color: #484848;
+		padding-right: 63px;
+		padding: 0;
+  		line-height: 26px;
+	}
+	.card-padding-mob{
+  		margin-top: 42px;
+  	}
+	ul{
+		padding-left: 1px;
+	}
+	ul > li{
+		font-family: Comfortaa;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 24px;
+		font-size: 16px;
+		letter-spacing: -1px;
+		color: #484848;
+		margin-bottom: 16px;
+		list-style: none;
+		.checklist-icon{
+			height: 17px;
+    		margin-right: 9px;
+		}
+		.text-bold{
+			font-weight: 600;
+		}
+	}
+}
+
+.wrapper-movers-list-mob{
+  		background: #F2F2F2;
+  		position: relative;
+  		h2{
+  			font-family: Comfortaa;
+			font-style: normal;
+			font-weight: bold;
+			line-height: 36px;
+			font-size: 33px;
+			letter-spacing: -1px;
+			color: #353C4C;
+  		}
+		p{
+			font-family: Comfortaa;
+			font-style: normal;
+			font-weight: 300;
+			line-height: 24px;
+			font-size: 15px;
+			letter-spacing: -1px;
+			color: #353C4C;
+			width: 172px;
+		}
+		.col-xs-8{
+			padding-right: 0;
+		}
+		.col-xs-4{
+			padding: 0;
+			margin: 0;
+		}
+  		
+  		.card-mover-image-mob{	
+  			background-image: image-url('moving-assist-desk.png');
+
+		    // background-image: linear-gradient(transparent, transparent), url(/assets/moving-assist-desk-507f2bf….png);
+		    background-size: cover;
+		    height: 332px;
+		    background-position: 2% 104%;
+		    margin-left: -20px;
+		    position: relative;
+    		top: -25px;
+
+
+  		}
+  		.btn-get-movers-list-mob{
+  			background: #5AC5C2;
+			border-radius: 5px;
+	        font-family: Comfortaa;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			font-size: 20px;
+			color: #FFFFFF;
+			text-align: center;
+			text-align: center;
+    		padding: 14px 49px;
+    		width: 100%;
+    		text-decoration: none;
+    		&:hover{
+    			background: #008489;
+    		}
+  		}
+  		
+  	}
+
+
+
+
+
+
+
+
+
+
+
