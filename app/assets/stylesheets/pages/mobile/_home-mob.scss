@@ -276,7 +276,148 @@
   		
   	}
 
+@media only screen 
+  and (min-width: 321px)
+  and (max-width: 767px){
+  	.wrapper-why-us-mob{
+  		.card-why-us-mob{
+			padding: 0;
+			h2{
+				margin: 0;
+			}
+			p{
+				padding-top: 13px;
+			}
+  		}
+  	}
+  	.wrapper-3-steps-mob{
+  		padding-bottom: 53px;
+  		.border-mob{
+  		 	position: static;
+  		}
+  		h1{
+  			line-height: 38px;
+			font-size: 38px;
+			text-align: left;
+			margin-top: 26px;
+  		}
+  		.card-3-steps-mob{
+  			padding: 0;
+    		margin-top: 32px;
+  		}
+  	}
+  	.wrapper-review-mob{
+  		padding: 0;
+  		padding-bottom: 67px;
+  		.card-review-image-mob{
+  			height: 310px;
+  		}
+  		.card-review-content-mob{
+  			height: 201px;
+  			.review-content-mob{
+  				position: static;
+  				margin-top: 26px;
+  				p{
+  					font-size: 20px;
+  					line-height: 28px;
+  				}
+  				.doube-quotes{
+					height: 25px;
+  				}
+  			}
+  			
+  		}
+  	}
+  	.wrapper-container-sharing-mob{
+  		padding: 0;
+  		padding-bottom: 100px;
+  		.border{
+  		 	position: static;
+  		}
+  		h1{
+  			line-height: 38px;
+			font-size: 38px;
+			text-align: left;
+			margin-top: 26px;
+			margin-bottom: 0;
+  		}
+  		p{
+  			padding: 0;
+  			line-height: 26px;
+  			letter-spacing: 0;
+  		}
+  		.card-padding-mob{
+  			margin-top: 42px;
+  		}
+  		ul > li{
+  			line-height: 24px;
+  			letter-spacing: 0;
+  		}
+  	}
+  	.wrapper-movers-list-mob{
+  		background: #F2F2F2;
+  		position: relative;
+  		h2{
+  			font-family: Comfortaa;
+			font-style: normal;
+			font-weight: bold;
+			line-height: 36px;
+			font-size: 33px;
+			letter-spacing: -1px;
+			color: #353C4C;
+  		}
+		p{
+			font-family: Comfortaa;
+			font-style: normal;
+			font-weight: 300;
+			line-height: 24px;
+			font-size: 15px;
+			letter-spacing: -1px;
+			color: #353C4C;
+			width: 172px;
+		}
+		.col-xs-8{
+			padding-right: 0;
+		}
+		.col-xs-4{
+			padding: 0;
+			margin: 0;
+		}
+  		
+  		.card-mover-image-mob{	
+  			background-image: image-url('moving-assist-desk.png');
 
+		    // background-image: linear-gradient(transparent, transparent), url(/assets/moving-assist-desk-507f2bf….png);
+		    background-size: cover;
+		    height: 332px;
+		    background-position: 2% 104%;
+		    margin-left: -20px;
+		    position: relative;
+    		top: -25px;
+
+
+  		}
+  		.btn-get-movers-list-mob{
+  			background: #5AC5C2;
+			border-radius: 5px;
+	        font-family: Comfortaa;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			font-size: 20px;
+			color: #FFFFFF;
+			text-align: center;
+			text-align: center;
+    		padding: 14px 49px;
+    		width: 100%;
+    		text-decoration: none;
+    		&:hover{
+    			background: #008489;
+    		}
+  		}
+  		
+  	}
+  }
 
 
 
