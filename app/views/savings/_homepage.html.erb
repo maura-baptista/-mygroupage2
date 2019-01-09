@@ -291,12 +291,19 @@
 			<%= render 'savings/faq/mobile/modal-faq6-mobile' %>
 		</div>
 	</section>
-	<section class="wrapper-ready-to-earn-mob">
+	<section class="wrapper-ready-to-earn-mob hidden-sm hidden-md hidden-lg">
 			<div class="image-box" style="background-image: linear-gradient(270deg, rgba(14, 13, 19, 0) 48.91%, #333333 100%), url(<%= asset_path 'sitted-lady-mob.jpg' %>);">
-					<div class="ready-to-earn-content">
-						<h1>Ready to earn?</h1>
-						<%= link_to "List my container", "#", class: "btn-list-container2" %>
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="ready-to-earn-content">
+								<h1>Ready to earn?</h1>
+								<%= link_to "List my container", "#", class: "btn-list-container2" %>
+							</div>
+						</div>
 					</div>
+				</div>
+					
 			</div>
 	</section>	
 
