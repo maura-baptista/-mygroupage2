@@ -158,7 +158,7 @@
 .wrapper-container-sharing-mob{
 	background: #FFFFFF;
 	padding: 0;
-	padding-bottom: 69px;
+	padding-bottom: 54px;
 	.border-mob{
 		border: 1.5px solid #8B8B8B;
 		width: 62px;
@@ -216,13 +216,16 @@
   		background: #F2F2F2;
   		position: relative;
   		h2{
-  			font-family: Comfortaa;
-			font-style: normal;
-			font-weight: bold;
-			line-height: 36px;
-			font-size: 33px;
-			letter-spacing: -1px;
-			color: #353C4C;
+  			    font-family: Comfortaa;
+			    font-style: normal;
+			    font-weight: bold;
+			    line-height: 36px;
+			    font-size: 34px;
+			    letter-spacing: -1px;
+			    color: #353C4C;
+			    margin-right: -45px;
+			    padding-bottom: 11px;
+			    padding-top: 16px;
   		}
 		p{
 			font-family: Comfortaa;
@@ -230,32 +233,39 @@
 			font-weight: 300;
 			line-height: 24px;
 			font-size: 15px;
-			letter-spacing: -1px;
-			color: #353C4C;
-			width: 172px;
+			color: rgba(53, 60, 76, 0.9);
+			margin: 0;
+			width: 181px;
 		}
 		.col-xs-8{
 			padding-right: 0;
 		}
 		.col-xs-4{
-			padding: 0;
-			margin: 0;
+			padding-right: 0;
+			padding-left: 0;
 		}
   		
   		.card-mover-image-mob{	
   			background-image: image-url('moving-assist-desk.png');
-
-		    // background-image: linear-gradient(transparent, transparent), url(/assets/moving-assist-desk-507f2bf….png);
+		   
 		    background-size: cover;
-		    height: 332px;
-		    background-position: 2% 104%;
-		    margin-left: -20px;
+		    height: 409px;
+		    width: 138px;
 		    position: relative;
-    		top: -25px;
+		    top: -23px;
+		    left: -31px;
+		    margin-bottom: -23px;
+		    background-position: 3% 104%;
+
+		}
+
+
 
 
   		}
-  		.btn-get-movers-list-mob{
+  		.btn-movers-list-section{
+  			margin-top: -68px;
+  			.btn-get-movers-list-mob{
   			background: #5AC5C2;
 			border-radius: 5px;
 	        font-family: Comfortaa;
@@ -265,17 +275,245 @@
 			font-size: 20px;
 			color: #FFFFFF;
 			text-align: center;
-			text-align: center;
-    		padding: 14px 49px;
+    		padding: 12px 108px;
     		width: 100%;
     		text-decoration: none;
     		&:hover{
     			background: #008489;
     		}
-  		}
-  		
-  	}
+  		}			
+}
 
+.wrapper-payments-mob{
+	background: #FFFFFF;
+	position: relative;
+	padding-top: 84px;
+	// padding: 7px;
+	.border{
+		border: 1.5px solid #8B8B8B;
+		width: 62px;
+		position: static;	
+	}
+	h1{
+		font-family: Comfortaa;
+		font-style: normal;
+		font-weight: bold;
+		line-height: 38px;
+		font-size: 38px;
+		text-align: left;
+		letter-spacing: -2px;
+    	margin-top: 28px;
+		color: #333333;
+	}
+	h2{
+		font-family: Comfortaa;
+		font-style: normal;
+		font-weight: bold;
+		line-height: 35px;
+		font-size: 26px;
+		letter-spacing: -1px;
+
+		color: #484848;
+	}
+	p{
+		font-family: Comfortaa;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 31px;
+		font-size: 16px;
+		letter-spacing: -1px;
+
+		color: #484848;
+	}
+	.card-payments{
+		padding-top: 7px;
+	}
+}
+
+.wrapper-review-II-mob{
+	background: #FFFFFF;
+	padding-top: 59px;
+
+	.card-review-image{
+		  height: 310px;
+		  background-size: cover !important;
+		  background-position: center;
+	}
+	.card-padding{
+		// padding: 10px;
+	}
+	
+	.card-review-content{
+			height: 200px;	
+		.review-content{
+			    position: static;
+    			margin-top: 26px;
+			.doube-quotes{
+				margin-bottom: 10px;
+    			height: 25px;
+			}
+			p {
+				font-family: Comfortaa;
+			    font-style: normal;
+			    font-weight: 300;
+			    letter-spacing: -2px;
+			    color: #484848;
+			    margin-top: 2px;
+			    font-size: 20px;
+			    line-height: 28px;
+			}
+			.review-owner{
+				font-family: Comfortaa;
+			    font-style: normal;
+			    font-weight: 300;
+			    line-height: 21px;
+			    font-size: 16px;
+			    letter-spacing: -1.5px;
+			    color: #767676;
+			}
+		}
+	}	
+}
+.wrapper-about-us-mob{
+	background: #FFFFFF;
+	padding-top: 25px;
+	.border{
+		border: 1.5px solid #8B8B8B;
+		width: 62px;
+		position: static;
+	}
+	h1{
+		font-family: Comfortaa;
+		font-style: normal;
+		font-weight: bold;
+		line-height: 38px;
+		font-size: 38px;
+		text-align: left;
+		letter-spacing: -2px;
+    	margin-top: 28px;
+		color: #333333;	
+	}
+	h2{
+		font-family: Comfortaa;
+		font-style: normal;
+		font-weight: bold;
+		line-height: 35px;
+		font-size: 26px;
+		letter-spacing: -1px;
+
+		color: #484848;
+	}
+	p{
+		font-family: Comfortaa;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 31px;
+		font-size: 16px;
+		letter-spacing: -1px;
+
+		color: #484848;
+	}
+	.card-why-us{
+		padding-top: 7px;
+	}
+}
+.FAQ-mob{
+	background: #FFFFFF;
+	padding-top: 59px;
+    padding-bottom: 49px;
+	.border{
+		border: 1.5px solid #8B8B8B;
+		width: 62px;
+		position: static;
+	}
+	h1{
+		font-family: Comfortaa;
+		font-style: normal;
+		font-weight: bold;
+		line-height: 38px;
+		font-size: 38px;
+		text-align: left;
+		letter-spacing: -2px;
+    	margin-top: 28px;
+		color: #333333;	
+	}
+	.card-faq{
+		 .btn-faq{
+            padding: 0px 3px;
+		    border: 0px solid transparent;
+		    border-radius: 24px;
+		    margin-left: 8px;
+		    font-family: Comfortaa;
+		    font-style: normal;
+		    font-weight: 400;
+		    line-height: 25px;
+		    font-size: 16px;
+		    letter-spacing: -1px;
+		    color: #008489;
+		    transition: all 0.3s ease;
+		    background-color: transparent;
+		    text-align: left;
+			&:focus{
+				 outline: none;
+				 color: #b50000;
+			}
+			&:hover{
+				font-weight: 700;
+				font-size: 19.5px;
+				text-transform: 1s;
+			}
+        }
+        hr{
+        	border: 0.5px solid #EDEDED;
+        }
+	}
+}
+
+.wrapper-ready-to-earn-mob{
+	background: #FFFFFF;
+	padding-bottom: 15px;
+	.image-box{
+		position: relative;
+		height: 275px;
+		background-size: cover;
+ 		background-position: 57% 104%;
+ 		.ready-to-earn-content{
+ 			position: absolute;
+ 			// top: 106px;
+ 			// left: 70px;
+ 		}
+	}
+	h1{
+		font-family: Comfortaa;
+		font-style: normal;
+		font-weight: bold;
+		line-height: 36px;
+		font-size: 36px;
+
+		color: #FFFFFF;
+	}
+	.btn-list-container2{
+		  background: #008489;
+		  border-radius: 5px;
+		  color: #FFFFFF;
+		  font-family: Comfortaa;
+		  font-size: 23px;
+		  font-weight: 400;
+		  text-align: center;
+		  padding: 22px 23px;
+		  &:hover{
+		    background: #004749;
+		    text-decoration: none;
+		    color: #FFFFFF;
+		  }
+		  &:visited{
+		    color: #FFFFFF;
+		    text-decoration: none currentcolor solid
+		  }	    
+	}
+}
+
+//large mobile divices
 @media only screen 
   and (min-width: 321px)
   and (max-width: 767px){
@@ -308,7 +546,7 @@
   	}
   	.wrapper-review-mob{
   		padding: 0;
-  		padding-bottom: 67px;
+  		padding-bottom: 50px;
   		.card-review-image-mob{
   			height: 310px;
   		}
@@ -328,101 +566,71 @@
   			
   		}
   	}
-  	.wrapper-container-sharing-mob{
-  		padding: 0;
-  		padding-bottom: 100px;
-  		.border{
-  		 	position: static;
-  		}
-  		h1{
-  			line-height: 38px;
-			font-size: 38px;
-			text-align: left;
-			margin-top: 26px;
-			margin-bottom: 0;
-  		}
-  		p{
-  			padding: 0;
-  			line-height: 26px;
-  			letter-spacing: 0;
-  		}
-  		.card-padding-mob{
-  			margin-top: 42px;
-  		}
-  		ul > li{
-  			line-height: 24px;
-  			letter-spacing: 0;
-  		}
-  	}
-  	.wrapper-movers-list-mob{
-  		background: #F2F2F2;
-  		position: relative;
+}
+
+// special media queries for different mobile sizes
+@media only screen 
+  and (min-width: 321px)
+  and (max-width: 375px){
+	.wrapper-movers-list-mob{
   		h2{
-  			font-family: Comfortaa;
-			font-style: normal;
-			font-weight: bold;
-			line-height: 36px;
-			font-size: 33px;
-			letter-spacing: -1px;
-			color: #353C4C;
+  			font-size: 36px;
   		}
 		p{
-			font-family: Comfortaa;
-			font-style: normal;
-			font-weight: 300;
-			line-height: 24px;
-			font-size: 15px;
-			letter-spacing: -1px;
-			color: #353C4C;
-			width: 172px;
+			width: 224px;
 		}
-		.col-xs-8{
-			padding-right: 0;
-		}
-		.col-xs-4{
-			padding: 0;
-			margin: 0;
-		}
-  		
   		.card-mover-image-mob{	
-  			background-image: image-url('moving-assist-desk.png');
+ 			left: -6px;
+		    height: 384px;
+		    width: 131px;
 
-		    // background-image: linear-gradient(transparent, transparent), url(/assets/moving-assist-desk-507f2bf….png);
-		    background-size: cover;
-		    height: 332px;
-		    background-position: 2% 104%;
-		    margin-left: -20px;
-		    position: relative;
-    		top: -25px;
-
-
-  		}
-  		.btn-get-movers-list-mob{
-  			background: #5AC5C2;
-			border-radius: 5px;
-	        font-family: Comfortaa;
-			font-style: normal;
-			font-weight: 400;
-			line-height: normal;
-			font-size: 20px;
-			color: #FFFFFF;
-			text-align: center;
-			text-align: center;
-    		padding: 14px 49px;
-    		width: 100%;
-    		text-decoration: none;
-    		&:hover{
-    			background: #008489;
+		}
+  		.btn-movers-list-section{
+  			
+  			.btn-get-movers-list-mob{
+  				padding: 12px 136px;
     		}
-  		}
-  		
-  	}
+  		}		
+	}
   }
 
+@media only screen 
+  and (min-width: 376px)
+  and (max-width: 426px){
+   .wrapper-movers-list-mob{
+		height: 409px;
+		.card-mover-image-mob{
+	   		position: static;
+	   }
+   }
+   
+}
 
+@media only screen 
+  and (min-width: 427px)
+  and (max-width: 767px){
+  	 .wrapper-movers-list-mob{
+		height: 409px;
+		h2{
+  			font-size: 36px;
+  		}
+		p{
+			width: 100%;
 
-
-
+		}
+		.card-mover-image-mob{
+	   		position: static;
+	   		width: 100%;
+	   }
+	   .btn-movers-list-section{
+	   		margin-top: -100px;
+  			
+  			.btn-get-movers-list-mob{
+  				padding: 12px 136px;
+    		}
+  		}		
+   }
+}
 
 
 

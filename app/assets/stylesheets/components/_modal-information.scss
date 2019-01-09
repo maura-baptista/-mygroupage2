@@ -68,21 +68,22 @@
 		.modal-title{
 			font-size: 18px;
 		}
+	.modal-header{
+		    padding-top: 38px;
+    		padding-bottom: 13px;
+		.close {
+			position: relative;
+    		top: -56px;
+    	
+		}
+	} 
 	}
 	.modal-body{
 		p{
 			font-size: 15px;
 		}
 	}
-	.modal-header{
-		    padding-top: 10px;
-    		padding-bottom: 10px;
-		.close {
-			position: relative;
-    		top: -17px;
-    		left: -94%;
-		}
-	} 
+	
 	
 
 }
