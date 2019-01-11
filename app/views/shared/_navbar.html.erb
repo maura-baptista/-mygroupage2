@@ -14,13 +14,15 @@
   <div class="navbar-wagon-right hidden-xs hidden-sm">
 
     <%# if user_signed_in? %>
-      <span class="earn-up-to navbar-wagon-item">EARN UP TO </span>
-      <button type="button" class="btn btn-information" data-toggle="modal" data-target="#estimate">
-        <i class="fas fa-info-circle"></i>
-      </button>
-      <span class="savings-amount navbar-wagon-item"><%= number_with_precision(@result, :precision => 0, ) %></span><span class="currency navbar-wagon-item"><%= @currency %>
-      </span>
-        <%= link_to "List my container", "#", class: "btn-list-my-container navbar-wagon-item" %>
+      <% if params[:commit] %>
+        <span class="earn-up-to navbar-wagon-item">EARN UP TO </span>
+        <button type="button" class="btn btn-information" data-toggle="modal" data-target="#estimate">
+          <i class="fas fa-info-circle"></i>
+        </button>
+        <span class="savings-amount navbar-wagon-item"><%= number_with_precision(@result, :precision => 0, ) %></span><span class="currency navbar-wagon-item"><%= @currency %>
+      <% end %>
+        </span>
+          <%= link_to "List my container", "#", class: "btn-list-my-container navbar-wagon-item" %>
       
   
 

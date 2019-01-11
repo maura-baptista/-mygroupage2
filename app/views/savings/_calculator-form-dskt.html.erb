@@ -3,7 +3,7 @@
 	<h1>Share your container <br>and earn money</h1>
 	<p>Find out what you could earn</p>
 	<%#= form_for  root_path, :method => "POST" do %>
- 	<%= simple_form_for :saving, url: calculator_path do |f| %>
+ 	<%= simple_form_for @saving, url: calculator_path do |f| %>
 
 	
 		<div class="row">
@@ -30,15 +30,16 @@
 		</div>
 		<div class="row">
 			<div class="col-xs-7 results-section">
-				<div class="results-values">
-					<h3> <span class="results-savings"><%= number_with_precision(@result, :precision => 0, ) %></span> <span class="results-currency"><%= @currency %></span></h3>
-					 <span class="results-earn-up-to ">EARN UP TO</span>
-					 <button type="button" class="btn btn-information" data-toggle="modal" data-target="#estimate">
-						  <i class="fas fa-info-circle"></i>
-					</button>
-						 
 
-				</div>
+				<% if params[:commit]%>
+					<div class="results-values">
+						<h3> <span class="results-savings"><%= number_with_precision(@result, :precision => 0, ) %></span> <span class="results-currency"><%= @currency %></span></h3>
+						 <span class="results-earn-up-to ">EARN UP TO</span>
+						 <button type="button" class="btn btn-information" data-toggle="modal" data-target="#estimate">
+							  <i class="fas fa-info-circle"></i>
+						</button>
+					</div>
+				<% end %>
 			</div>
 			<div class="col-xs-5">
 				<div class="results-btn">

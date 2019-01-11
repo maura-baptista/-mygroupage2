@@ -22,6 +22,10 @@ skip_before_action :authenticate_user!, only: [:new, :calculator]
 
   private 
 
+  def submit
+    @saving[:commit] == "Calculate"
+  end
+
   def saving_params
   	params.require(:saving).permit(:container, :volume, :price, :metrics, :currency)
   end

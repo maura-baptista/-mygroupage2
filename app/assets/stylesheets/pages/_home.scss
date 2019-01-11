@@ -530,6 +530,7 @@
   and (min-width: 768px)
   and (max-width: 990px){
 	.wrapper-why-us{
+		padding-bottom: 26px;
 		h2{
 			font-size: 23px;
 		}
@@ -538,6 +539,22 @@
 			padding: 0;
 		}
 	}
+	.wrapper-3-steps{
+		h1{
+
+		}
+		.card-3-steps{
+			padding: 0;
+		}
+		.badge{
+			width: 43px;
+	    	height: 43px;
+		}
+		h2{
+			
+		}
+	}
+	
   }
 
 

@@ -23,21 +23,23 @@
 				<%= f.input :currency, label: false, input_html: { class: 'special' },  collection: Saving::CURRENCIES , selected: @currecies %>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-xs-12">
-					<h3> <span class="results-savings"><%= number_with_precision(@result, :precision => 0, ) %></span> <span class="results-currency"><%= @currency %></span></h3>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-12">
-				<div class="information">
-					<span class="results-earn-up-to">EARN UP TO</span>
-					 <button type="button" class="btn btn-information" data-toggle="modal" data-target="#estimate-mobile">
-						  <i class="fas fa-info-circle"></i>
-					</button>
+		<% if params[:commit] %>
+			<div class="row">
+				<div class="col-xs-12">
+						<h3> <span class="results-savings"><%= number_with_precision(@result, :precision => 0, ) %></span> <span class="results-currency"><%= @currency %></span></h3>
 				</div>
 			</div>
-		</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="information">
+						<span class="results-earn-up-to">EARN UP TO</span>
+						 <button type="button" class="btn btn-information" data-toggle="modal" data-target="#estimate-mobile">
+							  <i class="fas fa-info-circle"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		<% end %>
 		<div class="row">
 			<div class="col-xs-12">
 				<div class="results-btn">
