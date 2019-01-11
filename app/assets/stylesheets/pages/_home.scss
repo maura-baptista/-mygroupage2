@@ -524,7 +524,22 @@
 	}
 }
 
-//mobile version
+//media queries - smaller desktop devices & ipad
+
+@media only screen 
+  and (min-width: 768px)
+  and (max-width: 990px){
+	.wrapper-why-us{
+		h2{
+			font-size: 23px;
+		}
+		
+		.card-why-us{
+			padding: 0;
+		}
+	}
+  }
+
 
 
 
