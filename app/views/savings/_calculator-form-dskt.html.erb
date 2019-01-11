@@ -17,7 +17,7 @@
 				<%= f.input :volume, as: :integer, label: false, input_html: { class: 'large-input' }, placeholder: "Volume of my move" %>
 			</div>
 			<div class="col-xs-5">
-				<%= f.input :metrics, label: false,input_html: { class: 'special' }, collection: Saving::METRIC, selected: @selected_metrics %>
+				<%= f.input :metrics, label: false,input_html: { class: 'special' }, collection: Saving::METRIC, prompt: params[:metrics] %>
 			</div>
 		</div>
 		<div class="row">
@@ -25,7 +25,7 @@
 				<%= f.input :price, as: :integer, label: false, input_html: { class: 'large-input' },  placeholder: "Best price you got so far" %>
 			</div>
 			<div class="col-xs-5">
-				<%= f.input :currency, label: false, input_html: { class: 'special' },  collection: Saving::CURRENCIES , selected: @currecies %>
+				<%= f.input :currency, label: false, input_html: { class: 'special' },  collection: Saving::CURRENCIES, prompt: params[:currency]%>
 			</div>
 		</div>
 		<div class="row">
