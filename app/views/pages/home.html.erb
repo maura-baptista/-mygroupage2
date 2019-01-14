@@ -1,0 +1,22 @@
+<div class="banner-home">
+	<div class="banner-body">
+		<h1>Moving overseas? Share a container.</h1>
+		<p>Split costs with expats who already have a container.</p>
+		<div class="search-form form-inline">
+			<%= form_tag groupages_path, method: :get do %>
+			  <%= text_field_tag :origin,
+			    params[:origin],
+			    class: "form-input form-control",
+			    placeholder: "I am moving from..."
+			  %>
+			  <%= hidden_field_tag :latitude %>
+						<%= hidden_field_tag :longitude %>
+			  <%= submit_tag "Search", class: " btn-search form-control" %>	
+		</div>
+		
+	<% end %>
+
+	</div>
+
+	
+</div>
