@@ -1,7 +1,7 @@
 .banner-home{
     background-image:  image-url('home-hero-desk3.png');
  	background-size: cover;
- 	height: 100vh;
+ 	height: 83vh;
  	background-position: top;
  	display: flex;
  	justify-content: space-around;
@@ -50,14 +50,18 @@
 				font-size: 20px;
 				text-align: center;
 				color: #FFFFFF;
-				margin-left: -11px;
-				// box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25), 0px 0px 0px rgba(0, 0, 0, 0.25);
+				margin-left: -7px;
+				box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25), 0px 4px 15px rgba(0, 0, 0, 0.25);
+				background-image: image-url("search-icon.svg");
+				background-position: left;
+				background-repeat: no-repeat;
+				background-size: 18% 70%;
 
 			}
 			.form-input{
 				height: 70px;
 				    /* padding: 6px; */
-			    padding: 6px 22px;
+			    padding: 6px 53px;
 			    /* background: #FFFFFF; */
 			    border-radius: 5px 0px 0px 5px;
 			    font-family: Comfortaa;
@@ -67,7 +71,12 @@
 			    font-size: 16px;
 			    letter-spacing: -1px;
 			    color: #727272;
-			    // box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25), 0px 4px 15px rgba(0, 0, 0, 0.25);
+			    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25), 0px 4px 15px rgba(0, 0, 0, 0.25);
+			    border: none;
+			    background-image: image-url("location-icon.svg");
+				background-position: left;
+				background-repeat: no-repeat;
+				background-size: 7% 70%;
 			}
 		}
 	}
