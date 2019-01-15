@@ -27,3 +27,160 @@
 		padding-top: 0;
 	}
 }
+.wrapper-moving-3-steps{
+	background: #FFFFFF;
+	position: relative;
+	// padding: 7px;
+	.border{
+		border: 1.5px solid #8B8B8B;
+		width: 62px;
+		position: absolute;
+		left: 50%;
+	}
+	h1{
+		font-family: Comfortaa;
+		font-style: normal;
+		font-weight: bold;
+		line-height: 117px;
+		font-size: 60px;
+		text-align: center;
+		letter-spacing: -2px;
+    	margin-top: 13px;
+		color: #333333;
+	}
+	h2{
+		font-family: Comfortaa;
+		font-style: normal;
+		font-weight: bold;
+		line-height: 35px;
+		font-size: 26px;
+		letter-spacing: -1px;
+
+		color: #484848;
+	}
+	p{
+		font-family: Comfortaa;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 31px;
+		font-size: 16px;
+		letter-spacing: -1px;
+
+		color: #484848;
+	}
+
+	.badge {
+		width: 55px;
+		height: 55px;
+		border-radius: 50%;
+		background: #008489;
+		 display: flex;
+		 justify-content: space-around;
+		 align-items: center;
+		 font-family: Comfortaa;
+		font-style: normal;
+		font-weight: bold;
+		line-height: 31px;
+		font-size: 20px;
+		text-align: center;
+		letter-spacing: -1px;
+		color: #FFFFFF;
+	}
+	.card-3-steps{
+		padding: 36px;
+		padding-bottom: 90px;
+	}
+}
+
+.wrapper-cards-groupage{
+	background: #FFFFFF;
+	padding-bottom: 150px;
+	.card-image{
+		.image{
+			height: 100%;
+			width: 100%;
+		}
+	}
+	.button-find-container{
+		text-align: center;
+		margin-top: 40px;
+		.btn-find-container{
+			background: #008489;
+			border-radius: 5px;
+			padding: 19px 28px 19px 67px;
+			font-family: Comfortaa;
+			font-style: normal;
+			font-weight: 300;
+			line-height: normal;
+			font-size: 20px;
+			color: #FFFFFF;
+			text-align: center;
+			background-image: image-url("search-icon.svg");
+			background-position: left;
+			background-repeat: no-repeat;
+			background-size: 27% 57%;
+		}
+	}
+}
+
+.wrapper-profissional-moving{
+	background: #FFFFFF;
+	padding-left: 50px;
+	padding-bottom: 150px;
+	.border{
+		border: 1.5px solid #8B8B8B;
+		width: 62px;
+		position: absolute;
+		left: 50%;
+	}
+	h1{
+		margin: 0;
+		padding-top: 13px;
+		margin-bottom: 37px;
+		font-family: Comfortaa;
+		font-style: normal;
+		font-weight: bold;
+		line-height: 117px;
+		font-size: 60px;
+		text-align: center;
+		letter-spacing: -2px;
+
+		color: #333333;
+	}
+	p{
+		font-family: Comfortaa;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 33px;
+		font-size: 16px;
+		letter-spacing: -1px;
+		color: #484848;
+		padding-right: 63px;
+	}
+	ul{
+		padding-left: 1px;
+	}
+	ul > li{
+		font-family: Comfortaa;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 31px;
+		font-size: 16px;
+		letter-spacing: -1px;
+		color: #484848;
+		margin-bottom: 16px;
+		list-style: none;
+		.checklist-icon{
+			height: 17px;
+    		margin-right: 9px;
+		}
+		.text-bold{
+			font-weight: 600;
+		}
+	}
+}
+
+
+
+
+
