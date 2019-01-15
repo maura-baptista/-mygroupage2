@@ -133,8 +133,8 @@
 				<h1>Professional moving</h1>
 				<div class="col-sm-6">
 					<div class="sharing-description card-padding">
-						<p>We know it’s a priority to make sure that sharing a container does not affect your move in any way: 
-						- your schedule must be respected
+						<p>We know it’s a priority to make sure that sharing a container does not affect your move in any way: <br>
+						- your schedule must be respected <br>
 						- no hiccup at customs can be tolerated
 						 <br> <br>
 						To achieve this, we team-up with your mover to qualify every expat interested in booking your unused space. Their schedule must fit yours, their paperwork must be in order for customs clearance.</p>
@@ -157,4 +157,104 @@
 			</div>
 		</div>
 	</section>
+	<section class="wrapper-list-container">
+		<div class="container">
+			<div class="list-container-box">
+				<div class="row">
+						<div class="col-sm-7">
+							<div class="box-text">
+								<h2>Got space in your container? <br>
+								Put it to work!</h2>
+								<p>Instantly find out how much you could earn by sharing it with other expats.</p>
+								<%= link_to "Learn more", "#", class: "btn-learn-more" %>
+							</div>
+							
+						</div>
+						<div class="col-sm-5">
+							<div class="card-mover-image-mob">
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="wrapper-about-us-home">
+			<div class="container">
+				<div class="row">
+					<div class="border"></div>
+					<h1>About myGroupage</h1>
+					<div class="col-sm-6">
+						<div class="card-why-us">
+							<h2>What is myGroupage?</h2>
+							<p>myGroupage is a community based international moving platform. We use spare container capacity and the power of online communities to make international moving finally affordable.</p>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="card-why-us">
+							<h2>What is a groupage?</h2>
+							<p>You can save money by sharing a container’s space with expats relocating on a similar itinerary. A shared-container is usually referred to as “groupage” by moving companies. Find a container and save money on your international move.</p>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+	</section>
+	<section class="FAQ-home">
+		<div class="container">
+			<div class="row">
+				<div class="border"></div>
+				<h1>Your questions answered</h1>
+				<div class="col-sm-6">
+						<div class="card-faq">
+							 <button type="button" class=" btn-faq" data-toggle="modal" data-target="#who-can-list-a-groupage">
+						  	Who can list a container?
+							</button>
+							<hr>
+							 <button type="button" class=" btn-faq" data-toggle="modal" data-target="#what-is-required-of-expats">
+						  	What is required of expats joining my container?
+							</button>
+							<hr>
+							<button type="button" class=" btn-faq" data-toggle="modal" data-target="#how-much-it-cost">
+						  	How much does it cost to list my container?
+							</button>
+							<hr>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="card-faq">
+							<button type="button" class=" btn-faq" data-toggle="modal" data-target="#will-my-goods-be-mixed">
+						  	Will my goods be mixed with others in the container?
+							</button>
+							<hr>
+							<button type="button" class=" btn-faq" data-toggle="modal" data-target="#what-protection">
+						  	What protection do I have against property damage?
+							</button>
+							<hr>
+							<button type="button" class=" btn-faq" data-toggle="modal" data-target="#help-set-prices">
+						  	How can myGroupage help me with setting prices?
+							</button>
+							<hr>
+						</div>
+						
+					</div>
+			</div>
+			<%= render 'pages/faq/modal-faq1' %>
+			<%= render 'pages/faq/modal-faq2' %>
+			<%= render 'pages/faq/modal-faq3' %>
+			<%= render 'pages/faq/modal-faq4' %>
+			<%= render 'pages/faq/modal-faq5' %>
+			<%= render 'pages/faq/modal-faq6' %>
+		</div>
+	</section>
+	<section class="wrapper-ready-to-earn-home">
+		<div class="container">
+			<div class="image-box" style="background-image: linear-gradient(90deg, #0E0D13 0%, rgba(13, 12, 18, 0.9) 0.01%, rgba(3, 2, 8, 0) 63.54%), url(<%= asset_path 'men.jpeg' %>);">
+					<div class="ready-to-earn-content">
+						<h1>Ready to earn?</h1>
+						<%= link_to "Find a container", "#", class: "btn-find-container" %>
+					</div>
+			</div>
+		</div>
+	</section>	
+		
 </div>
