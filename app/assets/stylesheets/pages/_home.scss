@@ -119,6 +119,15 @@
 			background-position: left;
 			background-repeat: no-repeat;
 			background-size: 27% 57%;
+			&:hover{
+			     background: #013638;
+			     text-decoration: none;
+			     color: #FFFFFF;
+		    }
+		    &:visited{
+		      	color: #FFFFFF;
+		      	text-decoration: none currentcolor solid;
+			}
 		}
 	}
 }
@@ -227,7 +236,7 @@
     		padding: 18px 29px;
     		text-decoration: none;
     		&:hover{
-    			background: #008489;
+    			background: #013638;
     		}
 		}
 		.card-mover-image-mob{	
