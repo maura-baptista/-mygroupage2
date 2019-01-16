@@ -1,0 +1,77 @@
+.full-container{
+	background-color: white;
+	padding-top: 100px;
+	height: 100vh;
+}	
+
+form{
+	::placeholder{
+		font-family: Comfortaa;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		font-size: 16px;
+		letter-spacing: -1px;
+
+		color: #C0C9D9;
+	}
+	.itinerary-section{
+		background: #FFFFFF;
+
+		h3{
+			font-family: Comfortaa;
+			font-style: normal;
+			font-weight: normal;
+			line-height: 29px;
+			font-size: 24px;
+			letter-spacing: -1px;
+			color: #484848;
+			margin: 0;
+			margin-bottom: 10px;
+		}
+		.when-you-move{
+			margin-top: 40px;
+			p{
+				font-family: Comfortaa;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 19px;
+				font-size: 14px;
+				letter-spacing: -1px;
+				color: #B4BBC6;
+				margin-top: -8px;
+
+			}
+		}
+	}
+
+}
+
+.flexbox{
+	display: flex;
+	justify-content: space-around;
+
+	.information-box{
+		background: #E5FAF9;
+		border: 1px solid #B2F1EC;
+		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+		border-radius: 5px;
+		width: 311px;
+		height: 145px;
+		p{
+			margin-top: 20px;
+			margin-bottom: 20px;
+			padding-left: 10px;
+
+			padding-left: 10px;
+		}
+		.lamp-icon{
+			height: 20px;
+			width: 20px;
+		}
+	}
+}
+
+
+
+

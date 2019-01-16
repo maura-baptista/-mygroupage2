@@ -1,3 +1,5 @@
+<div class="landing-wrapper">
+  
 <div class="navbar-wagon navbar-fixed-top hidden-xs">
   <!-- Logo -->
   <div class="logo">
@@ -49,7 +51,7 @@
       </div>
     <% else %>
       <!-- Login link (when logged out) -->
-      <%= link_to "List my container", new_saving_path , class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to "List my container", new_container_path , class: "navbar-wagon-item navbar-wagon-link" %>
       <%= link_to t(".sign_up", default: "Register"), new_user_registration_path, class: "navbar-wagon-item navbar-wagon-link" %>
       <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
     <% end %>
@@ -100,4 +102,6 @@
       </div>
     </div>
   </div>
+</div>
+
 </div>

@@ -1,0 +1,47 @@
+
+<div class="full-container">
+	<div class="container">
+		<div class="row">
+		<%= simple_form_for @groupage do |f| %>
+			<div class="col-sm-6">
+				<div class="itinerary-section form">
+					<div class="row">
+						<div class="col-sm-12">
+							<h3>What is your move’s itinerary?</h3>
+							<%= f.input :origin, label: false, placeholder: "Moving from (enter City)" %>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<%= f.input :destination, label: false, placeholder: "Moving to (enter City)" %>
+						</div>
+					</div>	
+					<div class="when-you-move">
+						<div class="row">
+							<div class="col-sm-12">
+								<h3>When are you moving?</h3>
+								<%= f.input :origin, label: false, placeholder: "My move date is" %>
+								<p>Note : select an approximate date if you are unsure</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="flexbox">
+					<div class="information-box">
+						<%= image_tag "lamp.svg", height: 10, class: "lamp1-icon.svg" %>
+						<p>86% of expats listing their container find at least 1 person to split costs with, within a week.</p>
+					
+					</div>
+				</div>
+				
+				
+			</div>
+		<% end %>
+	</div>	
+	</div>
+</div>
+
+
