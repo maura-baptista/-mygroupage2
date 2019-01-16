@@ -1,10 +1,11 @@
-class Saving < ApplicationRecord
+class Container < ApplicationRecord
+	has_one :groupage
 	CONTAINERS = [
 					["20’ container (6 meters container)", 30],
 					["40’ container (12 meters container)", 40],
 					["LCL (less than a container load)", 60]
 				]
-	validates :container, inclusion: {in: CONTAINERS}
+	validates :container_size, inclusion: {in: CONTAINERS}
 
 	METRIC = [
 				["m3 - cubic meters", 1],

@@ -10,21 +10,36 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_01_14_182902) do
+ActiveRecord::Schema.define(version: 2019_01_16_201947) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "savings", force: :cascade do |t|
+  create_table "containers", force: :cascade do |t|
     t.integer "volume"
     t.integer "price"
-    t.string "container"
+    t.string "container_size"
     t.string "metrics"
     t.string "currency"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "user_id"
-    t.index ["user_id"], name: "index_savings_on_user_id"
+    t.index ["user_id"], name: "index_containers_on_user_id"
+  end
+
+  create_table "groupages", force: :cascade do |t|
+    t.string "origin"
+    t.string "destination"
+    t.string "departure_date"
+    t.string "mover"
+    t.string "notification_email"
+    t.integer "phone_number"
+    t.bigint "user_id"
+    t.bigint "container_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["container_id"], name: "index_groupages_on_container_id"
+    t.index ["user_id"], name: "index_groupages_on_user_id"
   end
 
   create_table "user_savings", force: :cascade do |t|
@@ -48,7 +63,9 @@ ActiveRecord::Schema.define(version: 2019_01_14_182902) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "savings", "users"
-  add_foreign_key "user_savings", "savings"
+  add_foreign_key "containers", "users"
+  add_foreign_key "groupages", "containers"
+  add_foreign_key "groupages", "users"
+  add_foreign_key "user_savings", "containers", column: "saving_id"
   add_foreign_key "user_savings", "users"
 end
