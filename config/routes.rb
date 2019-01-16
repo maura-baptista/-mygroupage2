@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 	 match "calculator" => "savings#calculator", :via => [:post, :get]
   devise_for :users
   root to: 'pages#home'
-  resources :groupages
+  
   # root to: "savings#new"
   # match "calculator" => "pages#calculator", :via => [:post, :get]
   # post 'pages/home'
