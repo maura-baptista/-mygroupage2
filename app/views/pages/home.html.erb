@@ -1,260 +1,367 @@
-
-<div class="banner-home">
-	<div class="banner-body">
-		<h1>Moving overseas? Share a container.</h1>
-		<p>Split costs with expats who already have a container.</p>
-		<div class="search-form form-inline">
-			<%= form_tag groupages_path, method: :get do %>
-			  <%= text_field_tag :origin,
-			    params[:origin],
-			    class: "form-input form-control",
-			    placeholder: "I am moving from..."
-			  %>
-			  <%= hidden_field_tag :latitude %>
-						<%= hidden_field_tag :longitude %>
-			  <%= submit_tag "Search", class: " btn-search search-icon form-control" %>	
-		</div>
-	<% end %>
-	</div>
-</div>
-
 <!-- ***************** desktop page ************ -->
 <div class="hidden-xs">
-	<section class="wrapper-why-mygroupage">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-6">
-						<div class="card-whyus">
-							<h2>Why move with myGroupage?</h2>
-						<p>Everyday, hundreds of expats ship their goods abroad. While costs are high, most containers sail with a great amount of unused space. Use one of those containers for your move and split shipping costs. Win-win !</p>
-						</div>
-					</div>
-					<div class="col-sm-6">
-						<div class="card-whyus">
-							<h2>Complete & professional service</h2>
-							<p>Sharing a container on myGroupage is simple, secure and fully compliant. Every listing is quality controlled & approved by myGroupage. And all operations are handled by international movers near you.</p>
-						</div>
-						
-					</div>
-				</div>
-			</div>
-	</section>
-	<section class="wrapper-moving-3-steps">
-		<div class="container">
-			<div class="row">
-				<div class="border"></div>
-				<h1>Affordable moving in 3 steps</h1>
-				<div class="col-sm-4">
-					<div class="card-3-steps">
-						<div class="badge">
-						  1
-						</div>
-						<h2>Search containers being shared nearby</h2>
-						<p>Confirm details about your move (dates, route, ...). We’ll show you containers that match your need.</p>
-						
-					</div>
-				</div>
-				<div class="col-sm-4">
-					<div class="card-3-steps">
-						<div class="badge">
-						  2
-						</div>
-						<h2>Book the moving services you need</h2>
-						<p>Calculate your share of the shipping costs instantly. Request services like packing, door delivery, insurance...</p>
-					</div>
-				</div>
-				<div class="col-sm-4">
-					<div class="card-3-steps">
-						<div class="badge">
-						  3
-						</div>
-						<h2>Enjoy a professional move</h2>
-						<p>Although expats are the ones sharing their container, everything is handled by their international moving company.</p>
-					</div>
-				</div>
-			</div>
-		</div>		
-	</section>
-	<section class="wrapper-cards-groupage">
-		<div class="container">
-			<div class="row">			
-				<div class="col-sm-6 col-md-4">
-					<div class="card-image">
-						<%= link_to root_path, class: "image" do %>
-      						<%= image_tag "groupage-1.png"  %>
-    					<% end %>
-					</div>
-				</div>	
-				<div class="col-sm-6 col-md-4">
-					<div class="card-image">
-						<%= link_to root_path, class: "image" do %>
-      						<%= image_tag "groupage-2.png"  %>
-    					<% end %>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-4">
-					<div class="card-image">
-						<%= link_to root_path, class: "image" do %>
-      						<%= image_tag "groupage-3.png"  %>
-    					<% end %>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-4">
-					<div class="card-image">
-						<%= link_to root_path, class: "image" do %>
-      						<%= image_tag "groupage-3.png"  %>
-    					<% end %>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-4">
-					<div class="card-image">
-						<%= link_to root_path, class: "image" do %>
-      						<%= image_tag "groupage-1.png"  %>
-    					<% end %>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-4">
-					<div class="card-image">
-						<%= link_to root_path, class: "image" do %>
-      						<%= image_tag "groupage-2.png"  %>
-    					<% end %>
-					</div>			
-				</div>					
-			</div>
-			<div class="button-find-container">
-				<%= link_to "Find a container", "#", class: "btn-find-container " %>
+	<div class="banner-home hidden-xs">
+		<div class="banner-body">
+			<h1>Moving overseas? Share a container.</h1>
+			<p>Split costs with expats who already have a container.</p>
+			<div class="button-search-containers">
+					<%= link_to "Search containers", "#", class: "btn-search-containers " %>
 			</div>	
-		</div>
-	</section>
-	<section class="wrapper-profissional-moving">
-		<div class="container">
-			<div class="row">
-				<div class="border"></div>
-				<h1>Professional moving</h1>
-				<div class="col-sm-6">
-					<div class="sharing-description card-padding">
-						<p>We know it’s a priority to make sure that sharing a container does not affect your move in any way: <br>
-						- your schedule must be respected <br>
-						- no hiccup at customs can be tolerated
-						 <br> <br>
-						To achieve this, we team-up with your mover to qualify every expat interested in booking your unused space. Their schedule must fit yours, their paperwork must be in order for customs clearance.</p>
-					</div>
-					
-				</div>
-				<div class="col-sm-6">
-					<div class="sharing-points card-padding">
-						<ul>
-							<li><%= image_tag "check.svg", height: 50, class: "checklist-icon" %><span class="text-bold">Safe</span> : all moves are packed by your moving company</li>
-							<li><%= image_tag "check.svg", height: 50, class: "checklist-icon" %><span class="text-bold">Compliant</span> : each move is cleared separately under its owner’s name</li>
-							<li><%= image_tag "check.svg", height: 50, class: "checklist-icon" %><span class="text-bold">Insured</span> : moving insurance is available for all moves</li>
-							<li><%= image_tag "check.svg", height: 50, class: "checklist-icon" %><span class="text-bold">On-time</span> : container’s sailing schedule is set on YOUR dates</li>
-							<li><%= image_tag "check.svg", height: 50, class: "checklist-icon" %><span class="text-bold">Secure</span> : your container is sealed & opened in front of you</li>
-							<li><%= image_tag "check.svg", height: 50, class: "checklist-icon" %><span class="text-bold">Vetted</span> : listings are quality controlled & approved by myGroupage</li>
-						</ul>
-					</div>
-					
-				</div>
+			<!-- <div class="search-form form-inline">
+				<%#= form_tag groupages_path, method: :get do %>
+				  <%#= text_field_tag :origin,
+				    params[:origin],
+				    class: "form-input form-control",
+				    placeholder: "I am moving from..."
+				  %>
+				  <%#= hidden_field_tag :latitude %>
+				  <%= hidden_field_tag :longitude %>
+				  <%#= submit_tag "Search", class: " btn-search search-icon form-control" %>	
 			</div>
+			<%# end %> -->
 		</div>
-	</section>
-	<section class="wrapper-list-container">
-		<div class="container">
-			<div class="list-container-box">
-				<div class="row">
-						<div class="col-sm-7">
-							<div class="box-text">
-								<h2>Got space in your container? <br>
-								Put it to work!</h2>
-								<p>Instantly find out how much you could earn by sharing it with other expats.</p>
-								<%= link_to "Learn more", "#", class: "btn-learn-more" %>
+	</div>
+	<div class="hidden-xs">
+		<section class="wrapper-why-mygroupage">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="card-whyus">
+								<h2>Why move with myGroupage?</h2>
+							<p>Everyday, hundreds of expats ship their goods abroad. While costs are high, most containers sail with a great amount of unused space. Use one of those containers for your move and split shipping costs. Win-win !</p>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="card-whyus">
+								<h2>Complete & professional service</h2>
+								<p>Sharing a container on myGroupage is simple, secure and fully compliant. Every listing is quality controlled & approved by myGroupage. And all operations are handled by international movers near you.</p>
 							</div>
 							
 						</div>
-						<div class="col-sm-5">
-							<div class="card-mover-image-mob">
-							</div>
-						</div>
+					</div>
 				</div>
-			</div>
-		</div>
-	</section>
-	<section class="wrapper-about-us-home">
+		</section>
+		<section class="wrapper-moving-3-steps">
 			<div class="container">
 				<div class="row">
 					<div class="border"></div>
-					<h1>About myGroupage</h1>
-					<div class="col-sm-6">
-						<div class="card-why-us">
-							<h2>What is myGroupage?</h2>
-							<p>myGroupage is a community based international moving platform. We use spare container capacity and the power of online communities to make international moving finally affordable.</p>
+					<h1>Affordable moving in 3 steps</h1>
+					<div class="col-sm-4">
+						<div class="card-3-steps">
+							<div class="badge">
+							  1
+							</div>
+							<h2>Search containers being shared nearby</h2>
+							<p>Confirm details about your move (dates, route, ...). We’ll show you containers that match your need.</p>
+							
 						</div>
 					</div>
+					<div class="col-sm-4">
+						<div class="card-3-steps">
+							<div class="badge">
+							  2
+							</div>
+							<h2>Book the moving services you need</h2>
+							<p>Calculate your share of the shipping costs instantly. Request services like packing, door delivery, insurance...</p>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="card-3-steps">
+							<div class="badge">
+							  3
+							</div>
+							<h2>Enjoy a professional move</h2>
+							<p>Although expats are the ones sharing their container, everything is handled by their international moving company.</p>
+						</div>
+					</div>
+				</div>
+			</div>		
+		</section>
+		<section class="wrapper-cards-groupage">
+			<div class="container">
+				<div class="row">			
+					<div class="col-sm-6 col-md-4">
+						<div class="cards-container card-wrapper padded-top ">
+						    <div class="card-image filter" style="background-image: url(<%= asset_path'singapore.png' %>);">
+						    </div>
+
+						    <!-- Card Bottom Row -->
+						      <div class="card-details">
+						        <span class="country">FRANCE > SINGAPORE</span>
+						        <div class="card-row card-margin-adjustment">
+							        <span class="city">Bordeaux to Singapore</span>
+							        <span class="price">150 EUR</span>
+						        </div>
+						        <div class="card-row card-margin-adjustment">
+							        <span class="available-space">10 m3 available</span>
+							        <span class="metrics">/ cubic meter</span>
+						        </div>
+						        <span class="departure-date">Departs 10 feb 19</span>
+						      </div>
+						    <!-- Card Link -->
+						    <%= link_to "#", class: "card-link" do %>
+						    <% end %>
+						</div>
+						
+					</div>	
+					<div class="col-sm-6 col-md-4">
+						<div class="cards-container card-wrapper padded-top ">
+						    <div class="card-image filter" style="background-image: url(<%= asset_path'san-francisco.png' %>);">
+						    </div>
+
+						    <!-- Card Bottom Row -->
+						      <div class="card-details">
+						        <span class="country">UAE > USA</span>
+						        <div class="card-row card-margin-adjustment">
+							        <span class="city">Dubai to San Francisco</span>
+							        <span class="price">180 USD</span>
+						        </div>
+						        <div class="card-row card-margin-adjustment">
+							        <span class="available-space">7 m3 available</span>
+							        <span class="metrics">/ cubic meter</span>
+						        </div>
+						        <span class="departure-date">Departs 19 feb 19</span>
+						      </div>
+						    <!-- Card Link -->
+						    <%= link_to "#", class: "card-link" do %>
+						    <% end %>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="cards-container card-wrapper padded-top ">
+						    <div class="card-image filter" style="background-image: url(<%= asset_path'france.png' %>);">
+						    </div>
+
+						    <!-- Card Bottom Row -->
+						      <div class="card-details">
+						        <span class="country">CHILE > FRANCE</span>
+						        <div class="card-row card-margin-adjustment">
+							        <span class="city">Santiago to Paris</span>
+							        <span class="price">210 USD</span>
+						        </div>
+						        <div class="card-row card-margin-adjustment">
+							        <span class="available-space">12 m3 available</span>
+							        <span class="metrics">/ cubic meter</span>
+						        </div>
+						        <span class="departure-date">Departs 30 apr 19</span>
+						      </div>
+						    <!-- Card Link -->
+						    <%= link_to "#", class: "card-link" do %>
+						    <% end %>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="cards-container card-wrapper padded-top ">
+						    <div class="card-image filter" style="background-image: url(<%= asset_path'usa.png' %>);">
+						    </div>
+
+						    <!-- Card Bottom Row -->
+						      <div class="card-details">
+						        <span class="country">GERMANY > USA</span>
+						        <div class="card-row card-margin-adjustment">
+							        <span class="city">Berlin to New York</span>
+							        <span class="price">130 EUR</span>
+						        </div>
+						        <div class="card-row card-margin-adjustment">
+							        <span class="available-space">9 m3 available</span>
+							        <span class="metrics">/ cubic meter</span>
+						        </div>
+						        <span class="departure-date">Departs 15 jun 19</span>
+						      </div>
+						    <!-- Card Link -->
+						    <%= link_to "#", class: "card-link" do %>
+						    <% end %>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="cards-container card-wrapper padded-top ">
+						    <div class="card-image filter" style="background-image: url(<%= asset_path'south-africa.png' %>);">
+						    </div>
+
+						    <!-- Card Bottom Row -->
+						      <div class="card-details">
+						        <span class="country">UNITED KINGDOM > SOUTH AFRICA</span>
+						        <div class="card-row card-margin-adjustment">
+							        <span class="city">London to Cape Town</span>
+							        <span class="price">4.2 GBP</span>
+						        </div>
+						        <div class="card-row card-margin-adjustment">
+							        <span class="available-space">320 cuft available</span>
+							        <span class="metrics">/ cubic feet</span>
+						        </div>
+						        <span class="departure-date">Departs 5 may 19</span>
+						      </div>
+						    <!-- Card Link -->
+						    <%= link_to "#", class: "card-link" do %>
+						    <% end %>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="cards-container card-wrapper padded-top ">
+						    <div class="card-image filter" style="background-image: url(<%= asset_path'australia.png' %>);">
+						    </div>
+
+						    <!-- Card Bottom Row -->
+						      <div class="card-details">
+						        <span class="country">INDONESIA > AUSTRALIA</span>
+						        <div class="card-row card-margin-adjustment">
+							        <span class="city">Jakarta to Brisbane</span>
+							        <span class="price">175 USD </span>
+						        </div>
+						        <div class="card-row card-margin-adjustment">
+							        <span class="available-space">14 m3 available</span>
+							        <span class="metrics">/ cubic meter</span>
+						        </div>
+						        <span class="departure-date">Departs 28 jun 19</span>
+						      </div>
+						    <!-- Card Link -->
+						    <%= link_to "#", class: "card-link" do %>
+						    <% end %>
+						</div>		
+					</div>					
+				</div>
+				<div class="button-find-container">
+					<%= link_to "Search containers", "#", class: "btn-find-container " %>
+				</div>	
+			</div>
+		</section>
+		<section class="wrapper-profissional-moving">
+			<div class="container">
+				<div class="row">
+					<div class="border"></div>
+					<h1>Professional moving</h1>
 					<div class="col-sm-6">
-						<div class="card-why-us">
-							<h2>What is a groupage?</h2>
-							<p>You can save money by sharing a container’s space with expats relocating on a similar itinerary. A shared-container is usually referred to as “groupage” by moving companies. Find a container and save money on your international move.</p>
+						<div class="sharing-description card-padding">
+							<p>We know it’s a priority to make sure that sharing a container does not affect your move in any way: <br>
+							- your schedule must be respected <br>
+							- no hiccup at customs can be tolerated
+							 <br> <br>
+							To achieve this, we team-up with your mover to qualify every expat interested in booking your unused space. Their schedule must fit yours, their paperwork must be in order for customs clearance.</p>
+						</div>
+						
+					</div>
+					<div class="col-sm-6">
+						<div class="sharing-points card-padding">
+							<ul>
+								<li><%= image_tag "check.svg", height: 50, class: "checklist-icon" %><span class="text-bold">Safe</span> : all moves are packed by your moving company</li>
+								<li><%= image_tag "check.svg", height: 50, class: "checklist-icon" %><span class="text-bold">Compliant</span> : each move is cleared separately under its owner’s name</li>
+								<li><%= image_tag "check.svg", height: 50, class: "checklist-icon" %><span class="text-bold">Insured</span> : moving insurance is available for all moves</li>
+								<li><%= image_tag "check.svg", height: 50, class: "checklist-icon" %><span class="text-bold">On-time</span> : container’s sailing schedule is set on YOUR dates</li>
+								<li><%= image_tag "check.svg", height: 50, class: "checklist-icon" %><span class="text-bold">Secure</span> : your container is sealed & opened in front of you</li>
+								<li><%= image_tag "check.svg", height: 50, class: "checklist-icon" %><span class="text-bold">Vetted</span> : listings are quality controlled & approved by myGroupage</li>
+							</ul>
 						</div>
 						
 					</div>
 				</div>
 			</div>
-	</section>
-	<section class="FAQ-home">
-		<div class="container">
-			<div class="row">
-				<div class="border"></div>
-				<h1>Your questions answered</h1>
-				<div class="col-sm-6">
-						<div class="card-faq">
-							 <button type="button" class=" btn-faq" data-toggle="modal" data-target="#who-can-list-a-groupage">
-						  	Who can list a container?
-							</button>
-							<hr>
-							 <button type="button" class=" btn-faq" data-toggle="modal" data-target="#what-is-required-of-expats">
-						  	What is required of expats joining my container?
-							</button>
-							<hr>
-							<button type="button" class=" btn-faq" data-toggle="modal" data-target="#how-much-it-cost">
-						  	How much does it cost to list my container?
-							</button>
-							<hr>
+		</section>
+		<section class="wrapper-list-container">
+			<div class="container">
+				<div class="list-container-box">
+					<div class="row">
+							<div class="col-sm-7">
+								<div class="box-text">
+									<h2>Got space in your container? <br>
+									Put it to work!</h2>
+									<p>Instantly find out how much you could earn by sharing it with other expats.</p>
+									<%= link_to "Learn more", "#", class: "btn-learn-more" %>
+								</div>
+								
+							</div>
+							<div class="col-sm-5">
+								<div class="card-mover-image-mob">
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="wrapper-about-us-home">
+				<div class="container">
+					<div class="row">
+						<div class="border"></div>
+						<h1>About myGroupage</h1>
+						<div class="col-sm-6">
+							<div class="card-why-us">
+								<h2>What is myGroupage?</h2>
+								<p>myGroupage is a community based international moving platform. We use spare container capacity and the power of online communities to make international moving finally affordable.</p>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="card-why-us">
+								<h2>What is a groupage?</h2>
+								<p>You can save money by sharing a container’s space with expats relocating on a similar itinerary. A shared-container is usually referred to as “groupage” by moving companies. Find a container and save money on your international move.</p>
+							</div>
+							
 						</div>
 					</div>
+				</div>
+		</section>
+		<section class="FAQ-home">
+			<div class="container">
+				<div class="row">
+					<div class="border"></div>
+					<h1>Your questions answered</h1>
 					<div class="col-sm-6">
-						<div class="card-faq">
-							<button type="button" class=" btn-faq" data-toggle="modal" data-target="#will-my-goods-be-mixed">
-						  	Will my goods be mixed with others in the container?
-							</button>
-							<hr>
-							<button type="button" class=" btn-faq" data-toggle="modal" data-target="#what-protection">
-						  	What protection do I have against property damage?
-							</button>
-							<hr>
-							<button type="button" class=" btn-faq" data-toggle="modal" data-target="#help-set-prices">
-						  	How can myGroupage help me with setting prices?
-							</button>
-							<hr>
+							<div class="card-faq">
+								 <button type="button" class=" btn-faq" data-toggle="modal" data-target="#who-can-list-a-groupage">
+							  	Who can list a container?
+								</button>
+								<hr>
+								 <button type="button" class=" btn-faq" data-toggle="modal" data-target="#what-is-required-of-expats">
+							  	What is required of expats joining my container?
+								</button>
+								<hr>
+								<button type="button" class=" btn-faq" data-toggle="modal" data-target="#how-much-it-cost">
+							  	How much does it cost to list my container?
+								</button>
+								<hr>
+							</div>
 						</div>
-						
-					</div>
+						<div class="col-sm-6">
+							<div class="card-faq">
+								<button type="button" class=" btn-faq" data-toggle="modal" data-target="#will-my-goods-be-mixed">
+							  	Will my goods be mixed with others in the container?
+								</button>
+								<hr>
+								<button type="button" class=" btn-faq" data-toggle="modal" data-target="#what-protection">
+							  	What protection do I have against property damage?
+								</button>
+								<hr>
+								<button type="button" class=" btn-faq" data-toggle="modal" data-target="#help-set-prices">
+							  	How can myGroupage help me with setting prices?
+								</button>
+								<hr>
+							</div>
+							
+						</div>
+				</div>
+				<%= render 'pages/faq/modal-faq1' %>
+				<%= render 'pages/faq/modal-faq2' %>
+				<%= render 'pages/faq/modal-faq3' %>
+				<%= render 'pages/faq/modal-faq4' %>
+				<%= render 'pages/faq/modal-faq5' %>
+				<%= render 'pages/faq/modal-faq6' %>
 			</div>
-			<%= render 'pages/faq/modal-faq1' %>
-			<%= render 'pages/faq/modal-faq2' %>
-			<%= render 'pages/faq/modal-faq3' %>
-			<%= render 'pages/faq/modal-faq4' %>
-			<%= render 'pages/faq/modal-faq5' %>
-			<%= render 'pages/faq/modal-faq6' %>
-		</div>
-	</section>
-	<section class="wrapper-ready-to-earn-home">
-		<div class="container">
-			<div class="image-box" style="background-image: linear-gradient(90deg, #0E0D13 0%, rgba(13, 12, 18, 0.9) 0.01%, rgba(3, 2, 8, 0) 63.54%), url(<%= asset_path 'men.jpeg' %>);">
-					<div class="ready-to-earn-content">
-						<h1>Ready to earn?</h1>
-						<%= link_to "Find a container", "#", class: "btn-find-container" %>
-					</div>
+		</section>
+		<section class="wrapper-ready-to-earn-home">
+			<div class="container">
+				<div class="image-box" style="background-image: linear-gradient(90deg, #0E0D13 0%, rgba(13, 12, 18, 0.9) 0.01%, rgba(3, 2, 8, 0) 63.54%), url(<%= asset_path 'men.jpeg' %>);">
+						<div class="ready-to-earn-content">
+							<h1>Ready to earn?</h1>
+							<%= link_to "Find a container", "#", class: "btn-find-container" %>
+						</div>
+				</div>
 			</div>
-		</div>
-	</section>	
+		</section>	
+			
+	</div>
+</div>	
+	
+<!-- ***************** mobile page ************ -->
+<div class="hidden-sm hidden-md hidden-lg">
+	<div class="banner-home-mob">
 		
+	</div>
 </div>

@@ -96,6 +96,7 @@
 	background: #FFFFFF;
 	padding-bottom: 130px;
 	.card-image{
+
 		.image{
 			height: 100%;
 			width: 100%;
@@ -130,6 +131,171 @@
 			}
 		}
 	}
+
+
+	.card-margin {
+	  padding: 5px;
+	}
+
+	.card-wrapper {
+	  &:hover, &:active, &:focus {
+	    outline: none;
+	  }
+	  transition: transform 0.3s !important;
+	  &:hover{
+	    transform: translateY(-15px) scale(1.03) !important;
+	  }
+
+	}
+
+
+	.cards-container {
+	  height: 330px;
+	  background-size: cover !important;
+	  background-color: white;
+	  background-position: center;
+	  position: relative;
+	  justify-content: space-around;
+	  border-radius: 2px;
+	  // box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+	  padding: 0 0 35px 0;
+	  max-width: 100vw;
+	  
+	}
+
+	.card-link {
+	  color: #545454;;
+	  position: absolute !important;
+	  top: 0 !important;
+	  bottom: 0 !important;
+	  right: 0 !important;
+	  width: 100% !important;
+	  cursor: pointer !important;
+	  z-index: 10;
+	  background: black;
+	  opacity: 0;
+	  &:hover, &:active, &:focus {
+	    text-decoration: none;
+	    color: #545454;;
+	    outline: none;
+	  }
+	}
+
+	.card-details {
+	  margin-top: 10px;
+	  padding: 0px 0px;
+	   font-family: Comfortaa;
+		font-style: normal;
+
+	}
+
+	.country{
+		
+		font-weight: bold;
+		line-height: normal;
+		font-size: 12px;
+		text-indent: 8px;
+		color: #008489;
+		padding-left: 1px;
+	}
+
+	.city {
+
+	font-weight: bold;
+	line-height: normal;
+	font-size: 16px;
+	letter-spacing: -1px;
+	text-indent: 8px;
+	color: #333333;
+	margin-left: -9px;
+	
+
+	}
+
+	.price {
+	 
+		font-weight: bold;
+		line-height: normal;
+		font-size: 16px;
+		text-align: right;
+		letter-spacing: -1px;
+
+		color: #008489;
+	}
+	.available-space{
+		font-weight: 300;
+		line-height: normal;
+		font-size: 14px;
+		letter-spacing: -1px;
+		text-indent: 8px;
+		color: #484848;
+		margin-left: -9px;
+	}
+	.metrics{
+		font-weight: 300;
+		line-height: normal;
+		font-size: 14px;
+		text-align: right;
+		letter-spacing: -1px;
+		color: #008489;
+
+	}
+	.departure-date{
+		font-weight: bold;
+		line-height: normal;
+		font-size: 10px;
+		text-indent: 8px;
+		color: #484848;
+		padding-left: 1px;
+	}
+
+
+
+
+	.card-image {
+	  position: relative;
+	  height: 72%;
+	  width: 100%;
+	  // background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2) ), image-url('room1.jpeg');
+	  // background: rgba(84, 84, 84, 0.6);
+	  background-size: cover;
+	  background-repeat: no-repeat;
+	  background-position: center center;
+	  border-radius: 4px;
+	  // &:hover, &:active, &:focus {
+	  //   outline: none;
+
+
+	// }
+	}
+
+
+	.card-row {
+	  padding: 0px 10px;
+	  margin-top: 5px;
+	  overflow:hidden;
+	  white-space:nowrap;
+	  text-overflow: ellipsis;
+	  position:relative;
+	  z-index:2;
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+	}
+
+	.card-margin-adjustment{
+	  margin-top: 7px;
+	  padding: 0px 1px;
+	}
+
+	#icon-bed{
+	  margin-right: 10px;
+	}
+
+	#icon-people{
+	  margin-right: 10px;
+	}
+
 }
 
 .wrapper-profissional-moving{
@@ -409,6 +575,7 @@
 		  }	    
 	}
 }
+
 
 
 
