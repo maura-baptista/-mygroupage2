@@ -5,29 +5,34 @@
       <%= link_to root_path, class: "navbar-wagon-brand" do %>
       <%= image_tag "logo-deskt.png", height: 50 %>
     <% end %>
-      <%= link_to "Search containers", "#", class: "btn-nav-search-container" %>
-
   </div>
-
   
 
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
 
-    <% if user_signed_in? %>
-   
-    
+    <%# if user_signed_in? %>
+      <% if params[:commit] %>
+        <span class="earn-up-to navbar-wagon-item">EARN UP TO </span>
+        <button type="button" class="btn btn-information" data-toggle="modal" data-target="#estimate">
+          <i class="fas fa-info-circle"></i>
+        </button>
+        <span class="savings-amount navbar-wagon-item"><%= number_with_precision(@result, :precision => 0, ) %></span><span class="currency navbar-wagon-item"><%= @currency %>
+      <% end %>
+        </span>
+          <%= link_to "List my container", "#", class: "btn-list-my-container navbar-wagon-item" %>
       
   
 
       <!-- Links when logged in -->
-      <%= link_to "List my container", new_saving_path , class: "navbar-wagon-item navbar-wagon-link" %>
-      
+      <%#= link_to "Host", "#", class: "navbar-wagon-item navbar-wagon-link" %>
+      <%#= link_to "Trips", "#", class: "navbar-wagon-item navbar-wagon-link" %>
+      <%#= link_to "Messages", "#", class: "navbar-wagon-item navbar-wagon-link" %>
 
       <!-- Avatar with dropdown menu -->
-           <div class="navbar-wagon-item">
+      <!--      <div class="navbar-wagon-item">
         <div class="dropdown">
-          <%= image_tag "http://placehold.it/30x30", class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
+          <%= image_tag "http://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
           <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
             <li>
               <%= link_to "#" do %>
@@ -46,13 +51,11 @@
             </li>
           </ul>
         </div>
-      </div>
-    <% else %>
+      </div> -->
+    <%# else %>
       <!-- Login link (when logged out) -->
-      <%= link_to "List my container", new_saving_path , class: "navbar-wagon-item navbar-wagon-link" %>
-      <%= link_to t(".sign_up", default: "Register"), new_user_registration_path, class: "navbar-wagon-item navbar-wagon-link" %>
-      <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
-    <% end %>
+      <%#= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
+    <%# end %>
   </div>
 
   <!-- Dropdown list appearing on mobile only -->
