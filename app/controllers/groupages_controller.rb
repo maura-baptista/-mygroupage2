@@ -32,7 +32,7 @@ class GroupagesController < ApplicationController
 
       if @groupage.save
 
-        redirect_to user_steps_path
+        redirect_to edit_container_path(@container)
       else
         render :new
       end

@@ -1,7 +1,8 @@
 class ContainersController < ApplicationController
-skip_before_action :authenticate_user!, only: [:new, :calculator, :create]
+skip_before_action :authenticate_user!, only: [:new, :calculator, :create, :update]
 
   def new
+
   	
   end
 
@@ -19,13 +20,37 @@ skip_before_action :authenticate_user!, only: [:new, :calculator, :create]
   end
 
   def create
-     @container = Container.new(container_params)
-     @container.user = current_user
-      if @container.save
-        redirect_to user_steps_path
-      else
-        render :new
-      end
+  #   @container = Container.new
+  #   @container = Container.new(container_params)
+  #   @groupage = Groupage.find(@groupage.id)
+  #   @groupage.container = @container
+  #    @container.user = current_user
+  #     if @container.save
+  #       redirect_to user_steps_path
+  #     else
+  #       render :new
+  #     end
+  end
+
+  def edit
+    @container = Container.find(params[:id])
+    
+  end
+
+  def update
+    @container = Container.find(params[:id])
+    @container.update(container_params)
+    if @container.save
+      redirect_to user_steps_path
+    else
+      render :new
+    end
+
+    # @groupage = Groupage.new(params[:groupage])
+    # @groupage = Groupage.find(@groupage.id)
+    # @container = @groupage.container
+    # @container = Container.new(params[:container])
+
   end
 
   private 
