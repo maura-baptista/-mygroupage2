@@ -1,12 +1,17 @@
 Rails.application.routes.draw do
 
  
-  resources :groupages, only: [:index, :show, :new]
-	resources :containers, only: [:new, :create]
+ #  resources :groupages, only: [:index, :show, :new, :create]
+	# resources :containers, only: [:new, :create]
 	 match "calculator" => "containers#calculator", :via => [:post, :get]
   devise_for :users
   root to: 'pages#home'
+
+  resources :containers, only: [ :new, :create ] do
+    	resources :groupages, only: [ :index, :show, :new, :create ]
+  end
   
+  resources :user_steps
   # root to: "savings#new"
   # match "calculator" => "pages#calculator", :via => [:post, :get]
   # post 'pages/home'

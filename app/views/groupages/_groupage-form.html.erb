@@ -1,0 +1,195 @@
+
+<div class="full-container">
+	<!-- itenerary section -->
+	<div class="container">
+		<div class="row">
+			<%= simple_form_for [@container, @groupage], :html => { :multipart => true }, :url => {:controller => 'groupages', :action => 'create'} do |f| %>
+			<%#  f.input :container_id, :as => :hidden, :input_html => { :value => @container.id } %>
+				<div class="col-sm-6">
+					<div class="itinerary-section form">
+						<div class="row">
+							<div class="col-sm-12">
+								<h3>What is your move’s itinerary?</h3>
+								<%= f.input :origin, label: false, placeholder: "Moving from (enter City)" %>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12">
+								<%= f.input :destination, label: false, placeholder: "Moving to (enter City)" %>
+							</div>
+						</div>	
+						<div class="when-you-move">
+							<div class="row">
+								<div class="col-sm-12">
+									<h3>When are you moving?</h3>
+									<%= f.input :origin, label: false, placeholder: "My move date is" %>
+									<p>Note : select an approximate date if you are unsure</p>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<hr>
+					<div class="row">
+						<div class="next-button">
+							<%= f.submit "Next", class: "btn btn-next"  %>
+						</div>
+					</div>
+						
+				</div>
+				<div class="col-sm-6">
+					<div class="flexbox">
+						<div class="information-box">
+							<%= image_tag "bulb.svg", height: 30, class: "lamp-icon" %>
+							<p>86% of expats listing their container find at least 1 person to split costs with, within a week.</p>
+						</div>
+					</div>
+				</div>
+			<% end %>
+		</div>	
+	</div>
+
+	<!-- container information -->
+
+	<div class="container">
+		<div class="row">
+			<%= simple_form_for @container, url: containers_path do |f| %>
+			  	<%#  f.input :venue_id, :as => :hidden, :input_html => { :value => @venue.id } %>
+				<div class="col-sm-6">
+					<div class="itinerary-section form">
+						<div class="row">
+							<div class="col-sm-12">
+								<h3>What is the size of your container?</h3>
+								<%= f.input :container_size, label: false, placeholder: "My container size" %>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-8">
+								<h3>What is the volume of your move?</h3>
+								<%= f.input :volume, label: false, placeholder: "Enter your volume" %>
+							</div>
+							<div class="col-sm-4">
+								<%= f.input :metrics, label: false,input_html: { class: 'input2-margin-top' }, collection: Container::METRIC, prompt: params[:metrics] %>
+							</div>
+						</div>	
+						<div class="when-you-move">
+							<div class="row">
+								<div class="col-sm-8">
+									<h3>How much are you paying for your move?</h3>
+									<%= f.input :price, label: false, placeholder: "Enter amount here" %>
+
+								</div>
+								<div class="col-sm-4">
+									<%= f.input :currency, label: false, input_html: { class: 'input2-margin-top' },  collection: Container::CURRENCIES, prompt: params[:currency]%>
+								</div>
+								<div class="row">
+									<div class="col-sm-12">
+										<div class="container-info">
+											<p>Note : Enter the amount excluding insurance & other accessorial costs then choose the currency. <br>
+										Entering the price of your move helps us suggest selling prices for the space you don’t use.</p>
+										</div>
+										
+									</div>
+								</div>	
+							</div>
+						</div>
+					</div>
+					<hr>
+					<div class="row">
+						<div class="next-button">
+							<%= f.submit "Next", class: "btn btn-next"  %>
+						</div>
+					</div>
+						
+				</div>
+				<div class="col-sm-6">
+					<div class="flexbox">
+						<div class="information-box">
+							<%= image_tag "bulb.svg", height: 30, class: "lamp-icon" %>
+							<p>2 expats are moving on a similar itinerary and looking for space.</p>
+						</div>
+					</div>
+				</div>
+			<% end %>
+		</div>
+	</div>
+
+<!-- mover information -->
+
+	<div class="container">
+		<div class="row">
+			<%= simple_form_for [@container, @groupage], :html => { :multipart => true }, :url => {:controller => 'groupages', :action => 'create'} do |f| %>
+					<div class="col-sm-6">
+						<div class="itinerary-section form">
+							<div class="row">
+								<div class="col-sm-12">
+									<h3>Which moving company have you selected to handle your move?</h3>
+									<%= f.input :mover, label: false, placeholder: "Enter name of the moving company" %>
+									<p>Note : We need to verify that we already have a partnership with your moving company. In case we don’t, we will reach out to add your mover to our list of approved partners.</p>
+								</div>
+						</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="flexbox">
+							<div class="information-box">
+								<%= image_tag "bulb.svg", height: 30, class: "lamp-icon" %>
+									<p>Listing your container, we think you could earn up to <b>2,200</b> USD 
+									 <button type="button" class="btn btn-information" data-toggle="modal" data-target="#estimate">
+										  <i class="fas fa-info-circle"></i>
+									</button>
+								</p> 
+								
+							</div>
+						</div>
+					</div>
+			<% end %>
+			 <%= render 'containers/modal_information' %>
+		</div>
+	</div>
+
+	<!-- notification information -->
+
+	<div class="container">
+		<div class="row">
+			<%= simple_form_for [@container, @groupage], :html => { :multipart => true }, :url => {:controller => 'groupages', :action => 'create'} do |f| %>
+				<div class="col-sm-6">
+					<div class="itinerary-section form">
+						<div class="row">
+							<div class="col-sm-12">
+								<h3>Where should we notify you when your container is live?</h3>
+								<%= f.input :notification_email, label: "My main email address is", placeholder: "Email" %>
+								<h4>Your email will never be shared with anyone.</h4>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-2">
+								<%= f.input :phone_prefix, label: false, collection: Groupage::PHONE_PREFIX, input_html: { class: 'input-margin-top' } , prompt: params[:phone] %>
+							</div>
+							<div class="col-sm-10">
+								<%= f.input :notification_email, label: "Phone number (optional)", placeholder: "My phone number" %>
+								<p> <span class="parapgraph-margin-left">In case we need further details on your move.</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="flexbox">
+						<div class="information-box">
+							<%= image_tag "bulb.svg", height: 30, class: "lamp-icon" %>
+								<p>Listing your container, we think you could earn up to <b>2,200</b> USD 
+								 <button type="button" class="btn btn-information" data-toggle="modal" data-target="#estimate">
+									  <i class="fas fa-info-circle"></i>
+								</button>
+								</p> 
+							
+						</div>
+					</div>
+				</div>
+			<% end %>
+		</div>
+	</div>
+
+</div>
+
+

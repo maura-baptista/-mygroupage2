@@ -1,7 +1,7 @@
 .full-container{
 	background-color: white;
 	padding-top: 100px;
-	height: 100vh;
+	// height: 100vh;
 }	
 
 form{
@@ -15,6 +15,17 @@ form{
 
 		color: #C0C9D9;
 	}
+	label{
+			font-family: Comfortaa;
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+			font-size: 16px;
+			letter-spacing: -1px;
+			color: #353C4C;
+			margin-top: 31px;
+		}
+	
 	.itinerary-section{
 		background: #FFFFFF;
 
@@ -28,6 +39,29 @@ form{
 			color: #484848;
 			margin: 0;
 			margin-bottom: 10px;
+			margin-top: 15px;
+		}
+		p{
+			font-family: Comfortaa;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 19px;
+				font-size: 14px;
+				letter-spacing: -1px;
+				color: #B4BBC6;
+				margin-top: -8px;
+				padding-bottom: 200px;
+		}
+		h4{
+			font-family: Comfortaa;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 19px;
+			font-size: 14px;
+			letter-spacing: -1px;
+			color: #B4BBC6;
+			margin-top: -8px;
+
 		}
 		.when-you-move{
 			margin-top: 40px;
@@ -40,13 +74,47 @@ form{
 				letter-spacing: -1px;
 				color: #B4BBC6;
 				margin-top: -8px;
+				padding-bottom: 200px;
+
 
 			}
+		.container-info{
+			padding-left: 16px;
+		}
+		
+		}
+		.input-margin-top{
+			margin-top: 54px;
+		}
+		.input2-margin-top{
+			margin-top: 82px;
 		}
 	}
 	.form-control{
 		height: 50px;
+		border-radius: 5px;
 	}
+
+	.col-sm-2{
+		padding-right: 0;
+
+	}
+	.col-sm-10{
+		padding-left: 7px;
+		label{
+			margin-left: -89px;
+		}
+	}
+	.col-sm-4{
+		padding-left: 0;
+	}
+	.col-sm-8{
+		padding-right: 7px;
+	}
+	.parapgraph-margin-left{
+		margin-left: -89px;
+	}
+
 
 }
 
@@ -60,10 +128,10 @@ form{
 		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 		border-radius: 5px;
 		width: 341px;
-		height: 152px;
+		height: auto;
 		padding: 22px 17px;
+		padding-bottom: 2px;
 		p{
-			
 			font-family: Comfortaa;
 			font-style: normal;
 			font-weight: 300;
@@ -74,7 +142,7 @@ form{
 			color: #2D2D2D;
 
 			margin-top: 20px;
-			margin-bottom: 20px;
+			// margin-bottom: 20px;
 			padding-left: 10px;
 
 			padding-left: 10px;
@@ -84,6 +152,37 @@ form{
 			margin-left: 9px;
 			margin-bottom: -8px;
 		}
+		button{
+            padding: 0px 3px;
+            border: 0px solid transparent;
+            border-radius: 24px;
+            margin-left: -3px;
+            background-color: transparent;
+            
+            i{
+              color: #B4BBC6;
+              font-size: 12px;
+            }
+             &:focus{
+                 outline: none;
+                 color: #b50000;
+            }
+        }
+	}
+	
+}
+.next-button{
+	.btn-next{
+		background: #B2DADB;
+		border-radius: 4px;
+		font-family: Comfortaa;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		font-size: 24px;
+		text-align: center;
+		color: #FFFFFF;
+		padding: 11px 19px;
 	}
 }
 

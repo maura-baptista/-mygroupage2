@@ -5,14 +5,14 @@ class Container < ApplicationRecord
 					["40’ container (12 meters container)", 40],
 					["LCL (less than a container load)", 60]
 				]
-	validates :container_size, inclusion: {in: CONTAINERS}
+	# validates :container_size, inclusion: {in: CONTAINERS}
 
 	METRIC = [
 				["m3 - cubic meters", 1],
 				["cuft - cubic feet", 35,3147]
 			]
-	validates :metrics, inclusion: {in: METRIC}
+	# validates :metrics, inclusion: {in: METRIC}
 
 	CURRENCIES = @currencies = ["EUR", "USD", "GBP", "CAD", "CHF"]
-	validates :currency, inclusion: {in: CURRENCIES}
+	# validates :currency, inclusion: {in: CURRENCIES}
 end

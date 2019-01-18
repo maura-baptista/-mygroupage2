@@ -1,46 +1,54 @@
 
 <div class="full-container">
+	<!-- itenerary section -->
 	<div class="container">
 		<div class="row">
-		<%= simple_form_for @groupage do |f| %>
-			<div class="col-sm-6">
-				<div class="itinerary-section form">
-					<div class="row">
-						<div class="col-sm-12">
-							<h3>What is your move’s itinerary?</h3>
-							<%= f.input :origin, label: false, placeholder: "Moving from (enter City)" %>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-12">
-							<%= f.input :destination, label: false, placeholder: "Moving to (enter City)" %>
-						</div>
-					</div>	
-					<div class="when-you-move">
+			<%= simple_form_for [@container, @groupage], :html => { :multipart => true }, :url => {:controller => 'groupages', :action => 'create'} do |f| %>
+			<%#  f.input :container_id, :as => :hidden, :input_html => { :value => @container.id } %>
+				<div class="col-sm-6">
+					<div class="itinerary-section form">
 						<div class="row">
 							<div class="col-sm-12">
-								<h3>When are you moving?</h3>
-								<%= f.input :origin, label: false, placeholder: "My move date is" %>
-								<p>Note : select an approximate date if you are unsure</p>
+								<h3>What is your move’s itinerary?</h3>
+								<%= f.input :origin, label: false, placeholder: "Moving from (enter City)" %>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12">
+								<%= f.input :destination, label: false, placeholder: "Moving to (enter City)" %>
+							</div>
+						</div>	
+						<div class="when-you-move">
+							<div class="row">
+								<div class="col-sm-12">
+									<h3>When are you moving?</h3>
+									<%= f.input :origin, label: false, placeholder: "My move date is" %>
+									<p>Note : select an approximate date if you are unsure</p>
 
+								</div>
 							</div>
 						</div>
 					</div>
+					<hr>
+					<div class="row">
+						<div class="next-button">
+							<%= f.submit "Next", class: "btn btn-next"  %>
+						</div>
+					</div>
+						
 				</div>
-			</div>
-			<div class="col-sm-6">
-				<div class="flexbox">
-					<div class="information-box">
-						<%= image_tag "bulb.svg", height: 30, class: "lamp-icon" %>
-						<p>86% of expats listing their container find at least 1 person to split costs with, within a week.</p>
+				<div class="col-sm-6">
+					<div class="flexbox">
+						<div class="information-box">
+							<%= image_tag "bulb.svg", height: 30, class: "lamp-icon" %>
+							<p>86% of expats listing their container find at least 1 person to split costs with, within a week.</p>
+						</div>
 					</div>
 				</div>
-				
-				
-			</div>
-		<% end %>
-	</div>	
+			<% end %>
+		</div>	
 	</div>
+
 </div>
 
 
