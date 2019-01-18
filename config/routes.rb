@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+ # get 'groupages/form_opening'
+  get 'containers/form_opening'
+  # post 'calculator' => 'containers#calculator'
  
  #  resources :groupages, only: [:index, :show, :new, :create]
 	# resources :containers, only: [:new, :create]

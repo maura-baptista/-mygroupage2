@@ -1,10 +1,8 @@
 class ContainersController < ApplicationController
 skip_before_action :authenticate_user!, only: [:new, :calculator, :create, :update]
 
-  def new
+# layout :resolve_layout
 
-  	
-  end
 
   def calculator
     @container = Container.new
@@ -17,6 +15,17 @@ skip_before_action :authenticate_user!, only: [:new, :calculator, :create, :upda
     @left_space = @container_size - @volume 
 
     @result = (@price / @container_size) * @left_space
+  end
+
+  def form_opening
+    @container = Container.new
+    @groupage = Groupage.new
+    # @container = Container.new(params[:container])
+    
+    # @container = Container.find(@container.id)
+  end
+  def new
+    @container = Container.new
   end
 
   def create
@@ -58,4 +67,15 @@ skip_before_action :authenticate_user!, only: [:new, :calculator, :create, :upda
   def container_params
   	params.require(:container).permit(:container_size, :volume, :price, :metrics, :currency)
   end
+
+  # def resolve_layout
+  #   case dif_layout
+  #   when "calculator"
+  #     "calculator"
+  #   when "form_opening"
+  #     "calculator"
+  #   else
+  #     "application"
+  #   end
+  # end
 end
