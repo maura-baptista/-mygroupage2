@@ -92,11 +92,7 @@ form{
 		}
 		
 	}
-	// .buttom-section{
-	// 		position: absolute;
-	// 		bottom: 0;
-
-	// }
+	
 	.form-control{
 		height: 50px;
 		border-radius: 5px;
@@ -178,20 +174,38 @@ form{
 	}
 	
 }
-.next-button{
-	.btn-next{
-		background: #B2DADB;
-		border-radius: 4px;
-		font-family: Comfortaa;
-		font-style: normal;
-		font-weight: 400;
-		line-height: normal;
-		font-size: 24px;
-		text-align: center;
-		color: #FFFFFF;
-		padding: 11px 19px;
+.btn-section{
+	display: flex;
+	justify-content: space-between;
+	// .next-button{
+		.btn-next{
+			background: #B2DADB;
+			border-radius: 4px;
+			font-family: Comfortaa;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			font-size: 24px;
+			text-align: center;
+			color: #FFFFFF;
+			padding: 11px 19px;
+		}
+	// }
+
+	.back-link{
+		margin-top: 20px;
+		a{
+			font-family: Comfortaa;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			font-size: 14px;
+			color: #008489;
+			margin-left: 4px;
+		}
 	}
 }
+
 
 
 .close-form-section{
@@ -301,7 +315,7 @@ form{
 
 .opening-form-section{
 	background: #FFFFFF !important;
-	padding-top: 40px;
+	padding-top: 200px;
 	height: 100vh;
 	h2{
 		font-family: Comfortaa;

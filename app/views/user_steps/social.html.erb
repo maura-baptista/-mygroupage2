@@ -23,8 +23,18 @@
 					</div>
 					<hr>
 					<div class="row">
-						<div class="next-button">
-							<%= f.submit "Finish", class: "btn btn-next"  %>
+						<div class="btn-section">
+							<div class="back-link">
+								<%#= link_to 'Back', url_for(:back) %>
+								<%= link_to url_for(:back) , class: "btn-back-link" do %>
+										<i class="fas fa-chevron-left"></i>
+									<% end %>
+								<%= link_to "Back", url_for(:back), class: "btn-back-link" %>
+								
+							</div>
+							<div class="next-button">
+								<%= f.submit "Next", class: "btn btn-next"  %>
+							</div>
 						</div>
 					</div>
 				</div>

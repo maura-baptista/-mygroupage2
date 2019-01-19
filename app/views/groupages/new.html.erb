@@ -29,8 +29,17 @@
 							</div>
 						</div>
 						<hr>
-						<div class="buttom-section">
-							<div class="row">
+						
+						<div class="row">
+							<div class="btn-section">
+								<div class="back-link">
+									<%#= link_to 'Back to this p', url_for(:back) %>
+									<%= link_to containers_form_opening_path, class: "btn-back-link" do %>
+											<i class="fas fa-chevron-left"></i>
+										<% end %>
+									<%= link_to "Back", containers_form_opening_path, class: "btn-back-link" %>
+									
+								</div>
 								<div class="next-button">
 									<%= f.submit "Next", class: "btn btn-next"  %>
 								</div>

@@ -1,7 +1,7 @@
 class ContainersController < ApplicationController
 skip_before_action :authenticate_user!, only: [:new, :calculator, :create, :update]
 
-# layout :resolve_layout
+  layout "calculator"
 
 
   def calculator
@@ -68,14 +68,15 @@ skip_before_action :authenticate_user!, only: [:new, :calculator, :create, :upda
   	params.require(:container).permit(:container_size, :volume, :price, :metrics, :currency)
   end
 
-  # def resolve_layout
-  #   case dif_layout
-  #   when "calculator"
-  #     "calculator"
-  #   when "form_opening"
-  #     "calculator"
-  #   else
-  #     "application"
-  #   end
-  # end
+  def resolve_layout
+    case actio_name
+    when "calculator" 
+      "calculator"
+    when "form_opening"
+      "calculator"
+    else
+      "application"
+    end
+  end
+
 end

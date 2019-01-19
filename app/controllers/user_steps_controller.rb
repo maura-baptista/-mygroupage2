@@ -3,7 +3,8 @@ class UserStepsController < ApplicationController
 
   	steps :personal, :social, :close
 
-
+  	layout "calculator"
+  	
 	def show
 		# @container = Container.new(params[:container])
 		@user = current_user
