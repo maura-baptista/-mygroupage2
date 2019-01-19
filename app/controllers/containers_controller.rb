@@ -1,5 +1,5 @@
 class ContainersController < ApplicationController
-skip_before_action :authenticate_user!, only: [:new, :calculator, :create, :update]
+skip_before_action :authenticate_user!, only: [:new, :calculator, :form_opening, :update]
 
   layout "calculator"
 

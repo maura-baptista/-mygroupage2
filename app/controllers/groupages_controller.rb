@@ -1,9 +1,9 @@
 class GroupagesController < ApplicationController
-	skip_before_action :authenticate_user!, only: [:index, :show, :newconta]
+	skip_before_action :authenticate_user!, only: [:index, :show, :new]
   # before_action :set_container, only: [:create]
   
   layout "calculator"
-  
+
   def form_opening
   end
 
