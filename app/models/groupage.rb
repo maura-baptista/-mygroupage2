@@ -3,7 +3,7 @@ class Groupage < ApplicationRecord
   belongs_to :container
 
   geocoded_by :origin
-  after_validation :geocode, if: :will_save_change_to_address?
+  after_validation :geocode, if: :will_save_change_to_origin?
 
 
 	PHONE_PREFIX = @currencies = ["+33", "+44", "+35", "+61", "+1"]
