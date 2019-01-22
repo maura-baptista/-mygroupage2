@@ -17,9 +17,9 @@ gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
 
-gem "geocoder"
 gem 'pg_search'
 gem 'wicked'
+gem "geocoder"
 
 
 
