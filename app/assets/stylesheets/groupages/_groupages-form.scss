@@ -117,6 +117,37 @@ form{
 	.parapgraph-margin-left{
 		margin-left: -89px;
 	}
+	.btn-section{
+	display: flex;
+	justify-content: space-between;
+	.next-button{
+		.btn-next{
+			background: #028489;
+			border-radius: 4px;
+			font-family: Comfortaa;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			font-size: 24px;
+			text-align: center;
+			color: #FFFFFF;
+			padding: 11px 19px;
+		}
+	}
+
+	.back-link{
+		margin-top: 20px;
+		a{
+			font-family: Comfortaa;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			font-size: 14px;
+			color: #008489;
+			margin-left: 4px;
+		}
+	}
+}
 
 
 }
@@ -171,40 +202,13 @@ form{
                  color: #b50000;
             }
         }
+        .save-amount{
+        	font-size: 20px;
+        }
 	}
 	
 }
-.btn-section{
-	display: flex;
-	justify-content: space-between;
-	// .next-button{
-		.btn-next{
-			background: #B2DADB;
-			border-radius: 4px;
-			font-family: Comfortaa;
-			font-style: normal;
-			font-weight: 400;
-			line-height: normal;
-			font-size: 24px;
-			text-align: center;
-			color: #FFFFFF;
-			padding: 11px 19px;
-		}
-	// }
 
-	.back-link{
-		margin-top: 20px;
-		a{
-			font-family: Comfortaa;
-			font-style: normal;
-			font-weight: 400;
-			line-height: normal;
-			font-size: 14px;
-			color: #008489;
-			margin-left: 4px;
-		}
-	}
-}
 
 
 

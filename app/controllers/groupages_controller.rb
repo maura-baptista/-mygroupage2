@@ -16,9 +16,6 @@ class GroupagesController < ApplicationController
   def new
   	@groupage = Groupage.new
     @container = Container.new
-    @user = User.new
-
-  
   end
 
   def create

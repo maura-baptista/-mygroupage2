@@ -12,12 +12,12 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-sm-2">
-								<%= f.input :phone_prefix, label: false, collection: Groupage::PHONE_PREFIX, input_html: { class: 'input-margin-top' } , prompt: params[:phone] %>
-							</div>
-							<div class="col-sm-10">
-								<%= f.input :notification_email, label: "Phone number (optional)", placeholder: "My phone number" %>
-								<p> <span class="parapgraph-margin-left">In case we need further details on your move.</span></p>
+							<!-- <div class="col-sm-2">
+								<%#= f.input :phone_prefix, label: false, collection: Groupage::PHONE_PREFIX, input_html: { class: 'input-margin-top' } , prompt: params[:phone] %>
+							</div> -->
+							<div class="col-sm-12">
+								<%= f.input :notification_email, label: "Phone number (optional)", placeholder: "My phone number (incl. country code)" %>
+								<p> <span class="">In case we need further details on your move.</span></p>
 							</div>
 						</div>
 					</div>
