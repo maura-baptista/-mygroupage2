@@ -10,12 +10,12 @@
 						<div class="row">
 							<div class="col-sm-12">
 								<h3>What is your move’s itinerary?</h3>
-								<%= f.input :origin, label: false, placeholder: "Moving from (enter City)"%>
+								<%= f.input :origin, label: false, placeholder: "Moving from (enter City)", input_html: { id: "origin-address" }%>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-sm-12">
-								<%= f.input :destination, label: false, placeholder: "Moving to (enter City)" %>
+								<%= f.input :destination, label: false, placeholder: "Moving to (enter City)", input_html: { id: "destination-address" } %>
 							</div>
 						</div>	
 						<div class="when-you-move">

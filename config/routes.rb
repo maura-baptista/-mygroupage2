@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :flats
  # get 'groupages/form_opening'
   get 'containers/form_opening'
   # post 'calculator' => 'containers#calculator'

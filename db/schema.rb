@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_01_22_165532) do
+ActiveRecord::Schema.define(version: 2019_01_23_101018) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,6 +27,15 @@ ActiveRecord::Schema.define(version: 2019_01_22_165532) do
     t.index ["user_id"], name: "index_containers_on_user_id"
   end
 
+  create_table "flats", force: :cascade do |t|
+    t.string "name"
+    t.string "address"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.float "latitude"
+    t.float "longitude"
+  end
+
   create_table "groupages", force: :cascade do |t|
     t.string "origin"
     t.string "destination"
@@ -41,6 +50,8 @@ ActiveRecord::Schema.define(version: 2019_01_22_165532) do
     t.integer "phone_prefix"
     t.float "latitude"
     t.float "longitude"
+    t.float "destination_latitude"
+    t.float "destination_longitude"
     t.index ["container_id"], name: "index_groupages_on_container_id"
     t.index ["user_id"], name: "index_groupages_on_user_id"
   end
