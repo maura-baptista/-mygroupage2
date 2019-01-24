@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   resources :flats
  # get 'groupages/form_opening'
   get 'containers/form_opening'
+  get 'pages/login'
+  
   # post 'calculator' => 'containers#calculator'
  
  #  resources :groupages, only: [:index, :show, :new, :create]

@@ -30,7 +30,7 @@
 						<div class="flexbox">
 							<div class="information-box">
 								<%= image_tag "bulb.svg", height: 30, class: "lamp-icon" %>
-								<p>You could earn as much as  <b>2,200</b> USD 
+								<p>You could earn as much as  <b class="save-amount"><%= number_with_precision(@result, :precision => 0, ) %></b> USD 
 								 <button type="button" class="btn btn-information" data-toggle="modal" data-target="#estimate">
 									  <i class="fas fa-info-circle"></i>
 								</button>

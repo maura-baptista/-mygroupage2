@@ -5,12 +5,9 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
+  # validates :agreement, acceptance: { message: 'must accept terms' }
+  validates :agreement, acceptance: { accept: true }, on: :create, allow_nil: false
 
-         def groupage
-         	if user == current_user
-         		current_user.groupages.last
-         	end
-         end
 
 
 end
