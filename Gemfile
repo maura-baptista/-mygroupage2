@@ -34,5 +34,7 @@ end
 gem 'pg_search'
 gem 'wicked'
 gem "geocoder"
+gem 'omniauth-facebook'
+gem 'figaro'
 
 

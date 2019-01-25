@@ -1,8 +1,12 @@
 Rails.application.routes.draw do
 
+  devise_for :users,
+    controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
+
   resources :flats
  # get 'groupages/form_opening'
   get 'containers/form_opening'
+  get 'pages/login'
   get 'pages/login'
   
   # post 'calculator' => 'containers#calculator'
@@ -10,7 +14,6 @@ Rails.application.routes.draw do
  #  resources :groupages, only: [:index, :show, :new, :create]
 	# resources :containers, only: [:new, :create]
 	 match "calculator" => "containers#calculator", :via => [:post, :get]
-  devise_for :users
   root to: 'pages#home'
 
   resources :containers  do

@@ -5,14 +5,15 @@ class PagesController < ApplicationController
   # layout :resolve_layout
 
   def home
-
   end
 
   def login
-  	@user = User.new
+  	# @user = User.new
   	# render layout: "devise"
   	# render layout: false
-  	
+  end
+
+  def hire_mover
   end
 
   private
