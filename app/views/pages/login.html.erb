@@ -2,7 +2,9 @@
   <div class="row">
     <div class="col-sm-6">
       <div class="form-box">
-        <%= image_tag "logo-deskt.png", height: 30 %>
+        <%= link_to root_path, class: "navbar-wagon-brand" do %>
+          <%= image_tag "logo-deskt.png", height: 30 %>
+        <% end %>
         <div class="row">
           <div class=" col-sm-12 col-md-8 col-md-offset-2">
             <div class="login-form-title">

@@ -20,7 +20,13 @@
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
 	text-decoration: none;
 	&:hover{
+		background: #226af9;
+		color: #FFFFFF;
 		text-decoration: none;
+		background-image: image-url("facebook.svg");
+		background-position: left;
+		background-repeat: no-repeat;
+		background-size: 27% 28%;
 	}
 	&:visited{
       	color: #FFFFFF;
@@ -119,7 +125,7 @@
 
 		}
 	}
-	
+
 }
 
 

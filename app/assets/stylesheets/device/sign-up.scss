@@ -186,7 +186,6 @@
 			font-family: Comfortaa;
 			font-style: normal;
 			font-weight: 400;
-			line-height: normal;
 			font-size: 15px;
 			letter-spacing: -1px;
 			color: #484848;
@@ -210,3 +209,52 @@
 	color: #5AC5C2;
 	margin-left: 4px;
 }
+
+.forgot-pass-link{
+	font-size: 15px;
+	color: #5AC5C2;
+	margin-left: 4px;
+	margin-top: 10px;
+}
+
+.midle-text{
+	font-family: Comfortaa;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	font-size: 15px;
+	text-align: center;
+	color: #7B7E80;
+	display: flex;
+	justify-content: space-around;
+	align-items:center;
+	margin-top: 29px;
+}
+
+.forgot-pass-explanation{
+	padding-top: 49px;
+	p{
+		font-family: Comfortaa;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 23px;
+		font-size: 14px;
+		letter-spacing: -1px;
+		color: #353C4C;
+		margin: 0;
+		margin-bottom: -9px;
+	}
+	
+
+}
+.margin-top-forgot-pass{
+	    margin-top: 30%;
+}
+
+
+
+
+
+
+
+
