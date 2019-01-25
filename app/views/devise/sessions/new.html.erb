@@ -1,3 +1,88 @@
+<div class="registration-wrapper">
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="form-box">
+        <%= image_tag "logo-deskt.png", height: 30 %>
+        <div class="row">
+          <div class=" col-sm-12 col-md-8 col-md-offset-2">
+            <div class="form-title">
+              <%= link_to url_for(:back) , class: "login-back" do %>
+                <%= image_tag "back-arrow.svg", height: 20 %>  
+              <% end %>
+              <h2>Sign in to myGroupage</h2>
+            </div>
+            
+            <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+            <%= f.error_notification %>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="form-inputs input envelope-icon">
+                    <%= f.input :email,
+                          required: false,
+                          autofocus: true,
+                          input_html: { autocomplete: "email" }, label: false, placeholder: "Email" %>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="form-inputs input padlock-icon">
+                    <%= f.input :password,
+                          required: false,
+                          input_html: { autocomplete: "current-password" }, label: false, placeholder: "Password" %>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="form-actions">
+                    <%= f.button :submit, "Sign up" , class: "btn-sign-up"%>
+                  </div>
+                </div>
+              </div>
+            <% end %>
+            <div class="row">
+            <div class="col-xs-12">
+              <div class="log-in-link-section">
+                <p>Alreaady have a myGroupage account?<%= render "devise/shared/links" %>
+                </p>
+               
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+     <!--    <hr>
+        <div class="rights-reserved">  
+            <p>© mygroupage 2018 -  All rights reserved</p>
+            <p>Terms of service  ·  Privacy Policy</p>
+        </div> -->
+      </div>
+    </div>
+        
+    <div class="col-sm-6"> 
+      <div class="card-registration-form" style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url(<%= asset_path 'men.jpeg' %>);">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <h2>Log in</h2>
 
 <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>

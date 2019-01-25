@@ -13,7 +13,7 @@
 	background-image: image-url("facebook.svg");
 	background-position: left;
 	background-repeat: no-repeat;
-	background-size: 27% 38%;
+	background-size: 27% 28%;
 	display: block;
 	width: 100%;
 	margin-top: 29px;
@@ -59,7 +59,7 @@
 	background-image: image-url("envelope.svg");
 	background-position: left;
 	background-repeat: no-repeat;
-	background-size: 27% 38%;
+	background-size: 27% 24%;
 	display: block;
 	width: 100%;
 	padding: 21px 28px 21px 67px;
@@ -78,3 +78,50 @@
 	background-size: cover;
 	background-position: 75% 100%;
 }
+
+.main-page-login-link p {
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 15px;
+    letter-spacing: -1px;
+    color: #484848;
+    margin-top: 100px;
+}
+
+
+.registration-wrapper{
+	background: white;
+	// height: 100vh;
+	
+	
+	.form-box{
+		padding: 38px 50px;
+		padding-bottom: 0;
+		
+		.login-form-title{
+			display: flex;
+			padding-top: 120px;
+			a{
+				margin-top: 25px;
+				margin-right: 21px;
+			}
+			h2{
+				font-family: Comfortaa;
+				font-style: normal;
+				font-weight: bold;
+				line-height: normal;
+				font-size: 30px;
+				color: #353C4C;
+				// margin-left: 21px;
+			}
+
+		}
+	}
+	
+}
+
+
+
+
