@@ -1,4 +1,13 @@
 <div class="close-form-section">
+	<div class="progressbar boxshadow progressbar-margin">
+		
+		<div class="logo">
+			<%= link_to root_path, class: "navbar-wagon-brand" do %>
+      			<%= image_tag "balloons@3x.png", height: 50, class: "ballon-logo" %>
+    		<% end %>
+    		<h2>List your container</h2>
+		</div>	
+	</div>
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6">
@@ -49,5 +58,8 @@
 			</div>
 		</div>
 		
+	</div>
+	<div class="page-footer">
+		 <%= render 'shared/footer' %>
 	</div>
 </div>

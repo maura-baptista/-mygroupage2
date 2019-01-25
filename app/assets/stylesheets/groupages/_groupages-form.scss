@@ -1,9 +1,9 @@
 .full-container{
 	background-color: white;
-	padding-top: 100px;
+	// padding-top: 180px;
 	height: 100vh;
 	position: relative;
-	margin-top: 80px;
+	// padding-top: 0;
 }	
 
 form{
@@ -215,9 +215,9 @@ form{
 
 .close-form-section{
 	background: #FFFFFF !important;
-	padding-top: 40px;
+	// padding-top: 60px;
 	height: 100vh;
-	margin-top: 80px;
+	// margin-top: 80px;
 	
 	
 	h2{
@@ -227,6 +227,7 @@ form{
 		line-height: normal;
 		font-size: 30px;
 		color: #353C4C;
+		
 	}
 	p{
 		font-style: normal;
@@ -312,7 +313,9 @@ form{
 		// background-image:  image-url('ship.svg');
 		// height: 500px;
 		.ship-img{
-			height: 700px;
+			height: 600px;
+
+
 		}
 
 	}
@@ -321,7 +324,7 @@ form{
 
 .opening-form-section{
 	background: #FFFFFF !important;
-	padding-top: 200px;
+	// padding-top: 200px;
 	height: 100vh;
 	h2{
 		font-family: Comfortaa;
@@ -329,8 +332,8 @@ form{
 		font-weight: normal;
 		line-height: 37px;
 		font-size: 30px;
-
 		color: #484848;
+
 	}
 	p{
 		font-family: Comfortaa;
@@ -384,9 +387,58 @@ form{
 		    }
 	    }
 	}
+	// .image-background{
+	// 	img{
+	// 		    position: relative;
+	// 			 left: -44px
+			    
+			    
+			    
+	// 	}
+	// }
 }
 
+.progressbar{
+	background: #FFFFFF;
+	// box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+	padding-left: 40px;
+	
+	height: 80px;
+	widows: 100vw;
+	// margin-bottom: 100px;
+	.logo{
+		display: flex;
+		align-items: center;
+		.ballon-logo{
+			height: 36px;
+		}
+		h2{
+			font-family: Comfortaa;
+			font-style: normal;
+			font-weight: normal;
+			line-height: normal;
+			font-size: 24px;
+			color: #353C4C;
+			margin-left: 20px;
+		}
+	}
 
+}
+.background-tuorquoise{
+	background-color: #00A699;
+}
+
+.progress{
+	height: 11px;
+	margin-bottom: 100px;
+}
+.boxshadow{
+		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.progressbar-margin{
+	margin-bottom: 50px;
+}
 
 
 

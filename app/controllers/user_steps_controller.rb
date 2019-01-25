@@ -3,7 +3,7 @@ class UserStepsController < ApplicationController
 
   	steps :personal, :social, :close
 
-  	layout "calculator"
+  	layout "groupage-form"
   	
 	def show
 		# @container = Container.new(params[:container])

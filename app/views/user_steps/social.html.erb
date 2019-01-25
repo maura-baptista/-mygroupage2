@@ -1,4 +1,18 @@
 <div class="full-container">
+	<div class="progressbar">
+		
+		<div class="logo">
+			<%= link_to root_path, class: "navbar-wagon-brand" do %>
+      			<%= image_tag "balloons@3x.png", height: 50, class: "ballon-logo" %>
+    		<% end %>
+    		<h2>List your container</h2>
+		</div>	
+	</div>
+	<div class="progress">
+  		<div class="progress-bar background-tuorquoise w-85" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+  			
+  		</div>
+	</div>
 	<div class="container">
 		<div class="row">
 			<%= simple_form_for [@container, @groupage], url: wizard_path, :method => :put do |f| %>

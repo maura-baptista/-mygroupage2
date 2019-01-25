@@ -18,11 +18,13 @@ skip_before_action :authenticate_user!, only: [:new, :calculator, :form_opening,
   end
 
   def form_opening
+
     @container = Container.new
     @groupage = Groupage.new
     # @container = Container.new(params[:container])
     
     # @container = Container.find(@container.id)
+    render layout: "groupage-form"
   end
   def new
     @container = Container.new
@@ -43,6 +45,7 @@ skip_before_action :authenticate_user!, only: [:new, :calculator, :form_opening,
 
   def edit
     @container = Container.find(params[:id])
+    render layout: "groupage-form"
     
   end
 
