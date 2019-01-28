@@ -2,7 +2,7 @@ class GroupagesController < ApplicationController
 	skip_before_action :authenticate_user!, only: [:index, :show]
   # before_action :set_container, only: [:create]
   
-  # layout "calculator"
+  layout "groupage-form"
   # render layout: "special_layout"
   def form_opening
   end
@@ -16,7 +16,7 @@ class GroupagesController < ApplicationController
   def new
   	@groupage = Groupage.new
     @container = Container.new
-    render layout: "groupage-form"
+    # render layout: "groupage-form"
     
   end
 
@@ -42,6 +42,7 @@ class GroupagesController < ApplicationController
         format.json { render json: @groupage.errors, status: :unprocessable_entity }
 
       end
+
   end
 
 
