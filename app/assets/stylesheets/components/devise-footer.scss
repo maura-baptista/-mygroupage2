@@ -1,7 +1,7 @@
 .devise-footer{
 	// padding: 0px 50px;
 	// padding-right: 139px;
-	background-color:transparent;
+	background-color: transparent;
 	.form-box{
 		padding: 26px 50px;
 		.rights-reserved{
@@ -23,4 +23,25 @@
 	
 }
 
-
+.devise-mobile-footer{
+	background-color: white;
+	.mob-form-box{
+		padding: 15px;
+		.rights-reserved{
+			text-align: center;
+			// display: flex;
+			// justify-content: space-between;
+			// padding-bottom: 50px;
+		}
+		p{
+			font-family: Comfortaa;
+			font-style: normal;
+			font-weight: 300;
+			line-height: normal;
+			font-size: 12px;
+			letter-spacing: -1px;
+			color: #353C4C;
+		}
+	}
+	
+}

@@ -252,7 +252,115 @@
 }
 
 
+@media only screen 
+  and (max-width: 320px){
+	.registration-wrapper{
+		height: 100vh;
+		text-align: center;
+		.form-box{
+			padding: 15px;
+			.form-title {
+			    padding-top: 11px;
+			    h2{
+			    	font-size: 24px;
+			    }
+			    img{
+			    	height: 18px;
+			    }
+			}
+			.login-form-title{
+				padding: 10px;
+				h2{
+					font-size: 24px;
+				}
+			}
+		}
+		form{
+			.btn-sign-up{
+				height: 49px;
+				font-size: 19px;
+			}
+		}
+		.log-in-link-section{
+			padding: 0;
+			p{
+				font-size: 14px;
+			}
+		}
+		.login-link{
+			font-size: 15px;
+		}
+		.forgot-pass-link{
+			font-size: 14px;
+		}
 
+	}
+
+  }
+
+@media only screen 
+  and (min-width: 321px)
+  and (max-width: 767px){
+  	.registration-wrapper{
+  		height: 100vh;
+  		text-align: center;
+		.form-box{
+			padding: 15px;
+			.form-title {
+			    padding-top: 11px;
+			    h2{
+			    	font-size: 24px;
+			    }
+			    img{
+			    	height: 18px;
+			    }
+			}
+			.login-form-title{
+				    padding-top: 62px;
+				h2{
+					font-size: 25px;
+				}
+			}
+		}
+		form{
+			.btn-sign-up{
+				height: 49px;
+				font-size: 20px;
+			}
+		}
+		.log-in-link-section{
+			padding: 0;
+			p{
+				font-size: 14px;
+			}
+		}
+		.login-link{
+			font-size: 15px;
+		}
+		.forgot-pass-link{
+			font-size: 14px;
+		}
+	}
+  }
+
+@media only screen 
+  and (min-width: 768px)
+  and (max-width: 990px){
+  	.registration-wrapper{
+  		.form-box{
+			padding: 37px 25px;
+			.form-title{
+
+			}
+			.login-form-title{
+				padding-top: 49px;
+				h2{
+					font-size: 26px;
+				}
+			}
+		}	
+  	}
+  }
 
 
 

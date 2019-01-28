@@ -129,5 +129,65 @@
 }
 
 
+@media only screen 
+  and (max-width: 320px){
+	.btn-facebook{
+		font-size: 16px;
+		padding: 14px 28px 14px 67px;
+	}
+	.btn-email-signup{
+		font-size: 16px;
+		padding: 14px 28px 14px 67px;
 
+	}
+	.main-page-login-link{
+		p{
+			margin-top: 34px;
+			font-size: 14px;
+			margin-bottom: 0;
+		}
+	}
+
+}
+
+@media only screen 
+  and (min-width: 321px)
+  and (max-width: 767px){
+  	.btn-facebook{
+		font-size: 17px;
+		padding: 14px 28px 14px 67px;
+	}
+	.btn-email-signup{
+		font-size: 17px;
+		padding: 14px 28px 14px 67px;
+
+	}
+	.main-page-login-link{
+		p{
+			margin-top: 34px;
+			font-size: 14px;
+			margin-bottom: 0;
+		}
+	}
+  }
+
+@media only screen 
+  and (min-width: 768px)
+  and (max-width: 990px){
+  	.btn-facebook{
+  		font-size: 15px;
+		padding: 16px 28px 16px 67px;
+  	}
+  	.btn-email-signup{
+		font-size: 15px;
+		padding: 16px 28px 16px 67px;
+
+	}
+  }
+
+@media only screen 
+  and (min-width: 991px)
+  and (max-width: 1439px){
+  	
+  }
 
