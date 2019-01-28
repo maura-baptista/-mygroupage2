@@ -14,8 +14,7 @@
               <h2>Sign in to myGroupage</h2>
             </div>
             
-            <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-              <%= f.error_notification %>
+            
               <div class="row">
                 <div class="col-sm-12">
                   <%= link_to "Sign in with Facebook", user_facebook_omniauth_authorize_path, class: "btn-facebook" %>
@@ -28,6 +27,8 @@
                   </span>
                 </div>
               </div>
+              <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+              <%= f.error_notification %>
               <div class="row">
                 <div class="col-sm-12">
                   <div class="form-inputs input envelope-icon">
