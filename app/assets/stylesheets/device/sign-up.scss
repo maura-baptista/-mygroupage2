@@ -280,11 +280,21 @@
 				height: 49px;
 				font-size: 19px;
 			}
+			 .form-check{
+			 	text-align: left;
+			 }
+			 input[type="checkbox"]{
+			 	    margin: 15px 0 0;
+			 }
+			 label{
+			 	line-height: 14px;
+			 	margin-top: -15px;
+			 }
 		}
 		.log-in-link-section{
 			padding: 0;
 			p{
-				font-size: 14px;
+				font-size: 13px;
 			}
 		}
 		.login-link{
@@ -327,6 +337,17 @@
 				height: 49px;
 				font-size: 20px;
 			}
+			.form-check{
+			 	text-align: left;
+			 }
+			 input[type="checkbox"]{
+			 	    margin: 15px 0 0;
+			 }
+			 label{
+			 	line-height: 14px;
+			 	margin-top: -15px;
+			 	font-size: 11px;
+			 }
 		}
 		.log-in-link-section{
 			padding: 0;
