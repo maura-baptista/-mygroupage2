@@ -23,7 +23,7 @@
 	 	p{
 	 		font-family: Comfortaa;
 			font-style: normal;
-			font-weight: bold;
+			font-weight: 400;
 			line-height: 35px;
 			font-size: 24px;
 			text-align: center;
@@ -120,11 +120,96 @@
 
 //mobile banner
 .banner-home-mob{
-    background-image:  image-url('home-hero-desk2.png');
+    background-image:  image-url('homehero1x.png');
  	background-size: cover;
  	height: 50vh;
  	background-position: top;
  	display: flex;
  	justify-content: space-around;
- 	align-items: center;
+ 	// align-items: center;
+ 	.banner-content{
+ 		padding: 0px 43px;
+		h1{
+		font-family: Comfortaa;
+		font-style: normal;
+		font-weight: bold;
+		line-height: normal;
+		font-size: 28px;
+		text-align: center;
+		letter-spacing: -2px;
+		color: #484848;
+		margin-top: 0;
+		}
+		p{
+			font-family: Comfortaa;
+			font-style: normal;
+			font-weight: normal;
+			line-height: 27px;
+			font-size: 17px;
+			text-align: center;
+			letter-spacing: -1px;
+			color: #484848;
+		}
+ 	}
+ 	.button-search-containers{
+			text-align: center;
+			margin-top: 27px;
+			.btn-search-containers{
+				background: #008489;
+			    border-radius: 5px;
+			    padding: 13px 21px 13px 50px;
+			    font-family: Comfortaa;
+			    font-style: normal;
+			    font-weight: 300;
+			    line-height: normal;
+			    font-size: 16px;
+			    color: #FFFFFF;
+			    text-align: center;
+				background-image: image-url("search-icon.svg");
+				background-position: left;
+				background-repeat: no-repeat;
+				background-size: 22% 42%;
+				&:hover{
+				     background: #013638;
+				     text-decoration: none;
+				     color: #FFFFFF;
+				     background-image: image-url("search-icon.svg");
+					background-position: left;
+					background-repeat: no-repeat;
+					background-size: 22% 42%;
+			    }
+			    &:visited{
+			      	color: #FFFFFF;
+			      	text-decoration: none currentcolor solid;
+				}
+			}
+		}
 }
+
+@media only screen 
+  and (max-width: 320px){
+  	.banner-home-mob{
+  		.banner-content{
+  			h1{
+  				font-size: 27px;
+  			}
+  			p{
+  				font-size: 16px;
+  			}
+  		}
+  		.button-search-containers{
+			    margin-top: 22px;
+  		}
+  	}
+}
+
+// @media only screen 
+//   and (min-width: 321px)
+//   and (max-width: 767px){
+//   	.banner-home-mob{
+//   		.banner-content{
+  			
+//   		}
+//   	}
+// }
+

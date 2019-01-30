@@ -1,9 +1,4 @@
-.wrapper-calculator-form{
-	background: #FFFFFF;
-}
-
-
-.wrapper-why-us-mob{
+.wrapper-why-mygroupage-mob{
 	background: #FFFFFF;
 	padding: 7px;
 	padding-bottom: 17px;
@@ -28,16 +23,15 @@
 		color: #484848;
 		margin-bottom: 49px;
 	}
-	.card-why-us-mob{
+	.card-whyus{
 		padding: 0;
 	}
 }
-
-.wrapper-3-steps-mob{
+.wrapper-moving-3-steps-mob{
 	background: #FFFFFF;
 	position: relative;
 	padding-bottom: 53px;
-	.border-mob{
+	.border{
 		border: 1.5px solid #8B8B8B;
 		width: 62px;
 		position: static;
@@ -75,7 +69,7 @@
 		color: #484848;
 	}
 
-	.badge-mob {
+	.badge {
 		width: 50px;
 		height: 50px;
 		border-radius: 50%;
@@ -92,74 +86,229 @@
 		letter-spacing: -1px;
 		color: #FFFFFF;
 	}
-	.card-3-steps-mob{
+	.card-3-steps{
 		padding: 0;
     	margin-top: 32px;
     	margin-bottom: 21px;
 	}
 }
 
-.wrapper-review-mob{
+.wrapper-cards-groupage-mob{
 	background: #FFFFFF;
-	padding-bottom: 80px;
+	padding-bottom: 117px;
+	.card-image{
 
-	.card-review-image-mob{
-	  height: 310px;
-	  background-size: cover !important;
-	  background-position: center;
-	
-
+		.image{
+			height: 100%;
+			width: 100%;
+		}
 	}
-	.card-padding-mob{
-	 	padding: 64px;
-	}
-
-	.card-review-content-mob{
-		position: relative;
-		height: 201px;
-
-		//curved double quotes code
-		// q { quotes: '\201c' '\201d'; }
-		// q:before { content: open-quote;    font-size: 60px;  color: #FBBB00;}
-		// q:after  { content: close-quote; font-size: 60px;  color: #FBBB00; position: absolute;}
-		
-
-
-		.review-content-mob{
-			   position: static;
-    			 margin-top: 26px;
-			.doube-quotes-mob{
-				margin-bottom: 10px;
-				height: 25px;
-			}
-			p {
-				font-family: Comfortaa;
-				font-style: normal;
-				font-weight: 300;
-				letter-spacing: -2px;
-				color: #484848;
-				margin-top: 2px;
-				font-size: 20px;
-  				line-height: 28px;
-			}
-			.review-owner-mob{
-				font-family: Comfortaa;
-				font-style: normal;
-				font-weight: 300;
-				line-height: 21px;
-				font-size: 16px;
-				letter-spacing: -1.5px;
-				color: #767676;
+	.button-find-container{
+		text-align: center;
+		margin-top: 40px;
+		.btn-find-container{
+			background: #008489;
+		    border-radius: 5px;
+		    padding: 15px 28px 15px 67px;
+		    font-family: Comfortaa;
+		    font-style: normal;
+		    font-weight: 300;
+		    line-height: normal;
+		    font-size: 18px;
+		    color: #FFFFFF;
+		    text-align: center;
+			background-image: image-url("search-icon.svg");
+			background-position: left;
+			background-repeat: no-repeat;
+			background-size: 27% 49%;
+			&:hover{
+			     background: #013638;
+			     text-decoration: none;
+			     color: #FFFFFF;
+			     background-image: image-url("search-icon.svg");
+				background-position: left;
+				background-repeat: no-repeat;
+				background-size: 27% 49%;
+		    }
+		    &:visited{
+		      	color: #FFFFFF;
+		      	text-decoration: none currentcolor solid;
 			}
 		}
 	}
+
+
+	.card-margin {
+	  padding: 5px;
+	}
+
+	.card-wrapper {
+	  &:hover, &:active, &:focus {
+	    outline: none;
+	  }
+	  transition: transform 0.3s !important;
+	  &:hover{
+	    transform: translateY(-15px) scale(1.03) !important;
+	  }
+
+	}
+
+
+	.cards-container {
+	  height: 330px;
+	  background-size: cover !important;
+	  background-color: white;
+	  background-position: center;
+	  position: relative;
+	  justify-content: space-around;
+	  border-radius: 2px;
+	  // box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+	  padding: 0 0 35px 0;
+	  max-width: 100vw;
+	  margin-top: 13px;
+	  
+	}
+
+	.card-link {
+	  color: #545454;;
+	  position: absolute !important;
+	  top: 0 !important;
+	  bottom: 0 !important;
+	  right: 0 !important;
+	  width: 100% !important;
+	  cursor: pointer !important;
+	  z-index: 10;
+	  background: black;
+	  opacity: 0;
+	  &:hover, &:active, &:focus {
+	    text-decoration: none;
+	    color: #545454;;
+	    outline: none;
+	  }
+	}
+
+	.card-details {
+	  margin-top: 10px;
+	  padding: 0px 0px;
+	   font-family: Comfortaa;
+		font-style: normal;
+
+	}
+
+	.country{
+		
+		font-weight: bold;
+		line-height: normal;
+		font-size: 12px;
+		text-indent: 8px;
+		color: #008489;
+		padding-left: 1px;
+	}
+
+	.city {
+
+	font-weight: bold;
+	line-height: normal;
+	font-size: 16px;
+	letter-spacing: -1px;
+	text-indent: 8px;
+	color: #333333;
+	margin-left: -9px;
+	
+
+	}
+
+	.price {
+	 
+		font-weight: bold;
+		line-height: normal;
+		font-size: 16px;
+		text-align: right;
+		letter-spacing: -1px;
+
+		color: #008489;
+	}
+	.available-space{
+		font-weight: 300;
+		line-height: normal;
+		font-size: 14px;
+		letter-spacing: -1px;
+		text-indent: 8px;
+		color: #484848;
+		margin-left: -9px;
+	}
+	.metrics{
+		font-weight: 300;
+		line-height: normal;
+		font-size: 14px;
+		text-align: right;
+		letter-spacing: -1px;
+		color: #008489;
+
+	}
+	.departure-date{
+		font-weight: bold;
+		line-height: normal;
+		font-size: 10px;
+		text-indent: 8px;
+		color: #484848;
+		padding-left: 1px;
+	}
+
+
+
+
+	.card-image {
+	  position: relative;
+	  height: 72%;
+	  width: 100%;
+	  // background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2) ), image-url('room1.jpeg');
+	  // background: rgba(84, 84, 84, 0.6);
+	  background-size: cover;
+	  background-repeat: no-repeat;
+	  background-position: center center;
+	  border-radius: 4px;
+	  // &:hover, &:active, &:focus {
+	  //   outline: none;
+
+
+	// }
+	}
+
+
+	.card-row {
+	  padding: 0px 10px;
+	  margin-top: 5px;
+	  overflow:hidden;
+	  white-space:nowrap;
+	  text-overflow: ellipsis;
+	  position:relative;
+	  z-index:2;
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+	}
+
+	.card-margin-adjustment{
+	  margin-top: 7px;
+	  padding: 0px 1px;
+	}
+
+	#icon-bed{
+	  margin-right: 10px;
+	}
+
+	#icon-people{
+	  margin-right: 10px;
+	}
+
 }
 
-.wrapper-container-sharing-mob{
+.wrapper-profissional-moving-mob{
 	background: #FFFFFF;
 	padding: 0;
 	padding-bottom: 54px;
-	.border-mob{
+	.border{
 		border: 1.5px solid #8B8B8B;
 		width: 62px;
 		position: static;	
@@ -186,7 +335,7 @@
 		padding: 0;
   		line-height: 26px;
 	}
-	.card-padding-mob{
+	.card-padding{
   		margin-top: 42px;
   	}
 	ul{
@@ -212,7 +361,7 @@
 	}
 }
 
-.wrapper-movers-list-mob{
+.wrapper-list-space{
   		background: #F2F2F2;
   		position: relative;
   		h2{
@@ -220,7 +369,7 @@
 			    font-style: normal;
 			    font-weight: bold;
 			    line-height: 36px;
-			    font-size: 29px;
+			    font-size: 24px;
 			    letter-spacing: -1px;
 			    color: #353C4C;
 			    // margin-right: -45px;
@@ -246,27 +395,24 @@
 		}
   		
   		.card-mover-image-mob{	
-  			background-image: image-url('moving-assist-desk.png');
+  			background-image: image-url('container.png');
 		   
 		    background-size: cover;
-		    height: 409px;
+		    height: 250px;
 		    width: 100%;
 		    position: relative;
-		    top: -23px;
-		    // left: -31px;
-		    margin-bottom: -23px;
-		    background-position: 3% 104%;
+		    top: 37px;
+		    margin-bottom: 97px;
+		    background-position: 53% 103%;
+		
 
 		}
-
-
-
 
   		}
   		.btn-movers-list-section{
   			margin-top: -68px;
   			.btn-get-movers-list-mob{
-  			background: #5AC5C2;
+  			background: #008489;
 			border-radius: 5px;
 	        font-family: Comfortaa;
 			font-style: normal;
@@ -280,104 +426,14 @@
 			width: 100%;
     		text-decoration: none;
     		&:hover{
-    			background: #008489;
+    			background: #013638;
     		}
   		}			
 }
 
-.wrapper-payments-mob{
+.wrapper-about-us-home-mob{
 	background: #FFFFFF;
-	position: relative;
-	padding-top: 84px;
-	// padding: 7px;
-	.border{
-		border: 1.5px solid #8B8B8B;
-		width: 62px;
-		position: static;	
-	}
-	h1{
-		font-family: Comfortaa;
-		font-style: normal;
-		font-weight: bold;
-		line-height: 38px;
-		font-size: 38px;
-		text-align: left;
-		letter-spacing: -2px;
-    	margin-top: 28px;
-		color: #333333;
-	}
-	h2{
-		font-family: Comfortaa;
-		font-style: normal;
-		font-weight: bold;
-		line-height: 35px;
-		font-size: 26px;
-		letter-spacing: -1px;
-
-		color: #484848;
-	}
-	p{
-		font-family: Comfortaa;
-		font-style: normal;
-		font-weight: 300;
-		line-height: 31px;
-		font-size: 16px;
-		letter-spacing: -1px;
-
-		color: #484848;
-	}
-	.card-payments{
-		padding-top: 7px;
-	}
-}
-
-.wrapper-review-II-mob{
-	background: #FFFFFF;
-	padding-top: 59px;
-
-	.card-review-image{
-		  height: 310px;
-		  background-size: cover !important;
-		  background-position: center;
-	}
-	.card-padding{
-		// padding: 10px;
-	}
-	
-	.card-review-content{
-			height: 200px;	
-		.review-content{
-			    position: static;
-    			margin-top: 26px;
-			.doube-quotes{
-				margin-bottom: 10px;
-    			height: 25px;
-			}
-			p {
-				font-family: Comfortaa;
-			    font-style: normal;
-			    font-weight: 300;
-			    letter-spacing: -2px;
-			    color: #484848;
-			    margin-top: 2px;
-			    font-size: 20px;
-			    line-height: 28px;
-			}
-			.review-owner{
-				font-family: Comfortaa;
-			    font-style: normal;
-			    font-weight: 300;
-			    line-height: 21px;
-			    font-size: 16px;
-			    letter-spacing: -1.5px;
-			    color: #767676;
-			}
-		}
-	}	
-}
-.wrapper-about-us-mob{
-	background: #FFFFFF;
-	padding-top: 25px;
+	padding-top: 89px;
 	.border{
 		border: 1.5px solid #8B8B8B;
 		width: 62px;
@@ -418,7 +474,8 @@
 		padding-top: 7px;
 	}
 }
-.FAQ-mob{
+
+.FAQ-home-mob{
 	background: #FFFFFF;
 	padding-top: 59px;
     padding-bottom: 49px;
@@ -470,7 +527,7 @@
 	}
 }
 
-.wrapper-ready-to-earn-mob{
+.wrapper-ready-to-earn-home-mob{
 	background: #FFFFFF;
 	padding-bottom: 15px;
 	.image-box{
@@ -519,116 +576,32 @@
 	
 }
 
-// xs mobile devices
+
+
+
+
+
+//media queries
+
+
 @media only screen 
   and (max-width: 320px){
-  	.wrapper-movers-list-mob{
+  	.wrapper-list-space{
   		h2{
-  			font-size: 25px;
+  			font-size: 22px;
   		}
   		.card-mover-image-mob{
-  			background-position: 11% 104%;
+  			background-position: 56% 104%;
+  			    margin-bottom: 141px;
+  			    top: 75px;
+  		}
+  		.btn-movers-list-section{
+  			margin-top: -72px;
+  			.btn-get-movers-list-mob{
+  				font-size: 18px;
+  				padding: 12px 90px;
+  			}
   		}
   	}
   }
-
-//large mobile divices
-@media only screen 
-  and (min-width: 321px)
-  and (max-width: 767px){
-  	.wrapper-why-us-mob{
-  		.card-why-us-mob{
-			padding: 0;
-			h2{
-				margin: 0;
-			}
-			p{
-				padding-top: 13px;
-			}
-  		}
-  	}
-  	.wrapper-3-steps-mob{
-  		padding-bottom: 53px;
-  		.border-mob{
-  		 	position: static;
-  		}
-  		h1{
-  			line-height: 38px;
-			font-size: 38px;
-			text-align: left;
-			margin-top: 26px;
-  		}
-  		.card-3-steps-mob{
-  			padding: 0;
-    		margin-top: 32px;
-  		}
-  	}
-  	.wrapper-review-mob{
-  		padding: 0;
-  		padding-bottom: 50px;
-  		.card-review-image-mob{
-  			height: 310px;
-  		}
-  		.card-review-content-mob{
-  			height: 201px;
-  			.review-content-mob{
-  				position: static;
-  				margin-top: 26px;
-  				p{
-  					font-size: 20px;
-  					line-height: 28px;
-  				}
-  				.doube-quotes{
-					height: 25px;
-  				}
-  			}
-  			
-  		}
-  	}
-
-
-	.wrapper-movers-list-mob{
-		.card-mover-image-mob{
-			height: 378px;
-		}
-	}
-
-  	.wrapper-ready-to-earn-mob{
-		.image-box{
-	 		.ready-to-earn-content{
-			      width: 90%;
-			}
-		}
-
-  		h1{
-			width: 50%;
-  		}
-  		.btn-list-container2{
-			display: block;
-			width: 100%;
-		  background-color: #008489;
-		  border-radius: 5px;
-		  color: #FFFFFF;
-		  font-family: Comfortaa;
-		  font-size: 20px;
-		  font-weight: 400;
-		  text-align: center;
-		  padding: 11px 23px;
-	 	 &:hover{
-		    background: #004749;
-		    text-decoration: none;
-		    color: #FFFFFF;
-	  	 }
-		  &:visited{
-		    color: #FFFFFF;
-		    text-decoration: none currentcolor solid
-		  }	    
-		} 
-  	}
-
-}
-
-
-
-
 
