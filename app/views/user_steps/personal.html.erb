@@ -5,7 +5,7 @@
 			<%= link_to  new_container_path, class: "navbar-wagon-brand" do %>
       			<%= image_tag "balloons@3x.png", height: 50, class: "ballon-logo" %>
     		<% end %>
-    		<h2>List your container</h2>
+    		<h2>Step 1 : Start with the basics</h2>
 		</div>	
 	</div>
 	<div class="progress">
@@ -50,7 +50,7 @@
 							<div class="information-box">
 								<%= image_tag "bulb.svg", height: 30, class: "lamp-icon" %>
 									<p>Listing your container, we think you could earn up to <b class="save-amount">
-										<%= number_with_precision(@result, :precision => 0, ) %></b> USD 
+										<%= number_with_precision(@result, :precision => 0, ) %></b> <%= @currency %> 
 									 <button type="button" class="btn btn-information" data-toggle="modal" data-target="#estimate">
 										  <i class="fas fa-info-circle"></i>
 									</button>

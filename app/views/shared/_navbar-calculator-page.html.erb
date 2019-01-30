@@ -5,7 +5,10 @@
       <%= link_to root_path, class: "navbar-wagon-brand" do %>
       <%= image_tag "logo-deskt.png", height: 50 %>
     <% end %>
+    <%= link_to "Find a mover", pages_hire_mover_path, class: "btn-nav-search-container" %>
   </div>
+
+
   
 
   <!-- Right Navigation -->
@@ -13,7 +16,7 @@
 
     <%# if user_signed_in? %>
       <% if params[:commit] %>
-        <span class="earn-up-to navbar-wagon-item">EARN UP TO </span>
+        <span class="earn-up-to navbar-wagon-item">Potential earnings </span>
         <button type="button" class="btn btn-information" data-toggle="modal" data-target="#estimate">
           <i class="fas fa-info-circle"></i>
         </button>

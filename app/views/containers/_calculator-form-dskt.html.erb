@@ -1,7 +1,7 @@
 
 <div class="form-calculator">
 	<h1>Share your container <br>and earn money</h1>
-	<p>Find out what you could earn</p>
+	<p>Find out how much your unused space is worth</p>
 	<%#= form_for  root_path, :method => "POST" do %>
  	<%= simple_form_for @container, url: calculator_path do |f| %>
 
@@ -34,7 +34,7 @@
 				<% if params[:commit]%>
 					<div class="results-values">
 						<h3> <span class="results-savings"><%= number_with_precision(@result, :precision => 0, ) %></span> <span class="results-currency"><%= @currency %></span></h3>
-						 <span class="results-earn-up-to ">EARN UP TO</span>
+						 <span class="results-earn-up-to ">Potential earnings</span>
 						 <button type="button" class="btn btn-information" data-toggle="modal" data-target="#estimate">
 							  <i class="fas fa-info-circle"></i>
 						</button>
