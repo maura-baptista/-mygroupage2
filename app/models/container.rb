@@ -2,8 +2,8 @@ class Container < ApplicationRecord
 	has_one :groupage
 	CONTAINERS = [
 					["20’ container (6 meters container)", 30],
-					["40’ container (12 meters container)", 40],
-					["LCL (less than a container load)", 60]
+					["40’ container (12 meters container)", 60]
+					
 				]
 	# validates :container_size, inclusion: {in: CONTAINERS}
 

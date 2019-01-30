@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:home, :login]
+  skip_before_action :authenticate_user!, only: [:home, :login, :hire_mover, :list_confirmation]
 
   layout "devise", only: [:login]
   # layout :resolve_layout
