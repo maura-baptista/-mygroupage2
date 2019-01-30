@@ -7,6 +7,8 @@ class GroupagesController < ApplicationController
   def form_opening
   end
 
+  def 
+
   def index
   end
 

@@ -1,0 +1,91 @@
+
+<div class="full-container">
+	<!-- itenerary section -->
+	<div class="progressbar">
+		
+		<div class="logo">
+			<%= link_to  new_container_path, class: "navbar-wagon-brand" do %>
+      			<%= image_tag "balloons@3x.png", height: 50, class: "ballon-logo" %>
+    		<% end %>
+    		<h2>Find a moving company </h2>
+		</div>	
+	</div>
+	<div class="progress">
+  		<div class="progress-bar background-tuorquoise" role="progressbar" style="width: 66%" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100">
+  			
+  		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<%= simple_form_for @list do |f| %>
+			<%#  f.input :container_id, :as => :hidden, :input_html => { :value => @container.id } %>
+				<div class="col-sm-6">
+					<div class="itinerary-section form">
+						<div class="row">
+							<div class="col-sm-12">
+								<h3>What is your move’s itinerary?</h3>
+								<%= f.input :lead_origin, label: false, placeholder: "Moving from (enter City)", input_html: { id: "lead_origin-address" }%>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12">
+								<%= f.input :lead_destination, label: false, placeholder: "Moving to (enter City)", input_html: { id: "lead_destination-address" } %>
+							</div>
+						</div>	
+						<div class="lead-info-section">
+							<div class="row">
+								<div class="col-sm-12">
+									<h3>When are you moving?</h3>
+									    <%= f.input :lead_date, as: :string, required: false, label: false, input_html: {class: "datepicker"}, placeholder: "My move date is" %>
+									<p>Note : select an approximate date if you are unsure</p>
+
+								</div>
+							</div>
+						</div>
+						<div class="lead-info-section">
+							<div class="row">
+								<div class="col-sm-12">
+									<h3>Where must we send you the list?</h3>
+									    <%= f.input :lead_email, as: :string, required: false, label: false, placeholder: "Main email address"  %>
+									<p>Your email will never be shared with anyone.</p>
+
+								</div>
+							</div>
+						</div>
+						<hr>
+						
+						<div class="row">
+							<div class="btn-section">
+								<div class="back-link">
+									<%#= link_to 'Back to this p', url_for(:back) %>
+									<%= link_to containers_form_opening_path, class: "btn-back-link" do %>
+											<i class="fas fa-chevron-left"></i>
+										<% end %>
+									<%= link_to "Back", pages_hire_mover_path, class: "btn-back-link" %>
+									
+									
+								</div>
+								<div class="next-button">
+									<%= f.submit "Get list", class: "btn btn-next"  %>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+						
+				</div>
+				<div class="col-sm-6">
+					<div class="flexbox">
+						<div class="information-box">
+							<%= image_tag "bulb.svg", height: 30, class: "lamp-icon" %>
+							<p>86% of expats listing their container find at least 1 person to split costs with, within a week.</p>
+						</div>
+					</div>
+				</div>
+			<% end %>
+		</div>	
+	</div>
+
+</div>
+
+

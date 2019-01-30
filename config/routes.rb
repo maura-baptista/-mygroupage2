@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+ 
   devise_for :users,
     controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
 
@@ -7,7 +8,9 @@ Rails.application.routes.draw do
  # get 'groupages/form_opening'
   get 'containers/form_opening'
   get 'pages/login'
-  get 'pages/login'
+  get 'pages/hire_mover'
+   get 'pages/list_confirmation'
+  
   
   # post 'calculator' => 'containers#calculator'
  
@@ -21,6 +24,7 @@ Rails.application.routes.draw do
   end
   
   resources :user_steps
+  resources :lists, only: [ :new, :create, :edit, :update ]
   # root to: "savings#new"
   # match "calculator" => "pages#calculator", :via => [:post, :get]
   # post 'pages/home'

@@ -1,0 +1,48 @@
+<div class="opening-form-section">
+	<div class="progressbar">
+		
+		<div class="logo">
+			<%= link_to  new_container_path, class: "navbar-wagon-brand" do %>
+      			<%= image_tag "balloons@3x.png", height: 50, class: "ballon-logo" %>
+    		<% end %>
+    		<h2>Find a moving company</h2>
+		</div>	
+	</div>
+	<div class="progress">
+  		<div class="progress-bar background-tuorquoise" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+  			
+  		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+				<h2>Your list is under way !</h2>
+				<p>Thanks for requesting the list of our approved partners. Please check your mailbox, your list should be sent soon. Come back and list your container when you are ready.</p>
+				<div class="buttons-section">
+					 <%= link_to "Home",   new_container_path , class: "btn-get-list" %>
+				</div>	
+				<div class="main-box">
+					<div class="box-information">
+						<p><b>
+							Are you a moving professional?
+						</b></p>
+						<p>Email us at hello@mygroupage.com if you want to learn more about becoming a myGroupage moving partner.</p>
+					</div>
+				</div>	
+			</div>		
+				
+			<div class="col-sm-6">
+				<div class="image-background">
+					<%= image_tag "mover-track-icon.svg", height: 500, class: "mover-track-img" %>
+				</div>
+				
+			</div>
+		</div>
+		
+	</div>
+	<div class="hire-mover-footer">
+		 <%= render 'shared/footer' %>
+	</div>
+</div>
+
+

@@ -14,6 +14,11 @@ class PagesController < ApplicationController
   end
 
   def hire_mover
+    render layout: "groupage-form"
+  end
+
+  def list_confirmation
+    render layout: "groupage-form"
   end
 
   private
