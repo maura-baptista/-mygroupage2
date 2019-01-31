@@ -122,7 +122,7 @@
 .banner-home-mob{
     background-image:  image-url('homehero1x.png');
  	background-size: cover;
- 	height: 50vh;
+ 	height: 64vh;
  	background-position: top;
  	display: flex;
  	justify-content: space-around;
@@ -189,6 +189,7 @@
 @media only screen 
   and (max-width: 320px){
   	.banner-home-mob{
+  		height: 50vh;
   		.banner-content{
   			h1{
   				font-size: 27px;

@@ -206,6 +206,13 @@
   
 
 }
+.navbar-calcu-mobile{
+  height:80px;
+  width: 100vw;
+  z-index: 500;
+  position: fixed;
+  top: 0;
+}
 .navbar-wagon-mobile{
   // box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
   background-color: white;
@@ -241,8 +248,39 @@
   height: 42px;
 }
 }
-// .navbar-large{
-//   height: 60px;
-//     background-color: transparent;
-//     font-weight: lighter;
-// }
+.navbar-wagon-calcu-mobile{
+  // box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
+  background-color: transparent;
+  transition: all 0.3s ease;
+  height: 80px;
+  padding: 0px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+    .navbar-wagon-dropdown-menu {
+      margin-top: 15px;
+      box-shadow: 1px 1px 4px #E6E6E6;
+      border-color: #E6E6E6;
+      margin-right: -94px;
+   }
+    .navbar-wagon-dropdown-menu:before {
+      content: ' ';
+      height: 10px;
+      width: 10px;
+      position: absolute;
+      right: 114px;
+      top: -6px;
+      background-color: white;
+      transform: rotate(45deg);
+      border-left: 1px solid #E6E6E6;
+      border-top: 1px solid #E6E6E6;
+    }
+    .arrow{
+      height: 13px;
+    }
+  .mongolfier_logo{
+  height: 42px;
+}
+}
+
