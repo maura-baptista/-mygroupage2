@@ -227,14 +227,14 @@
       margin-top: 15px;
       box-shadow: 1px 1px 4px #E6E6E6;
       border-color: #E6E6E6;
-      margin-right: -171px;
+      margin-right: 43px;
    }
     .navbar-wagon-dropdown-menu:before {
       content: ' ';
       height: 10px;
       width: 10px;
       position: absolute;
-      right: 114px;
+      right: 238px;
       top: -6px;
       background-color: white;
       transform: rotate(45deg);
@@ -331,7 +331,11 @@
       background-size: 22% 42%;
       margin-left: 9px;
     }
+    .navbar-wagon-dropdown-menu{
+      margin-right: -10px;
+    }
   }
+
 }
 
 

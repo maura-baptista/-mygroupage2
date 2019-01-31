@@ -120,15 +120,15 @@
 
 //mobile banner
 .banner-home-mob{
-    background-image:  image-url('homehero1x.png');
+    background-image:  image-url('homehero2x.png');
  	background-size: cover;
- 	height: 64vh;
+ 	height: 86vh;
  	background-position: top;
  	display: flex;
  	justify-content: space-around;
  	// align-items: center;
  	.banner-content{
- 		padding: 0px 43px;
+ 		padding: 65px 19px;
 		h1{
 		font-family: Comfortaa;
 		font-style: normal;
@@ -143,9 +143,9 @@
 		p{
 			font-family: Comfortaa;
 			font-style: normal;
-			font-weight: normal;
-			line-height: 27px;
-			font-size: 17px;
+			font-weight: 300;
+			line-height: 25px;
+			font-size: 18px;
 			text-align: center;
 			letter-spacing: -1px;
 			color: #484848;
@@ -189,7 +189,7 @@
 @media only screen 
   and (max-width: 320px){
   	.banner-home-mob{
-  		height: 50vh;
+  		height: 84vh;
   		.banner-content{
   			h1{
   				font-size: 27px;
