@@ -218,16 +218,16 @@
   background-color: white;
   transition: all 0.3s ease;
   height: 80px;
-  padding: 0px 30px;
+  padding: 0px 15px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  // justify-content: space-between;
 
     .navbar-wagon-dropdown-menu {
       margin-top: 15px;
       box-shadow: 1px 1px 4px #E6E6E6;
       border-color: #E6E6E6;
-      margin-right: -94px;
+      margin-right: -171px;
    }
     .navbar-wagon-dropdown-menu:before {
       content: ' ';
@@ -245,7 +245,40 @@
       height: 13px;
     }
   .mongolfier_logo{
-  height: 42px;
+    height: 42px;
+  }
+  .btn-nav-search-container-mob{
+  background: #FFFFFF;
+  border: 0.5px solid rgba(192, 201, 217, 0.5);
+  border-radius: 5px;
+  padding: 12px 26px 12px 46px;
+  font-family: Comfortaa;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  font-size: 16px;
+  color: #353C4C;
+  text-align: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  background-image: image-url("search-icon-black.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 22% 42%;
+  margin-left: 19px;
+    
+  &:hover{
+    background: #e5e5e5;
+    text-decoration: none;
+    color: #353C4C;
+    background-image: image-url("search-icon-black.svg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 27% 57%;
+    }
+    &:visited{
+        color: #353C4C;
+        text-decoration: none currentcolor solid;
+  }
 }
 }
 .navbar-wagon-calcu-mobile{
@@ -283,4 +316,23 @@
   height: 42px;
 }
 }
+
+
+@media only screen 
+  and (max-width: 320px){
+  .navbar-wagon-mobile{
+    padding: 0px 13px;
+  }
+  .navbar-wagon-mobile{
+    .btn-nav-search-container-mob{
+      padding: 10px 11px 10px 32px;
+      font-size: 14px;
+      color: #353C4C;
+      background-size: 22% 42%;
+      margin-left: 9px;
+    }
+  }
+}
+
+
 
