@@ -199,10 +199,13 @@
 
 
 //mobile navbar
+
 .navbar-mobile{
   height:80px;
   width: 100vw;
   z-index: 500;
+  position: fixed;
+  top: 0;
   
 
 }
@@ -222,6 +225,12 @@
   display: flex;
   align-items: center;
   // justify-content: space-between;
+
+  .dropdown{
+    .flex-container{
+      display: flex;
+    }
+  }
 
     .navbar-wagon-dropdown-menu {
       margin-top: 15px;

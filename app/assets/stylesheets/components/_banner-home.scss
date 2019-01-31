@@ -119,6 +119,11 @@
 }
 
 //mobile banner
+.blank-wrapper{
+  height: 80px;
+  width: 100%;
+  background-color: white;
+}
 .banner-home-mob{
     background-image:  image-url('homeherov3.png');
  	background-size: cover;
@@ -133,8 +138,8 @@
 		font-family: Comfortaa;
 		font-style: normal;
 		font-weight: bold;
-		line-height: normal;
-		font-size: 28px;
+		line-height: 44px;
+		font-size: 36px;
 		text-align: center;
 		letter-spacing: -2px;
 		color: #484848;
@@ -193,6 +198,7 @@
   		.banner-content{
   			h1{
   				font-size: 27px;
+  				line-height: 34px;
   			}
   			p{
   				font-size: 16px;
