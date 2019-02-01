@@ -19,22 +19,22 @@
 		<div class="row">
 			<%= simple_form_for [@container, @groupage], :url => {:controller => 'groupages', :action => 'create'} do |f| %>
 			<%#  f.input :container_id, :as => :hidden, :input_html => { :value => @container.id } %>
-				<div class="col-sm-6">
+				<div class="col-xs-12 col-sm-6">
 					<div class="itinerary-section form">
 						<div class="row">
-							<div class="col-sm-12">
+							<div class="col-xs-12 col-sm-12">
 								<h3>What is your move’s itinerary?</h3>
 								<%= f.input :origin, label: false, placeholder: "Moving from (enter City)", input_html: { id: "origin-address" }%>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-sm-12">
+							<div class="col-xs-12 col-sm-12">
 								<%= f.input :destination, label: false, placeholder: "Moving to (enter City)", input_html: { id: "destination-address" } %>
 							</div>
 						</div>	
 						<div class="when-you-move">
 							<div class="row">
-								<div class="col-sm-12">
+								<div class="col-xs-12 col-sm-12">
 									<h3>When are you moving?</h3>
 									    <%= f.input :departure_date, as: :string, required: false, label: false, input_html: {class: "datepicker"}, placeholder: "My move date is" %>
 									<p>Note : select an approximate date if you are unsure</p>
@@ -42,9 +42,9 @@
 								</div>
 							</div>
 						</div>
-						<hr>
+						<hr class="hidden-xs">
 						
-						<div class="row">
+						<div class="row hidden-xs">
 							<div class="btn-section">
 								<div class="back-link">
 									<%#= link_to 'Back to this p', url_for(:back) %>
@@ -64,7 +64,7 @@
 					
 						
 				</div>
-				<div class="col-sm-6">
+				<div class="col-xs-12 col-sm-6">
 					<div class="flexbox">
 						<div class="information-box">
 							<%= image_tag "bulb.svg", height: 30, class: "lamp-icon" %>
@@ -72,8 +72,29 @@
 						</div>
 					</div>
 				</div>
+				<div class="hidden-sm hidden-md hidden-lg">
+					<!-- <div class="col-xs-12"> -->
+						<div class="action-buttons-section">
+							<div class="back-link">
+								<%#= link_to 'Back to this p', url_for(:back) %>
+								<%= link_to containers_form_opening_path, class: "btn-back-link" do %>
+										<i class="fas fa-chevron-left"></i>
+									<% end %>
+								<%= link_to "Back", containers_form_opening_path, class: "btn-back-link" %>
+								
+								
+							</div>
+							<div class="next-button">
+								<%= f.submit "Next", class: "btn btn-next"  %>
+							</div>
+						</div>
+					<!-- </div> -->
+					
+				</div>
 			<% end %>
 		</div>	
+		
+
 	</div>
 
 </div>

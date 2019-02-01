@@ -21,44 +21,53 @@
 				<div class="col-sm-6">
 					<div class="itinerary-section form">
 						<div class="row">
-							<div class="col-sm-12">
+							<div class="col-xs-12 col-sm-12">
 								<h3>What is the size of your container?</h3>
 								<%= f.input :container_size, label: false, collection: Container::CONTAINERS, prompt: "My container size" %>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-sm-8">
+							<div class="col-xs-12">
 								<h3>What is the volume of your move?</h3>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-7 col-sm-8">
 								<%= f.input :volume, label: false, placeholder: "Enter your volume" %>
 							</div>
-							<div class="col-sm-4">
+							<div class="col-xs-5 col-sm-4">
 								<%= f.input :metrics, label: false,input_html: { class: 'input2-margin-top' }, collection: Container::METRIC, prompt: params[:metrics] %>
 							</div>
 						</div>	
 						<div class="when-you-move">
 							<div class="row">
-								<div class="col-sm-8">
+								<div class="col-xs-12">
 									<h3>How much are you paying for your move?</h3>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-7 col-sm-8">
 									<%= f.input :price, label: false, placeholder: "Enter amount here" %>
 
 								</div>
-								<div class="col-sm-4">
+								<div class="col-xs-5 col-sm-4">
 									<%= f.input :currency, label: false, input_html: { class: 'input2-margin-top' },  collection: Container::CURRENCIES, prompt: params[:currency]%>
 								</div>
-								<div class="row">
-									<div class="col-sm-12">
-										<div class="container-info">
-											<p>Note : Enter the amount excluding insurance & other accessorial costs then choose the currency. <br>
-										Entering the price of your move helps us suggest selling prices for the space you don’t use.</p>
-										</div>
-										
-									</div>
-								</div>	
 							</div>
+							<div class="row">
+								<div class="col-xs-12 col-sm-12">
+									<div class="container-info">
+										<p>Note : Enter the amount excluding insurance & other accessorial costs then choose the currency. <br>
+										Entering the price of your move helps us suggest selling prices for the space you don’t use.</p>
+									</div>
+									
+								</div>
+							</div>	
+						
 						</div>
 					</div>
-					<hr>
-					<div class="row">
+					<hr class="hidden-xs">
+					<div class="row hidden-xs">
 						<div class="btn-section">
 							<div class="back-link">
 								<%#= link_to 'Back', url_for(:back) %>
@@ -75,13 +84,32 @@
 					</div>
 						
 				</div>
-				<div class="col-sm-6">
+				<div class="col-xs-12 col-sm-6">
 					<div class="flexbox">
 						<div class="information-box">
 							<%= image_tag "bulb.svg", height: 30, class: "lamp-icon" %>
 							<p>2 expats are moving on a similar itinerary and looking for space.</p>
 						</div>
 					</div>
+				</div>
+				<div class="hidden-sm hidden-md hidden-lg">
+					<!-- <div class="col-xs-12"> -->
+						<div class="action-buttons-section">
+							<div class="back-link">
+								<%#= link_to 'Back to this p', url_for(:back) %>
+								<%= link_to containers_form_opening_path, class: "btn-back-link" do %>
+										<i class="fas fa-chevron-left"></i>
+									<% end %>
+								<%= link_to "Back", containers_form_opening_path, class: "btn-back-link" %>
+								
+								
+							</div>
+							<div class="next-button">
+								<%= f.submit "Next", class: "btn btn-next"  %>
+							</div>
+						</div>
+					<!-- </div> -->
+					
 				</div>
 			<% end %>
 		</div>

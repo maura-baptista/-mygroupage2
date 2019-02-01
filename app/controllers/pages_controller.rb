@@ -5,6 +5,7 @@ class PagesController < ApplicationController
   # layout :resolve_layout
 
   def home
+    render layout: "application"
   end
 
   def login

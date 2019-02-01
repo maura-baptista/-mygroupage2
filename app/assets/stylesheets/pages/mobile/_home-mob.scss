@@ -627,23 +627,17 @@
 @media only screen 
   and (max-width: 320px){
   	.wrapper-list-space{
-  		h2{
-  			font-size: 22px;
-  		}
-  		.card-mover-image-mob{
-  			background-position: 56% 104%;
-  			    margin-bottom: 141px;
-  			    top: 75px;
-  		}
-  		.btn-movers-list-section{
-  			margin-top: -72px;
-  			.btn-get-movers-list-mob{
-  				font-size: 18px;
-  				padding: 12px 90px;
-  			}
-  		}
+		.grey-wrapper{
+			.get-list-button{
+				.btn-learn-more{
+		  			
+					font-size: 18px;
+					
+	  			}
+			}
+		}	
   	}
-  }
+}
 
  @media only screen 
   and (min-width: 321px)

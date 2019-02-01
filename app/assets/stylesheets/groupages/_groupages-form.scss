@@ -392,7 +392,7 @@ form{
 		}
 		.btn-list-my-container{
 		    background: #008489;
-		    border-radius: 5px;
+		    border-radius: 4px;
 		    color: #FFFFFF;
 		    font-family: Comfortaa;
 		    font-size: 24px;
@@ -422,6 +422,12 @@ form{
 	// }
 }
 
+.stiky-progressbar{
+	height: 91px;
+	position: fixed;
+	top: 0;
+	width: 100%
+}
 .progressbar{
 	background: #FFFFFF;
 	// box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
@@ -448,6 +454,7 @@ form{
 	}
 
 }
+
 .background-tuorquoise{
 	background-color: #00A699;
 }
@@ -464,6 +471,211 @@ form{
 	margin-bottom: 50px;
 }
 
+.action-buttons-section{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #FFFFFF;
+	box-shadow: 0px -4px 12px rgba(51, 51, 51, 0.25);
+	margin-top: 32px;
+	height: 80px;
+	width: 100vw;
+	padding: 0px 15px;
+	position: fixed;
+	bottom: 0;
+
+	.next-button{
+		.btn-next{
+			background: #028489;
+			border-radius: 4px;
+			font-family: Comfortaa;
+			font-style: normal;
+			font-weight: 300;
+			line-height: normal;
+			font-size: 24px;
+			text-align: center;
+			color: #FFFFFF;
+			padding: 7px 15px;
+		}
+	}
+
+	.back-link{
+		margin-top: 7px;
+		a{
+			font-family: Comfortaa;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			font-size: 19px;
+			color: #008489;
+			margin-left: 4px;
+		}
+	}
+	
+
+}
+
+//media queries
+
+@media only screen 
+  and (max-width: 320px){
+  	.full-container{
+  		height: auto;
+  	}
+	.progress{
+		margin-bottom: 19px;
+	}
+	.progressbar{
+		padding-left: 19px;
+    	height: 73px;
+		.logo{
+			h2{
+				font-size: 22px;
+				margin-left: 11px;
+			}
+		}
+	}
+	.opening-form-section{
+		    margin-bottom: -66px;
+
+		h2{
+			line-height: 29px;
+			font-size: 24px;
+		}
+		.buttons-section{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			    margin-top: 46px;
+			.btn-cancel{
+				border: 1.5px solid #008489;
+			    padding: 11px 28px;
+			    margin-right: 0;
+			    text-align: center;
+			    height: 45px;
+			    font-size: 21px;
+			}
+			.btn-list-my-container{
+			    padding: 9px 19px;
+			    text-align: center;
+			    height: 45px;
+			    font-size: 21px;
+			}
+		}
+	}
+	form{
+		margin-top: 15px;
+		.itinerary-section{
+			h3{
+				margin-top: 0;
+				font-size: 18px;
+			}
+			.when-you-move{
+				p{
+					padding-bottom: 23px;
+					font-size: 13px;
+				}
+				.container-info{
+					padding-left: 0;
+				}
+			}
+			.input2-margin-top{
+				margin-top: 0px;
+			}
+		}
+		.form-control{
+			font-size: 15px;
+		}
+		::placeholder{
+			font-size: 15px;
+		}
+	}
+	.flexbox{
+		padding-bottom: 115px;
+		.information-box{
+			padding-bottom: 2px;
+		}
+	}
+}
+
+@media only screen 
+  and (min-width: 321px)
+  and (max-width: 767px){
+  	.full-container{
+  		height: auto;
+  	}
+	.progress{
+		margin-bottom: 41px;
+	}
+	.progressbar{
+		padding-left: 19px;
+  //   	height: 73px;
+		.logo{
+			h2{
+				font-size: 23px;
+				margin-left: 11px;
+			}
+		}
+	}
+	.opening-form-section{
+		margin-bottom: -71px;
+		h2{
+			line-height: 29px;
+			font-size: 24px;
+		}
+		.buttons-section{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			.btn-cancel{
+				border: 1.5px solid #008489;
+				padding: 11px 34px;
+				margin-right: 0;
+				text-align: center;
+				height: 50px;
+			}
+			.btn-list-my-container{
+				padding: 9px 24px;
+				text-align: center;
+				height: 50px;
+			}
+		}
+
+	}
+	form{
+		margin-top: 15px;
+		.itinerary-section{
+			h3{
+				margin-top: 0;
+				font-size: 20px;
+				.form-header-marg{
+					    margin-top: -33px;
+				}
+			}
+			.when-you-move{
+				p{
+					padding-bottom: 23px;
+					font-size: 13px;
+				}
+				.container-info{
+					padding-left: 0;
+				}
+				h3{
+					margin-top: -33px;
+				}
+			}
+			.input2-margin-top{
+				margin-top: 0px;
+			}
+		}
+	}
+	.flexbox{
+		padding-bottom: 115px;
+		.information-box{
+			padding-bottom: 2px;
+		}
+	}
+  }
 
 
 

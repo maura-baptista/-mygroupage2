@@ -24,7 +24,7 @@ skip_before_action :authenticate_user!, only: [:new, :calculator, :form_opening,
     # @container = Container.new(params[:container])
     
     # @container = Container.find(@container.id)
-    render layout: "groupage-form"
+    render layout: "form-cover"
   end
   def new
     @container = Container.new
