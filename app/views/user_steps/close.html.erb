@@ -10,9 +10,9 @@
 	</div>
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-6">
+			<div class="col-xs-12 col-sm-6">
 				<h2>Great progress !</h2>
-				<p>Thanks for requesting your container to be listed. We are analyizing your request and should come back to you shortly. 
+				<p>Thanks for requesting your container to be listed. We are analyizing your request and should come back to you shortly. <br>
 				You will be notifed by email when your container listing is approved.</p>
 									
 				<div class="step step-active">
@@ -34,8 +34,8 @@
 					<p>Spread the word on social medias if you wish,
 					monitor all your container enquiries.</p>
 				</div>
-				<div class="row">
-					<div class="col-sm-12">
+				<div class="row hidden-xs">
+					<div class="col-xs-12 col-sm-12">
 						<div class="flexbox">
 							<div class="information-box">
 								<%= image_tag "bulb.svg", height: 30, class: "lamp-icon" %>
@@ -48,9 +48,11 @@
 						</div>
 					</div>
 				</div>
-
+				<div class="page-footer">
+		 			<%= render 'shared/footer-groupage-form' %>
+				</div>
 			</div>
-			<div class="col-sm-6">
+			<div class="col-xs-12 col-sm-6 hidden-xs">
 				<div class="image-background">
 					<%= image_tag "ship.svg", height: 600, class: "ship-img" %>
 				</div>
@@ -58,8 +60,5 @@
 			</div>
 		</div>
 		
-	</div>
-	<div class="page-footer">
-		 <%= render 'shared/footer' %>
 	</div>
 </div>

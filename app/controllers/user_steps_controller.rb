@@ -1,15 +1,16 @@
 class UserStepsController < ApplicationController
 	 include Wicked::Wizard
 
-  	steps :personal, :social, :close
+  	steps :mover_info, :personal_info, :close
 
   	layout "groupage-form"
+  	
   	
 	def show
 		# @container = Container.new(params[:container])
 		@user = current_user
 		case step
-		when :personal
+		when :mover_info
 			@container = @user.containers.last
 			@container = Container.find(@container.id)
 		    @metrics = @container[:metrics].to_f
@@ -26,7 +27,7 @@ class UserStepsController < ApplicationController
 			@groupage = Groupage.find(@groupage.id)
 
 
-		when :social
+		when :personal_info
 			@container = @user.containers.last
 			@container = Container.find(@container.id)
 		    @metrics = @container[:metrics].to_f
@@ -46,7 +47,7 @@ class UserStepsController < ApplicationController
 		    @container_size = @container[:container_size].to_f * @metrics
 		    @volume = @container[:volume].to_f
 		    @price = @container[:price].to_f
-		   @currency = @container[:currency]
+		   	@currency = @container[:currency]
 		    @left_space = @container_size - @volume 
 
 		    @result = (@price / @container_size) * @left_space
@@ -62,10 +63,10 @@ class UserStepsController < ApplicationController
 	
 	  	@groupage = Groupage.find(@groupage.id)
 	  	case step
-	  	when :personal
+	  	when :mover_info
 	  		# @graupage.attributes = params[:groupage]
 	  		@groupage.update(groupage_params)
-	  	when :social
+	  	when :personal_info
 	  		@groupage.update(groupage_params)
 	  	end
 	  	render_wizard @groupage

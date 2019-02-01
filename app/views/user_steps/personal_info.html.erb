@@ -35,8 +35,8 @@
 							</div>
 						</div>
 					</div>
-					<hr>
-					<div class="row">
+					<hr class="hidden-xs">
+					<div class="row hidden-xs">
 						<div class="btn-section">
 							<div class="back-link">
 								<%#= link_to 'Back', url_for(:back) %>
@@ -65,6 +65,24 @@
 						</div>
 					</div>
 				</div>
+				<div class="hidden-sm hidden-md hidden-lg">
+						<!-- <div class="col-xs-12"> -->
+						<div class="action-buttons-section">
+							<div class="back-link">
+								<%#= link_to 'Back to this p', url_for(:back) %>
+								<%= link_to containers_form_opening_path, class: "btn-back-link" do %>
+										<i class="fas fa-chevron-left"></i>
+									<% end %>
+								<%= link_to "Back", containers_form_opening_path, class: "btn-back-link" %>
+								
+								
+							</div>
+							<div class="next-button">
+								<%= f.submit "Next", class: "btn btn-next"  %>
+							</div>
+						</div>
+						<!-- </div> -->
+					</div>
 			<% end %>
 		</div>
 	</div>

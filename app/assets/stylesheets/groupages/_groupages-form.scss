@@ -568,7 +568,12 @@ form{
 		.itinerary-section{
 			h3{
 				margin-top: 0;
-				font-size: 18px;
+				font-size: 18px;	
+			}
+			p{
+				
+				padding-bottom: 23px;
+				font-size: 13px;
 			}
 			.when-you-move{
 				p{
@@ -595,6 +600,37 @@ form{
 		.information-box{
 			padding-bottom: 2px;
 		}
+	}
+	.close-form-section{
+		height: auto;
+		h2{
+			font-size: 25px;
+		}
+		p{
+			font-size: 15px;
+		}
+		.step{
+			h2{
+				font-size: 21px;
+			}
+			p{
+				padding-bottom: 17px;
+			}
+		}
+		.flexbox{
+			padding-bottom: 0px;
+			.check-icon{
+				width: 30px;
+				height: 30px;
+				font-size: 18px;
+				font-weight: 300;
+				right: 3%;
+			}
+		}
+
+	}
+	.progressbar-margin{
+		margin-bottom: 23px;
 	}
 }
 
@@ -652,6 +688,11 @@ form{
 					    margin-top: -33px;
 				}
 			}
+			p{
+				
+				padding-bottom: 23px;
+				font-size: 13px;
+			}
 			.when-you-move{
 				p{
 					padding-bottom: 23px;
@@ -674,6 +715,34 @@ form{
 		.information-box{
 			padding-bottom: 2px;
 		}
+	}
+	.close-form-section{
+		height: auto;
+		h2{
+			font-size: 27px;
+		}
+		p{
+			font-size: 15px;
+		}
+		.step{
+			h2{
+				font-size: 21px;
+			}
+			p{
+				padding-bottom: 17px;
+			}
+		}
+		.flexbox{
+			padding-bottom: 0px;
+			.check-icon{
+				width: 30px;
+				height: 30px;
+				font-size: 18px;
+				font-weight: 300;
+				right: 3%;
+			}
+		}
+
 	}
   }
 
