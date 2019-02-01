@@ -561,6 +561,34 @@ form{
 			    height: 45px;
 			    font-size: 21px;
 			}
+			.btn-cancel-lg{
+				border: 1.5px solid #008489;
+			    padding: 11px 28px;
+			    margin-right: 0;
+			    text-align: center;
+			    height: 45px;
+			    font-size: 21px;
+			}
+			.btn-get-list{
+			    padding: 9px 19px;
+			    text-align: center;
+			    height: 45px;
+			    font-size: 21px;
+			}
+			.full-width{
+				display: block;
+			    width: 100%;
+			    position: relative;
+			    top: -27px;
+
+			}
+		}
+		.image-background{
+			.mover-track-img{
+				height: 200px;
+			    margin-top: 10px;
+			    margin-bottom: 10px;
+			}
 		}
 	}
 	form{
@@ -675,7 +703,30 @@ form{
 				text-align: center;
 				height: 50px;
 			}
+			.btn-get-list{
+			    padding: 9px 19px;
+			    text-align: center;
+			    height: 45px;
+			    font-size: 21px;
+			}
+			.full-width{
+				display: block;
+			    width: 100%;
+			    position: relative;
+			    top: -27px;
+
+			}
 		}
+		.image-background{
+			.mover-track-img{
+				height: 200px;
+			    margin-top: 10px;
+			    margin-bottom: 10px;
+			    position: relative;
+			    left: 28px;
+			}
+		}
+
 
 	}
 	form{

@@ -15,16 +15,16 @@
 	</div>
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-6">
+			<div class="col-xs-12 col-sm-6">
 				<h2>Hire a moving company</h2>
 				<p>Listing your container on myGroupage is only possible after you booked your move/container with a trusted international moving company.  <br>
 				<br>
 				Proceed if you need a list of trusted international moving companies in your country.</p>
 				<div class="buttons-section">
 					<%= link_to "Cancel", new_container_path, class: "btn-cancel-lg" %>
-					 <%= link_to "Get list",   new_list_path , class: "btn-get-list" %>
+					 <%= link_to "Continue",   new_list_path , class: "btn-get-list" %>
 				</div>	
-				<div class="main-box">
+				<div class="main-box hidden-xs">
 					<div class="box-information">
 						<p><b>
 							Are you a moving professional?
@@ -34,7 +34,7 @@
 				</div>	
 			</div>		
 				
-			<div class="col-sm-6">
+			<div class="col-xs-12 col-sm-6 hidden-xs">
 				<div class="image-background">
 					<%= image_tag "mover-track-icon.svg", height: 500, class: "mover-track-img" %>
 				</div>
@@ -43,9 +43,7 @@
 		</div>
 		
 	</div>
-	<div class="hire-mover-footer">
-		 <%= render 'shared/footer' %>
-	</div>
+	
 </div>
 
 

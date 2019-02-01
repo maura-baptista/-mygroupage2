@@ -36,7 +36,7 @@
 								<%= f.input :volume, label: false, placeholder: "Enter your volume" %>
 							</div>
 							<div class="col-xs-5 col-sm-4">
-								<%= f.input :metrics, label: false,input_html: { class: 'input2-margin-top' }, collection: Container::METRIC, prompt: params[:metrics] %>
+								<%= f.input :metrics, label: false, collection: Container::METRIC, prompt: params[:metrics] %>
 							</div>
 						</div>	
 						<div class="when-you-move">
@@ -51,7 +51,7 @@
 
 								</div>
 								<div class="col-xs-5 col-sm-4">
-									<%= f.input :currency, label: false, input_html: { class: 'input2-margin-top' },  collection: Container::CURRENCIES, prompt: params[:currency]%>
+									<%= f.input :currency, label: false,  collection: Container::CURRENCIES, prompt: params[:currency]%>
 								</div>
 							</div>
 							<div class="row">

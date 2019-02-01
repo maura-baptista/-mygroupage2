@@ -15,13 +15,13 @@
 	</div>
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-6">
+			<div class="col-xs-12 col-sm-6">
 				<h2>Your list is under way !</h2>
 				<p>Thanks for requesting the list of our approved partners. Please check your mailbox, your list should be sent soon. Come back and list your container when you are ready.</p>
-				<div class="buttons-section">
+				<div class="buttons-section hidden-xs">
 					 <%= link_to "Home",   new_container_path , class: "btn-get-list" %>
 				</div>	
-				<div class="main-box">
+				<div class="main-box hidden-xs">
 					<div class="box-information">
 						<p><b>
 							Are you a moving professional?
@@ -31,17 +31,16 @@
 				</div>	
 			</div>		
 				
-			<div class="col-sm-6">
+			<div class="col-xs-12 col-sm-6">
 				<div class="image-background">
 					<%= image_tag "mover-track-icon.svg", height: 500, class: "mover-track-img" %>
 				</div>
-				
+				<div class="buttons-section hidden-sm hidden-md hidden-lg">
+					 <%= link_to "Home",   new_container_path , class: "btn-get-list full-width" %>
+				</div>	
 			</div>
 		</div>
 		
-	</div>
-	<div class="hire-mover-footer">
-		 <%= render 'shared/footer' %>
 	</div>
 </div>
 
