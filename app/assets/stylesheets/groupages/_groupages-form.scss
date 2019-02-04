@@ -703,12 +703,22 @@ form{
 				text-align: center;
 				height: 50px;
 			}
-			.btn-get-list{
-			    padding: 9px 19px;
+			.btn-cancel-lg{
+				border: 1.5px solid #008489;
+			    padding: 11px 42px;
+			    margin-right: 0;
 			    text-align: center;
 			    height: 45px;
 			    font-size: 21px;
 			}
+			.btn-get-list{
+			    padding: 9px 34px;
+			    text-align: center;
+			    height: 45px;
+			    font-size: 21px;
+			    border-radius: 4px;
+			}
+			
 			.full-width{
 				display: block;
 			    width: 100%;
