@@ -1,0 +1,33 @@
+<div class="full-wrapper-alert">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<div class="alert-form">
+					<div class="row">
+						<div class="col-xs-12">
+							<h2>Enter your email address  and we’ll notify you.</h2>
+							<div class="user-search-params">
+								<p>Moving from : <span class="bold-text"><%= @alert[:origin] %></span></p>
+								<p>Moving to : <span class="bold-text"><%= @alert[:destination] %></span></p>
+								<p>Date : <span class="bold-text"><%= @alert[:departure_date] %></span></p>
+
+							</div>
+							
+						</div>
+
+						<div class="col-xs-12">
+							<div class="user-email-box">
+									<p><%= Alert.last.alert_email%></p>
+							</div>
+	                           <span class="check-icon"><i class="fas fa-check"></i></span>	
+						</div>
+						
+						
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>

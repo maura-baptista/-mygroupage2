@@ -1,2 +1,47 @@
-<h1>Groupages#index</h1>
-<p>Find me in app/views/groupages/index.html.erb</p>
+<div class="full-wrapper-results">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="search-params-box hidden-xs">
+							<p><%= @groupage[:origin]%> > <%= @groupage[:destination]  %></p>
+
+							<p> <span class="departure_date"><%= Date.parse(@groupage[:departure_date]).strftime("%d %b %Y" ) unless params[:groupage][:departure_date].blank? %></span> </p>
+						
+						</div>
+						<div class="search-params-box-mob hidden-sm hidden-md hidden-lg">
+							<p><i class="fas fa-map-marker-alt"></i> <b>From:</b> &nbsp;<%= @groupage[:origin]%></p>
+							<p><i class="fas fa-map-marker-alt"></i> <b>To:</b> &nbsp;<%= @groupage[:destination]%></p>
+
+							<p><i class="far fa-calendar-alt"></i> <b>Date:</b> &nbsp;<span class="departure_date"><%= Date.parse(@groupage[:departure_date]).strftime("%d %b %Y" ) unless params[:groupage][:departure_date].blank? %></span> </p>
+						
+						</div>
+
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-5">
+						<div class="lighthouse-img">							
+						</div>
+						
+					</div>
+					<div class="col-xs-7">
+						<div class="alert-section">
+							<h2>No container for now.
+								Create an alert 
+								and be notified.</h2>
+							<div class="button-create-alert">
+								<%#= link_to "Create alert", new_alert_path , class: "btn-create-alert" %>
+								<%#= link_to "Create alert", params.slice(:sort).merge(per_page: 20), new_alert_path, class: "btn-create-alert"  %>
+								<%= link_to "Create alert", new_alert_path( @params_hash), class: "btn-create-alert" %>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>

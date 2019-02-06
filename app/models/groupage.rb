@@ -2,6 +2,7 @@ class Groupage < ApplicationRecord
   belongs_to :user
   belongs_to :container
   # before_save :geocode_endpoints
+    validates :departure_date, presence: true
 
   geocoded_by :origin, :latitude => :latitude, :longitude => :longitude
   geocoded_by :destination, :latitude => :destination_latitude, :longitude => :destination_longitude

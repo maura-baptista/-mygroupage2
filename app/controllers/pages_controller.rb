@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
   skip_before_action :authenticate_user!, only: [:home, :login, :hire_mover, :list_confirmation]
 
-  layout "devise", only: [:login]
+  
   # layout :resolve_layout
 
   def home
@@ -9,9 +9,7 @@ class PagesController < ApplicationController
   end
 
   def login
-  	# @user = User.new
-  	# render layout: "devise"
-  	# render layout: false
+     render layout: "devise"
   end
 
   def hire_mover
@@ -20,6 +18,18 @@ class PagesController < ApplicationController
 
   def list_confirmation
     render layout: "form-cover"
+  end
+
+  def search_container
+    @groupage = Groupage.new
+    render layout: "groupage-form"
+  end
+
+
+  def alert_confirmation
+    # @alert = Alert.new
+    @alert = Alert.last
+   
   end
 
   private

@@ -1,0 +1,45 @@
+<div class="full-wrapper-alert">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<div class="alert-form">
+					<div class="row">
+						<div class="col-xs-12">
+							<h2>Enter your email address  and we’ll notify you.</h2>
+							<div class="user-search-params">
+								<p>Moving from : <span class="bold-text"><%= @groupage[:origin] %></span></p>
+								<p>Moving to : <span class="bold-text"> <%= @groupage[:destination] %></span></p>
+								<p>Date : <span class="bold-text"><%= @groupage[:departure_date] %> </span></p>
+								<%#= Groupage.origin %>
+
+							</div>
+						</div>
+						<%= simple_form_for @alert do |f| %>
+						<%#= simple_form_for @alert, url:alerts_path, method: :get do |f| %>
+						<%= f.error_notification %>
+
+						<div class="col-xs-12">
+							 <%= f.input :alert_email,
+	                            required: true,
+	                            autofocus: true ,
+	                            input_html: { autocomplete: "email" }, label: false, placeholder: "Email"%>
+	                              <%= f.input :origin, :as => :hidden, :input_html => { :value => params[:origin] } %>
+	                               <%= f.input :destination, :as => :hidden, :input_html => { :value => params[:destination] } %>
+	                               <%= f.input :departure_date, :as => :hidden, :input_html => { :value => params[:departure_date] } %>
+
+	                            <p><span class="user-info">Your email will never be shared with anyone.</span></p>
+						</div>
+						<div class="col-xs-12">
+							<div class="button-alert">
+								<%= f.button :submit, "Create alert" , class: "btn-create-alert"%>
+							</div>
+						</div>
+						<% end %>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>

@@ -10,10 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_01_30_131447) do
+ActiveRecord::Schema.define(version: 2019_02_06_110319) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "alerts", force: :cascade do |t|
+    t.string "alert_email"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "origin"
+    t.string "destination"
+    t.string "departure_date"
+  end
 
   create_table "containers", force: :cascade do |t|
     t.integer "volume"

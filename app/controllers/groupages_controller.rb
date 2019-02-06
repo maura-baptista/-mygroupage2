@@ -2,14 +2,18 @@ class GroupagesController < ApplicationController
 	skip_before_action :authenticate_user!, only: [:index, :show]
   # before_action :set_container, only: [:create]
   
-  layout "groupage-form"
-  # render layout: "special_layout"
+  
+ 
   def form_opening
   end
 
-  def 
+  
 
   def index
+    @groupage = Groupage.new
+    @params_hash = request.query_parameters[:groupage]
+    @groupage = @params_hash
+
   end
 
   def show
@@ -18,7 +22,7 @@ class GroupagesController < ApplicationController
   def new
   	@groupage = Groupage.new
     @container = Container.new
-    # render layout: "groupage-form"
+    render layout: "groupage-form"
     
   end
 
