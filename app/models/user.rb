@@ -37,7 +37,7 @@ class User < ApplicationRecord
   #for activeadmin
 
   def name
-     "#{id} -#{email} #{first_name} #{last_name}"
+     "#{first_name} #{last_name}"
   
      # "#{first_name} #{last_name}"
   end
