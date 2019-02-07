@@ -1,5 +1,6 @@
 class Container < ApplicationRecord
 	has_one :groupage
+	belongs_to :user
 	CONTAINERS = [
 					["20’ container (6 meters container)", 30],
 					["40’ container (12 meters container)", 60]
