@@ -22,7 +22,7 @@ class PagesController < ApplicationController
 
   def search_container
     @groupage = Groupage.new
-    render layout: "groupage-form"
+    
   end
 
 

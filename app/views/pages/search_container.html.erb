@@ -1,20 +1,6 @@
 
-<div class="full-container">
+<div class="full-container container-margin-top">
 	<!-- itenerary section -->
-	<div class="progressbar">
-		
-		<div class="logo">
-			<%= link_to  new_container_path, class: "navbar-wagon-brand" do %>
-      			<%= image_tag "balloons@3x.png", height: 50, class: "ballon-logo" %>
-    		<% end %>
-    		<h2>Step 1 : Start with the basics </h2>
-		</div>	
-	</div>
-	<div class="progress">
-  		<div class="progress-bar background-tuorquoise" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-  			
-  		</div>
-	</div>
 	<div class="container">
 		<div class="row">
 			<%= simple_form_for @groupage, url:groupages_path, method: :get do |f| %>
@@ -55,6 +41,13 @@
 								</div>
 							</div>
 						</div>
+						<div class="row hidden-sm hiddem-md hidden-lg">
+							<div class="col-xs-12">
+								<div class="search-button">
+									<%= f.submit "Search", class: "btn-search"  %>
+								</div>
+							</div>
+						</div>	
 						<hr class="hidden-xs">
 						
 						<div class="row hidden-xs">
@@ -85,25 +78,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="hidden-sm hidden-md hidden-lg">
-					<!-- <div class="col-xs-12"> -->
-						<div class="action-buttons-section">
-							<div class="back-link">
-								<%#= link_to 'Back to this p', url_for(:back) %>
-								<%= link_to containers_form_opening_path, class: "btn-back-link" do %>
-										<i class="fas fa-chevron-left"></i>
-									<% end %>
-								<%= link_to "Back", containers_form_opening_path, class: "btn-back-link" %>
-								
-								
-							</div>
-							<div class="next-button">
-								<%= f.submit "Next", class: "btn btn-next"  %>
-							</div>
-						</div>
-					<!-- </div> -->
-					
-				</div>
+				
 			<% end %>
 		</div>	
 		
