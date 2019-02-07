@@ -9,8 +9,9 @@
 							<div class="user-search-params">
 								<p>Moving from : <span class="bold-text"><%= @groupage[:origin] %></span></p>
 								<p>Moving to : <span class="bold-text"> <%= @groupage[:destination] %></span></p>
-								<p>Date : <span class="bold-text"><%= @groupage[:departure_date] %> </span></p>
+								<p>Date : <span class="bold-text"><%= Date.parse(@groupage[:departure_date]).strftime("%d %b %Y") %> </span></p>
 								<%#= Groupage.origin %>
+							
 
 							</div>
 						</div>

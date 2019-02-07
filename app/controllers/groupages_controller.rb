@@ -45,7 +45,7 @@ class GroupagesController < ApplicationController
         redirect_to edit_container_path(@container)
       else
         render :new
-        format.json { render json: @groupage.errors, status: :unprocessable_entity }
+        # format.json { render json: @groupage.errors, status: :unprocessable_entity }
 
       end
 

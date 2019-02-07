@@ -9,8 +9,7 @@
 							<div class="user-search-params">
 								<p>Moving from : <span class="bold-text"><%= @alert[:origin] %></span></p>
 								<p>Moving to : <span class="bold-text"><%= @alert[:destination] %></span></p>
-								<p>Date : <span class="bold-text"><%= @alert[:departure_date] %></span></p>
-
+								<p>Date : <span class="bold-text"><%= Date.parse(@alert[:departure_date]).strftime("%d %b %Y") %></span></p>
 							</div>
 							
 						</div>

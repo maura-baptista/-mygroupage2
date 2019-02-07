@@ -1,6 +1,7 @@
 class User < ApplicationRecord
 	has_many :groupages
   has_many :containers, through: :groupages  # Include default devise modules. Others available are:
+  
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable,
@@ -9,6 +10,7 @@ class User < ApplicationRecord
   # validates :agreement, acceptance: { message: 'must accept terms' }
   validates :agreement, acceptance: { accept: true }, on: :create, allow_nil: false
 
+  validates :first_name, :last_name, presence: true
 
   def self.find_for_facebook_oauth(auth)
     user_params = auth.slice(:provider, :uid)
@@ -29,5 +31,14 @@ class User < ApplicationRecord
     end
 
     return user
+  end
+
+
+  #for activeadmin
+
+  def name
+     "#{id} -#{email} #{first_name} #{last_name}"
+  
+     # "#{first_name} #{last_name}"
   end
 end
