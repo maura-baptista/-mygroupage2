@@ -76,8 +76,8 @@
 
 
 <!-- mobile navbar -->
-<div class="navbar-calcu-mobile hidden-sm hidden-md hidden-lg">
-   <div class="navbar-wagon-calcu-mobile  ">
+<div class="navbar-mobile hidden-sm hidden-md hidden-lg">
+   <div class="navbar-wagon-mobile ">
     <!-- Logo -->
    
     
@@ -90,13 +90,18 @@
    
 
     <!-- Dropdown list appearing on mobile only -->
-    <div class="navbar-wagon-item hidden-md hidden-lg">
+    <div class="hidden-md hidden-lg">
       <div class="dropdown">
         <!-- <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i> -->
-        <div class="dropdown-toggle" data-toggle="dropdown">
+        
+          <div class="dropdown-toggle" data-toggle="dropdown">
           <%= image_tag "balloons@3x.png", height: 50, class: "mongolfier_logo" %>
           <%= image_tag "arrow.svg", height: 10, class: "arrow" %>
         </div>
+        <%= link_to "list my container", pages_search_container_path, class: "btn-nav-list-container" %>
+        <%#= link_to "List my container", containers_form_opening_path, class: "btn-list-my-container navbar-wagon-item" %>
+       
+        
         
         <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
           <li><%= link_to "Home",  root_path %></li>
