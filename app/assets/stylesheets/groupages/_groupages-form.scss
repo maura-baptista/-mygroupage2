@@ -7,7 +7,7 @@
 }	
 
 .container-margin-top{
-	padding-top: 100px;
+	padding-top: 180px;
 }
 
 form{
@@ -83,6 +83,9 @@ form{
 				margin-top: -8px;
 				padding-bottom: 120px;
 
+			}
+			.zero-padding{
+				padding-bottom: 0px;
 
 			}
 		.container-info{
@@ -118,40 +121,41 @@ form{
 		
 		}
 		.search-button{
-			padding-bottom: 50px;
+			margin-top: 38px;
 			
 			.btn-search{
 				background: #008489;
 				border-radius: 5px;
 				font-family: Comfortaa;
 				font-style: normal;
-				font-weight: 300;
+				font-weight: 400;
 				line-height: normal;
 				font-size: 20px;
 				letter-spacing: -1px;
 				color: #FFFFFF;
 				width: 100%;
-				padding: 10px 10px;
+				padding: 16px 10px;
 				background-image: image-url("search-icon.svg");
 		        background-position: left;
 		        background-repeat: no-repeat;
-		        background-size: 68% 49%;
+		        background-size: 79% 41%;
+		        &:hover{
+			      background: #013638;
+			     text-decoration: none;
+			     color: #FFFFFF;
+			      background-image: image-url("search-icon.svg");
+			        background-position: left;
+			        background-repeat: no-repeat;
+			        background-size: 79% 41%;
+		    	}
+			    &:visited{
+			        color: #FFFFFF;
+			        text-decoration: none ;
+		    	}
 			}
-			&:hover{
-		      background: #e5e5e5;
-		      text-decoration: none;
-		      color: #FFFFFF;
-		      background-image: image-url("search-icon.svg");
-		        background-position: left;
-		        background-repeat: no-repeat;
-		        background-size: 59% 49%;
-		      }
-		      &:visited{
-		          color: #FFFFFF;
-		          text-decoration: none ;
-	    	    }
-			}		
-		}
+		}	
+		
+	}
 	
 	.form-control{
 		height: 50px;
@@ -559,6 +563,9 @@ form{
   	.full-container{
   		height: auto;
   	}
+  	.container-margin-top{
+		padding-top: 100px;
+	}
 	.progress{
 		margin-bottom: 19px;
 	}
@@ -652,6 +659,14 @@ form{
 			.input2-margin-top{
 				margin-top: 0px;
 			}
+			.search-button{
+				margin-top: 6px;
+    			margin-bottom: 33px;
+				.btn-search{
+					font-size: 17px;
+					background-size: 69% 37%;
+				}
+			}
 		}
 		.form-control{
 			font-size: 15px;
@@ -706,6 +721,9 @@ form{
   		height: auto;
   		padding-bottom: 64px;
   	}
+  	.container-margin-top{
+		padding-top: 108px;
+	}
 	.progress{
 		margin-bottom: 41px;
 	}
@@ -807,6 +825,15 @@ form{
 			.input2-margin-top{
 				margin-top: 0px;
 			}
+			.search-button{
+				margin-top: 7px;
+    			margin-bottom: 33px;
+				.btn-search{
+					font-size: 19px;
+					background-size: 71% 37%;
+				}
+			}
+
 		}
 	}
 	.flexbox{
