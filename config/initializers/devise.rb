@@ -3,7 +3,7 @@
 # Use this hook to configure devise mailer, warden hooks and so forth.
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
-  config.omniauth :facebook, ENV["FB_ID"], ENV["FB_SECRET"],
+  config.omniauth :facebook, ENV["FB_ID2"], ENV["FB_SECRET2"],
     scope: 'email',
     info_fields: 'email, first_name, last_name',
     image_size: 'square',  # 50x50, guaranteed ratio
