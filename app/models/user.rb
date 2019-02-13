@@ -8,11 +8,12 @@ class User < ApplicationRecord
          :omniauthable, omniauth_providers: [:facebook]
 
   # validates :agreement, acceptance: { message: 'must accept terms' }
-  validates :agreement, acceptance: { accept: true }, on: :create, allow_nil: false
+  # validates :agreement, acceptance: { accept: true }, on: :create, allow_nil: false
 
   validates :first_name, :last_name, presence: true
 
   def self.find_for_facebook_oauth(auth)
+   
     user_params = auth.slice(:provider, :uid)
     user_params.merge! auth.info.slice(:email, :first_name, :last_name)
     user_params[:facebook_picture_url] = auth.info.image
