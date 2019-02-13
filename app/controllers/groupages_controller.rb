@@ -35,7 +35,12 @@ class GroupagesController < ApplicationController
     @groupage = Groupage.new(groupage_params)
     @groupage.container = @container
 
-    @groupage.user = @groupage.container.user 
+    @user = User.new(params[:user])
+    @user.save
+    @user = current_user
+    @user = User.find(@user.id)
+    @groupage.user = current_user
+
       if @groupage.save
 
         redirect_to edit_container_path(@container)
