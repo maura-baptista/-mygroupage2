@@ -55,9 +55,7 @@ skip_before_action :authenticate_user!, only: [:new, :calculator, :form_opening,
     if @container.save
       redirect_to user_steps_path
     else
-      render :new
-      format.json { render json: @container.errors, status: :unprocessable_entity }
-
+      render :edit
     end
 
     # @groupage = Groupage.new(params[:groupage])

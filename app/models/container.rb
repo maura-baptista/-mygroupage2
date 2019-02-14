@@ -1,6 +1,12 @@
 class Container < ApplicationRecord
 	has_one :groupage
-	 belongs_to :user
+	belongs_to :user
+
+	validates :container_size, :volume, :metrics, :price, :currency,  presence: true, on: :update
+
+	validates :container_size, :volume, :metrics, :price, :currency,  presence: true, if: :should_validate?
+
+
 	CONTAINERS = [
 					["20’ container (6 meters container)", 30],
 					["40’ container (12 meters container)", 60]
@@ -16,4 +22,11 @@ class Container < ApplicationRecord
 
 	CURRENCIES = @currencies = ["EUR", "USD", "GBP", "CAD", "CHF"]
 	# validates :currency, inclusion: {in: CURRENCIES}
+
+	def should_validate?
+    	    new_record? || volume.present?
+
+  	end
+
+
 end
