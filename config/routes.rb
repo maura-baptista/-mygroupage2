@@ -15,7 +15,8 @@ Rails.application.routes.draw do
   get 'pages/search_container'
   get 'groupages/search_container'
   get 'pages/alert_confirmation'
-  
+   get 'terms_and_conditions', to: 'pages#terms_and_conditions', as: 'terms_and_conditions'
+  get 'privacy_policy',       to: 'pages#privacy_policy', as: 'privacy_policy'
   
   # post 'calculator' => 'containers#calculator'
  

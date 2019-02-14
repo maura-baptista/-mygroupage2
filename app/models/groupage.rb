@@ -5,6 +5,7 @@ class Groupage < ApplicationRecord
   validates :departure_date, :origin, :destination, presence: true
   # validates :mover, presence: true, on: :mover_info
     # validates :mover, presence: true, on: :personal_info
+  validates :departure_date, :origin, :destination, presence: true, on: :index
 
 
 

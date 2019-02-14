@@ -82,7 +82,7 @@
 
                   <%= f.input :newsletter, as: :boolean, checked_value: true, unchecked_value: false, label: "I would like to receive the myGroupage newsletter and special offers", class: ' form-control checkbox' %>
                   <p class="terms-of-service">
-                    By signing up you agree, to our <span class="color-torquoise">Terms of Service.</span>
+                    By signing up you agree, to our <span class="color-torquoise"><%= link_to "Terms of Service",  terms_and_conditions_path, class: "color-torquoise" %></span>
                   </p>
                   </div>
                 </div>

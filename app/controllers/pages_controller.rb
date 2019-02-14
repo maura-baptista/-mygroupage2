@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:home, :login, :hire_mover, :list_confirmation, :search_container, :alert_confirmation ]
+  skip_before_action :authenticate_user!, only: [:home, :login, :hire_mover, :list_confirmation, :search_container, :alert_confirmation, :terms_and_conditions, :privacy_policy ]
 
   
   # layout :resolve_layout
@@ -30,6 +30,12 @@ class PagesController < ApplicationController
     # @alert = Alert.new
     @alert = Alert.last
    
+  end
+
+  def terms_and_conditions
+  end
+
+  def privacy_policy
   end
 
   private
