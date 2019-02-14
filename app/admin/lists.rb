@@ -5,7 +5,7 @@ ActiveAdmin.register List do
 	    selectable_column
 	    column :id
 	    column :lead_origin
-	    column :lead_destinatio
+	    column :lead_destination
 	    column :lead_date
 	    column :lead_email
 	    column :created_at
