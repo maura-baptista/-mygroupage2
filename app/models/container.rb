@@ -4,7 +4,7 @@ class Container < ApplicationRecord
 
 	validates :container_size, :volume, :metrics, :price, :currency,  presence: true, on: :update
 
-	validates :container_size, :volume, :metrics, :price, :currency,  presence: true, if: :should_validate?
+	# validates :container_size, :volume, :metrics, :price, :currency,  presence: true, if: :should_validate?
 
 
 	CONTAINERS = [
@@ -24,7 +24,7 @@ class Container < ApplicationRecord
 	# validates :currency, inclusion: {in: CURRENCIES}
 
 	def should_validate?
-    	    new_record? || volume.present?
+    	new_record? || volume.present?
 
   	end
 
