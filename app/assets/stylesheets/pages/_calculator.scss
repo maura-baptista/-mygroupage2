@@ -555,7 +555,63 @@
 		}
 	}
 	
-  }
+}
+
+@media only screen 
+  and (min-width: 991px)
+  and (max-width: 1199px){
+  	.wrapper-why-us{
+
+  	}
+  	.wrapper-3-steps{
+  		padding-bottom: 68px;
+  		h1{
+  			font-size: 54px;
+  			margin-top: 9px;
+  			margin-bottom: 40px;
+  		}
+  		.card-3-steps{
+  			padding: 27px;
+  			padding-right: 10px;
+  		}
+  	}
+  	.wrapper-container-sharing{
+  		h1{
+  			font-size: 54px;
+  		}
+  	}
+  	.wrapper-payments{
+  		h1{
+  			font-size: 54px;
+  		}
+  		h2{
+  			font-size: 25px;
+  		}
+  		.card-payments{
+  			padding-right: 0px;
+  		}
+  	}
+  	.wrapper-about-us{
+  		h1{
+  			font-size: 54px;
+  		}
+  	}
+  	.FAQ{
+  		h1{
+  			font-size: 54px;
+  		}
+  		.card-faq{
+  			padding-right: 10px;
+  			.btn-faq{
+  				font-size: 16px;
+  			}
+  		}
+  	}
+}
+
+
+
+
 
 
 
