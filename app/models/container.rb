@@ -20,7 +20,11 @@ class Container < ApplicationRecord
 			]
 	# validates :metrics, inclusion: {in: METRIC}
 
-	CURRENCIES = @currencies = ["EUR", "USD", "GBP", "CAD", "CHF"]
+	CURRENCIES = ["EUR", "USD", "GBP", "CHF", "***", "AUD", "BRL", "CAD", "CHF",
+								"CLP", "CNY", "CZK", "DKK", "HKD", "HUF", "IDR", "ILS", "INR",
+								"JPY", "KRW", "MXN", "MYR", "NOK", "NZD", "PHP", "PKR", "PLN" , 
+								"RUB", "SEK", "SGD", "THB", "TRY", "TWD", "ZAR"
+								]
 	# validates :currency, inclusion: {in: CURRENCIES}
 
 	def should_validate?
@@ -30,3 +34,5 @@ class Container < ApplicationRecord
 
 
 end
+
+
