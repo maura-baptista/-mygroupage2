@@ -1,3 +1,109 @@
+.footer-v2{
+  background: #192739;
+  // height: 200px;
+  padding: 60px 0px 10px 0px;
+  width: 100vw;
+  .logo-section{
+     img{
+        height: 35px;
+     }
+     p{
+      font-family: Comfortaa;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 21px;
+      font-size: 14px;
+      letter-spacing: -1px;
+      color: rgba(255, 255, 255, 0.8);
+      margin-top: 21px;
+      // width: 480px;
+     }
+  }
+  .footer-links{
+    h3{
+      font-family: Comfortaa;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 27px;
+      font-size: 18px;
+      letter-spacing: -1px;
+      color: rgba(255, 255, 255, 0.9);
+      margin-top: 0;
+      margin-bottom: 25px;
+
+    }
+    p{
+      // padding-top: 1px;
+      a{
+      font-family: Comfortaa;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 21px;
+      font-size: 14px;
+      letter-spacing: -1px;
+      letter-spacing: -1px;
+      color: rgba(255, 255, 255, 0.8);
+      }
+
+    }
+  }
+  .contact-footer{
+    h3{
+      font-family: Comfortaa;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 27px;
+      font-size: 18px;
+      letter-spacing: -1px;
+      color: rgba(255, 255, 255, 0.9);
+      margin-top: 0;
+      margin-bottom: 25px;
+    }
+    i{
+        color: #FFFFFF;
+        margin-right: 15px;
+        font-size: 20px;
+    }
+    p{
+      font-family: Comfortaa;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.8);
+      margin-top: 12px;
+    }
+  }
+  // hr{
+  //     border: 1px solid #989898;
+  //   }
+  .rights-reserved2{
+    display: flex;
+    justify-content: space-between;
+    p{
+      font-family: Comfortaa;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      font-size: 11px;
+      letter-spacing: -1px;
+      color: rgba(255, 255, 255, 0.8);
+     
+    }
+    & .color-tourquoise{
+        color: #5AC5C2 !important;
+      }
+    a{
+      color: #5AC5C2;
+
+    }
+
+  }
+}
+
+
+
+
 .footer{
 	background: #FFFFFF;
 	// padding-top: 50px px;
@@ -87,6 +193,54 @@
   			}
   		}
   	}
+    .footer-v2{
+        padding: 20px 0;
+        .logo-section{
+          img{
+            height: 30px;
+          }
+          p{
+            font-size: 13px;
+            margin-top: 9px;
+            margin-bottom: 32px;
+          }
+        }
+        .footer-links{
+          padding-bottom: 21px;
+          h3{
+            font-size: 16px;
+            margin-bottom: 1px;
+          }
+          p{
+            margin-bottom: 2px;
+            a{
+              font-size: 13px;
+            }
+          }
+        }
+        .contact-footer{
+          h3{
+            font-size: 16px;
+            margin-bottom: 8px;
+          }
+          i{
+            color: #FFFFFF;
+            margin-right: 18px;
+            font-size: 18px;
+          }
+          p{
+            font-size: 14px;
+          }
+        }
+        .rights-reserved2{
+          display: inline-block;
+          margin-top: -9px;
+          p{
+            margin-bottom: 6px;
+            font-size: 10px;
+          }
+        }
+    }
 
   }
 
@@ -119,6 +273,54 @@
   			}
   		}
   	}
+  .footer-v2{
+        padding: 20px 0;
+        .logo-section{
+          img{
+            height: 30px;
+          }
+          p{
+            font-size: 13px;
+            margin-top: 9px;
+            margin-bottom: 32px;
+          }
+        }
+        .footer-links{
+          padding-bottom: 21px;
+          h3{
+            font-size: 16px;
+            margin-bottom: 1px;
+          }
+          p{
+            margin-bottom: 2px;
+            a{
+              font-size: 13px;
+            }
+          }
+        }
+        .contact-footer{
+          h3{
+            font-size: 16px;
+            margin-bottom: 8px;
+          }
+          i{
+            color: #FFFFFF;
+            margin-right: 18px;
+            font-size: 18px;
+          }
+          p{
+            font-size: 14px;
+          }
+        }
+        .rights-reserved2{
+          display: inline-block;
+          margin-top: -9px;
+          p{
+            margin-bottom: 6px;
+            font-size: 10px;
+          }
+        }
+    }
 }
 
 //groupage form footer

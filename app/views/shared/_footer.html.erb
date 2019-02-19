@@ -1,14 +1,84 @@
-<footer class="footer">
+<footer class="footer-v2">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-6">
+				<div class="logo-section">
+					<%= link_to root_path, class: "logo-footer" do %>
+						<%= image_tag "logo-footer.png", height: 30 %>
+	   			 	<% end %>
+	   		 		<p>coshippers is a community based relocation solution, making use of spare capacity and the power of community to solve the challenges of international moving.</p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-3">
+				<div class="footer-links">
+					<h3>EXPLORE</h3>
+					
+						<p><%= link_to "Find a mover",  new_list_path %></p> 
+						<p><%= link_to "Why share my container",  new_list_path %></p> 
+						<p><%= link_to "List my container",  new_list_path %></p> 
+						<p><%= link_to "Join as a moving company",  new_list_path %></p> 
+				</div>
+				
+			</div>
+			<div class="col-xs-12 col-sm-3">
+				<div class="contact-footer">
+					<h3>CONTACT</h3>
+					<div class="social-networks">
+						<%= link_to "#" do %>
+							<i class="fab fa-facebook-f"></i>
+						<% end %>
+						<%= link_to "#" do %>
+							<i class="fab fa-twitter"></i>
+						<% end %>
+						<%= link_to "#" do %>
+							<i class="fas fa-envelope"></i>
+						<% end %>
+					</div>
+					<p>hello@coshippers.com</p>
+				</div>
+				
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<hr>
+				<div class="rights-reserved2">
+					<p>© coshippers 2019 -  All rights reserved</p>
+					<p><span class="color-tourquoise"><%= link_to "Terms and conditions ",  new_list_path %>&nbsp; . &nbsp; <%= link_to "  Privacy Policy",  new_list_path %></span> </p>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <footer class="footer">
 	<div class="container">
 		<div class="footer-line">
 			<hr>
 		</div>
 		<div class="rights-reserved">
-			<%= link_to root_path, class: "logo-footer hidden-xs" do %>
-	      		<%= image_tag "logo-col-3x.png", height: 30 %>
-	   		 <% end %>
+			<%#= link_to root_path, class: "logo-footer hidden-xs" do %>
+	      		<%#= image_tag "logo-col-3x.png", height: 30 %>
+	   		 <%# end %>
 	   		<p>© coshippers 2019 -  All rights reserved
 			</p>
 		</div>
 	</div>
-</footer>
+</footer> -->
