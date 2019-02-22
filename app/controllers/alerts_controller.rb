@@ -9,6 +9,9 @@ class AlertsController < ApplicationController
   	@groupage = query_params
 
 
+
+
+
   	
   	
   	 # @groupage = Groupage.new
@@ -17,15 +20,20 @@ class AlertsController < ApplicationController
   end
 
   def create
-  	
-  	@alert = Alert.new(alert_params)
+     
+
+   @alert = Alert.new(alert_params)
+   @groupage = @alert
+     
   	if @alert.save
 
   		
       redirect_to   pages_alert_confirmation_path
        #redirect_to   controller: "pages", action: "alert_confirmation", query_parameters: @alert
     else
+
       render :new
+
     end
 
   end
@@ -35,7 +43,7 @@ class AlertsController < ApplicationController
   private
 
   def alert_params
-    params.require(:alert).permit(:alert_email, :origin, :destination, :departure_date)
+    params.require(:alert).permit(:alert_email, :origin, :destination, :departure_date, :move_size)
   end
 
 end

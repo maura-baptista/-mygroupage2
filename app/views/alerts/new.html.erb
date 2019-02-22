@@ -1,8 +1,11 @@
 <div class="full-wrapper-alert">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6 col-md-offset-3">
+			<div class="col-xs-12 col-sm-6 col-sm-offset-3">
 				<div class="alert-form">
+					<%= simple_form_for @alert do |f| %>
+						<%#= simple_form_for @alert, url:alerts_path, method: :get do |f| %>
+						<%= f.error_notification %>
 					<div class="row">
 						<div class="col-xs-12">
 							<h2>Enter your email address  and we’ll notify you.</h2>
@@ -15,10 +18,6 @@
 
 							</div>
 						</div>
-						<%= simple_form_for @alert do |f| %>
-						<%#= simple_form_for @alert, url:alerts_path, method: :get do |f| %>
-						<%= f.error_notification %>
-
 						<div class="col-xs-12">
 							 <%= f.input :alert_email,
 	                            required: true,
@@ -30,14 +29,39 @@
 
 	                            <p><span class="user-info">Your email will never be shared with anyone.</span></p>
 						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<h3>How much do you have to ship?</h3>
+							<hr>
+							<fieldset class="form-group radio_buttons optional alert_move_size">
+								<div class="groupage-sizes">
+									
+									<input type="hidden" name="alert[move_size]" value="">
+									<div class="form-check">
+										<input class="form-check-input radio_buttons optional hidden" type="radio" value="Full cometents of your home" name="alert[move_size]" id="alert_move_size_full_cometents_of_your_home">
+										<label class="collection_radio_buttons groupage-size" for="alert_move_size_full_cometents_of_your_home"><%= image_tag "full-contents.svg", height: 50 %><%= Alert::MOVE_SIZE[0]%></label>
+									</div>
+									<div class="form-check">
+										<input class="form-check-input radio_buttons optional hidden" type="radio" value="Some boxes and some furniture" name="alert[move_size]" id="alert_move_size_some_boxes_and_some_furniture">
+										<label class="collection_radio_buttons groupage-size" for="alert_move_size_some_boxes_and_some_furniture"><%= image_tag "partial-move.svg", height: 50 %><%= Alert::MOVE_SIZE[1]%></label>
+									</div>
+									<div class="form-check">
+										<input class="form-check-input radio_buttons optional hidden" type="radio" value="10 boxes or less" name="alert[move_size]" id="alert_move_size_10_boxes_or_less">
+										<label class="collection_radio_buttons groupage-size" for="alert_move_size_10_boxes_or_less"><%= image_tag "small-move.svg", height: 50 %><%= Alert::MOVE_SIZE[2]%></label>
+									</div>
+								</div>
+							</fieldset>
+						</div>
+					</div>
+					<div class="row">
 						<div class="col-xs-12">
 							<div class="button-alert">
 								<%= f.button :submit, "Create alert" , class: "btn-create-alert"%>
 							</div>
 						</div>
-						<% end %>
-						
 					</div>
+				<% end %>
 				</div>
 			</div>
 		</div>

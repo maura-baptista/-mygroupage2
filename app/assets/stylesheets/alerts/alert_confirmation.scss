@@ -1,6 +1,6 @@
-.full-wrapper-alert{
+.full-wrapper-alert-confirmation{
 	background: #FFFFFF;
-	height: auto;
+	height: 100vh;
 	    padding-top: 125px;
 	.alert-form{
 		font-family: Comfortaa;
@@ -180,7 +180,7 @@
 
 @media only screen 
   and (max-width: 320px){
-	.full-wrapper-alert{
+	.full-wrapper-alert-confirmation{
 		height: auto;
 		padding-top: 61px;
 		.alert-form{
@@ -244,7 +244,7 @@
 @media only screen 
   and (min-width: 321px)
   and (max-width: 767px){
-	.full-wrapper-alert{
+	.full-wrapper-alert-confirmation{
 		height: auto;
 		padding-top: 66px;
 		.alert-form{
@@ -307,8 +307,8 @@
 @media only screen 
   and (min-width: 768px)
   and (max-width: 991px){
-  	.full-wrapper-alert{
-  		height: auto;
+  	.full-wrapper-alert-confirmation{
+  		height: 100vh;
   		.alert-form{
 			fieldset{
 				.groupage-sizes{

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_14_120119) do
+ActiveRecord::Schema.define(version: 2019_02_20_143340) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(version: 2019_02_14_120119) do
     t.string "origin"
     t.string "destination"
     t.string "departure_date"
+    t.string "move_size"
   end
 
   create_table "containers", force: :cascade do |t|
@@ -90,6 +91,12 @@ ActiveRecord::Schema.define(version: 2019_02_14_120119) do
     t.float "lead_origin_long"
     t.float "lead_destination_lat"
     t.float "lead_destination_long"
+  end
+
+  create_table "move_sizes", force: :cascade do |t|
+    t.string "size"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|
