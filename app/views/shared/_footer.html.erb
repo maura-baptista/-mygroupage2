@@ -13,9 +13,10 @@
 				<div class="footer-links">
 					<h3>EXPLORE</h3>
 					
-						<p><%= link_to "Find a mover",  "#" %></p> 
-						<p><%= link_to "Why share my container",  "#" %></p> 
-						<p><%= link_to "List my container",  "#" %></p> 
+						<p><%= link_to "Find a mover",  new_list_path %></p> 
+						<p><%= link_to "Offer space",  containers_form_opening_path  %></p> 
+						 <p><%= link_to "Find space",  pages_search_container_path %></p>
+						 <p><%= link_to "Why share my container",  root_path %></p> 
 						<p><%= link_to "Join as a moving company",  "#" %></p> 
 				</div>
 				
@@ -24,7 +25,7 @@
 				<div class="contact-footer">
 					<h3>CONTACT</h3>
 					<div class="social-networks">
-						<%= link_to "#" do %>
+						<%= link_to "https://www.facebook.com/coshippers/" do %>
 							<i class="fab fa-facebook-f"></i>
 						<% end %>
 						<%= link_to "#" do %>
