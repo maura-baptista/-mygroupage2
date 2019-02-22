@@ -23,6 +23,8 @@ class AlertsController < ApplicationController
      
 
    @alert = Alert.new(alert_params)
+   
+
    @groupage = @alert
      
   	if @alert.save
@@ -33,6 +35,7 @@ class AlertsController < ApplicationController
     else
 
       render :new
+
 
     end
 

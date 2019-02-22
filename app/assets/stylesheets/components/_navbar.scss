@@ -56,6 +56,48 @@
         text-decoration: none currentcolor solid;
   }
 }
+
+.btn-offer-space{
+  background: transparent;
+   padding: 8px 15px 8px 38px !important;
+   border-radius: 5px;
+   background-image: image-url("add-icon.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 32% 50%;
+  &:hover{
+    color: #da552f;
+  }
+   &:visited{
+        text-decoration: none;
+  }
+   &:focus{
+      outline: none;
+    }
+}
+
+.btn-find-space{
+  background: transparent;
+   padding: 8px 15px 8px 38px !important;
+   border-radius: 5px;
+   background-image: image-url("search-icon-black.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 32% 50%;
+  &:hover{
+    color: #da552f;
+  }
+   &:visited{
+        text-decoration: none;
+  }
+   &:focus{
+      outline: none;
+    }
+}
+
+.fa-people-carry{
+  margin-right: -7px;
+}
 /* User Avatar */
 .navbar-wagon .avatar {
   height: 35px;
@@ -146,7 +188,7 @@
 /* Basic navbar item */
 .navbar-wagon-item {
   cursor: pointer;
-  padding: 0 10px;
+  padding: 0 15px;
 }
 
 /* Navbar link */
