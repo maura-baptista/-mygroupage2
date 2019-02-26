@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:home, :login, :hire_mover, :list_confirmation, :search_container, :alert_confirmation, :terms_and_conditions, :privacy_policy ]
+  skip_before_action :authenticate_user!, only: [:home, :login, :hire_mover, :list_confirmation, :alert_confirmation, :terms_and_conditions, :privacy_policy ]
 
   
   # layout :resolve_layout
