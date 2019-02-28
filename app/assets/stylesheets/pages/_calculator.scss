@@ -269,6 +269,24 @@
     			background: #008489;
     		}
 		}
+
+		.btn-get-quotes{
+			background: #008489;
+			border-radius: 5px;
+	        font-family: Comfortaa;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			font-size: 22px;
+			color: #FFFFFF;
+			text-align: center;
+			text-align: center;
+    		padding: 14px 35px;
+    		text-decoration: none;
+    		&:hover{
+    			background: #008489;
+    		}
+		}
 	}
 }
 
@@ -422,7 +440,8 @@
 
 .FAQ{
 	background: #FFFFFF;
-	padding: 7px;
+	// padding: 7px;
+	// margin-bottom: -166px;
 	padding-bottom: 88px;
 	.border{
 		border: 1.5px solid #8B8B8B;
@@ -476,6 +495,171 @@
         }
 	}
 }
+
+.wrapper-ready-to-move{
+	background-image:  image-url('d_footer_hills.png');
+ 	background-size: cover;
+ 	background-position: bottom;
+ 	height: 73vh;
+ 	display: flex;
+ 	// align-items: center;
+ 	justify-content: space-around;
+ 
+
+ 	.wrapper-content{
+		.border{
+			border: 1.5px solid #8B8B8B;
+			width: 62px;
+			position: absolute;
+			left: 50%;
+		}
+		h1{
+			font-family: Comfortaa;
+			font-style: normal;
+			font-weight: bold;
+			line-height: 117px;
+			font-size: 60px;
+			text-align: center;
+			letter-spacing: -2px;
+			color: #333333;
+			margin-top: 0;
+			margin-bottom: 98px;
+
+		}
+		.offer-sapce{
+			background: #FFFFFF;
+			box-shadow: 0px 0px 20px rgba(112, 135, 185, 0.3);
+			border-radius: 8px;
+			padding: 45px 47px;
+			margin-left: 143px;
+			
+			.offer-space-header{
+				display: flex;
+				// justify-content: space-between;
+				img{
+					height: 78px;
+				}
+				h3{
+					font-family: Comfortaa;
+					font-style: normal;
+					font-weight: bold;
+					line-height: normal;
+					font-size: 40px;
+					letter-spacing: -3px;
+					color: #5AC5C2;
+					margin-top: 0;
+					margin-left: 15px;
+				}
+			}
+			p{
+				font-family: Comfortaa;
+				font-style: normal;
+				font-weight: normal;
+				line-height: 22px;
+				font-size: 16px;
+				text-align: center;
+				letter-spacing: -1px;
+				color: #484848;
+				margin-top: 20px;
+			}
+			.btn-get-quotes{
+				background: #5AC5C2;
+				border-radius: 5px;
+				font-family: Comfortaa;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+				font-size: 20px;
+				text-align: center;
+				color: #FFFFFF;
+				padding: 14px 20px;
+			    width: 100%;
+			    display: block;
+			    margin-top: 20px;
+			}
+
+		}
+		.find-sapce{
+			background: #FFFFFF;
+			box-shadow: 0px 0px 20px rgba(112, 135, 185, 0.3);
+			border-radius: 8px;
+			padding: 45px 47px;
+			margin-right: 143px;
+			
+			.find-space-header{
+				display: flex;
+				// justify-content: space-between;
+				img{
+					    height: 78px;
+				}
+				h3{
+					font-family: Comfortaa;
+					font-style: normal;
+					font-weight: bold;
+					line-height: normal;
+					font-size: 40px;
+					letter-spacing: -3px;
+					color: #353C4C;
+					margin-top: 0;
+					margin-left: 15px;
+				}
+			}
+			p{
+				font-family: Comfortaa;
+				font-style: normal;
+				font-weight: normal;
+				line-height: 22px;
+				font-size: 16px;
+				text-align: center;
+				letter-spacing: -1px;
+				color: #484848;
+				margin-top: 20px;
+			}
+			.btn-find-a-container{
+				background: #353C4C;
+				border-radius: 5px;
+				font-family: Comfortaa;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+				font-size: 20px;
+				text-align: center;
+				color: #FFFFFF;
+				padding: 14px 20px;
+			    width: 100%;
+			    display: block;
+			    margin-top: 20px;
+			}
+		}
+		
+ 	}
+ 	
+}
+
+.wrapper-blue{
+	background: #DAEEF5;
+	height: 120px;
+	width: 100%;
+	.social-networks-icons{
+		text-align: center;
+		i{
+			font-size: 20px;
+			padding-right: 15px;
+			color: #849E9F;
+			margin-top: 20px;
+		
+		}
+		p{
+			font-family: Comfortaa;
+			font-style: normal;
+			font-weight: normal;
+			line-height: normal;
+			font-size: 18px;
+			color: #849E9F;
+			margin-top: 16px;
+		}
+	}
+}
 .wrapper-ready-to-earn{
 	background: #FFFFFF;
 	padding-bottom: 145px;
@@ -524,6 +708,8 @@
 	}
 }
 
+
+
 //media queries - smaller desktop devices & ipad
 
 @media only screen 
@@ -560,6 +746,40 @@
 	.wrapper-review-II{
 		padding-left: 0;
 	}
+	.wrapper-ready-to-move{
+		.wrapper-content{
+			.offer-sapce{
+				margin-left: 0px;
+				.offer-space-header{
+					img{
+						height: 54px;
+					}
+					h3{
+						font-size: 30px;
+
+					}
+				}
+				p{
+						margin-top: 18px;
+					}
+			}
+			.find-sapce{
+				margin-right: 0px;
+				.find-space-header{
+					img{
+						height: 54px;
+					}
+					h3{
+						font-size: 30px;
+
+					}
+				}
+				p{
+						margin-top: 18px;
+					}
+			}
+		}
+  	}
 	
 }
 
@@ -613,6 +833,40 @@
   				font-size: 16px;
   			}
   		}
+  	}
+  	.wrapper-ready-to-move{
+		.wrapper-content{
+			.offer-sapce{
+				margin-left: 60px;
+				.offer-space-header{
+					img{
+						height: 66px;
+					}
+					h3{
+						font-size: 37px;
+
+					}
+				}
+				p{
+						margin-top: 18px;
+					}
+			}
+			.find-sapce{
+				margin-right: 60px;
+				.find-space-header{
+					img{
+						height: 66px;
+					}
+					h3{
+						font-size: 37px;
+
+					}
+				}
+				p{
+						margin-top: 18px;
+					}
+			}
+		}
   	}
 }
 
