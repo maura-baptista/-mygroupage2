@@ -1,17 +1,72 @@
 .steps-to-share-container-mob{
 	background: white;
 	padding-top: 50px;
+	h1{
+	    font-family: Comfortaa;
+	    font-style: normal;
+	    font-weight: bold;
+	    letter-spacing: -2px;
+	    color: #333333;
+	    line-height: 38px;
+	    font-size: 38px;
+	    text-align: left;
+	     margin-top: 22px;
+
+
+
+	}
+	.border{
+			border: 1.5px solid #8B8B8B;
+		    width: 62px;
+		    position: static;
+		}
+	.text-center{
+		text-align: center;
+	}
 	.gif-container{
 		display: flex;
 	    align-items: center;
 	    justify-content: space-around;
 		img{
-			height: 50%;
-			width: 60%;
+			height: auto;
+			width: 100%;
 		}
 	}
 	.compare-movers-section {
-		    padding-top: 44px;
+		margin-bottom: 40px;
+		h2{
+			font-family: Comfortaa;
+			font-style: normal;
+			font-weight: bold;
+			line-height: 37px;
+			font-size: 28px;
+			letter-spacing: -1px;
+
+			color: #000000;
+		}
+		p{
+			font-family: Comfortaa;
+			font-style: normal;
+			font-weight: normal;
+			line-height: 31px;
+			font-size: 16px;
+
+			color: #484848;
+		}
+	}
+	.gif-book-online{
+		display: flex;
+	    align-items: center;
+	    justify-content: space-around;
+	  
+		img{
+			height: auto;
+			width: 100%;
+			margin-top: 40px;
+		}
+	}
+	.book-your-move-section{
+		margin-bottom: 40px;
 		.border{
 			border: 1px solid #B4BBC6;
 			width: 62px;
@@ -30,11 +85,68 @@
 			font-family: Comfortaa;
 			font-style: normal;
 			font-weight: normal;
-			line-height: 32px;
+			line-height: 31px;
 			font-size: 16px;
 
 			color: #484848;
 		}
 	}
+	.gif-earn-money{
+
+		display: flex;
+	    align-items: center;
+	    justify-content: space-around;
+	   
+		img{
+			height: auto;
+			width: 100%;
+			margin-top: 40px;
+		}
+	}
+	.earn-money-section{
 	
+		.border{
+			border: 1px solid #B4BBC6;
+			width: 62px;
+		}
+		h2{
+			font-family: Comfortaa;
+			font-style: normal;
+			font-weight: bold;
+			line-height: 37px;
+			font-size: 28px;
+			letter-spacing: -1px;
+			color: #000000;
+		}
+		p{
+			font-family: Comfortaa;
+			font-style: normal;
+			font-weight: normal;
+			line-height: 31px;
+			font-size: 16px;
+			color: #484848;
+   			 margin-bottom: 80px;
+		}
+	}
+	
+}
+
+@media only screen 
+  and (max-width: 320px){
+	.steps-to-share-container-mob{
+		.compare-movers-section{
+			// .border{
+			// 	border: 1.5px solid #8B8B8B;
+			//     width: 62px;
+			//     position: static;
+			// }
+			h2{
+				font-size: 26px;
+			}
+			p{
+				font-size: 16px;
+				font-weight: 300;
+			}
+		}
+	}
 }

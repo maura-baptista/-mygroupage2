@@ -220,7 +220,7 @@
 			    font-style: normal;
 			    font-weight: bold;
 			    line-height: 36px;
-			    font-size: 29px;
+			    font-size: 28px;
 			    letter-spacing: -1px;
 			    color: #353C4C;
 			    // margin-right: -45px;
@@ -266,7 +266,27 @@
   		.btn-movers-list-section{
   			margin-top: -68px;
   			.btn-get-movers-list-mob{
-  			background: #5AC5C2;
+	  			background: #5AC5C2;
+				border-radius: 5px;
+		        font-family: Comfortaa;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+				font-size: 20px;
+				color: #FFFFFF;
+				text-align: center;
+	    		padding: 12px 108px;
+	    		display: block;
+				width: 100%;
+	    		text-decoration: none;
+	    		&:hover{
+	    			background: #008489;
+	    		}
+
+  		}
+  		.btn-get-quotes-mob{
+    		background: #008489;
+  			
 			border-radius: 5px;
 	        font-family: Comfortaa;
 			font-style: normal;
@@ -280,9 +300,9 @@
 			width: 100%;
     		text-decoration: none;
     		&:hover{
-    			background: #008489;
+    			background: #5AC5C2;
     		}
-  		}			
+    	}			
 }
 
 .wrapper-payments-mob{

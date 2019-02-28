@@ -30,88 +30,47 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
+					<div class="border"></div>
+					<h1 >How it works</h2>
 					 <div class="gif-container">
-						 <%= image_tag "hire-container-step1.gif", height: 50 %>
+						 <%= image_tag "hire-container-step1-mob2.gif", height: 50 %>
 					</div>
 				</div>
 				<div class="col-xs-12">
 					<div class="compare-movers-section ">
-						<div class="border"></div>
+						
 						<h2>Compare movers</h2>
-						<p>Talk to our moving partners near you and receive quotes to ship your goods in a full container. Discover how much unused space you have and what you could earn by letting other expats book it.</p>
+						<p>Talk to our moving partners near you and receive quotes to ship your goods in a full container. Discover how much unused space you have and what you could earn by letting other expats book it.</p>	
+					</div>
+					<hr>
+				</div>
+				<div class="col-xs-12">
+					<div class="gif-book-online">
+						 <%= image_tag "hire-container-step2.gif", height: 50 %>
+				</div>
+				<div class="col-xs-12">
+					<div class="book-your-move-section">	
+						<h2>Book your move</h2>
+						<p>Hire the mover you are most comfortable with. Confirm basic information like your dates, route, and how much you want to earn from your unused space. Hit publish: your container is live.</p>	
+					</div>
+					<hr>
+				</div>
+				<div class="col-xs-12">
+					<div class="gif-earn-money">
+						 <%= image_tag "hire-container-step3.gif", height: 50 %>
+					</div>
+				</div>
+				<div class="col-xs-12">
+					<div class="earn-money-section">
+						<div class="border"></div>
+						<h2>Earn money</h2>
+						<p>Once your container is live, qualified expats start making enquiries. Sit back as your mover handles them and turns them into money for you. Monitor progress in your dahsboard. </p>
 						
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="wrapper-calculator-form">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12">
-					
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="wrapper-why-us-mob hidden-sm hidden-md hidden-lg">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12">
-						<div class="card-why-us-mob">
-							<h2>Why share your container?</h2>
-						<p>No matter where you are moving, other expats are headed in the same direction. Let them book the space you don’t use and split your container shipping costs with you. 
-						You save, they save.</p>
-						</div>
-					</div>
-					<div class="col-xs-12">
-						<div class="card-why-us-mob">
-							<h2>We team up with your mover</h2>
-							<p>Sharing your container is pretty straight forward. All you need to do is let your moving company know you want to do so. Request your container to be listed and we’ll team up with your mover to sell the space you don’t need.</p>
-						</div>
-						
-					</div>
-				</div>
-			</div>
-	</section>
-	<section class="wrapper-3-steps-mob hidden-sm hidden-md hidden-lg">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12">
-					<div class="border-mob"></div>
-					<h1>Sharing your container in 3 steps</h1>
-				</div>
-				<div class="col-xs-12">
-					<div class="card-3-steps-mob">
-						<div class="badge-mob">
-						  1
-						</div>
-						<h2>List your container for free</h2>
-						<p>Confirm your basic move information and who your mover is. Set prices for the space you want to sell, we are here to help along the way.</p>
-						
-					</div>
-				</div>
-				<div class="col-xs-12">
-					<div class="card-3-steps-mob">
-						<div class="badge-mob">
-						  2
-						</div>
-						<h2>Your mover handles everything</h2>
-						<p>Once your container is live, qualified expats make enquiries. Your moving company takes care of everything and sells your unused space for you. Track everything in your dashboard.</p>
-					</div>
-				</div>
-				<div class="col-xs-12">
-					<div class="card-3-steps-mob">
-						<div class="badge-mob">
-						  3
-						</div>
-						<h2>Decide how you get paid</h2>
-						<p>Confirm if you want money delivered to your bank account or used to pay your own move bill. Payments are made 1 week after containers sail.
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
 	</section>
 	<section class="wrapper-review-mob hidden-sm hidden-md hidden-lg">
 		<div class="container">
@@ -172,8 +131,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-8">
-					<h2>Need to book your container?</h2>
-					<p>Receive a free list of preferred moving companies in your country. Come back & list your container when you are ready.</p>
+					<h2>Request your free quotes now !</h2>
+					<p>Get free estimates from our moving partners. Discover how much a container costs and what the unused space could earn you.</p>
 				</div>
 				<div class="col-xs-4">
 
@@ -184,7 +143,7 @@
 			<div class="row">
 				<div class="col-xs-12">
 					<div class="btn-movers-list-section">
-						<%= link_to "Get list", pages_hire_mover_path, class: "btn-get-movers-list-mob" %>
+						<%= link_to "Get quotes", pages_hire_mover_path, class: "btn-get-quotes-mob" %>
 				</div>
 					</div>
 			</div>		
@@ -321,21 +280,24 @@
 			<%= render 'containers/faq/mobile/modal-faq6-mobile' %>
 		</div>
 	</section>
-	<section class="wrapper-ready-to-earn-mob hidden-sm hidden-md hidden-lg">
-			<div class="image-box" style="background-image: linear-gradient(270deg, rgba(14, 13, 19, 0) 48.91%, #333333 100%), url(<%= asset_path 'sitted-lady-mob.jpg' %>);">
+	<section class="ready-to-move-mob">
+		
+	</section>
+	<!-- <section class="wrapper-ready-to-earn-mob hidden-sm hidden-md hidden-lg">
+			<div class="image-box" style="background-image: linear-gradient(270deg, rgba(14, 13, 19, 0) 48.91%, #333333 100%), url(<%#= asset_path 'sitted-lady-mob.jpg' %>);">
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12">
 							<div class="ready-to-earn-content">
 								<h1>Ready to earn?</h1>
-								<%= link_to "List my container", containers_form_opening_path, class: "btn-list-container2" %>
+								<%#= link_to "List my container", containers_form_opening_path, class: "btn-list-container2" %>
 							</div>
 						</div>
 					</div>
 				</div>
 					
 			</div>
-	</section>	
+	</section>	 -->
 </div>
 
 
