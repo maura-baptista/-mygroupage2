@@ -490,6 +490,142 @@
 	}
 }
 
+.ready-to-move-mob{
+	background: white;
+	// background-image:  image-url('footer-hills.png'); 
+		background-image:  image-url('d_footer_hills.png'); 
+
+	// background-size: cover;
+	// // background-position: bottom;
+ // 	height: 100vh;
+     background-size: 768px auto;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 133px;
+ 	h1{
+ 		font-family: Comfortaa;
+		font-style: normal;
+		font-weight: bold;
+		line-height: 38px;
+		font-size: 38px;
+		letter-spacing: -2px;
+		color: #333333;
+		margin-bottom: 50px;
+
+ 	}
+	.border{
+		border: 1.5px solid #8B8B8B;
+	    width: 62px;
+	    position: static;
+	}
+	.offer-space{
+		background: #FFFFFF;
+		box-shadow: 0px 0px 20px rgba(112, 135, 185, 0.3);
+		border-radius: 8px;
+		    padding: 31px 24px;
+		.offer-space-header{
+			display: flex;
+			justify-content: space-around;
+			img{
+				height: 50px;
+			}
+			h3{
+				font-family: Comfortaa;
+				font-style: normal;
+				font-weight: bold;
+				line-height: normal;
+				font-size: 38px;
+				letter-spacing: -3px;
+				color: #5AC5C2;
+				margin-top: 0;
+				// margin-left: 5%;
+			}
+		}
+		p{
+			font-family: Comfortaa;
+			font-style: normal;
+			font-weight: normal;
+			line-height: 22px;
+			font-size: 16px;
+			text-align: center;
+			letter-spacing: -1px;
+			color: #484848;
+			margin-top: 16px;
+		}
+		.buttom-get-quotes{
+			text-align: center;
+			margin-top: 24px;
+			.btn-get-quotes{
+				font-family: Comfortaa;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+				font-size: 22px;
+				text-align: center;
+				color: #FFFFFF;
+				background: #5AC5C2;
+				border-radius: 5px;
+				padding: 10px 74px;
+				
+				
+			}
+		}
+		
+	}
+	.find-space{
+		background: #FFFFFF;
+		box-shadow: 0px 0px 20px rgba(112, 135, 185, 0.3);
+		border-radius: 8px;
+		padding: 31px 24px;
+		margin-top: 25px;
+		.find-space-header{
+			display: flex;
+			justify-content: space-around;
+			img{
+				height: 50px;
+			}
+			h3{
+				font-family: Comfortaa;
+				font-style: normal;
+				font-weight: bold;
+				line-height: normal;
+				font-size: 38px;
+				letter-spacing: -3px;
+				color: #353C4C;
+				margin-top: 0;
+				// margin-left: 5%;
+			}
+		}
+		p{
+			font-family: Comfortaa;
+			font-style: normal;
+			font-weight: normal;
+			line-height: 22px;
+			font-size: 16px;
+			text-align: center;
+			letter-spacing: -1px;
+			color: #484848;
+			margin-top: 16px;
+		}
+		.buttom-find-a-container{
+			text-align: center;
+			margin-top: 24px;
+			.btn-find-a-container{
+				font-family: Comfortaa;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+				font-size: 22px;
+				text-align: center;
+				color: #FFFFFF;
+				background: #353C4C;
+				border-radius: 5px;
+				padding: 10px 38px;
+			}
+		}
+	}
+}
+
 .wrapper-ready-to-earn-mob{
 	background: #FFFFFF;
 	padding-bottom: 15px;
@@ -538,6 +674,30 @@
 	} 
 	
 }
+.wrapper-blue-mob{
+	background: #DAEEF5;
+	height: 120px;
+	width: 100%;
+	.social-networks-icons{
+		text-align: center;
+		i{
+			font-size: 20px;
+			padding-right: 15px;
+			color: #849E9F;
+			margin-top: 20px;
+		
+		}
+		p{
+			font-family: Comfortaa;
+			font-style: normal;
+			font-weight: normal;
+			line-height: normal;
+			font-size: 18px;
+			color: #849E9F;
+			margin-top: 16px;
+		}
+	}
+}
 
 // xs mobile devices
 @media only screen 
@@ -550,6 +710,52 @@
   			background-position: 11% 104%;
   		}
   	}
+  	.ready-to-move-mob{
+  		.offer-space{
+  			.offer-space-header{
+  				h3{
+  					font-size: 33px;
+  				}
+  				img{
+  					height: 47px;
+  				}
+  			}
+  			.buttom-get-quotes {
+				.btn-get-quotes{
+					display: block;
+					width: 100%;
+					padding: 10px 44px;
+					font-size: 21px;
+				}
+  			}
+  			p{
+  				font-size: 15px;
+  			}
+  		}
+  		.find-space{
+  			.find-space-header{
+  				h3{
+  					font-size: 33px;
+  				}
+  				img{
+  					height: 47px;
+  				}
+  			}
+  			.buttom-find-a-container {
+				.btn-find-a-container{
+					display: block;
+					width: 100%;
+					padding: 10px 26px;
+					font-size: 21px;
+				}
+  			}
+  			p{
+  				font-size: 15px;
+  			}
+  		}
+
+  	}
+
   }
 
 //large mobile divices

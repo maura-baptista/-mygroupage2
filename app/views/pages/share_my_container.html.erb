@@ -16,7 +16,7 @@
 </div>
 <!-- XXXXXXXXX mobile page XXXXXXXXXX -->
 <div class="hidden-sm hidden-md hidden-lg">
-	<section class="wrapper-banner-header">
+	<section class="wrapper-banner-header hidden-sm hidden-md hidden-lg">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
@@ -26,14 +26,14 @@
 			</div>
 		</div>
 	</section>
-	<section class="steps-to-share-container-mob">
+	<section class="steps-to-share-container-mob hidden-sm hidden-md hidden-lg">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
 					<div class="border"></div>
-					<h1 >How it works</h2>
+					<h1 >How it works</h1>
 					 <div class="gif-container">
-						 <%= image_tag "hire-container-step1-mob2.gif", height: 50 %>
+						 <%= image_tag "mHire-a-container-Step1-Mob.gif", height: 50 %>
 					</div>
 				</div>
 				<div class="col-xs-12">
@@ -46,7 +46,7 @@
 				</div>
 				<div class="col-xs-12">
 					<div class="gif-book-online">
-						 <%= image_tag "hire-container-step2.gif", height: 50 %>
+						 <%= image_tag "mHire-a-container-Step2-Mob.gif", height: 50 %>
 				</div>
 				<div class="col-xs-12">
 					<div class="book-your-move-section">	
@@ -57,7 +57,7 @@
 				</div>
 				<div class="col-xs-12">
 					<div class="gif-earn-money">
-						 <%= image_tag "hire-container-step3.gif", height: 50 %>
+						 <%= image_tag "mHire-a-container-Step3-Mob.gif", height: 50 %>
 					</div>
 				</div>
 				<div class="col-xs-12">
@@ -209,7 +209,7 @@
 				<div class="row">
 					<div class="col-xs-12">
 						<div class="border"></div>
-					<h1>About coshippers</h1>
+						<h1>About coshippers</h1>
 					</div>
 				</div>
 				<div class="row">
@@ -280,8 +280,56 @@
 			<%= render 'containers/faq/mobile/modal-faq6-mobile' %>
 		</div>
 	</section>
-	<section class="ready-to-move-mob">
-		
+	<section class="ready-to-move-mob hidden-sm hidden-md hidden-lg">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="border"></div>
+					<h1>Ready to move?</h1>
+				</div>
+				<div class="col-xs-12">
+					<div class="offer-space">
+						<div class="offer-space-header">
+							<%= image_tag "offer-space-icon.svg", height: 50 %>
+							<h3>Offer space</h3>
+						</div>
+						<p>Book your container and sell the space you don’t use.</p>
+						<div class="buttom-get-quotes">
+							<%= link_to "Get quotes", "#" , class: " btn-get-quotes" %>
+						</div>	
+					</div>
+				</div>
+			</div>	
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="find-space">
+						<div class="find-space-header">
+							<%= image_tag "find-space-icon.svg", height: 50 %>
+							<h3>Find space</h3>
+						</div>
+						<p>Find space in a container headed in your direction and save.</p>
+						<div class="buttom-find-a-container">
+							<%= link_to "Find a container", "#" , class: " btn-find-a-container" %>
+						</div>
+						
+					</div>
+				</div>
+			</div>	
+		</div>
+	</section>
+	<section class="wrapper-blue-mob hidden-sm hidden-md hidden-lg">
+		<div class="social-networks-icons">
+			<%= link_to "https://www.facebook.com/coshippers/" do %>
+				<i class="fab fa-facebook-f"></i>
+			<% end %>
+			<%= link_to "#" do %>
+				<i class="fab fa-twitter"></i>
+			<% end %>
+			<%= link_to "#" do %>
+				<i class="fas fa-envelope"></i>
+			<% end %>
+			<p>hello@coshippers.com</p>
+		</div>
 	</section>
 	<!-- <section class="wrapper-ready-to-earn-mob hidden-sm hidden-md hidden-lg">
 			<div class="image-box" style="background-image: linear-gradient(270deg, rgba(14, 13, 19, 0) 48.91%, #333333 100%), url(<%#= asset_path 'sitted-lady-mob.jpg' %>);">
@@ -311,17 +359,17 @@
 			<div class="row">
 				<div class="col-sm-4">
 					<div class="gif-container margin-right-large">
-						 <%= image_tag "hire-container-step1.gif", height: 50 %>
+						 <%= image_tag "mHire-a-container-Step1-Mob.gif", height: 50 %>
 					</div>
 				</div>
 				<div class="col-sm-4">
 					<div class="gif-book-online margin-right-large">
-						 <%= image_tag "hire-container-step2.gif", height: 50 %>
+						 <%= image_tag "mHire-a-container-Step2-Mob.gif", height: 50 %>
 					</div>
 				</div>
 				<div class="col-sm-4">
 					<div class="earn-money margin-right-large">
-						 <%= image_tag "hire-container-step3.gif", height: 50 %>
+						 <%= image_tag "mHire-a-container-Step3-Mob.gif", height: 50 %>
 					</div>
 				</div>
 			</div>
@@ -568,7 +616,6 @@
 						</div>
 						<p>Book your container and sell the space you don’t use.</p>
 						<%= link_to "Get quotes", "#" , class: " btn-get-quotes" %>
-
 					</div>
 				</div>
 				<div class="col-sm-6">
@@ -579,7 +626,6 @@
 						</div>
 						<p>Find space in a container headed in your direction and save.</p>
 						<%= link_to "Find a container", "#" , class: " btn-find-a-container" %>
-
 					</div>
 				</div>
 			</div>

@@ -8,18 +8,19 @@
 	    letter-spacing: -2px;
 	    color: #333333;
 	    line-height: 38px;
-	    font-size: 38px;
+	    font-size: 36px;
 	    text-align: left;
 	     margin-top: 22px;
+	     margin-bottom: 29px;
 
 
 
 	}
 	.border{
-			border: 1.5px solid #8B8B8B;
-		    width: 62px;
-		    position: static;
-		}
+		border: 1.5px solid #8B8B8B;
+	    width: 62px;
+	    position: static;
+	}
 	.text-center{
 		text-align: center;
 	}
@@ -40,7 +41,7 @@
 			font-weight: bold;
 			line-height: 37px;
 			font-size: 28px;
-			letter-spacing: -1px;
+			letter-spacing: -2px;
 
 			color: #000000;
 		}
@@ -48,10 +49,11 @@
 			font-family: Comfortaa;
 			font-style: normal;
 			font-weight: normal;
-			line-height: 31px;
+			line-height: unset;
 			font-size: 16px;
 
 			color: #484848;
+			margin-bottom: 65px;
 		}
 	}
 	.gif-book-online{
@@ -62,7 +64,7 @@
 		img{
 			height: auto;
 			width: 100%;
-			margin-top: 40px;
+			margin-top: 19px;
 		}
 	}
 	.book-your-move-section{
@@ -77,7 +79,7 @@
 			font-weight: bold;
 			line-height: 37px;
 			font-size: 28px;
-			letter-spacing: -1px;
+			letter-spacing: -2px;
 
 			color: #000000;
 		}
@@ -85,10 +87,10 @@
 			font-family: Comfortaa;
 			font-style: normal;
 			font-weight: normal;
-			line-height: 31px;
+			line-height: unset;
 			font-size: 16px;
-
 			color: #484848;
+			margin-bottom: 70px;
 		}
 	}
 	.gif-earn-money{
@@ -100,7 +102,7 @@
 		img{
 			height: auto;
 			width: 100%;
-			margin-top: 40px;
+			margin-top: 55px;
 		}
 	}
 	.earn-money-section{
@@ -115,14 +117,15 @@
 			font-weight: bold;
 			line-height: 37px;
 			font-size: 28px;
-			letter-spacing: -1px;
+			letter-spacing: -2px;
 			color: #000000;
+			margin-top: 54px;
 		}
 		p{
 			font-family: Comfortaa;
 			font-style: normal;
 			font-weight: normal;
-			line-height: 31px;
+			line-height: unset;
 			font-size: 16px;
 			color: #484848;
    			 margin-bottom: 80px;
@@ -130,6 +133,8 @@
 	}
 	
 }
+
+
 
 @media only screen 
   and (max-width: 320px){
