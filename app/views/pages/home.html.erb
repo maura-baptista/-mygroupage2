@@ -344,16 +344,50 @@
 				<%= render 'pages/faq/modal-faq6' %>
 			</div>
 		</section>
-		<section class="wrapper-ready-to-earn-home">
+		<section class="wrapper-ready-to-move">
+		<div class="wrapper-content">
+			<div class="border"></div>
+			<h1>Ready to move? </h1>
 			<div class="container">
-				<div class="image-box" style="background-image: linear-gradient(90deg, #0E0D13 0%, rgba(13, 12, 18, 0.9) 0.01%, rgba(3, 2, 8, 0) 63.54%), url(<%= asset_path 'men.jpeg' %>);">
-						<div class="ready-to-earn-content">
-							<h1>Ready to save?</h1>
-							<%= link_to "Find a container", pages_search_container_path, class: "btn-find-container" %>
+				<div class="row">
+				<div class="col-sm-6">
+					<div class="offer-sapce">
+						<div class="offer-space-header">
+							<%= image_tag "offer-space-icon.svg", height: 50 %>
+							<h3>Offer space</h3>
 						</div>
+						<p>Book your container and sell the space you don’t use.</p>
+						<%= link_to "Get quotes", "#" , class: " btn-get-quotes" %>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="find-sapce">
+						<div class="find-space-header">
+							<%= image_tag "find-space-icon.svg", height: 50 %>
+							<h3>Find space</h3>
+						</div>
+						<p>Find space in a container headed in your direction and save.</p>
+						<%= link_to "Find a container", "#" , class: " btn-find-a-container" %>
+					</div>
 				</div>
 			</div>
-		</section>	
+			</div>
+		</div>	
+	</section>
+	<section class="wrapper-blue">
+		<div class="social-networks-icons">
+			<%= link_to "https://www.facebook.com/coshippers/" do %>
+				<i class="fab fa-facebook-f"></i>
+			<% end %>
+			<%= link_to "#" do %>
+				<i class="fab fa-twitter"></i>
+			<% end %>
+			<%= link_to "#" do %>
+				<i class="fas fa-envelope"></i>
+			<% end %>
+			<p>hello@coshippers.com</p>
+		</div>
+	</section>
 			
 	</div>
 </div>	
@@ -647,20 +681,55 @@
 				<%= render 'pages/faq/mobile/modal-faq6-mob' %>
 			</div>
 	</section>
-	<section class="wrapper-ready-to-earn-home-mob">
-			
-		<div class="image-box" style="background-image: linear-gradient(90deg, #0E0D13 0%, rgba(13, 12, 18, 0.9) 0.01%, rgba(3, 2, 8, 0) 63.54%), url(<%= asset_path 'men.jpeg' %>);">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12">
-						<div class="ready-to-earn-content">
-							<h1>Ready to save?</h1>
-							<%= link_to "Find a container", pages_search_container_path, class: "btn-list-container2" %>
+	<section class="ready-to-move-mob hidden-sm hidden-md hidden-lg">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="border"></div>
+					<h1>Ready to move?</h1>
+				</div>
+				<div class="col-xs-12">
+					<div class="offer-space">
+						<div class="offer-space-header">
+							<%= image_tag "offer-space-icon.svg", height: 50 %>
+							<h3>Offer space</h3>
 						</div>
+						<p>Book your container and sell the space you don’t use.</p>
+						<div class="buttom-get-quotes">
+							<%= link_to "Get quotes", "#" , class: " btn-get-quotes" %>
+						</div>	
 					</div>
 				</div>
-				
-			</div>
+			</div>	
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="find-space">
+						<div class="find-space-header">
+							<%= image_tag "find-space-icon.svg", height: 50 %>
+							<h3>Find space</h3>
+						</div>
+						<p>Find space in a container headed in your direction and save.</p>
+						<div class="buttom-find-a-container">
+							<%= link_to "Find a container", "#" , class: " btn-find-a-container" %>
+						</div>
+						
+					</div>
+				</div>
+			</div>	
 		</div>
-	</section>	
+	</section>
+	<section class="wrapper-blue-mob hidden-sm hidden-md hidden-lg">
+		<div class="social-networks-icons">
+			<%= link_to "https://www.facebook.com/coshippers/" do %>
+				<i class="fab fa-facebook-f"></i>
+			<% end %>
+			<%= link_to "#" do %>
+				<i class="fab fa-twitter"></i>
+			<% end %>
+			<%= link_to "#" do %>
+				<i class="fas fa-envelope"></i>
+			<% end %>
+			<p>hello@coshippers.com</p>
+		</div>
+	</section>
 </div>
