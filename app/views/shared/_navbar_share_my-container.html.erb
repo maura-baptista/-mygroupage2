@@ -27,7 +27,18 @@
       <%#= link_to "List my container", new_container_path , class: "navbar-wagon-item navbar-wagon-link" %>
       <!-- <i class="fas fa-people-carry"></i><%#= link_to "Hire a mover",pages_hire_mover_path , class: "navbar-wagon-item navbar-wagon-link btn-hire-mover" %> -->
       <%= link_to "Find a container", pages_search_container_path , class: "navbar-wagon-item navbar-wagon-link btn-find-space" %>
-      <%= link_to "Share my container", new_container_path , class: "navbar-wagon-item navbar-wagon-link btn-offer-space" %>
+      <div class="navbar-wagon-item">
+            <div class="dropdown">
+              <div class="dropdown-toggle btn-offer-space navbar-wagon-link" data-toggle="dropdown">
+                Share my container
+              </div>
+              <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu navbar-dropdown-menu-right">
+          
+                <li><%= link_to "I need a container",   share_my_container_path, class: "dark-grey-color" %></li>
+                <li><%= link_to "I have booked my move",  new_container_path, class: "dark-grey-color" %></li>
+              </ul>
+            </div>
+          </div>
       
 
       <!-- Avatar with dropdown menu -->
@@ -60,8 +71,18 @@
       <!-- Login link (when logged out) -->
      <!--  <i class="fas fa-people-carry"></i> --><%#= link_to "Hire a mover", pages_hire_mover_path , class: "navbar-wagon-item navbar-wagon-link btn-hire-mover" %>
       <%= link_to "Find a container", pages_search_container_path , class: "navbar-wagon-item navbar-wagon-link btn-find-space" %>
-      <%= link_to "Share my container", new_container_path , class: "navbar-wagon-item navbar-wagon-link btn-offer-space" %>
-      <%#= link_to t(".sign_up", default: "Register"), new_user_registration_path, class: "navbar-wagon-item navbar-wagon-link" %>
+      <div class="navbar-wagon-item">
+            <div class="dropdown">
+              <div class="dropdown-toggle btn-offer-space navbar-wagon-link" data-toggle="dropdown">
+                Share my container
+              </div>
+              <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu navbar-dropdown-menu-right">
+          
+                <li><%= link_to "I need a container",   share_my_container_path, class: "dark-grey-color" %></li>
+                <li><%= link_to "I have booked my move",  new_container_path, class: "dark-grey-color" %></li>
+              </ul>
+            </div>
+          </div>
        <%= link_to "Sign up",  pages_login_path, class: "navbar-wagon-item navbar-wagon-link" %>
 
       <%= link_to t(".sign_in", default: "Log in"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
@@ -77,8 +98,8 @@
           <hr>
           <li><%= link_to "Hire a mover",   pages_hire_mover_path %></li>
           <li><%= link_to "Learn about sharing my container",  new_container_path %></li>
-           <li><%= link_to "Offer space",  containers_form_opening_path %></li>
-           <li><%= link_to "Find space",  pages_search_container_path %></li>
+           <li><%= link_to "Share my container",   share_my_container_path %></li>
+           <li><%= link_to "Find a container",  pages_search_container_path %></li>
       </ul>
     </div>
   </div>
@@ -117,7 +138,7 @@
           <hr>
           <li><%= link_to "Hire a mover",   pages_hire_mover_path %></li>
           <li><%= link_to "Learn about sharing my container",  new_container_path %></li>
-           <li><%= link_to "Share my container",  containers_form_opening_path %></li>
+           <li><%= link_to "Share my container",   share_my_container_path %></li>
            <li><%= link_to "Find a container",  pages_search_container_path %></li>
 
           <hr>
