@@ -1,0 +1,35 @@
+.movers-banner{
+
+	.header-wrapper{
+		background: white;
+		height: 20vh;
+		padding: 0 89px;
+		.header-text{
+			h1{
+				font-family: Comfortaa;
+				font-style: normal;
+				font-weight: 300;
+				line-height: normal;
+				font-size: 48px;
+				letter-spacing: -3px;
+				color: #000000;
+				margin: 0;
+				padding-top: 52px;
+				.text-bold{
+					font-weight: 400;
+				}
+			}
+		}
+		.partner-form-section{
+			.form-movers{
+				
+			}
+		}
+	}
+	.banner-movers-hero{
+		background-image:  image-url('partners_hero.png');
+	 	background-size: cover;
+	 	height: 50vh;
+	 	background-position: center;
+	}
+}

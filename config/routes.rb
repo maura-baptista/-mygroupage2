@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
  
   
+  get 'movers/index'
+  get 'movers/new'
   ActiveAdmin.routes(self)
   devise_for :users,
     controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
@@ -33,6 +35,7 @@ Rails.application.routes.draw do
 
   resources :groupages, only: [:index, :show]
   resources :alerts, only: [:new, :create]
+  resources :movers, only: [:index, :new, :create]
   
   resources :user_steps
   resources :lists, only: [ :new, :create, :edit, :update ]
