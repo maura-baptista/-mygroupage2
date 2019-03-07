@@ -105,7 +105,7 @@
 }
 .wrapper-pricing-model-mob{
 	background: #FFFFFF;
-	padding-bottom: 140px;
+	padding-bottom: 104px;
 	.movers-list-box{
 	    background-color: #F2F2F2;
 	    background-color: #F2F2F2;
@@ -218,7 +218,7 @@
 .wrapper-mover-stepline-mob{
 	background: white;
 	padding: 0 15px;
-	padding-bottom: 50px;
+	padding-bottom: 75px;
 	h1{    padding-bottom: 50px;
 	    font-family: Comfortaa;
 	    font-style: normal;
@@ -281,4 +281,12 @@
 			margin-top: 12px;
 		}
 	}	
+}
+
+@media only screen 
+  and (max-width: 320px){
+	.wrapper-mover-stepline-mob{
+		padding: 0;
+		padding-bottom: 60px;
+	}
 }

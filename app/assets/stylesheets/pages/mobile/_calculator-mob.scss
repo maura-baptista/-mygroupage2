@@ -624,6 +624,24 @@
 			}
 		}
 	}
+	.button-list-my-company{
+		text-align: center;
+		.btn-list-my-company{
+			background: #008489;
+			border-radius: 5px;
+			font-family: Comfortaa;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			font-size: 23px;
+			color: #FFFFFF;
+			padding: 13px 44px;
+		}
+	}
+}
+.borders-padding{
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 .wrapper-ready-to-earn-mob{
@@ -753,6 +771,14 @@
   				font-size: 15px;
   			}
   		}
+  		.button-list-my-company{
+		
+			.btn-list-my-company{
+			display: block;
+			width: 100%;
+			font-size: 19px;
+			}
+		}
 
   	}
 
