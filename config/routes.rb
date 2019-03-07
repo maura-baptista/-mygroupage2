@@ -1,15 +1,13 @@
 Rails.application.routes.draw do
 
  
-  
-  get 'movers/index'
-  get 'movers/new'
   ActiveAdmin.routes(self)
   devise_for :users,
     controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
 
   resources :flats
  # get 'groupages/form_opening'
+  get 'pages/partner_form_confirmation'
   get 'containers/form_opening'
   get 'pages/login'
   get 'pages/hire_mover'

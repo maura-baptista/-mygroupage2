@@ -2,7 +2,7 @@
 
 	.header-wrapper{
 		background: white;
-		height: 20vh;
+		height: 30vh;
 		padding: 0 89px;
 		.header-text{
 			h1{
@@ -14,15 +14,90 @@
 				letter-spacing: -3px;
 				color: #000000;
 				margin: 0;
-				padding-top: 52px;
+				padding-top: 75px;
 				.text-bold{
-					font-weight: 400;
+					font-weight: 600;
 				}
 			}
 		}
 		.partner-form-section{
 			.form-movers{
-				
+				background: #F8F8F9;
+				border-radius: 5px;
+				padding: 40px 40px;
+				margin-top: 50px;
+		
+				h2{
+					font-family: Comfortaa;
+					font-style: normal;
+					font-weight: bold;
+					line-height: 35px;
+					font-size: 26px;
+					letter-spacing: -1px;
+					color: #008489;
+					margin: 0;
+					margin-bottom: 15px;
+				}	
+				form{
+					::placeholder{
+						font-family: Comfortaa;
+						font-style: normal;
+						font-weight: 300;
+						line-height: normal;
+						font-size: 16px;
+						letter-spacing: -1px;
+
+						color: #353C4C;
+					}
+					.form-control{
+						border: 0.5 solid #B4BBC6;
+						box-shadow: none;
+						font-family: Comfortaa;
+						font-style: normal;
+						font-weight: 300;
+						line-height: normal;
+						font-size: 16px;
+						letter-spacing: -1px;
+
+						color: #353C4C;
+					}
+					.top-border-radius{
+						border-radius: 5px 5px 0px 0px;
+					}
+					.input-margin-none{
+						margin-bottom: -16px;
+					}
+					.bottom-border-radius{
+						border-radius: 0px 0px 5px 5px !important;
+
+					}
+					.right-border-radius{
+						border-radius: 5px 0px 0px 0px;
+
+					}
+					.left-border-radius{
+						border-radius: 0px 5px 0px 0px;
+					}
+					.right-padding{
+						padding-right: 0;
+					}
+					.left-padding{
+						padding-left: 0;
+					}
+					.btn-submit-movers-form{
+						background: #008489;
+						border-radius: 5px;
+						font-family: Comfortaa;
+						font-style: normal;
+						font-weight: 400;
+						line-height: normal;
+						font-size: 26px;
+						text-align: center;
+						color: #FFFFFF;
+						width: 100%;
+						height: 55px;
+					}
+				}
 			}
 		}
 	}
@@ -33,3 +108,220 @@
 	 	background-position: center;
 	}
 }
+.wrapper-pricing-model{
+	background: #FFFFFF;
+	padding-bottom: 140px;
+	.movers-list-box{
+	    background-color: #F2F2F2;
+	    padding-top: 18px;
+	    padding-left: 55px;
+	    padding-bottom: 22px;
+		.movers-list-text{
+			h2{
+				font-family: Comfortaa;
+				font-style: normal;
+				font-weight: bold;
+				line-height: 48px;
+				font-size: 36px;
+				letter-spacing: -1px;
+				color: #353C4C;
+			}
+			p{
+				font-family: Comfortaa;
+				font-style: normal;
+				font-weight: 300;
+				line-height: 33px;
+				font-size: 19px;
+				letter-spacing: -1px;
+				color: #353C4C;
+				
+
+			}
+			.top-paragraph{
+					margin-bottom: 30px;
+				}
+			.bottom-paragraph{
+				margin-bottom: 0;
+				margin-top: 8px;
+			}
+			
+			.sucess-steps{
+				display: flex;
+				.check-icon{
+					width: 30px;
+					height: 30px;
+					border-radius: 50%;
+					background: #008489;
+					 display: flex;
+					 justify-content: space-around;
+					 align-items: center;
+					font-weight: 300;
+					font-size: 15px;
+					text-align: center;
+					color: #FFFFFF;
+				}
+				p{
+					font-family: Comfortaa;
+					font-style: normal;
+					font-weight: 300;
+					line-height: 33px;
+					font-size: 19px;
+					letter-spacing: -1px;
+					color: #353C4C;
+					margin-left: 15px;
+					margin-bottom: 16px;
+				}
+			}
+			
+		}
+		.movers-list-image{
+			position: relative;
+			.mover-assist-image{
+				position: absolute;
+			    right: 26px;
+			    top: -72px;
+			    height: 496px;
+			}
+		}
+		.btn-get-movers-list{
+			background: #5AC5C2;
+			border-radius: 5px;
+	        font-family: Comfortaa;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			font-size: 20px;
+			color: #FFFFFF;
+			text-align: center;
+			text-align: center;
+    		padding: 14px 49px;
+    		text-decoration: none;
+    		&:hover{
+    			background: #008489;
+    		}
+		}
+
+		.btn-get-quotes{
+			background: #008489;
+			border-radius: 5px;
+	        font-family: Comfortaa;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			font-size: 22px;
+			color: #FFFFFF;
+			text-align: center;
+			text-align: center;
+    		padding: 14px 35px;
+    		text-decoration: none;
+    		&:hover{
+    			background: #008489;
+    		}
+		}
+	}
+}
+
+.wrapper-mover-stepline{
+	background: white;
+
+	.main-border{
+		border: 1.5px solid #8B8B8B;
+		width: 62px;
+		position: absolute;
+		left: 50%;
+	}
+	h1{
+		font-family: Comfortaa;
+		font-style: normal;
+		font-weight: bold;
+		line-height: 94px;
+		font-size: 48px;
+		text-align: center;
+		letter-spacing: -3px;
+		color: #333333;
+		margin-bottom: 46px;
+		margin-top: 10px;
+
+	}
+	.stepline-icon-container{
+		display: flex;
+		align-items: center;
+		.stepline-border{
+			border: 1.5px solid #5AC5C2;
+			width: 100%;
+			margin-left: 20px;
+		}
+	}
+	.stepline-description{
+		h2{
+			font-family: Comfortaa;
+			font-style: normal;
+			font-weight: bold;
+			line-height: 28px;
+			font-size: 22px;
+			color: #000000;
+			margin-top: 21px;
+		}
+		p{
+			font-family: Comfortaa;
+			font-style: normal;
+			font-weight: normal;
+			line-height: 32px;
+			font-size: 16px;
+			letter-spacing: -1px;
+			color: #484848;
+			margin-top: -3px;
+		}
+	}	
+}
+.wrapper-ready-to-book-jobs{
+	background-image:  image-url('d_footer_hills.png');
+ 	background-size: cover;
+ 	background-position: bottom;
+ 	height: 73vh;
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: space-around;
+ 	.wrapper-content{
+ 		position: relative;
+ 		.border{
+			border: 1.5px solid #8B8B8B;
+			width: 62px;
+			position: absolute;
+			left: 41%;
+		}
+		h1{
+			font-family: Comfortaa;
+			font-style: normal;
+			font-weight: bold;
+			line-height: 59px;
+			font-size: 48px;
+			text-align: center;
+			letter-spacing: -3px;
+			color: #333333;
+			margin-top: 27px;
+			margin-bottom: 98px;
+
+		}
+		.button-list-my-company{
+			text-align: center;
+			.btn-list-my-company{
+				background: #008489;
+				border-radius: 5px;
+				font-family: Comfortaa;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+				font-size: 28px;
+				color: #FFFFFF;
+				padding: 16px 46px;
+			}
+		}
+		
+ 	}
+}
+
+
+
+
+

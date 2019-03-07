@@ -6,6 +6,9 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable,
          :omniauthable, omniauth_providers: [:facebook]
+         
+  belongs_to :profileable, polymorphic: true
+
 
   # validates :agreement, acceptance: { message: 'must accept terms' }
   # validates :agreement, acceptance: { accept: true }, on: :create, allow_nil: false

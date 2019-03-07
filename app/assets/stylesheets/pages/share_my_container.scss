@@ -67,6 +67,26 @@
 }
 
 .wrapper-steps-to-share-container{
+	position: relative;
+
+	h1{
+		font-family: Comfortaa;
+		font-style: normal;
+		font-weight: bold;
+		line-height: 94px;
+		font-size: 48px;
+		text-align: center;
+		letter-spacing: -3px;
+		color: #333333;
+		margin-top: 20px;
+		margin-bottom: 50px;
+	}
+	.main-border{
+		border: 1.5px solid #8B8B8B;
+		width: 62px;
+		position: absolute;
+		left: 50%;
+	}
 	background: white;
 	padding-top: 80px;
 	padding-bottom: 140px;
@@ -203,6 +223,7 @@
 
 .wrapper-banner-header{
 	background: white;
+	padding: 0px 15px;
 	h1{
 		margin: 0;
 		margin-top: 51px;
@@ -212,7 +233,7 @@
 		line-height: normal;
 		font-size: 36px;
 		letter-spacing: -2px;
-		color: #484848;
+		color: #333333;
 	}
 	p{
 		margin: 0;
@@ -221,7 +242,7 @@
 		font-style: normal;
 		font-weight: normal;
 		line-height: 32px;
-		font-size: 24px;
+		font-size: 27px;
 		letter-spacing: -1px;
 
 		color: #484848;

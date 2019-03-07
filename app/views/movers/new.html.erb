@@ -1,26 +1,476 @@
-<div class="blank-wrapper">
-        
-</div>
-<div class="movers-banner">
-	<div class="header-wrapper">
-		<div class="row">
-			<div class="col-sm-7">
-				<div class="header-text">
-					<h1><span class="text-bold">Book more ocean moves</span> <br>
-					Organize groupages with us</h1>
+<!-- desktop version -->
+<div class="hidden-xs">
+	<div class="blank-wrapper">     
+	</div>
+	<div class="movers-banner">
+		<div class="header-wrapper">
+			<div class="row">
+				<div class="col-sm-8">
+					<div class="header-text">
+						<h1><span class="text-bold">Book more ocean moves</span> <br>
+						Organize groupages with us</h1>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="partner-form-section">
+						<div class="form-movers">
+							<h2>Partner with us</h2>
+							<%= simple_form_for @mover do |f| %>
+							<!-- <ul>
+					            <% @mover.errors.full_messages.each do |error| %>
+					              <li><%= error %>
+					            <% end %>
+					         </ul> -->
+					            <% if flash.any? %>
+							        <div class="alert alert-success">
+							          <% flash.each do |key, value| %>
+							            <%= content_tag :div, value, class: "flash #{key}" %>
+							          <% end %>
+							        </div>
+							    <% end %>
+							<div class="row">
+								<div class="col-sm-12">
+									<%= f.input :company_name, label: false, placeholder: "Company name", input_html: { class: "top-border-radius input-margin-none" } %>
+									<%= f.input :office_address, label: false, placeholder: "Country of operation", input_html: { id: "mover_country_address", class: "bottom-border-radius" }%>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-6 right-padding">
+									<%= f.input :responsible_first_name, label: false, placeholder: "First name", input_html: { class: "right-border-radius input-margin-none" } %>
+								</div>
+								<div class="col-sm-6 left-padding">
+									<%= f.input :responsible_last_name, label: false, placeholder: "Last name", input_html: { class: "left-border-radius input-margin-none" } %>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-12">
+									<%= f.input :responsible_function, label: false, collection: Mover::EMPLOYEE_ROLE, prompt: "Your role", input_html: { class: "bottom-border-radius " } %>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-12">
+									<%= f.input :email, label: false, placeholder: "Email address", input_html: { class: "top-border-radius input-margin-none" } %>
+									<%= f.input :phone_number, label: false, placeholder: "Phone number", input_html: { id: "mover_country_address", class: "bottom-border-radius" }%>
+								</div>
+							</div>	
+							<div class="row">
+								<div class="col-sm-12">
+									<%= f.input :groupage_experience, label: false, collection: ["yes", "no"], prompt: "Do you handle groupage already?" %>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-12">
+									<%= f.submit "Submit >", class: "btn btn-submit-movers-form"  %>
+								</div>
+							</div>
+							<% end %>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="col-sm-5">
-				<div class="partner-form-section">
+			
+		</div>
+		<div class="banner-movers-hero">
+			
+		</div>
+	</div>
+	<section class="wrapper-steps-to-share-container">
+		<div class="container">
+			<div class="row">
+				<div class="main-border"></div>
+				<h1>Book & manage more groupage moves</h1>
+				<div class="col-sm-4">
+					<div class="gif-container margin-right-large">
+						 <%= image_tag "step1-new-bookings.gif", height: 50 %>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="gif-book-online margin-right-large">
+						 <%= image_tag "step2-find-partners.gif", height: 50 %>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="earn-money margin-right-large">
+						 <%= image_tag "step3-partner-with-pros.gif", height: 50 %>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="compare-movers-section margin-right-small ">
+						<div class="border"></div>
+						<h2>Do more business <br> <br></h2>
+						<p>Receive FCL bookings from expats  willing to sell their unused space to  other people. Handle enquiries and operations with clients as usual. 
+						Be a DA for our worldwide partners shipping groupages to your area.</p>
+						
+					</div>
+					
+				</div>
+				<div class="col-sm-4">
+					<div class="book-your-move-section margin-right-small ">
+						<div class="border"></div>
+						<h2>Join a network of groupage movers</h2>
+						<p>Leave the guesswork out of the equation. Join a community of Movers who share groupage best practices for their region. Consign your shipments to agents who handle those operations regularly.</p>
+						
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="earn-money-section margin-right-small ">
+						<div class="border"></div>
+						<h2>Partner with professionals</h2>
+						<p>When you partner with Coshippers, we're right next to you. We'll get you set up, promote your services, work with you to keep operations smooth and impress your customers. We’ll work together to boost volumes. </p>
+						
+					</div>
+				</div>
+			</div>	
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="cta-section">
+						<%= link_to "Get in touch >", "#" , class: "btn-get-quotes" %>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="wrapper-pricing-model">
+		
+		<div class="movers-list-box">
+			<div class="container">
+				<div class="row">
+						<div class="col-sm-8">
+							<div class="movers-list-text">
+								<h2>Success-based pricing model</h2>
+								<p class="top-paragraph"> Join our platform and start receiving enquiries for free. We only charge a fee on successfull jobs (clients sharing their container on coshippers).</p>
+								<div class="sucess-steps">
+									<span class="check-icon"><i class="fas fa-check"></i></span>
+									<p>Receive free leads of expats willing to start a groupage</p>	
+								</div>
+								<div class="sucess-steps">
+									<span class="check-icon"><i class="fas fa-check"></i></span>
+									<p>Confirmed clients publish their groupage online</p>	
+								</div>
+								<div class="sucess-steps">
+									<span class="check-icon"><i class="fas fa-check"></i></span>
+									<p>We work with you to send more leads and fill the groupage up ! </p>	
+								</div>
+								<p class="bottom-paragraph">
+									Get in touch to learn how you can increase your bookings and revenue via our success based pricing model.
+								</p>
+							</div>
+							
+						</div>
+						<div class="col-sm-4">
+							<div class="movers-list-image">
+								<%= image_tag "moving-assist-desk.png", height: 50, class: "mover-assist-image" %>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="wrapper-mover-stepline">
+		<div class="container">
+			<div class="row">
+				<div class="main-border"></div>
+				<h1>Handling moves on coshippers</h1>
+				<div class="col-sm-3">
+					<div class="stepline-icon-container">
+						<%= image_tag "ID-icon.svg", height: 50 %>
+						<div class="stepline-border"></div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="stepline-icon-container">
+						<%= image_tag "chat-icon.svg", height: 50 %>
+						<div class="stepline-border"></div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="stepline-icon-container">
+						<%= image_tag "small-truck-icon.svg", height: 50 %>
+						<div class="stepline-border"></div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="stepline-icon-container">
+						<%= image_tag "money-icon.svg", height: 50 %>
+						<div class="stepline-border"></div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="stepline-description">
+						<h2>List your company</h2>
+						<p>Get in touch to learn more about coshippers. We’ll discuss eligibility requirements and help you set a profile for your moving company.</p>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="stepline-description">
+						<h2>Receive enquiries</h2>
+						<p>Receive enquiries from expats willing to start or join a groupage. Perform surveys and send quotes within 48hrs.</p>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="stepline-description">
+						<h2>Organize operations</h2>
+						<p>Organize your operations as usual. If needed, leverage our network to find a reliable destination agent to handle your groupage.</p>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="stepline-description">
+						<h2>Get paid locally</h2>
+						<p>Raise your invoices and receive payments from expats locally. </p>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</section>
+	<section class="wrapper-ready-to-book-jobs">
+		<div class="wrapper-content">
+			<div class="border"></div>
+			<h1>Ready to book more jobs? <br>
+				Sign up today </h1>
+				<div class="button-list-my-company">
+					<%= link_to "List my company",   share_my_container_path, class: "btn-list-my-company" %>
+				</div>
+			
+		</div>	
+	</section>
+	<section class="wrapper-blue">
+		<div class="social-networks-icons">
+			<%= link_to "https://www.facebook.com/coshippers/" do %>
+				<i class="fab fa-facebook-f"></i>
+			<% end %>
+			<%= link_to "#" do %>
+				<i class="fab fa-twitter"></i>
+			<% end %>
+			<%= link_to "#" do %>
+				<i class="fas fa-envelope"></i>
+			<% end %>
+			<p>hello@coshippers.com</p>
+		</div>
+	</section>	
+</div>
+
+<!-- mobile version -->
+<div class="hidden-sm hidden-md hidden-lg">
+	<div class="blank-wrapper">     
+	</div>
+	<div class="movers-banner-mob">
+		<div class="container">
+			<h1><span class="text-bold">Book more <br> ocean moves</span> <br>
+			Organize groupages with us</h1>
+		</div>
+	</div>
+	<div class="wrapper-partner-form">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
 					<div class="form-movers">
+						<h2>Partner with us</h2>
+						<%= simple_form_for @mover do |f| %>
+						<!-- <ul>
+				            <% @mover.errors.full_messages.each do |error| %>
+				              <li><%= error %>
+				            <% end %>
+				         </ul> -->
+				            <% if flash.any? %>
+						        <div class="alert alert-success">
+						          <% flash.each do |key, value| %>
+						            <%= content_tag :div, value, class: "flash #{key}" %>
+						          <% end %>
+						        </div>
+						    <% end %>
+						<div class="row">
+							<div class="col-xs-12">
+								<%= f.input :company_name, label: false, placeholder: "Company name", input_html: { class: "top-border-radius input-margin-none" } %>
+								<%= f.input :office_address, label: false, placeholder: "Country of operation", input_html: { id: "mover_country_address", class: "bottom-border-radius" }%>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6 right-padding">
+								<%= f.input :responsible_first_name, label: false, placeholder: "First name", input_html: { class: "right-border-radius input-margin-none" } %>
+							</div>
+							<div class="col-xs-6 left-padding">
+								<%= f.input :responsible_last_name, label: false, placeholder: "Last name", input_html: { class: "left-border-radius input-margin-none" } %>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								<%= f.input :responsible_function, label: false, collection: Mover::EMPLOYEE_ROLE, prompt: "Your role", input_html: { class: "bottom-border-radius " } %>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								<%= f.input :email, label: false, placeholder: "Email address", input_html: { class: "top-border-radius input-margin-none" } %>
+								<%= f.input :phone_number, label: false, placeholder: "Phone number", input_html: { id: "mover_country_address", class: "bottom-border-radius" }%>
+							</div>
+						</div>	
+						<div class="row">
+							<div class="col-xs-12">
+								<%= f.input :groupage_experience, label: false, collection: ["yes", "no"], prompt: "Do you handle groupage already?" %>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								<%= f.submit "Submit >", class: "btn btn-submit-movers-form"  %>
+							</div>
+						</div>
+						<% end %>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<section class="banner-movers-hero-mob">
+		
+	</section>
+	<section class="steps-to-share-container-mob hidden-sm hidden-md hidden-lg">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="border"></div>
+					<h1 class="header-margin-top" >Book & manage more groupage moves</h1>
+					 <div class="gif-container">
+						 <%= image_tag "mstep1-new-bookings.gif", height: 50 %>
+					</div>
+				</div>
+				<div class="col-xs-12">
+					<div class="compare-movers-section ">
+						<h2 class="sec-header-margin-top">Do more business</h2>
+						<p>Receive FCL bookings from expats  willing to sell their unused space to  other people. Handle enquiries and operations with clients as usual. 
+						Be a DA for our worldwide partners shipping groupages to your area.</p>	
+					</div>
+					<hr>
+				</div>
+				<div class="col-xs-12">
+					<div class="gif-book-online">
+						 <%= image_tag "mtep2-find-partners.gif", height: 50, class: "img-margin-top" %>
+					</div>
+				</div>
+				<div class="col-xs-12">
+					<div class="book-your-move-section">	
+						<h2 class="sec-header-margin-top">Join a network of groupage movers</h2>
+						<p>Leave the guesswork out of the equation. Join a community of Movers who share groupage best practices for their region. Consign your shipments to agents who handle those operations regularly.</p>	
+					</div>
+					<hr>
+				</div>
+				<div class="col-xs-12">
+					<div class="gif-earn-money">
+						 <%= image_tag "mstep3-partner-with pros.gif", height: 50 %>
+					</div>
+				</div>
+				<div class="col-xs-12">
+					<div class="earn-money-section">
+						<h2 class="earn-header-margin">Partner with professionals</h2>
+						<p>When you partner with Coshippers, we're right next to you. We'll get you set up, promote your services, work with you to keep operations smooth and impress your customers. We’ll work together to boost volumes.  </p>
 						
 					</div>
 				</div>
 			</div>
 		</div>
+	</section>
+	<section class="wrapper-pricing-model-mob">
+		<div class="movers-list-box">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="movers-list-text">
+							<h2>Success-based pricing model</h2>
+							<p class="top-paragraph"> Join our platform and start receiving enquiries for free. We only charge a fee on successfull jobs (clients sharing their container on coshippers).</p>
+							<div class="sucess-steps">
+								<span class="check-icon"><i class="fas fa-check"></i></span>
+								<p>Receive free leads of expats willing to start a groupage</p>	
+							</div>
+							<div class="sucess-steps">
+								<span class="check-icon"><i class="fas fa-check"></i></span>
+								<p>Confirmed clients publish their groupage online</p>	
+							</div>
+							<div class="sucess-steps">
+								<span class="check-icon"><i class="fas fa-check"></i></span>
+								<p>We work with you to send more leads and fill the groupage up ! </p>	
+							</div>
+							<p class="bottom-paragraph">
+								Get in touch to learn how you can increase your bookings and revenue via our success based pricing model.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="wrapper-mover-stepline-mob">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="border"></div>
+					<h1 class="header-margin-top" >Handling moves on coshippers</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-2">
+					<div class="stepline-icon-container">
+						<%= image_tag "ID-icon.svg", height: 50 %>
+						<div class="stepline-border"></div>
+					</div>					
+				</div>
+				<div class="col-xs-10">
+					<div class="stepline-description">
+						<h2>List your company</h2>
+						<p>Get in touch to learn more about coshippers. We’ll discuss eligibility requirements and help you set a profile for your moving company.</p>
+					</div>
+					
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-2">
+					<div class="stepline-icon-container">
+						<%= image_tag "chat-icon.svg", height: 50 %>
+						<div class="stepline-border"></div>
+					</div>					
+				</div>
+				<div class="col-xs-10">
+					<div class="stepline-description">
+						<h2>Receive enquiries</h2>
+						<p>Receive enquiries from expats willing to start or join a groupage. Perform surveys and send quotes within 48hrs.</p>
+					</div>
+				</div>
+			</div> 
+			<div class="row">
+				<div class="col-xs-2">
+					<div class="stepline-icon-container">
+						<%= image_tag "small-truck-icon.svg", height: 50 %>
+						<div class="stepline-border"></div>
+					</div>					
+				</div>
+				<div class="col-xs-10">
+					<div class="stepline-description">
+						<h2>Organize operations</h2>
+						<p>Organize your operations as usual. If needed, leverage our network to find a reliable destination agent to handle your groupage.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-2">
+					<div class="stepline-icon-container">
+						<%= image_tag "money-icon.svg", height: 50 %>
+						<div class="stepline-border"></div>
+					</div>					
+				</div>
+				<div class="col-xs-10">
+					<div class="stepline-description">
+						<h2>Get paid locally</h2>
+						<p>Raise your invoices and receive payments from expats locally </p>
+					</div>
+				</div>
+			</div>
+		</div>
 		
-	</div>
-	<div class="banner-movers-hero">
-		
-	</div>
+	</section>
 </div>
+
+
+
+
+

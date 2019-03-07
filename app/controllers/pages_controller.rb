@@ -45,6 +45,9 @@ class PagesController < ApplicationController
     render layout: "share_my_container"
   end
 
+  def partner_form_confirmation
+  end
+
   private
 
   # def resolve_layout

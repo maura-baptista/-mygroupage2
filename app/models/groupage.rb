@@ -9,12 +9,10 @@ class Groupage < ApplicationRecord
 
 
 
-
   geocoded_by :origin, :latitude => :latitude, :longitude => :longitude
   geocoded_by :destination, :latitude => :destination_latitude, :longitude => :destination_longitude
   after_validation :geocode_endpoints, if: :will_save_change_to_origin?
   after_validation :geocode_endpoints, if: :will_save_change_to_destination?
-
 
 
 	PHONE_PREFIX = @currencies = ["+33", "+44", "+35", "+61", "+1"]

@@ -1,6 +1,7 @@
 .steps-to-share-container-mob{
 	background: white;
-	padding-top: 50px;
+	padding: 0 15px;
+	padding-top: 80px;
 	h1{
 	    font-family: Comfortaa;
 	    font-style: normal;
@@ -42,8 +43,8 @@
 			line-height: 37px;
 			font-size: 28px;
 			letter-spacing: -2px;
-
 			color: #000000;
+			margin-top: 7px;
 		}
 		p{
 			font-family: Comfortaa;
@@ -53,7 +54,10 @@
 			font-size: 16px;
 
 			color: #484848;
-			margin-bottom: 65px;
+			margin-bottom: 46px;
+		}
+		.sec-header-margin-top{
+			margin-top: 29px;
 		}
 	}
 	.gif-book-online{
@@ -64,7 +68,10 @@
 		img{
 			height: auto;
 			width: 100%;
-			margin-top: 19px;
+			margin-top: 7px;
+		}
+		.img-margin-top{
+			margin-top: 29px;
 		}
 	}
 	.book-your-move-section{
@@ -82,6 +89,7 @@
 			letter-spacing: -2px;
 
 			color: #000000;
+			    margin-top: -1px;
 		}
 		p{
 			font-family: Comfortaa;
@@ -90,7 +98,10 @@
 			line-height: unset;
 			font-size: 16px;
 			color: #484848;
-			margin-bottom: 70px;
+			margin-bottom: 46px;
+		}
+		.sec-header-margin-top{
+			margin-top: 29px;
 		}
 	}
 	.gif-earn-money{
@@ -102,7 +113,7 @@
 		img{
 			height: auto;
 			width: 100%;
-			margin-top: 55px;
+			margin-top: 30px;
 		}
 	}
 	.earn-money-section{
@@ -119,7 +130,7 @@
 			font-size: 28px;
 			letter-spacing: -2px;
 			color: #000000;
-			margin-top: 54px;
+			margin-top: 35px;
 		}
 		p{
 			font-family: Comfortaa;
@@ -130,8 +141,15 @@
 			color: #484848;
    			 margin-bottom: 80px;
 		}
+		.earn-header-margin{
+			margin-top: 23px;
+		}
 	}
-	
+	.header-margin-top{
+		margin-bottom: 44px;
+	}
+
+
 }
 
 

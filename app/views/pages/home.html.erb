@@ -23,23 +23,23 @@
 	</div>
 	<div class="hidden-xs">
 		<section class="wrapper-why-mygroupage">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-6">
-							<div class="card-whyus">
-								<h2>Why use coshippers?</h2>
-							<p>Everyday, hundreds of expats ship their goods abroad. While costs are high, most containers sail with a great amount of unused space. Use one of those containers for your move and split shipping costs. Win-win !</p>
-							</div>
-						</div>
-						<div class="col-sm-6">
-							<div class="card-whyus">
-								<h2>Complete & professional service</h2>
-								<p>Sharing a container on coshippers is simple, secure and fully compliant. Every listing is quality controlled & approved by coshippers. And all operations are handled by international movers you can trust.</p>
-							</div>
-							
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="card-whyus">
+							<h2>Why use coshippers?</h2>
+						<p>Everyday, hundreds of expats ship their goods abroad. While costs are high, most containers sail with a great amount of unused space. Use one of those containers for your move and split shipping costs. Win-win !</p>
 						</div>
 					</div>
+					<div class="col-sm-6">
+						<div class="card-whyus">
+							<h2>Complete & professional service</h2>
+							<p>Sharing a container on coshippers is simple, secure and fully compliant. Every listing is quality controlled & approved by coshippers. And all operations are handled by international movers you can trust.</p>
+						</div>
+						
+					</div>
 				</div>
+			</div>
 		</section>
 		<section class="wrapper-moving-3-steps">
 			<div class="container">
@@ -345,50 +345,49 @@
 			</div>
 		</section>
 		<section class="wrapper-ready-to-move">
-		<div class="wrapper-content">
-			<div class="border"></div>
-			<h1>Ready to move? </h1>
-			<div class="container">
-				<div class="row">
-				<div class="col-sm-6">
-					<div class="offer-sapce">
-						<div class="offer-space-header">
-							<%= image_tag "offer-space-icon.svg", height: 50 %>
-							<h3>Offer space</h3>
+			<div class="wrapper-content">
+				<div class="border"></div>
+				<h1>Ready to move? </h1>
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="offer-sapce">
+								<div class="offer-space-header">
+									<%= image_tag "offer-space-icon.svg", height: 50 %>
+									<h3>Offer space</h3>
+								</div>
+								<p>Book your container and sell the space you don’t use.</p>
+								<%= link_to "Get quotes", pages_hire_mover_path , class: " btn-get-quotes" %>
+							</div>
 						</div>
-						<p>Book your container and sell the space you don’t use.</p>
-						<%= link_to "Get quotes", pages_hire_mover_path , class: " btn-get-quotes" %>
+						<div class="col-sm-6">
+							<div class="find-sapce">
+								<div class="find-space-header">
+									<%= image_tag "find-space-icon.svg", height: 50 %>
+									<h3>Find space</h3>
+								</div>
+								<p>Find space in a container headed in your direction and save.</p>
+								<%= link_to "Find a container",  pages_search_container_path , class: " btn-find-a-container" %>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="col-sm-6">
-					<div class="find-sapce">
-						<div class="find-space-header">
-							<%= image_tag "find-space-icon.svg", height: 50 %>
-							<h3>Find space</h3>
-						</div>
-						<p>Find space in a container headed in your direction and save.</p>
-						<%= link_to "Find a container",  pages_search_container_path , class: " btn-find-a-container" %>
-					</div>
-				</div>
+			</div>	
+		</section>
+		<section class="wrapper-blue">
+			<div class="social-networks-icons">
+				<%= link_to "https://www.facebook.com/coshippers/" do %>
+					<i class="fab fa-facebook-f"></i>
+				<% end %>
+				<%= link_to "#" do %>
+					<i class="fab fa-twitter"></i>
+				<% end %>
+				<%= link_to "#" do %>
+					<i class="fas fa-envelope"></i>
+				<% end %>
+				<p>hello@coshippers.com</p>
 			</div>
-			</div>
-		</div>	
-	</section>
-	<section class="wrapper-blue">
-		<div class="social-networks-icons">
-			<%= link_to "https://www.facebook.com/coshippers/" do %>
-				<i class="fab fa-facebook-f"></i>
-			<% end %>
-			<%= link_to "#" do %>
-				<i class="fab fa-twitter"></i>
-			<% end %>
-			<%= link_to "#" do %>
-				<i class="fas fa-envelope"></i>
-			<% end %>
-			<p>hello@coshippers.com</p>
-		</div>
-	</section>
-			
+		</section>	
 	</div>
 </div>	
 	
