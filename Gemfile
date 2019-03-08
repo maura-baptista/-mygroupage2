@@ -16,6 +16,7 @@ gem 'sassc-rails'
 gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
+gem 'bootstrap-slider-rails'
 
 gem "letter_opener", group: :development
 gem 'postmark-rails'

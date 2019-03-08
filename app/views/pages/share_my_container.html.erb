@@ -2,26 +2,350 @@
         
 </div>
  <!-- desktop banner -->
-<div class="banner-share-my-container ">
+
+<div class="banner-wrapper hidden-xs">
 	<div class="banner-content">
 		<div class="banner-tagline">
-			<h1 class="hidden-xs">Let your move pay for itself</h1>
-			<p class="hidden-xs">Book a container & let other expats <br> rent the space you don’t use. </p>
-		</div>
-		<div class="get-quotes-button hidden-xs">
-			<%= link_to "Get quotes >", "#" , class: "btn-get-quotes" %>
+			<h1 class="hidden-xs"><b class="text-bold">
+				Book a container and</b> <br>
+				let other expats rent the 
+				space you don’t need
+			</h1>
+			<div class="get-quotes-button hidden-xs">
+				<%= link_to "Get quotes >", "#" , class: "btn-get-quotes" %>
+			</div>
 		</div>
 	</div>
-	
+	<div class="banner-hero">
+		
+	</div>
 </div>
+
+<!-- ***************** desktop page ************ -->
+<div class="hidden-xs">
+	<section class="wrapper-steps-to-share-container">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="main-border header-margin-top"></div>
+					<h1>How to book and share your container</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="gif-container margin-right-large">
+						 <%= image_tag "mHire-a-container-Step1-Mob.gif", height: 50 %>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="gif-book-online margin-right-large">
+						 <%= image_tag "mHire-a-container-Step2-Mob.gif", height: 50 %>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="earn-money margin-right-large">
+						 <%= image_tag "mHire-a-container-Step3-Mob.gif", height: 50 %>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="compare-movers-section margin-right-small ">
+						<div class="border"></div>
+						<h2>Compare movers</h2>
+						<p>Talk to our moving partners near you and receive quotes to ship your goods in a full container. Discover how much unused space you have and what you could earn by letting other expats book it.</p>
+						
+					</div>
+					
+				</div>
+				<div class="col-sm-4">
+					<div class="book-your-move-section margin-right-small ">
+						<div class="border"></div>
+						<h2>Book your move</h2>
+						<p>Hire the mover you are most comfortable with. Confirm basic information like your dates, route, and how much you want to earn from your unused space. Hit publish: your container is live.</p>
+						
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="earn-money-section margin-right-small ">
+						<div class="border"></div>
+						<h2>Earn money</h2>
+						<p>Once your container is live, qualified expats start making enquiries. Sit back as your mover handles them and turns them into money for you. Monitor progress in your dahsboard. </p>
+						
+					</div>
+				</div>
+			</div>	
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="cta-section">
+						<%= link_to "Get quotes >", "#" , class: "btn-get-quotes" %>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="wrapper-review">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="card-review-image card-padding" style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url(<%= asset_path 'review-deskt.jpg' %>);">
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="card-review-content card-padding">
+						<div class="review-content">
+							<%= image_tag "right-quotation-mark.svg", height: 30, class: "doube-quotes" %> <br>
+							<p>The mover was responsible for handling each move in my container. This definitely helped me decide to share my container.
+							</p>
+							<span class="review-owner">
+								Karen shared a container with other teachers
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="wrapper-container-sharing">
+		<div class="container">
+			<div class="row">
+				<div class="border"></div>
+				<h1>Simple, secure & compliant</h1>
+				<div class="col-sm-6">
+					<div class="sharing-description card-padding">
+						<p>We know it’s a priority to make sure that sharing your container does not affect your move in any way: <br>
+						- your schedule must be respected <br>
+						- no hiccup at customs can be tolerated <br> <br>
+
+						To achieve this, we team-up with your mover to qualify every expat interested in booking your unused space. Their schedule must fit yours, their paperwork must be in order for customs clearance.</p>
+					</div>
+					
+				</div>
+				<div class="col-sm-6">
+					<div class="sharing-points card-padding">
+						<ul>
+							<li><%= image_tag "check.svg", height: 50, class: "checklist-icon" %><span class="text-bold">Secure</span> : all moves are packed by the moving company</li>
+							<li><%= image_tag "check.svg", height: 50, class: "checklist-icon" %><span class="text-bold">Compliant</span> : each move is cleared separately under its owner’s name</li>
+							<li><%= image_tag "check.svg", height: 50, class: "checklist-icon" %><span class="text-bold">Insured</span> : moving insurance is available for all moves</li>
+							<li><%= image_tag "check.svg", height: 50, class: "checklist-icon" %><span class="text-bold">On-time</span> : : container’s sailing schedule is set on YOUR dates</li>
+							<li><%= image_tag "check.svg", height: 50, class: "checklist-icon" %><span class="text-bold">Secure</span>  : your container is sealed & opened in front of you</li>
+							<li><%= image_tag "check.svg", height: 50, class: "checklist-icon" %><span class="text-bold">Vetted</span> : listings are quality controlled & approved by coshippers</li>
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="wrapper-movers-list">
+		<div class="container">
+			<div class="movers-list-box">
+				<div class="row">
+						<div class="col-sm-8">
+							<div class="movers-list-text">
+								<h2>Request your free quotes now !</h2>
+								<p>Get free estimates from our moving partners. Discover how much a container costs and what the unused space could earn you.</p>
+								<%= link_to "Get quotes", pages_hire_mover_path, class: "btn-get-quotes" %>
+							</div>
+							
+						</div>
+						<div class="col-sm-4">
+							<div class="movers-list-image">
+								<%= image_tag "moving-assist-desk.png", height: 50, class: "mover-assist-image" %>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="wrapper-payments">
+		<div class="container">
+			<div class="row">
+				<div class="border"></div>
+				<h1>Payments made simple</h1>
+				<div class="col-sm-4">
+					<div class="card-payments">
+						<h2>Charge what you want</h2>
+						<p>You always get to pick the price for your unused space. Use our suggested prices or set your own.</p>
+						
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="card-payments">
+						<h2>Our service is free</h2>
+						<p>Our service is completely free to you. Our revenue comes from the moving companies.</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="card-payments">
+						<h2>Decide who gets paid</h2>
+						<p>Receive the money from bookings directly or ask your mover to collect and deduct from your own invoice.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="wrapper-review-II">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="card-review-content">
+						<div class="review-content">
+							<%= image_tag "right-quotation-mark.svg", height: 30, class: "doube-quotes" %> <br> 
+							<p>Sharing our container has pretty much paid the flight tickets.
+							</p>
+							<span class="review-owner">
+								Marie & Jean-Paul used coshippers to reduce 
+								their relocation expenses
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="card-review-image" style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url(<%= asset_path 'couple-review-dskt.jpg' %>);">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="wrapper-about-us">
+			<div class="container">
+				<div class="row">
+					<div class="border"></div>
+					<h1>About coshippers</h1>
+					<div class="col-sm-6">
+						<div class="card-why-us">
+							<h2>What is coshippers?</h2>
+							<p>coshippers is a community based international moving platform. We use spare container capacity and the power of online communities to make international moving finally affordable.</p>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="card-why-us">
+							<h2>What is a groupage?</h2>
+							<p>You can earn money by sharing your container’s space with expats relocating on a similar itinerary. A shared-container is usually referred to as “groupage” by moving companies. List your container and earn money from your spare space.</p>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+	</section>
+	<section class="FAQ">
+		<div class="container">
+			<div class="row">
+				<div class="border"></div>
+				<h1>Your questions answered</h1>
+				<div class="col-sm-6">
+						<div class="card-faq">
+							 <button type="button" class=" btn-faq" data-toggle="modal" data-target="#who-can-start-a-groupage">
+						  	Who can list a container?
+							</button>
+							<hr>
+							 <button type="button" class=" btn-faq" data-toggle="modal" data-target="#what-is-required-for-expats">
+						  	What is required of expats joining my container?
+							</button>
+							<hr>
+							<button type="button" class=" btn-faq" data-toggle="modal" data-target="#how-much-does-it-cost-to-list">
+						  	How much does it cost to list my container?
+							</button>
+							<hr>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="card-faq">
+							<button type="button" class=" btn-faq" data-toggle="modal" data-target="#what-protection-do-i-have">
+						  	Will my goods be mixed with others in the container?
+							</button>
+							<hr>
+							<button type="button" class=" btn-faq" data-toggle="modal" data-target="#how-much-do-i-pay">
+						  	What protection do I have against property damage?
+							</button>
+							<hr>
+							<button type="button" class=" btn-faq" data-toggle="modal" data-target="#how-can-mygroupage-help">
+						  	How can coshippers help me with setting prices?
+							</button>
+							<hr>
+						</div>
+						
+					</div>
+			</div>
+			<%= render 'containers/faq/modal-faq1' %>
+			<%= render 'containers/faq/modal-faq2' %>
+			<%= render 'containers/faq/modal-faq3' %>
+			<%= render 'containers/faq/modal-faq4' %>
+			<%= render 'containers/faq/modal-faq5' %>
+			<%= render 'containers/faq/modal-faq6' %>
+		</div>
+	</section>
+	<section class="wrapper-ready-to-move">
+		<div class="wrapper-content">
+			<div class="border"></div>
+			<h1>Ready to move? </h1>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="offer-sapce">
+							<div class="offer-space-header">
+								<%= image_tag "offer-space-icon.svg", height: 50 %>
+								<h3>Offer space</h3>
+							</div>
+							<p>Book your container and sell the space you don’t use.</p>
+							<%= link_to "Get quotes", pages_hire_mover_path , class: " btn-get-quotes" %>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="find-sapce">
+							<div class="find-space-header">
+								<%= image_tag "find-space-icon.svg", height: 50 %>
+								<h3>Find space</h3>
+							</div>
+							<p>Find space in a container headed in your direction and save.</p>
+							<%= link_to "Find a container", pages_search_container_path , class: " btn-find-a-container" %>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</section>
+	<section class="wrapper-blue">
+		<div class="social-networks-icons">
+			<%= link_to "https://www.facebook.com/coshippers/" do %>
+				<i class="fab fa-facebook-f"></i>
+			<% end %>
+			<%= link_to "#" do %>
+				<i class="fab fa-twitter"></i>
+			<% end %>
+			<%= link_to "#" do %>
+				<i class="fas fa-envelope"></i>
+			<% end %>
+			<p>hello@coshippers.com</p>
+		</div>
+	</section>
+	<!-- <section class="wrapper-ready-to-earn">
+		<div class="container">
+			<div class="image-box" style="background-image: linear-gradient(90deg, #0E0D13 0%, rgba(13, 12, 18, 0.9) 0.01%, rgba(3, 2, 8, 0) 63.54%), url(<%#= asset_path 'sitted-lady.jpg' %>);">
+					<div class="ready-to-earn-content">
+						<h1>Ready to earn?</h1>
+						<%#= link_to "List my container", containers_form_opening_path, class: "btn-list-container2" %>
+					</div>
+			</div>
+		</div>
+	</section>	 -->
+</div>
+
+
 <!-- XXXXXXXXX mobile page XXXXXXXXXX -->
 <div class="hidden-sm hidden-md hidden-lg">
+	<section class="banner-share-container-mob">	
+	</section>
 	<section class="wrapper-banner-header hidden-sm hidden-md hidden-lg">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
-					<h1>Let your move pay for itself</h1>
-					<p>Book a container & let other expats rent the space you don’t use.</p>
+					<h1><b>Book a container</b>  and 
+					let other expats rent the 
+					space you don’t need</h1>
+					
 				</div>
 			</div>
 		</div>
@@ -346,319 +670,5 @@
 			</div>
 	</section>	 -->
 </div>
-
-
-
-
-
-<!-- ***************** desktop page ************ -->
-<div class="hidden-xs">
-	<section class="wrapper-steps-to-share-container">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-4">
-					<div class="gif-container margin-right-large">
-						 <%= image_tag "mHire-a-container-Step1-Mob.gif", height: 50 %>
-					</div>
-				</div>
-				<div class="col-sm-4">
-					<div class="gif-book-online margin-right-large">
-						 <%= image_tag "mHire-a-container-Step2-Mob.gif", height: 50 %>
-					</div>
-				</div>
-				<div class="col-sm-4">
-					<div class="earn-money margin-right-large">
-						 <%= image_tag "mHire-a-container-Step3-Mob.gif", height: 50 %>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-4">
-					<div class="compare-movers-section margin-right-small ">
-						<div class="border"></div>
-						<h2>Compare movers</h2>
-						<p>Talk to our moving partners near you and receive quotes to ship your goods in a full container. Discover how much unused space you have and what you could earn by letting other expats book it.</p>
-						
-					</div>
-					
-				</div>
-				<div class="col-sm-4">
-					<div class="book-your-move-section margin-right-small ">
-						<div class="border"></div>
-						<h2>Book your move</h2>
-						<p>Hire the mover you are most comfortable with. Confirm basic information like your dates, route, and how much you want to earn from your unused space. Hit publish: your container is live.</p>
-						
-					</div>
-				</div>
-				<div class="col-sm-4">
-					<div class="earn-money-section margin-right-small ">
-						<div class="border"></div>
-						<h2>Earn money</h2>
-						<p>Once your container is live, qualified expats start making enquiries. Sit back as your mover handles them and turns them into money for you. Monitor progress in your dahsboard. </p>
-						
-					</div>
-				</div>
-			</div>	
-			<div class="row">
-				<div class="col-sm-12">
-					<div class="cta-section">
-						<%= link_to "Get quotes >", "#" , class: "btn-get-quotes" %>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="wrapper-review">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-6">
-					<div class="card-review-image card-padding" style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url(<%= asset_path 'review-deskt.jpg' %>);">
-					</div>
-				</div>
-				<div class="col-sm-6">
-					<div class="card-review-content card-padding">
-						<div class="review-content">
-							<%= image_tag "right-quotation-mark.svg", height: 30, class: "doube-quotes" %> <br>
-							<p>The mover was responsible for handling each move in my container. This definitely helped me decide to share my container.
-							</p>
-							<span class="review-owner">
-								Karen shared a container with other teachers
-							</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="wrapper-container-sharing">
-		<div class="container">
-			<div class="row">
-				<div class="border"></div>
-				<h1>Simple, secure & compliant</h1>
-				<div class="col-sm-6">
-					<div class="sharing-description card-padding">
-						<p>We know it’s a priority to make sure that sharing your container does not affect your move in any way: <br>
-						- your schedule must be respected <br>
-						- no hiccup at customs can be tolerated <br> <br>
-
-						To achieve this, we team-up with your mover to qualify every expat interested in booking your unused space. Their schedule must fit yours, their paperwork must be in order for customs clearance.</p>
-					</div>
-					
-				</div>
-				<div class="col-sm-6">
-					<div class="sharing-points card-padding">
-						<ul>
-							<li><%= image_tag "check.svg", height: 50, class: "checklist-icon" %><span class="text-bold">Secure</span> : all moves are packed by the moving company</li>
-							<li><%= image_tag "check.svg", height: 50, class: "checklist-icon" %><span class="text-bold">Compliant</span> : each move is cleared separately under its owner’s name</li>
-							<li><%= image_tag "check.svg", height: 50, class: "checklist-icon" %><span class="text-bold">Insured</span> : moving insurance is available for all moves</li>
-							<li><%= image_tag "check.svg", height: 50, class: "checklist-icon" %><span class="text-bold">On-time</span> : : container’s sailing schedule is set on YOUR dates</li>
-							<li><%= image_tag "check.svg", height: 50, class: "checklist-icon" %><span class="text-bold">Secure</span>  : your container is sealed & opened in front of you</li>
-							<li><%= image_tag "check.svg", height: 50, class: "checklist-icon" %><span class="text-bold">Vetted</span> : listings are quality controlled & approved by coshippers</li>
-						</ul>
-					</div>
-					
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="wrapper-movers-list">
-		<div class="container">
-			<div class="movers-list-box">
-				<div class="row">
-						<div class="col-sm-8">
-							<div class="movers-list-text">
-								<h2>Request your free quotes now !</h2>
-								<p>Get free estimates from our moving partners. Discover how much a container costs and what the unused space could earn you.</p>
-								<%= link_to "Get quotes", pages_hire_mover_path, class: "btn-get-quotes" %>
-							</div>
-							
-						</div>
-						<div class="col-sm-4">
-							<div class="movers-list-image">
-								<%= image_tag "moving-assist-desk.png", height: 50, class: "mover-assist-image" %>
-							</div>
-						</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="wrapper-payments">
-		<div class="container">
-			<div class="row">
-				<div class="border"></div>
-				<h1>Payments made simple</h1>
-				<div class="col-sm-4">
-					<div class="card-payments">
-						<h2>Charge what you want</h2>
-						<p>You always get to pick the price for your unused space. Use our suggested prices or set your own.</p>
-						
-					</div>
-				</div>
-				<div class="col-sm-4">
-					<div class="card-payments">
-						<h2>Our service is free</h2>
-						<p>Our service is completely free to you. Our revenue comes from the moving companies.</p>
-					</div>
-				</div>
-				<div class="col-sm-4">
-					<div class="card-payments">
-						<h2>Decide who gets paid</h2>
-						<p>Receive the money from bookings directly or ask your mover to collect and deduct from your own invoice.
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="wrapper-review-II">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-6">
-					<div class="card-review-content">
-						<div class="review-content">
-							<%= image_tag "right-quotation-mark.svg", height: 30, class: "doube-quotes" %> <br> 
-							<p>Sharing our container has pretty much paid the flight tickets.
-							</p>
-							<span class="review-owner">
-								Marie & Jean-Paul used coshippers to reduce 
-								their relocation expenses
-							</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-6">
-					<div class="card-review-image" style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url(<%= asset_path 'couple-review-dskt.jpg' %>);">
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="wrapper-about-us">
-			<div class="container">
-				<div class="row">
-					<div class="border"></div>
-					<h1>About coshippers</h1>
-					<div class="col-sm-6">
-						<div class="card-why-us">
-							<h2>What is coshippers?</h2>
-							<p>coshippers is a community based international moving platform. We use spare container capacity and the power of online communities to make international moving finally affordable.</p>
-						</div>
-					</div>
-					<div class="col-sm-6">
-						<div class="card-why-us">
-							<h2>What is a groupage?</h2>
-							<p>You can earn money by sharing your container’s space with expats relocating on a similar itinerary. A shared-container is usually referred to as “groupage” by moving companies. List your container and earn money from your spare space.</p>
-						</div>
-						
-					</div>
-				</div>
-			</div>
-	</section>
-	<section class="FAQ">
-		<div class="container">
-			<div class="row">
-				<div class="border"></div>
-				<h1>Your questions answered</h1>
-				<div class="col-sm-6">
-						<div class="card-faq">
-							 <button type="button" class=" btn-faq" data-toggle="modal" data-target="#who-can-start-a-groupage">
-						  	Who can list a container?
-							</button>
-							<hr>
-							 <button type="button" class=" btn-faq" data-toggle="modal" data-target="#what-is-required-for-expats">
-						  	What is required of expats joining my container?
-							</button>
-							<hr>
-							<button type="button" class=" btn-faq" data-toggle="modal" data-target="#how-much-does-it-cost-to-list">
-						  	How much does it cost to list my container?
-							</button>
-							<hr>
-						</div>
-					</div>
-					<div class="col-sm-6">
-						<div class="card-faq">
-							<button type="button" class=" btn-faq" data-toggle="modal" data-target="#what-protection-do-i-have">
-						  	Will my goods be mixed with others in the container?
-							</button>
-							<hr>
-							<button type="button" class=" btn-faq" data-toggle="modal" data-target="#how-much-do-i-pay">
-						  	What protection do I have against property damage?
-							</button>
-							<hr>
-							<button type="button" class=" btn-faq" data-toggle="modal" data-target="#how-can-mygroupage-help">
-						  	How can coshippers help me with setting prices?
-							</button>
-							<hr>
-						</div>
-						
-					</div>
-			</div>
-			<%= render 'containers/faq/modal-faq1' %>
-			<%= render 'containers/faq/modal-faq2' %>
-			<%= render 'containers/faq/modal-faq3' %>
-			<%= render 'containers/faq/modal-faq4' %>
-			<%= render 'containers/faq/modal-faq5' %>
-			<%= render 'containers/faq/modal-faq6' %>
-		</div>
-	</section>
-	<section class="wrapper-ready-to-move">
-		<div class="wrapper-content">
-			<div class="border"></div>
-			<h1>Ready to move? </h1>
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-6">
-						<div class="offer-sapce">
-							<div class="offer-space-header">
-								<%= image_tag "offer-space-icon.svg", height: 50 %>
-								<h3>Offer space</h3>
-							</div>
-							<p>Book your container and sell the space you don’t use.</p>
-							<%= link_to "Get quotes", pages_hire_mover_path , class: " btn-get-quotes" %>
-						</div>
-					</div>
-					<div class="col-sm-6">
-						<div class="find-sapce">
-							<div class="find-space-header">
-								<%= image_tag "find-space-icon.svg", height: 50 %>
-								<h3>Find space</h3>
-							</div>
-							<p>Find space in a container headed in your direction and save.</p>
-							<%= link_to "Find a container", pages_search_container_path , class: " btn-find-a-container" %>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>	
-	</section>
-	<section class="wrapper-blue">
-		<div class="social-networks-icons">
-			<%= link_to "https://www.facebook.com/coshippers/" do %>
-				<i class="fab fa-facebook-f"></i>
-			<% end %>
-			<%= link_to "#" do %>
-				<i class="fab fa-twitter"></i>
-			<% end %>
-			<%= link_to "#" do %>
-				<i class="fas fa-envelope"></i>
-			<% end %>
-			<p>hello@coshippers.com</p>
-		</div>
-	</section>
-	<!-- <section class="wrapper-ready-to-earn">
-		<div class="container">
-			<div class="image-box" style="background-image: linear-gradient(90deg, #0E0D13 0%, rgba(13, 12, 18, 0.9) 0.01%, rgba(3, 2, 8, 0) 63.54%), url(<%#= asset_path 'sitted-lady.jpg' %>);">
-					<div class="ready-to-earn-content">
-						<h1>Ready to earn?</h1>
-						<%#= link_to "List my container", containers_form_opening_path, class: "btn-list-container2" %>
-					</div>
-			</div>
-		</div>
-	</section>	 -->
-</div>
-
-<!-- <div class="banner-mobile hidden-sm hidden-md hidden-lg">
-	
-</div> -->
 
 
