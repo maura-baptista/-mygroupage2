@@ -46,6 +46,7 @@ class PagesController < ApplicationController
   end
 
   def partner_form_confirmation
+    render layout: "mover"
   end
 
   private

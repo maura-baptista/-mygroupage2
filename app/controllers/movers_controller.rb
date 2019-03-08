@@ -6,6 +6,7 @@ class MoversController < ApplicationController
 
   def new
   	@mover = Mover.new
+    render layout: "mover"
   end
 
   def create

@@ -368,6 +368,31 @@
           text-decoration: none currentcolor solid;
     }
   }
+  .btn-nav-list-company{
+      background: #008489;
+      border: 0.5px solid rgba(192, 201, 217, 0.5);
+      border-radius: 5px;
+      padding: 11px 46px; 
+      font-family: Comfortaa;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      font-size: 18px;
+      text-align: center;
+      letter-spacing: -1px;
+      color: #FFFFFF !important;
+      margin-left: 38px;
+        
+      &:hover{
+        background: #e5e5e5;
+        text-decoration: none;
+        color: #353C4C;
+        }
+        &:visited{
+            color: #353C4C;
+            text-decoration: none currentcolor solid;
+      }
+    }
   .btn-nav-list-container{
     background: #008489;
     border: 0.5px solid rgba(192, 201, 217, 0.5);
@@ -455,6 +480,10 @@
       background-size: 22% 42%;
       margin-left: 20px;
       color: #FFFFFF;
+    }
+    .btn-nav-list-company{
+        padding: 11px 25px;
+        font-size: 17px;
     }
   }
 
