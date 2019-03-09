@@ -1,6 +1,6 @@
 class Groupage < ApplicationRecord
   belongs_to :user
-  belongs_to :container
+  belongs_to :container, dependent: :destroy
   # before_save :geocode_endpoints
   validates :departure_date, :origin, :destination, presence: true
   # validates :mover, presence: true, on: :mover_info
