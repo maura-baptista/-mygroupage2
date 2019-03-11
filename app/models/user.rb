@@ -7,7 +7,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable,
          :omniauthable, omniauth_providers: [:facebook]
          
-  belongs_to :profileable, polymorphic: true
+  # belongs_to :profileable, polymorphic: true
 
 
   # validates :agreement, acceptance: { message: 'must accept terms' }
