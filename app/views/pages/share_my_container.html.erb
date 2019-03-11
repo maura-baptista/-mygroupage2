@@ -18,50 +18,49 @@
 				</div>
 			</div>
 			<div class="get-quotes-form">
-				 <%= simple_form_for(@estimate) do |f| %>
-			<div class="row">
-				<div class="col-sm-6">
-			 		<%= f.input :departure_location, label: false, placeholder: "Moving from", input_html: { id: "lead_origin-address" }%>
-			 	</div>
-			 	<div class="col-sm-6">
-			 		<%= f.input :arrival_location, label: false, placeholder: "Moving to", input_html: { id: "lead_destination-address" } %>
-			 	</div>
-			</div>
-			<div class="row">
- 				<div class="col-sm-6">
- 					<%= f.input :expat_first_name, label: false, placeholder: "First name"%>
- 				</div>
- 				<div class="col-sm-6">
- 					<%= f.input :expat_last_name, label: false, placeholder: "Last name" %>
- 				</div>
- 			</div>
- 			<div class="row">
- 				<div class="col-sm-6">
- 					<%= f.input :expat_email, label: false, placeholder: "Email address" %>
- 				</div>
- 				<div class="col-sm-6">
- 					<%= f.input :expat_phone_number, label: false, placeholder: "Phone number" %>
- 				</div>
- 			</div>
- 			<div class="row">
- 				<div class="col-sm-12">
- 					<div class="get-quotes-button hidden-xs">
-						<%= link_to "Get quotes >", "#" , class: "btn-get-quotes" %>
-					</div> 
- 				</div>
- 			</div>
+				 <%= simple_form_for @estimate, :url => {:controller => 'estimates', :action => 'create'} do |f| %>
+				<div class="row">
+					<div class="col-sm-6">
+				 		<%= f.input :departure_location, label: false, placeholder: "Moving from", input_html: { id: "departure_location-address" }%>
+				 	</div>
+				 	<div class="col-sm-6">
+				 		<%= f.input :arrival_location, label: false, placeholder: "Moving to", input_html: { id: "arrival_location-address" } %>
+				 	</div>
+				</div>
+				<div class="row">
+	 				<div class="col-sm-6">
+	 					<%= f.input :expat_first_name, label: false, placeholder: "First name"%>
+	 				</div>
+	 				<div class="col-sm-6">
+	 					<%= f.input :expat_last_name, label: false, placeholder: "Last name" %>
+	 				</div>
+	 			</div>
+	 			<div class="row">
+	 				<div class="col-sm-6">
+	 					<%= f.input :expat_email, label: false, placeholder: "Email address" %>
+	 				</div>
+	 				<div class="col-sm-6">
+	 					<%= f.input :expat_phone_number, label: false, placeholder: "Phone number" %>
+	 				</div>
+	 			</div>
+	 			<div class="row">
+	 				<div class="col-sm-12">
+	 					<div class="get-quotes-button">
+	 						<%= f.submit "Get quotes >1234", class: "btn-get-quotes"  %>
+						</div> 
+	 				</div>
+	 			</div>
 			</div>
 			
 		</div>
 		<% end %>
 	</div>
-	<div class="banner-hero">
-		
+	<div class="banner-hero">	
 	</div>
 </div>
 <div class="wrapper-moving-benefits hidden-xs">
 	<div class="container">
-		<dib class="row">
+		<div class="row">
 			<div class="col-sm-4">
 				<div class="benefits-card border-right">
 					<div class="benefits-content">
@@ -86,9 +85,8 @@
 					</div>
 				</div>
 			</div>
-		</dib>
+		</div>
 	</div>
-	
 </div>
 
 
@@ -308,7 +306,7 @@
 				<h1>Your questions answered</h1>
 				<div class="col-sm-6">
 						<div class="card-faq">
-							 <button type="button" class=" btn-faq" data-toggle="modal" data-target="#who-can-start-a-groupage">
+							<button type="button" class=" btn-faq" data-toggle="modal" data-target="#who-can-start-a-groupage">
 						  	How can I get quotes for shipping a full container?
 							</button>
 							<hr>
@@ -321,8 +319,8 @@
 							</button>
 							<hr>
 						</div>
-					</div>
-					<div class="col-sm-6">
+				</div>
+				<div class="col-sm-6">
 						<div class="card-faq">
 							<button type="button" class=" btn-faq" data-toggle="modal" data-target="#what-protection-do-i-have">
 						  	What are customs implications?
@@ -336,9 +334,8 @@
 						  	How can coshippers help me with setting prices?
 							</button>
 							<hr>
-						</div>
-						
-					</div>
+						</div>	
+				</div>
 			</div>
 			<%= render 'containers/faq/modal-faq1' %>
 			<%= render 'containers/faq/modal-faq2' %>
@@ -418,10 +415,14 @@
 					space you don’t need</h1>	
 				</div>
 				<div class="get-quotes-button">
-					<%= link_to "Get quotes >", "#" , class: "btn-get-quotes" %>
+					<%#= link_to "Get quotes >", "#" , class: "btn-get-quotes" %>
+					<button type="button" class=" btn-get-quotes" data-toggle="modal" data-target="#button-get-quotes">
+						Get quotes >
+					</button>
 				</div>
 			</div>
 		</div>
+		<%#= render 'pages/modal-get-quotes-form' %>
 	</section>
 	<section class="steps-to-share-container-mob hidden-sm hidden-md hidden-lg">
 		<div class="container">
