@@ -8,8 +8,8 @@ class Mover < ApplicationRecord
 	validates :responsible_function, inclusion: {in: EMPLOYEE_ROLE}
 
 	validates :responsible_first_name, presence: true
-  validates :responsible_last_name, presence: true
-  validates :email, presence: true, uniqueness: { case_sensitive: false }
+    validates :responsible_last_name, presence: true
+    validates :email, presence: true, uniqueness: { case_sensitive: false }
 
    # validate :office_address_coordinates
 

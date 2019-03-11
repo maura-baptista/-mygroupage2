@@ -34,7 +34,7 @@ Rails.application.routes.draw do
   resources :groupages, only: [:index, :show]
   resources :alerts, only: [:new, :create]
   resources :movers, only: [:index, :new, :create]
-  
+   resources :estimates
   resources :user_steps
   resources :lists, only: [ :new, :create, :edit, :update ]
   # root to: "savings#new"

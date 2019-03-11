@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_10_003035) do
+ActiveRecord::Schema.define(version: 2019_03_11_125710) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -59,11 +59,17 @@ ActiveRecord::Schema.define(version: 2019_03_10_003035) do
     t.index ["user_id"], name: "index_containers_on_user_id"
   end
 
-  create_table "expats", force: :cascade do |t|
+  create_table "estimates", force: :cascade do |t|
+    t.string "departure_location"
+    t.string "arrival_location"
+    t.string "expat_first_name"
+    t.string "expat_last_name"
+    t.string "expat_email"
+    t.string "expat_phone_number"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "username"
   end
+
 
   create_table "flats", force: :cascade do |t|
     t.string "name"

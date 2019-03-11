@@ -4,22 +4,93 @@
  <!-- desktop banner -->
 
 <div class="banner-wrapper hidden-xs">
-	<div class="banner-content">
-		<div class="banner-tagline">
-			<h1 class="hidden-xs"><b class="text-bold">
-				Book a container and</b> <br>
-				let other expats rent the 
-				space you don’t need
-			</h1>
-			<div class="get-quotes-button hidden-xs">
-				<%= link_to "Get quotes >", "#" , class: "btn-get-quotes" %>
+	<div class="banner-content">	
+		<div class="row">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="banner-tagline">
+						<h1><b class="text-bold">
+							Book a container and</b> <br>
+							let other expats rent the 
+							space you don’t need
+						</h1>
+					</div>	
+				</div>
 			</div>
+			<div class="get-quotes-form">
+				 <%= simple_form_for(@estimate) do |f| %>
+			<div class="row">
+				<div class="col-sm-6">
+			 		<%= f.input :departure_location, label: false, placeholder: "Moving from", input_html: { id: "lead_origin-address" }%>
+			 	</div>
+			 	<div class="col-sm-6">
+			 		<%= f.input :arrival_location, label: false, placeholder: "Moving to", input_html: { id: "lead_destination-address" } %>
+			 	</div>
+			</div>
+			<div class="row">
+ 				<div class="col-sm-6">
+ 					<%= f.input :expat_first_name, label: false, placeholder: "First name"%>
+ 				</div>
+ 				<div class="col-sm-6">
+ 					<%= f.input :expat_last_name, label: false, placeholder: "Last name" %>
+ 				</div>
+ 			</div>
+ 			<div class="row">
+ 				<div class="col-sm-6">
+ 					<%= f.input :expat_email, label: false, placeholder: "Email address" %>
+ 				</div>
+ 				<div class="col-sm-6">
+ 					<%= f.input :expat_phone_number, label: false, placeholder: "Phone number" %>
+ 				</div>
+ 			</div>
+ 			<div class="row">
+ 				<div class="col-sm-12">
+ 					<div class="get-quotes-button hidden-xs">
+						<%= link_to "Get quotes >", "#" , class: "btn-get-quotes" %>
+					</div> 
+ 				</div>
+ 			</div>
+			</div>
+			
 		</div>
+		<% end %>
 	</div>
 	<div class="banner-hero">
 		
 	</div>
 </div>
+<div class="wrapper-moving-benefits hidden-xs">
+	<div class="container">
+		<dib class="row">
+			<div class="col-sm-4">
+				<div class="benefits-card border-right">
+					<div class="benefits-content">
+						<h2>Quality moving</h2>
+						<p>Certified moving professionals</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="benefits-card border-right">
+					<div class="benefits-content">
+						<h2>Cover your costs</h2>
+						<p>Sell your unused space & reduce your move bill</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="benefits-card">
+					<div class="benefits-content">
+						<h2>Simple & compliant</h2>
+						<p>Your shared-container is customs-compliant</p>
+					</div>
+				</div>
+			</div>
+		</dib>
+	</div>
+	
+</div>
+
 
 <!-- ***************** desktop page ************ -->
 <div class="hidden-xs">
@@ -223,7 +294,7 @@
 					<div class="col-sm-6">
 						<div class="card-why-us">
 							<h2>What is a groupage?</h2>
-							<p>You can earn money by sharing your container’s space with expats relocating on a similar itinerary. A shared-container is usually referred to as “groupage” by moving companies. List your container and earn money from your spare space.</p>
+							<p>You can earn money by sharing your container’s space with expats relocating on a similar itinerary. A shared-container is usually referred to as “groupage” by moving companies. Book your container and earn money from your spare space.</p>
 						</div>
 						
 					</div>
@@ -238,7 +309,7 @@
 				<div class="col-sm-6">
 						<div class="card-faq">
 							 <button type="button" class=" btn-faq" data-toggle="modal" data-target="#who-can-start-a-groupage">
-						  	Who can list a container?
+						  	How can I get quotes for shipping a full container?
 							</button>
 							<hr>
 							 <button type="button" class=" btn-faq" data-toggle="modal" data-target="#what-is-required-for-expats">
@@ -246,7 +317,7 @@
 							</button>
 							<hr>
 							<button type="button" class=" btn-faq" data-toggle="modal" data-target="#how-much-does-it-cost-to-list">
-						  	How much does it cost to list my container?
+						  	Is there any guarantee that my container will fill up?
 							</button>
 							<hr>
 						</div>
@@ -254,7 +325,7 @@
 					<div class="col-sm-6">
 						<div class="card-faq">
 							<button type="button" class=" btn-faq" data-toggle="modal" data-target="#what-protection-do-i-have">
-						  	Will my goods be mixed with others in the container?
+						  	What are customs implications?
 							</button>
 							<hr>
 							<button type="button" class=" btn-faq" data-toggle="modal" data-target="#how-much-do-i-pay">
@@ -290,7 +361,7 @@
 								<h3>Offer space</h3>
 							</div>
 							<p>Book your container and sell the space you don’t use.</p>
-							<%= link_to "Get quotes", pages_hire_mover_path , class: " btn-get-quotes" %>
+							<%= link_to "Get quotes", "#" , class: " btn-get-quotes" %>
 						</div>
 					</div>
 					<div class="col-sm-6">
@@ -300,7 +371,7 @@
 								<h3>Find space</h3>
 							</div>
 							<p>Find space in a container headed in your direction and save.</p>
-							<%= link_to "Find a container", pages_search_container_path , class: " btn-find-a-container" %>
+							<%= link_to "Find a container", root_path , class: " btn-find-a-container" %>
 						</div>
 					</div>
 				</div>
@@ -548,7 +619,7 @@
 					<div class="col-sm-6">
 						<div class="card-why-us">
 							<h2>What is a groupage?</h2>
-							<p>You can earn money by sharing your container’s space with expats relocating on a similar itinerary. A shared-container is usually referred to as “groupage” by moving companies. List your container and earn money from your spare space.</p>
+							<p>You can earn money by sharing your container’s space with expats relocating on a similar itinerary. A shared-container is usually referred to as “groupage” by moving companies. Book your container and earn money from your spare space.</p>
 						</div>
 						
 					</div>
@@ -567,7 +638,7 @@
 				<div class="col-sm-6">
 						<div class="card-faq">
 							 <button type="button" class=" btn-faq" data-toggle="modal" data-target="#who-can-start-a-groupage-mob">
-						  	Who can list a container?
+						  	How can I get quotes for shipping a full container?
 							</button>
 							<hr>
 							 <button type="button" class=" btn-faq" data-toggle="modal" data-target="#what-is-required-for-expats-mob">
@@ -575,7 +646,7 @@
 							</button>
 							<hr>
 							<button type="button" class=" btn-faq" data-toggle="modal" data-target="#how-much-does-it-cost-to-list-mob">
-						  	How much does it cost to list my container?
+						  	Is there any guarantee that my container will fill up?
 							</button>
 							<hr>
 						</div>
@@ -583,7 +654,7 @@
 					<div class="col-sm-6">
 						<div class="card-faq">
 							<button type="button" class=" btn-faq" data-toggle="modal" data-target="#what-protection-do-i-have-mob">
-						  	Will my goods be mixed with others in the container?
+						  	What are customs implications?
 							</button>
 							<hr>
 							<button type="button" class=" btn-faq" data-toggle="modal" data-target="#how-much-do-i-pay-mob">
