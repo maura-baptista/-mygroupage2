@@ -295,7 +295,7 @@
 			font-size: 20px;
 			color: #FFFFFF;
 			text-align: center;
-    		padding: 12px 108px;
+    		padding: 12px 80px;
     		display: block;
 			width: 100%;
     		text-decoration: none;
@@ -737,6 +737,7 @@
   		}
   		.card-mover-image-mob{
   			background-position: 11% 104%;
+  			height: 436px;
   		}
   	}
   	.ready-to-move-mob{
@@ -850,11 +851,11 @@
   	}
 
 
-	.wrapper-movers-list-mob{
-		.card-mover-image-mob{
-			height: 378px;
-		}
-	}
+	// .wrapper-movers-list-mob{
+	// 	.card-mover-image-mob{
+	// 		height: 378px;
+	// 	}
+	// }
 
   	.wrapper-ready-to-earn-mob{
 		.image-box{
