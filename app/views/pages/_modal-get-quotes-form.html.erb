@@ -1,0 +1,55 @@
+<!-- Modal -->
+<div class="modal fade" id="form-quote-request" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Receive up to 4 moving quotes</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="col-xs-12">
+          <div class="get-quotes-form">
+            <%= simple_form_for @estimate, :url => {:controller => 'estimates', :action => 'create'} do |f| %>
+            <div class="row">
+              <div class="col-xs-12">
+                <%= f.input :departure_location, label: false, placeholder: "Moving from", input_html: { id: "departure_location-address ", class: "location-input costumized-input" } %>
+              </div>
+              <div class="col-xs-12">
+                <%= f.input :arrival_location, label: false, placeholder: "Moving to", input_html: { id: "arrival_location-address", class: "location-input costumized-input " } %>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <%= f.input :expat_first_name, label: false, placeholder: "First name"%>
+              </div>
+              <div class="col-xs-12">
+                <%= f.input :expat_last_name, label: false, placeholder: "Last name" %>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <%= f.input :expat_email, label: false, placeholder: "Email address" %>
+              </div>
+              <div class="col-xs-12">
+                <%= f.input :expat_phone_number, label: false, placeholder: "Phone number" %>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="get-quotes-button">
+                  <%= f.submit "Get quotes >", class: "btn-get-quotes"  %>
+                </div> 
+              </div>
+            </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+       
+      </div>
+    </div>
+  </div>
+</div>

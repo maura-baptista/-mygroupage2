@@ -357,6 +357,25 @@
 		}
 		}
 	}
+	.modal{
+		.modal-header{
+			border-bottom: none;
+			padding-top: 23px;
+			.close{
+				top: -15px;
+				font-weight: 400;
+				color: #008489;
+				opacity: 1;
+			}
+		}
+		.modal-content{
+			.modal-title{
+				font-weight: 400;
+				margin-bottom: -48px;
+				font-size: 18px;
+			}
+		}
+	}
 }
 
 @media only screen 
@@ -374,7 +393,46 @@
   		p{
   			font-size: 20px;
   		}
+  		.get-quotes-button{
+  			padding-top: 17px;
+  			.btn-get-quotes{
+				width: 100%;
+				padding: 15px 31px;
+
+			}
+  		}
+  		.modal{
+	  		.modal-header{
+	  			font-size: 16px;
+	  			.close{
+	  				top: -11px;
+	  			}
+	  		}
+	  		.modal-content{
+				.modal-title{
+					font-weight: 400;
+					margin-bottom: -48px;
+					font-size: 16px;
+				}
+			}
+			.modal-body{
+				padding: 0;
+				padding-top: 15px;
+			}
+	  	}
   	}
+  	.banner-wrapper{
+  		.get-quotes-form{
+			form{
+				
+			}
+  		}
+  	}
+	.location-input{
+  		padding: 6px 33px;
+  		background-size: 13% 31%;
+  	}
+
 
 }
 
@@ -386,7 +444,27 @@
 		height: 42vh;
 		background-position: 81% 104%;
   	}
-  	
+  	.location-input{
+  		padding: 6px 33px;
+  		background-size: 13% 31%;
+  	}
+  	.wrapper-banner-header{
+		.get-quotes-button{
+			padding-top: 17px;
+			.btn-get-quotes{
+				width: 100%;
+			}
+		}
+  	}
+  	.banner-wrapper{
+  		.get-quotes-form{
+			form{
+				::placeholder{
+					font-size: 10px;
+				}
+			}
+  		}
+  	}
   }
 
 

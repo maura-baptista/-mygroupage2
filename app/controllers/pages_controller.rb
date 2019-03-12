@@ -50,6 +50,10 @@ class PagesController < ApplicationController
     render layout: "mover"
   end
 
+  def quotes_form_confirmation
+    render layout: "form-cover"
+  end
+
   private
 
   # def resolve_layout

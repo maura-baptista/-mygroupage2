@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   resources :flats
  # get 'groupages/form_opening'
+  get 'pages/quotes_form_confirmation'
   get 'pages/partner_form_confirmation'
   get 'containers/form_opening'
   get 'pages/login'
@@ -15,10 +16,10 @@ Rails.application.routes.draw do
   get 'pages/search_container'
   get 'groupages/search_container'
   get 'pages/alert_confirmation'
-   get 'terms_and_conditions', to: 'pages#terms_and_conditions', as: 'terms_and_conditions'
+  get 'terms_and_conditions', to: 'pages#terms_and_conditions', as: 'terms_and_conditions'
   get 'privacy_policy',       to: 'pages#privacy_policy', as: 'privacy_policy'
   get 'moving_guides',       to: 'pages#moving_guides', as: 'moving_guides'
-   get 'share_my_container',       to: 'pages#share_my_container', as: 'share_my_container'
+  get 'share_my_container',       to: 'pages#share_my_container', as: 'share_my_container'
   
   # post 'calculator' => 'containers#calculator'
  
