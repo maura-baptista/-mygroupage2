@@ -5,8 +5,8 @@ function autocomplete() {
     var leadOriginAddress = document.getElementById('lead_origin-address');
     var leadDestinationAddress = document.getElementById('lead_destination-address');
     var countryAddress = document.getElementById('mover_country_address');
-    var departureLocationAddress = document.getElementById('departure_location-address');
-    var arrivalLocationAddress = document.getElementById('arrival_location-address');
+    var departureLocationAddress = document.getElementById('departure_location_address');
+    var arrivalLocationAddress = document.getElementById('arrival_location_address');
 
     if (originAddress) {
       var autocomplete = new google.maps.places.Autocomplete(originAddress, { types: [ 'geocode' ] });

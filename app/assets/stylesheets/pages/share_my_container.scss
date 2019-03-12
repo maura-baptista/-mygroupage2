@@ -69,10 +69,6 @@
 					}
 	 			}
 	 		}
-	 		input{
-				border: 1px solid #B4BBC6;
-				border-radius: 5px;
-	 		}
 		}
 	}
 	
@@ -93,6 +89,9 @@
     background-size: 16% 37%;
     padding: 6px 37px;
 
+}
+.costumized-input{
+	border: 1px solid #B4BBC6;
 }
 
 .wrapper-moving-benefits{

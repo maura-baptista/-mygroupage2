@@ -21,26 +21,26 @@
 					 <%= simple_form_for @estimate, :url => {:controller => 'estimates', :action => 'create'} do |f| %>
 					<div class="row">
 						<div class="col-sm-6">
-					 		<%= f.input :departure_location, label: false, placeholder: "Moving from", input_html: { id: "departure_location-address ", class: "location-input costumized-input" } %>
+					 		<%= f.input :departure_location, label: false, placeholder: "Moving from", input_html: { id: "departure_location_address ", class: "location-input costumized-input" } %>
 					 	</div>
 					 	<div class="col-sm-6">
-					 		<%= f.input :arrival_location, label: false, placeholder: "Moving to", input_html: { id: "arrival_location-address", class: "location-input costumized-input " } %>
-					 	</div>
+					 		<%= f.input :arrival_location, label: false, placeholder: "Moving to", input_html: { id: "arrival_location_address", class: "location-input costumized-input " } %>
+					 	</div> 
 					</div>
 					<div class="row">
 		 				<div class="col-sm-6">
-		 					<%= f.input :expat_first_name, label: false, placeholder: "First name"%>
+		 					<%= f.input :expat_first_name, label: false, placeholder: "First name", input_html: { class: " costumized-input" }%>
 		 				</div>
 		 				<div class="col-sm-6">
-		 					<%= f.input :expat_last_name, label: false, placeholder: "Last name" %>
+		 					<%= f.input :expat_last_name, label: false, placeholder: "Last name", input_html: { class: " costumized-input" } %>
 		 				</div>
 		 			</div>
 		 			<div class="row">
 		 				<div class="col-sm-6">
-		 					<%= f.input :expat_email, label: false, placeholder: "Email address" %>
+		 					<%= f.input :expat_email, label: false, placeholder: "Email address", input_html: { class: " costumized-input" } %>
 		 				</div>
 		 				<div class="col-sm-6">
-		 					<%= f.input :expat_phone_number, label: false, placeholder: "Phone number" %>
+		 					<%= f.input :expat_phone_number, label: false, placeholder: "Phone number", input_html: { class: " costumized-input" } %>
 		 				</div>
 		 			</div>
 		 			<div class="row">
