@@ -214,7 +214,7 @@
 							<div class="movers-list-text">
 								<h2>Request your free quotes now !</h2>
 								<p>Get free estimates from our moving partners. Discover how much a container costs and what the unused space could earn you.</p>
-								<%= link_to "Get quotes", pages_hire_mover_path, class: "btn-get-quotes" %>
+								<%= link_to "Get quotes", "#", class: "btn-get-quotes" %>
 							</div>
 							
 						</div>
@@ -542,7 +542,7 @@
 			<div class="row">
 				<div class="col-xs-12">
 					<div class="btn-movers-list-section">
-						<%= link_to "Get quotes", pages_hire_mover_path, class: "btn-get-quotes-mob" %>
+						<%= link_to "Get quotes", "#", class: "btn-get-quotes-mob", "data-toggle" => "modal", 'data-target' => '#form-quote-request' %>
 					</div>
 				</div>
 			</div>		
@@ -566,14 +566,14 @@
 				</div>
 				<div class="col-sm-4">
 					<div class="card-payments">
-						<h2>Pay low fees</h2>
-						<p>There’s no cost to sign up. We generally charge a flat 5% to container owners per booking made.</p>
+						<h2>Our service is free</h2>
+						<p>Our service is completely free to you. Our revenue comes from the moving companies.</p>
 					</div>
 				</div>
 				<div class="col-sm-4">
 					<div class="card-payments">
 						<h2>Decide who gets paid</h2>
-						<p>Receive the money in your bank account or have it wired to your mover to cover your container costs. You decide.
+						<p>Receive the money from bookings directly or ask your mover to collect and deduct from your own invoice.
 						</p>
 					</div>
 				</div>
@@ -639,6 +639,7 @@
 			<div class="row">
 				<div class="col-sm-6">
 						<div class="card-faq">
+							<hr>
 							 <button type="button" class=" btn-faq" data-toggle="modal" data-target="#who-can-start-a-groupage-mob">
 						  	How can I get quotes for shipping a full container?
 							</button>
@@ -694,7 +695,7 @@
 						</div>
 						<p>Book your container and sell the space you don’t use.</p>
 						<div class="buttom-get-quotes">
-							<%= link_to "Get quotes", pages_hire_mover_path , class: " btn-get-quotes" %>
+							<%= link_to "Get quotes", "#" , class: " btn-get-quotes", "data-toggle" => "modal", 'data-target' => '#form-quote-request' %>
 						</div>	
 					</div>
 				</div>
@@ -708,7 +709,7 @@
 						</div>
 						<p>Find space in a container headed in your direction and save.</p>
 						<div class="buttom-find-a-container">
-							<%= link_to "Find a container",  pages_search_container_path , class: " btn-find-a-container" %>
+							<%= link_to "Find a container",  root_path , class: " btn-find-a-container" %>
 						</div>
 						
 					</div>

@@ -108,7 +108,7 @@
     background-color: #fff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-top: 0.4px solid rgba(0, 0, 0, 0.1);
-    padding: 10px 0;
+    padding: 25px 0;
 	.benefits-card{
 		display: flex;
 		justify-content: space-around;
@@ -120,7 +120,7 @@
 				font-style: normal;
 				font-weight: bold;
 				line-height: 41px;
-				font-size: 26px;
+				font-size: 22px;
 				text-align: center;
 				letter-spacing: -1px;
 				color: #333333;
@@ -131,7 +131,7 @@
 				font-style: normal;
 				font-weight: normal;
 				line-height: 22px;
-				font-size: 14px;
+				font-size: 15px;
 				text-align: center;
 				letter-spacing: -1px;
 				color: #484848;
@@ -148,13 +148,15 @@
 
 .wrapper-steps-to-share-container{
 	position: relative;
-
+	background: white;
+	padding-top: 96px;
+	padding-bottom: 140px;
 	h1{
 		font-family: Comfortaa;
 		font-style: normal;
 		font-weight: bold;
-		line-height: 94px;
-		font-size: 48px;
+		line-height: 48px;
+		font-size: 40px;
 		text-align: center;
 		letter-spacing: -3px;
 		color: #333333;
@@ -167,9 +169,7 @@
 		position: absolute;
 		left: 50%;
 	}
-	background: white;
-	padding-top: 80px;
-	padding-bottom: 140px;
+	
 	.gif-container{
 		img{
 			height: auto;
@@ -346,6 +346,7 @@
 		box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
 		border-radius: 5px;
 		padding: 15px 72px;
+		border: none;
 		&:hover{
 		   	background: #bc0000;
 				text-decoration: none;
@@ -354,7 +355,7 @@
 		&:visited{
 		    color: #FFFFFF;
 				text-decoration: none;
-		}
+			}
 		}
 	}
 	.modal{
@@ -398,6 +399,7 @@
   			.btn-get-quotes{
 				width: 100%;
 				padding: 15px 31px;
+				border: none;
 
 			}
   		}
@@ -453,6 +455,7 @@
 			padding-top: 17px;
 			.btn-get-quotes{
 				width: 100%;
+				border: none;
 			}
 		}
   	}
