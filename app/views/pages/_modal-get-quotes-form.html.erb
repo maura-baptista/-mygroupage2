@@ -14,10 +14,10 @@
             <%= simple_form_for @estimate, :url => {:controller => 'estimates', :action => 'create'} do |f| %>
             <div class="row">
               <div class="col-xs-12">
-                <%= f.input :departure_location, label: false, placeholder: "Moving from", input_html: { id: "departure_location-address ", class: "location-input costumized-input" } %>
+                <%= f.input :departure_location, label: false, placeholder: "Moving from", input_html: { class: "location-input costumized-input" } %>
               </div>
               <div class="col-xs-12">
-                <%= f.input :arrival_location, label: false, placeholder: "Moving to", input_html: { id: "arrival_location-address", class: "location-input costumized-input " } %>
+                <%= f.input :arrival_location, label: false, placeholder: "Moving to", input_html: { class: "location-input costumized-input " } %>
               </div>
             </div>
             <div class="row">
