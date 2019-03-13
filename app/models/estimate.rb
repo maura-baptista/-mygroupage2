@@ -1,8 +1,11 @@
 class Estimate < ApplicationRecord
- geocoded_by :departure_location, :latitude => :departure_location_lat, :longitude => :departure_location_long
-  geocoded_by :arrival_location, :latitude => :arrival_location_lat, :longitude => :arrival_location_long
-  after_validation :geocode_endpoints, if: :will_save_change_to_departure_location?
-  after_validation :geocode_endpoints, if: :will_save_change_to_arrival_location?
+
+	 validates :departure_location, :arrival_location, presence: true
+
+ 	geocoded_by :departure_location, :latitude => :departure_location_lat, :longitude => :departure_location_long
+  	geocoded_by :arrival_location, :latitude => :arrival_location_lat, :longitude => :arrival_location_long
+  	after_validation :geocode_endpoints, if: :will_save_change_to_departure_location?
+  	after_validation :geocode_endpoints, if: :will_save_change_to_arrival_location?
 
 
   	def geocode_endpoints
