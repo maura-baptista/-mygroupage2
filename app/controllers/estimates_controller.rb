@@ -1,7 +1,7 @@
 class EstimatesController < ApplicationController
 
 	skip_before_action :authenticate_user!, only: [ :create]
-
+	  layout "share_my_container"
 
 	def create
 		@estimate = Estimate.new(estimate_params)
