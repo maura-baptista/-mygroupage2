@@ -20,7 +20,10 @@ class ApplicationController < ActionController::Base
     # end
 
 
-    
+    # def after_sign_in_path_for(resource)
+    #  redirect_to request.referrer
+    #   # replace users_dashboard_path by whichever route you want to redirect to after login - default is root_path
+    # end
 
   private
 

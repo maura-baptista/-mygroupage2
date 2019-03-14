@@ -1,9 +1,12 @@
 .banner-share-container-mob{
-	background-image:  image-url('sitted-lady-mob.jpg');
+	background-image:  image-url('share-container-hero-dsk2.png');
 	background-size: cover;
-	height: 35vh;
+	height: 38vh;
 	background-position: center;
-	clip-path: polygon(100% 0px, 100% 66%, 0% 86%, 0% 0%);
+	// clip-path: polygon(100% 0px, 100% 66%, 0% 86%, 0% 0%);
+	    clip-path: polygon(100% 0px, 100% 100%, 0% 67%, 0% 0%);
+
+	// transform: matrix(-1, 0, 0, 1, 0, 0);
 	
 }
 
