@@ -19,6 +19,9 @@ class ApplicationController < ActionController::Base
     #   end
     # end
 
+
+    
+
   private
 
   def layout_by_resource
