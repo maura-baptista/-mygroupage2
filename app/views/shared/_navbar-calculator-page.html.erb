@@ -16,53 +16,62 @@
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
 
-    <%# if user_signed_in? %>
+    <% if user_signed_in? %>
       <% if params[:commit] %>
         <span class="earn-up-to navbar-wagon-item">Potential earnings </span>
         <button type="button" class="btn btn-information" data-toggle="modal" data-target="#estimate">
           <i class="fas fa-info-circle"></i>
         </button>
         <span class="savings-amount navbar-wagon-item"><%= number_with_precision(@result, :precision => 0, ) %></span><span class="currency navbar-wagon-item"><%= @currency %>
-      <% end %>
         </span>
-          <%#= link_to "List my container", containers_form_opening_path, class: "btn-list-my-container navbar-wagon-item" %>
-           <!-- <i class="fas fa-people-carry"></i> --><%#= link_to "Hire a mover", pages_hire_mover_path , class: "navbar-wagon-item navbar-wagon-link btn-hire-mover" %>
-          <%= link_to "Find a container", pages_search_container_path , class: "navbar-wagon-item navbar-wagon-link btn-find-space" %>
+      <% end %>
+
+        <%= link_to "Browse containers", pages_search_container_path , class: "navbar-wagon-item navbar-wagon-link btn-find-space" %>
+           <!--  navbar link with dropdown menu -->
           <div class="navbar-wagon-item">
             <div class="dropdown">
               <div class="dropdown-toggle btn-offer-space navbar-wagon-link" data-toggle="dropdown">
-                Share my container
+                Start a container
               </div>
               <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu navbar-dropdown-menu-right">
           
-                <li><%= link_to "I need a container",   share_my_container_path, class: "dark-grey-color" %></li>
-                <li><%= link_to "I have booked my move",  new_container_path, class: "dark-grey-color" %></li>
+                <li><%= link_to share_my_container_path, class: "text-bold" do %>
+                      I need a container
+                      <p>Get free quotes from our preferred moving companies.</p>
+                    <% end %>
+                </li>
+                <hr>
+                <li><%= link_to new_container_path, class: "text-bold"  do %>
+                      I have a container
+                      <p>Find out how much you could 
+                      earn renting your extra space.</p>
+                    <% end %>
+                </li>
+                <hr>
+                <li><%= link_to "Join as a moving company",   new_mover_path, class: "dark-grey-color" %></li>
               </ul>
             </div>
           </div>
       
-  
 
-      <!-- Links when logged in -->
-      <%#= link_to "Host", "#", class: "navbar-wagon-item navbar-wagon-link" %>
-      <%#= link_to "Trips", "#", class: "navbar-wagon-item navbar-wagon-link" %>
-      <%#= link_to "Messages", "#", class: "navbar-wagon-item navbar-wagon-link" %>
-
-      <!-- Avatar with dropdown menu -->
-      <!--      <div class="navbar-wagon-item">
+            <!-- Avatar with dropdown menu -->
+      <div class="navbar-wagon-item">
         <div class="dropdown">
-          <%= image_tag "http://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
-          <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-            <li>
-              <%= link_to "#" do %>
+          <% avatar_url = current_user.facebook_picture_url || "avatar-icon.png" %>
+          <%= image_tag avatar_url, class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
+
+          <%#= image_tag "avatar-icon.png", class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
+          <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu dropdown-menu-right-zero dark-grey-color">
+          <!--   <li>
+              <%#= link_to "#" do %>
                 <i class="fa fa-user"></i> <%= t(".profile", default: "Profile") %>
-              <% end %>
+              <%# end %>
             </li>
             <li>
-              <%= link_to "#" do %>
+              <%#= link_to "#" do %>
                 <i class="fa fa-cog"></i>  <%= t(".settings", default: "Settings") %>
-              <% end %>
-            </li>
+              <%# end %>
+            </li> -->
             <li>
               <%= link_to destroy_user_session_path, method: :delete do %>
                 <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Log out") %>
@@ -70,11 +79,40 @@
             </li>
           </ul>
         </div>
-      </div> -->
-    <%# else %>
-      <!-- Login link (when logged out) -->
-      <%#= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
-    <%# end %>
+      </div>
+    <% else %>
+        <!-- Login link (when logged out) -->
+        <%= link_to "Browse containers", pages_search_container_path , class: "navbar-wagon-item navbar-wagon-link btn-find-space" %>
+       <div class="navbar-wagon-item">
+           <div class="dropdown">
+              <div class="dropdown-toggle btn-offer-space navbar-wagon-link" data-toggle="dropdown">
+                Start a container
+              </div>
+              <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu navbar-dropdown-menu-right">
+          
+                <li><%= link_to share_my_container_path, class: "text-bold" do %>
+                      I need a container
+                      <p>Get free quotes from our preferred moving companies.</p>
+                    <% end %>
+                </li>
+                <hr>
+                <li><%= link_to new_container_path, class: "text-bold"  do %>
+                      I have a container
+                      <p>Find out how much you could 
+                      earn renting your extra space.</p>
+                    <% end %>
+                </li>
+                <hr>
+                <li><%= link_to "Join as a moving company",   new_mover_path, class: "dark-grey-color" %></li>
+              </ul>
+            </div>
+      </div>
+      
+       <%= link_to "Sign up",  pages_login_path, class: "navbar-wagon-item navbar-wagon-link" %>
+
+      <%= link_to t(".sign_in", default: "Log in"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
+      
+    <% end %>
   </div>
 
   <!-- Dropdown list appearing on mobile only -->
@@ -125,11 +163,24 @@
         <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
           <li><%= link_to "Home",  root_path %></li>
           <hr>
-          <li><%= link_to "Hire a mover",   pages_hire_mover_path %></li>
-          <li><%= link_to "Learn about sharing my container",  new_container_path %></li>
-           <li><%= link_to "Share my container",   share_my_container_path %></li>
-           <li><%= link_to "Find a container",  pages_search_container_path %></li>
-
+          <li><%= link_to "Browse containers",  pages_search_container_path, class: "search-icon-link" %></li>
+          <hr>
+          <span class="nav-title add-icon-link">Start a container</span>
+          <li><%#= link_to "I need a container", share_my_container_path, class: "nav-subtitle" %></li>
+          <li><%= link_to share_my_container_path, class: "nav-subtitle" do %>
+              I need a container
+                <p>Get free quotes from our 
+                preferred moving companies.</p>
+              <% end %>
+          </li>
+          <li><%= link_to new_container_path, class: "nav-subtitle subtitle-margin-top" do %>
+              I have a container
+              <p>Find out how much you could 
+            earn renting your extra space.</p>
+              <% end %>
+          </li>
+          <hr>
+          <li><%= link_to "Join as a moving company",  new_mover_path %></li>
           <hr>
           <% if user_signed_in? %>
             <li><%= link_to destroy_user_session_path, method: :delete do %>
@@ -139,6 +190,9 @@
             <li><%= link_to "Sign up",  pages_login_path, class: "navbar-wagon-item navbar-wagon-link" %></li> 
             <li><%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %></li> 
           <% end %>
+
+
+        </ul>
 
 
         </ul>

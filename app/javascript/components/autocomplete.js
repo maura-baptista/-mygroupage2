@@ -48,25 +48,17 @@ function autocomplete() {
         }
       });
     }
-    // if (departureLocationAddress) {
-    //   var autocomplete = new google.maps.places.Autocomplete(departureLocationAddress, { types: [ 'geocode' ] });
-    //   google.maps.event.addDomListener(departureLocationAddress, 'keydown', function(e) {
-    //     if (e.key === "Enter") {
-    //       e.preventDefault(); // Do not submit the form on Enter.
-    //     }
-    //   });
-    // }
-    if (arrivalLocationAddress) {
-      var autocomplete = new google.maps.places.Autocomplete(arrivalLocationAddress, { types: [ 'geocode' ] });
-      google.maps.event.addDomListener(arrivalLocationAddress, 'keydown', function(e) {
+    if (departureLocationAddress) {
+      var autocomplete = new google.maps.places.Autocomplete(departureLocationAddress, { types: [ 'geocode' ] });
+      google.maps.event.addDomListener(departureLocationAddress, 'keydown', function(e) {
         if (e.key === "Enter") {
           e.preventDefault(); // Do not submit the form on Enter.
         }
       });
     }
-    if (departureLocationAddress ) {
-      var autocomplete = new google.maps.places.Autocomplete(departureLocationAddress, { types: [ 'geocode' ] });
-      google.maps.event.addDomListener(departureLocationAddress, 'keydown', function(e) {
+    if (arrivalLocationAddress) {
+      var autocomplete = new google.maps.places.Autocomplete(arrivalLocationAddress, { types: [ 'geocode' ] });
+      google.maps.event.addDomListener(arrivalLocationAddress, 'keydown', function(e) {
         if (e.key === "Enter") {
           e.preventDefault(); // Do not submit the form on Enter.
         }

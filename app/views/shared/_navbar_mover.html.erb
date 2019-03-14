@@ -22,18 +22,28 @@
   
 
       <!-- Links when logged in -->
-      <%#= link_to "List my container", new_container_path , class: "navbar-wagon-item navbar-wagon-link" %>
-      <!-- <i class="fas fa-people-carry"></i><%#= link_to "Hire a mover",pages_hire_mover_path , class: "navbar-wagon-item navbar-wagon-link btn-hire-mover" %> -->
-      <%= link_to "Find a container", pages_search_container_path , class: "navbar-wagon-item navbar-wagon-link btn-find-space" %>
+      
+      <%= link_to "Browse containers", pages_search_container_path , class: "navbar-wagon-item navbar-wagon-link btn-find-space" %>
       <div class="navbar-wagon-item">
             <div class="dropdown">
               <div class="dropdown-toggle btn-offer-space navbar-wagon-link" data-toggle="dropdown">
-                Share my container
+                Start a container
               </div>
               <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu navbar-dropdown-menu-right">
-          
-                <li><%= link_to "I need a container",   share_my_container_path, class: "dark-grey-color" %></li>
-                <li><%= link_to "I have booked my move",  new_container_path, class: "dark-grey-color" %></li>
+                <li><%= link_to share_my_container_path, class: "text-bold" do %>
+                      I need a container
+                      <p>Get free quotes from our preferred moving companies.</p>
+                    <% end %>
+                </li>
+                <hr>
+                <li><%= link_to new_container_path, class: "text-bold"  do %>
+                      I have a container
+                      <p>Find out how much you could 
+                      earn renting your extra space.</p>
+                    <% end %>
+                </li>
+                <hr>
+                <li><%= link_to "Join as a moving company",   new_mover_path, class: "dark-grey-color" %></li>
               </ul>
             </div>
           </div>
@@ -46,7 +56,7 @@
           <%= image_tag avatar_url, class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
 
           <%#= image_tag "avatar-icon.png", class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
-          <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+          <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu dropdown-menu-right-zero dark-grey-color">
           <!--   <li>
               <%#= link_to "#" do %>
                 <i class="fa fa-user"></i> <%= t(".profile", default: "Profile") %>
@@ -67,17 +77,28 @@
       </div>
     <% else %>
       <!-- Login link (when logged out) -->
-     <!--  <i class="fas fa-people-carry"></i> --><%#= link_to "Hire a mover", pages_hire_mover_path , class: "navbar-wagon-item navbar-wagon-link btn-hire-mover" %>
-      <%= link_to "Find a container", pages_search_container_path , class: "navbar-wagon-item navbar-wagon-link btn-find-space" %>
+      <%= link_to "Browse containers", pages_search_container_path , class: "navbar-wagon-item navbar-wagon-link btn-find-space" %>
       <div class="navbar-wagon-item">
             <div class="dropdown">
               <div class="dropdown-toggle btn-offer-space navbar-wagon-link" data-toggle="dropdown">
-                Share my container
+                Start a container
               </div>
               <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu navbar-dropdown-menu-right">
           
-                <li><%= link_to "I need a container",   share_my_container_path, class: "dark-grey-color" %></li>
-                <li><%= link_to "I have booked my move",  new_container_path, class: "dark-grey-color" %></li>
+                <li><%= link_to share_my_container_path, class: "text-bold" do %>
+                      I need a container
+                      <p>Get free quotes from our preferred moving companies.</p>
+                    <% end %>
+                </li>
+                <hr>
+                <li><%= link_to new_container_path, class: "text-bold"  do %>
+                      I have a container
+                      <p>Find out how much you could 
+                      earn renting your extra space.</p>
+                    <% end %>
+                </li>
+                <hr>
+                <li><%= link_to "Join as a moving company",   new_mover_path, class: "dark-grey-color" %></li>
               </ul>
             </div>
           </div>
@@ -131,14 +152,26 @@
        
         
         
-        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+         <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
           <li><%= link_to "Home",  root_path %></li>
           <hr>
-          <li><%= link_to "Hire a mover",   pages_hire_mover_path %></li>
-          <li><%= link_to "Learn about sharing my container",  new_container_path %></li>
-           <li><%= link_to "Share my container",   share_my_container_path %></li>
-           <li><%= link_to "Find a container",  pages_search_container_path %></li>
-
+          <li><%= link_to "Browse containers",  pages_search_container_path, class: "search-icon-link" %></li>
+          <hr>
+          <span class="nav-title add-icon-link">Start a container</span>
+          <li><%= link_to share_my_container_path, class: "nav-subtitle" do %>
+                I need a container
+                <p>Get free quotes from our 
+                preferred moving companies.</p>
+              <% end %>
+          </li>
+          <li><%= link_to new_container_path, class: "nav-subtitle subtitle-margin-top" do %>
+                I have a container
+                <p>Find out how much you could 
+            earn renting your extra space.</p>
+            <% end %>
+          </li>
+          <hr>
+          <li><%= link_to "Join as a moving company",  new_mover_path %></li>
           <hr>
           <% if user_signed_in? %>
             <li><%= link_to destroy_user_session_path, method: :delete do %>
