@@ -379,6 +379,147 @@
 	}
 }
 
+.wrapper-calculator{
+	background-image:  image-url('calculator-hero.png');
+ 	background-size: cover;
+ 	height: 700px;
+ 	background-position: bottom;
+ 	.header-card{
+ 		    padding-top: 20%;
+ 		.calculator-description{
+ 			h2{
+ 				font-family: Comfortaa;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 40px;
+				line-height: normal;
+				letter-spacing: -1px;
+				color: #333333;
+ 			}
+ 			p{
+ 				font-family: Comfortaa;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 24px;
+				line-height: 36px;
+				color: #484848;
+ 			}
+ 			.get-quotes-button{
+	 			padding-top: 40px;
+	 			.btn-get-quotes{
+	 				font-family: Comfortaa;
+					font-style: normal;
+					font-weight: 400;
+					line-height: normal;
+					font-size: 28px;
+					text-align: center;
+					color: #FFFFFF;
+	 				background: #008489;
+					box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+					border-radius: 5px;
+					padding: 12px 45px;
+					width: 100%;
+					border: none;
+					&:hover{
+					   	background: #bc0000;
+	      				text-decoration: none;
+	      				color: #FFFFFF;
+					}
+					&:visited{
+					    color: #FFFFFF;
+	      				text-decoration: none;
+					}
+	 			}
+	 		}
+ 		}
+ 	}
+ 	.form-card{
+ 		.calculator-form{
+ 			background: #FFFFFF;
+			opacity: 0.95;
+			border: 1px solid #B4BBC6;
+			box-sizing: border-box;
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+			border-radius: 5px;
+			padding: 14px 67px;
+ 			p{
+ 				font-family: Comfortaa;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 16px;
+				line-height: normal;
+				letter-spacing: -1px;
+				color: #353C4C;
+				margin-top: 23px;
+				margin-bottom: 3px;
+ 			}
+		 	.col-sm-7{
+		        padding-right: 10px;
+		    }
+		    .col-sm-5{
+		        padding-left: 0;
+		    }
+		     .form-control{
+			    height: 49px;
+			    border-radius: 5px;
+			    border: 1px solid #B4BBC6;
+			    // box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.060);
+			    color: rgba(53, 60, 76, 0.8);
+			    font-family: Comfortaa;
+			    font-style: normal;
+			    font-weight: 300;
+			    line-height: normal;
+			    font-size: 16px;
+			    letter-spacing: -1px;
+			}
+ 			.form-group{
+       			margin-bottom: 10px;
+        		::placeholder{
+             		color: rgba(53, 60, 76, 0.8);
+        		}
+    		}
+    		.calculator-chart-card{
+    			margin: 0 auto;
+    			.chart-box{
+    				    width: 100%;
+    				.chart-value{
+						    position: absolute;
+						    left: 50%;
+						    top: 50%;
+						    transform: translateY(-50%) translateX(-50%);
+						    font-size: 49.68px;
+						    display: inline-block;
+
+							    font-family: Comfortaa;
+								font-style: normal;
+								font-weight: bold;
+								font-size: 36px;
+								line-height: normal;
+								letter-spacing: -1px;
+								color: #333333;
+    				}
+    				img{
+						width: 100%;
+						height: 88px;
+    				}
+
+
+    			}
+    			.large-img{
+	    			height: 120px !important;
+	    				}
+    			.gaugeChar{
+    				position: relative;
+    			}
+    		}
+ 		}
+ 	}
+
+}
+.wrapper-padding-top{
+	padding-top: 150px;
+}
+
 @media only screen 
   and (max-width: 320px){
   	.banner-share-my-container{

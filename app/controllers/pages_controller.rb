@@ -43,6 +43,7 @@ class PagesController < ApplicationController
 
   def share_my_container
     @estimate = Estimate.new
+    @container = Container.new
     render layout: "share_my_container"
   end
 

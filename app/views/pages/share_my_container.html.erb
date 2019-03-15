@@ -46,7 +46,7 @@
 		 			<div class="row">
 		 				<div class="col-sm-12">
 		 					<div class="get-quotes-button">
-		 						<%= f.submit "Get quotes >", class: "btn-get-quotes"  %>
+		 						<%= f.submit "Get free quotes", class: "btn-get-quotes"  %>
 							</div> 
 		 				</div>
 		 			</div>
@@ -153,7 +153,105 @@
 			</div>
 		</div>
 	</section>
-	<section class="wrapper-review">
+	<section class="wrapper-calculator">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="header-card">
+						<div class="calculator-description">
+							<h2>Offset your moving costs</h2>
+							<p>Use our simple simulator to estimate the spare space you will have if you book a container. Get an idea of how much of your moving costs could be offset.</p>
+							<div class="get-quotes-button">
+			 					<%= link_to "Get free quotes", "#", class: "btn-get-quotes" %>
+							</div> 
+						</div>			
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="form-card">
+						<div class="calculator-form">
+							<%= simple_form_for @container, url: calculator_path do |f| %>
+							<div class="row">
+								<div class="col-sm-12">
+									<p>Your container size</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-12">
+									<%= f.input :container_size, label: false, collection: Container::CONTAINERS, prompt: "My container size" %>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-12">
+									<p>Door to door cost for a container</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-7">
+									<%= f.input :price, as: :integer, label: false, input_html: { class: 'large-input' },  placeholder: "Best price you got so far" %>
+								</div>
+								<div class="col-sm-5">
+									<%= f.input :currency, label: false, input_html: { class: 'special' },  collection: Container::CURRENCIES, prompt: params[:currency]%>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-12">
+									<p>Volume of your move</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-7">
+									<%= f.input :volume, as: :integer, label: false, input_html: { class: 'large-input' }, placeholder: "Volume of my move" %>
+								</div>
+								<div class="col-sm-5">
+									<%= f.input :metrics, label: false,input_html: { class: 'special' }, collection: Container::METRIC, prompt: params[:metrics] %>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-4">
+									<div class="calculator-chart-card">
+										<div class="chart-box gaugeChar">
+											<div class="chart-value">
+												12
+											</div>
+											<%= image_tag "small-chart.svg", height: 50 %>
+										</div>
+										
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="calculator-chart-card">
+										<div class="chart-box gaugeChar">
+											<div class="chart-value">
+												2,400
+											</div>
+											<%= image_tag "small-chart.svg", height: 50, class: "large-img" %>
+										</div>
+										
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="calculator-chart-card">
+										<div class="chart-box gaugeChar">
+											<div class="chart-value">
+												20'
+											</div>
+											<%= image_tag "small-chart.svg", height: 50 %>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+
+							<% end %>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="wrapper-review wrapper-padding-top">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-6">
@@ -418,7 +516,7 @@
 				<div class="get-quotes-button">
 					<%#= link_to "Get quotes >", "#" , class: "btn-get-quotes" %>
 					<button type="button" class=" btn-get-quotes" data-toggle="modal" data-target="#form-quote-request">
-						Get quotes >
+						Get free quotes
 					</button>
 				</div>
 			</div>
