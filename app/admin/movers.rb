@@ -5,6 +5,7 @@ ActiveAdmin.register Mover do
 	    selectable_column
 	    column :id
 	    column :company_name
+	    column :office_address
 	    column :responsible_first_name
 	    column :responsible_last_name
 	    column :responsible_function
