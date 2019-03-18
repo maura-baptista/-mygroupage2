@@ -208,41 +208,48 @@
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-sm-4">
-									<div class="calculator-chart-card">
-										<div class="chart-box gaugeChar">
-											<div class="chart-value">
-												12
+								<div class="chart-container">
+									<div class="col">
+										<div class="calculator-chart-card flex-items-centered">
+											<div class="chart-box gaugeChar small-chart-top-margin">
+												<div class="chart-value">
+													12
+												</div>
+												<%= image_tag "small-chart.svg", height: 50 %>
 											</div>
-											<%= image_tag "small-chart.svg", height: 50 %>
+											<div class="chart-title">
+												<p>M3 OF EMPTY SPACE</p>
+											</div>
 										</div>
-										
 									</div>
-								</div>
-								<div class="col-sm-4">
-									<div class="calculator-chart-card">
-										<div class="chart-box gaugeChar">
-											<div class="chart-value">
-												2,400
+									<div class="col">
+										<div class="calculator-chart-card">
+											<div class="chart-box gaugeChar ">
+												<div class="chart-value large-font">
+													2,400
+												</div>
+												<%= image_tag "small-chart.svg", height: 50, class: "large-img" %>
 											</div>
-											<%= image_tag "small-chart.svg", height: 50, class: "large-img" %>
+											<div class="chart-title">
+												<p>TOTAL EARNINGS POTENTIAL (USD)</p>
+											</div>
 										</div>
-										
 									</div>
-								</div>
-								<div class="col-sm-4">
-									<div class="calculator-chart-card">
-										<div class="chart-box gaugeChar">
-											<div class="chart-value">
-												20'
+									<div class="col">
+										<div class="calculator-chart-card">
+											<div class="chart-box gaugeChar small-chart-top-margin">
+												<div class="chart-value">
+													20'
+												</div>
+												<%= image_tag "small-chart.svg", height: 50 %>
 											</div>
-											<%= image_tag "small-chart.svg", height: 50 %>
+											<div class="chart-title">
+												<p>CONTAINER NEEDED</p>
+											</div>
 										</div>
-										
 									</div>
 								</div>
 							</div>
-
 							<% end %>
 						</div>
 						
