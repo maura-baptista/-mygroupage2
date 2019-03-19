@@ -382,7 +382,7 @@
 .wrapper-calculator{
 	background-image:  image-url('calculator-hero.png');
  	background-size: cover;
- 	height: 700px;
+ 	height: 75vh;
  	background-position: bottom;
  	.header-card{
  		    padding-top: 20%;
@@ -481,7 +481,7 @@
     		}
     		.chart-container{
 		    	padding: 20px 0px;
-		    	background: yellow;
+		    	// background: yellow;
 		    	height: 220px;
 		    	display: flex;
     		}
@@ -506,6 +506,7 @@
 							line-height: normal;
 							letter-spacing: -1px;
 							color: #333333;
+
     				}
     				.large-font{
 						font-size: 39px;
@@ -537,7 +538,26 @@
 						color: #484848;
 						margin: 0;
 						margin-top: 9px;
+
     				}
+    			}
+    			.title-width{
+    				width: 186px;
+    			}
+    		}
+    		.results-btn{
+    			.btn-calculate{
+    				background: #008489;
+					border-radius: 5px;
+					font-family: Comfortaa;
+					font-style: normal;
+					font-weight: bold;
+					font-size: 24px;
+					line-height: normal;
+					text-align: center;
+					color: #FFFFFF;
+					height: 50px;
+					width: 100%;
     			}
     		}
     		

@@ -17,6 +17,20 @@ skip_before_action :authenticate_user!, only: [:new, :calculator, :form_opening,
     @result = (@price / @container_size) * @left_space
   end
 
+  def earnings_calculator
+    @estimate = Estimate.new
+    @container = Container.new
+    @container = Container.new(container_params)
+    @metrics = @container[:metrics].to_f
+    @container_size = @container[:container_size].to_f * @metrics
+    @volume = @container[:volume].to_f
+    @price = @container[:price].to_f
+   @currency = @container[:currency]
+    @left_space = @container_size - @volume 
+
+    @result = (@price / @container_size) * @left_space
+  end
+
   def form_opening
 
     @container = Container.new

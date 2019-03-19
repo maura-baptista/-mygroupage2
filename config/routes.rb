@@ -7,6 +7,10 @@ Rails.application.routes.draw do
 
   resources :flats
  # get 'groupages/form_opening'
+       
+  get 'containers/earnings_calculator'
+  post 'containers/earnings_calculator'
+
   get 'pages/quotes_form_confirmation'
   get 'pages/partner_form_confirmation'
   get 'containers/form_opening'
