@@ -7,11 +7,10 @@ class Container < ApplicationRecord
 	# validates :container_size, :volume, :metrics, :price, :currency,  presence: true, if: :should_validate?
 
 
-	CONTAINERS = [
-					["20’ container (6 meters container)", 30],
-					["40’ container (12 meters container)", 60]
-					
-				]
+	CONTAINERS = [ ["20" , 30], ["40", 60]]
+				# 20 means 20'(feet) container
+				# 40 means 40'(feet) container
+
 	# validates :container_size, inclusion: {in: CONTAINERS}
 
 	METRIC = [

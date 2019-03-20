@@ -546,18 +546,24 @@
     			}
     		}
     		.results-btn{
+    			margin-top: 20px;
     			.btn-calculate{
-    				background: #008489;
+    				background: transparent;
 					border-radius: 5px;
 					font-family: Comfortaa;
 					font-style: normal;
 					font-weight: bold;
-					font-size: 24px;
+					font-size: 20px;
 					line-height: normal;
 					text-align: center;
-					color: #FFFFFF;
-					height: 50px;
+					color: #484848;
+					height: 55px;
 					width: 100%;
+					background-image: image-url('calculator-icon.svg') !important;
+				    background-position: left;
+				    background-repeat: no-repeat;
+				    background-size: 40% 46%;
+				    padding: 6px 37px;
     			}
     		}
     		

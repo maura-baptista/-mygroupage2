@@ -173,6 +173,7 @@
 							<%#= simple_form_for @container, url: calculator_path, method: :get do |f| %>
 
 							<%#= simple_form_for @container, :html => { :multipart => true }, :url => {:controller => 'containers', :action => 'earnings_calculator', :method => :get } do |f| %>
+							<%#= params.inspect %>
 							<%= simple_form_for @container, :url => containers_earnings_calculator_path(@container, :anchor => 'form'), :method => :post do |f| %>
 
 			
@@ -204,16 +205,8 @@
 							</div>
 							<div class="row">
 								<div class="col-sm-12">
-									<p>Your container size</p>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-sm-7">
-									<%= f.input :container_size, label: false, collection: Container::CONTAINERS, selected: 0 %>
-								</div>
-								<div class="col-sm-5">
 									<div class="results-btn">
-										<%= f.submit "Calculate", class: "btn btn-calculate form-control"  %>
+										<%= f.submit "Calculate earnings", class: "btn btn-calculate form-control"  %>
 									</div>
 								</div>
 							</div>
@@ -233,7 +226,11 @@
 												<%= image_tag "small-chart.svg", height: 50 %>
 											</div>
 											<div class="chart-title">
-												<p>M3 OF EMPTY SPACE</p>
+												<% if params[:commit]%>
+													<p><%= @metrics_display %> OF EMPTY SPACE</p>
+												<% else %>
+													<p>M3 OF EMPTY SPACE</p>
+												<% end %>
 											</div>
 										</div>
 									</div>
@@ -252,7 +249,11 @@
 												<%= image_tag "small-chart.svg", height: 50, class: "large-img" %>
 											</div>
 											<div class="chart-title title-width">
-												<p>TOTAL EARNINGS POTENTIAL (USD)</p>
+												<% if params[:commit]%>
+													<p>TOTAL EARNINGS POTENTIAL (<%= @currency %>)</p>
+												<% else %>
+													<p>TOTAL EARNINGS POTENTIAL (USD)</p>
+												<% end %>
 											</div>
 										</div>
 									</div>

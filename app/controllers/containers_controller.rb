@@ -1,5 +1,5 @@
 class ContainersController < ApplicationController
-skip_before_action :authenticate_user!, only: [:new, :calculator, :form_opening, :update]
+skip_before_action :authenticate_user!, only: [:new, :calculator, :earnings_calculator, :form_opening, :update]
 
   layout "calculator"
 
@@ -11,7 +11,7 @@ skip_before_action :authenticate_user!, only: [:new, :calculator, :form_opening,
   	@container_size = @container[:container_size].to_f * @metrics
   	@volume = @container[:volume].to_f
   	@price = @container[:price].to_f
- 	 @currency = @container[:currency]
+ 	  @currency = @container[:currency]
     @left_space = @container_size - @volume 
 
     @result = (@price / @container_size) * @left_space
@@ -22,28 +22,57 @@ skip_before_action :authenticate_user!, only: [:new, :calculator, :form_opening,
     @container = Container.new
     @container = Container.new(container_params)
     @metrics = @container[:metrics].to_f
-    @container_size = @container[:container_size].to_f * @metrics
+    # @container_size = @container[:container_size].to_f * @metrics
     @volume = @container[:volume].to_f
     @price = @container[:price].to_f
     @currency = @container[:currency]
     
 
 
-   # CONTAINERS = [
+   # Container::CONTAINERS = [
    #        ["20’ container", 30],
    #        ["40’ container", 60]
           
    #      ]
 
-   #  container_size = CONTAINER
+    @container_size = 0
 
-   #  if  @volume > 27
+    if  @metrics == 1
+      if @volume <= 27
+        container_size = Container::CONTAINERS[0][1]
+        @container_size = Container::CONTAINERS[0][0] 
+        @metrics_display = "M3"
 
+      elsif @volume > 27 &&  @volume < 58
+        container_size = Container::CONTAINERS[1][1]
+        @container_size = Container::CONTAINERS[1][0]
+         @metrics_display = "M3"
 
+      else
+         flash[:notice]='Your move is too big to share a container.'
+      end 
+    elsif @metrics == 35
 
-    @left_space = @container_size - @volume 
+      if @volume <= 950
+        container_size = Container::CONTAINERS[0][1]
+        @container_size = Container::CONTAINERS[0][0] 
+         @metrics_display = "CUFT"
+      elsif @volume > 950 &&  @volume < 2000
+        container_size = Container::CONTAINERS[1][1]
+        @container_size = Container::CONTAINERS[1][0]
+        @metrics_display = "CUFT"
+      else
+         flash[:notice]='Your move is too big to share a container.'
+      end 
+      
+    end 
+      container = container_size* @metrics
+      @left_space = container - @volume 
+      @result = (@price / container) * @left_space
 
-    @result = (@price / @container_size) * @left_space
+    
+
+    
   end
 
   def form_opening
