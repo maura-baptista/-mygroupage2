@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:home, :login, :hire_mover, :list_confirmation, :alert_confirmation, :terms_and_conditions, :privacy_policy,  :moving_guides, :share_my_container, :partner_form_confirmation, :quotes_form_confirmation ]
+  skip_before_action :authenticate_user!, only: [:home, :login, :hire_mover, :list_confirmation, :alert_confirmation, :terms_and_conditions, :privacy_policy,  :moving_guides, :search_container, :share_my_container, :partner_form_confirmation, :quotes_form_confirmation ]
 
   
   # layout :resolve_layout
@@ -22,7 +22,6 @@ class PagesController < ApplicationController
 
   def search_container
     @groupage = Groupage.new
-    
   end
 
 
@@ -54,6 +53,8 @@ class PagesController < ApplicationController
   def quotes_form_confirmation
     render layout: "form-cover"
   end
+
+
 
   private
 

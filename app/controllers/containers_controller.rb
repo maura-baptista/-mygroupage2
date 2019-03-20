@@ -25,7 +25,22 @@ skip_before_action :authenticate_user!, only: [:new, :calculator, :form_opening,
     @container_size = @container[:container_size].to_f * @metrics
     @volume = @container[:volume].to_f
     @price = @container[:price].to_f
-   @currency = @container[:currency]
+    @currency = @container[:currency]
+    
+
+
+   # CONTAINERS = [
+   #        ["20’ container", 30],
+   #        ["40’ container", 60]
+          
+   #      ]
+
+   #  container_size = CONTAINER
+
+   #  if  @volume > 27
+
+
+
     @left_space = @container_size - @volume 
 
     @result = (@price / @container_size) * @left_space
