@@ -24,6 +24,7 @@ class AlertsController < ApplicationController
 
    @alert = Alert.new(alert_params)
    
+   
 
    @groupage = @alert
      

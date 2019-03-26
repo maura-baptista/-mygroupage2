@@ -49,7 +49,12 @@ skip_before_action :authenticate_user!, only: [:new, :calculator, :earnings_calc
          @metrics_display = "M3"
 
       else
+          container_size = Container::CONTAINERS[1][1]
+          @container_size = Container::CONTAINERS[1][0]
+          @metrics_display = "M3"
+          # redirect_to containers_earnings_calculator_path, notice: "Great! We'll get in touch with you soon."
          flash[:notice]='Your move is too big to share a container.'
+         
       end 
     elsif @metrics == 35
 
@@ -62,7 +67,11 @@ skip_before_action :authenticate_user!, only: [:new, :calculator, :earnings_calc
         @container_size = Container::CONTAINERS[1][0]
         @metrics_display = "CUFT"
       else
+        container_size = Container::CONTAINERS[1][1]
+        @container_size = Container::CONTAINERS[1][0]
+        @metrics_display = "CUFT"
          flash[:notice]='Your move is too big to share a container.'
+        
       end 
       
     end 

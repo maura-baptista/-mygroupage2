@@ -175,7 +175,16 @@
 							<%#= simple_form_for @container, :html => { :multipart => true }, :url => {:controller => 'containers', :action => 'earnings_calculator', :method => :get } do |f| %>
 							<%#= params.inspect %>
 							<%= simple_form_for @container, :url => containers_earnings_calculator_path(@container, :anchor => 'form'), :method => :post do |f| %>
-
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="calculator-flash">
+										<% if flash.any? %>
+								        <%= flash[:notice] %>
+							      	<% end %> 
+									</div>	
+								</div>
+							</div>
+								
 			
 							<div class="row">
 								<div class="col-sm-12">
