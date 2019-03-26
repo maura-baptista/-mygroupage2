@@ -611,6 +611,144 @@
 			</div>
 		</div>
 	</section>
+
+	<section class="wrapper-calculator-mob hidden-sm hidden-md hidden-lg" id="form2" >
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="header-card">
+						<div class="calculator-description">
+							<h2>Offset your moving costs</h2>
+							<p>Use our simple simulator to estimate the spare space you will have if you book a container. Get an idea of how much of your moving costs could be offset.</p>
+							<div class="get-quotes-button">
+			 					<%#= link_to "Get free quotes", "#", class: "btn-get-quotes" %>
+							</div> 
+						</div>			
+					</div>
+				</div>
+				<div class="col-xs-12">
+					<div class="form-card">
+						<div class="calculator-form">
+							<%= simple_form_for @container, :url => containers_earnings_calculator_path(@container, :anchor => 'form2'), :method => :post do |f| %>
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="calculator-flash">
+										<% if flash.any? %>
+								        <%= flash[:notice] %>
+							      	<% end %> 
+									</div>	
+								</div>
+							</div>
+								
+			
+							<div class="row">
+								<div class="col-xs-12">
+									<p>Door to door cost for a container</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-7">
+									<%= f.input :price, as: :integer, label: false, input_html: { class: 'large-input', value: f.object.price || '6000' },  placeholder: "Best price you got so far" %>
+								</div>
+								<div class="col-xs-5">
+									<%= f.input :currency, label: false, input_html: { class: 'special' },  collection: Container::CURRENCIES, selected: 'USD' %>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-12">
+									<p>Volume of your move</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-7">
+									<%= f.input :volume, as: :integer, label: false, input_html: { class: 'large-input', value: f.object.volume || '18'  }, placeholder: "Volume of my move" %>
+								</div>
+								<div class="col-xs-5">
+									<%= f.input :metrics, label: false,input_html: { class: 'special' }, collection: Container::METRIC, prompt: params[:metrics] %>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="results-btn">
+										<%= f.submit "Calculate earnings", class: "btn btn-calculate form-control"  %>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="chart-container">
+									<div class="col-xs-3 chart-padding-right">
+										<div class="calculator-chart-card flex-items-centered">
+											<div class="chart-box gaugeChar small-chart-top-margin">
+												<div class="chart-value">
+													<% if params[:commit]%>
+														<%=  number_with_precision(@left_space, :precision => 0 )%>
+													<% else %>
+													<%= "12" %>
+													<% end %>
+
+												</div>
+												<%= image_tag "small-chart.svg", height: 50 %>
+											</div>
+											<div class="chart-title">
+												<% if params[:commit]%>
+													<p><%= @metrics_display %> OF EMPTY <br> SPACE</p>
+												<% else %>
+													<p>M3 OF EMPTY <br> SPACE</p>
+												<% end %>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-6">
+										<div class="calculator-chart-card">
+											<div class="chart-box gaugeChar ">
+												<div class="chart-value large-font">
+													<% if params[:commit]%>
+														<%= number_with_precision(@result, :precision => 0, :delimiter => ',' ) %>
+													<% else %>
+													<%= "2,400" %>
+
+													<% end %>
+													
+												</div>
+												<%= image_tag "small-chart.svg", height: 50, class: "large-img" %>
+											</div>
+											<div class="chart-title">
+												<% if params[:commit]%>
+													<p style="margin-top: 9px;">TOTAL EARNINGS <br> POTENTIAL (<%= @currency %>)</p>
+												<% else %>
+													<p style="margin-top: 9px;">TOTAL EARNINGS <br> POTENTIAL (USD)</p>
+												<% end %>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-3 chart-padding-left">
+										<div class="calculator-chart-card">
+											<div class="chart-box gaugeChar small-chart-top-margin">
+												<div class="chart-value">
+													<% if params[:commit]%>
+														<%= number_with_precision(@container_size, :precision => 0, )%>'
+													<% else %>
+													<%= "20" %>'
+													<% end %>
+													
+												</div>
+												<%= image_tag "small-chart.svg", height: 50 %>
+											</div>
+											<div class="chart-title">
+												<p>CONTAINER <br> NEEDED</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<% end %>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 	
 	<section class="wrapper-review-mob hidden-sm hidden-md hidden-lg">
 		<div class="container">
